@@ -1,6 +1,7 @@
 ### MoonMeet
-![GitHub contributors](https://img.shields.io/github/contributors/JavkhlanK/Sketchware-Pro) ![GitHub last commit](https://img.shields.io/github/last-commit/JavkhlanK/Sketchware-Pro)
-A new era of chatting and meeting people !
+![GitHub contributors](https://img.shields.io/github/contributors/AlucardTN/MoonMeet) ![GitHub last commit](https://img.shields.io/github/last-commit/AlucardTN/MoonMeet)
+
+-A new era of chatting and meeting people !
 
 ### Description
 - Moon Meet is a social media platform including chatting feature.
