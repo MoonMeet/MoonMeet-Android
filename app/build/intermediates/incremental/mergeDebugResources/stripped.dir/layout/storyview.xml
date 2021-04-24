@@ -1,0 +1,74 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#ECF0F3"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:fitsSystemWindows="true">
+		<ImageView
+			android:id="@+id/imageview1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="14dp"
+			android:src="@drawable/ic_arrow_back_white"
+			android:scaleType="center" />
+		<TextView
+			android:id="@+id/textview1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="14dp"
+			android:text="Story Viewers"
+			android:textSize="18sp"
+			android:textColor="#193566" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/noviewersyet"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="8dp"
+		android:background="#ECF0F3"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical"
+		android:layout_gravity="center_horizontal|center_vertical">
+		<com.google.android.material.textview.MaterialTextView
+			android:id="@+id/noviewersyet_full_txt"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="8dp"
+			android:paddingTop="8dp"
+			android:paddingRight="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:text="No Viewers, yet."
+			android:textSize="20sp"
+			android:textStyle="bold"
+			android:textColor="#000000"
+			android:alpha="0.8"
+			android:layout_gravity="center_horizontal|center_vertical" />
+		<com.google.android.material.textview.MaterialTextView
+			android:id="@+id/noviewersyet_mini_txt"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:text="Peoples who view your story will show here."
+			android:textSize="14sp"
+			android:textColor="#000000"
+			android:alpha="0.8"
+			android:layout_gravity="center_horizontal|center_vertical" />
+	</LinearLayout>
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/recyclerview1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#ECF0F3"
+		android:layout_weight="1"
+		android:fitsSystemWindows="true" />
+</LinearLayout>

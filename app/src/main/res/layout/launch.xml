@@ -1,0 +1,282 @@
+<androidx.drawerlayout.widget.DrawerLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/_drawer"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:openDrawer="start"
+	app:insetForeground="#FF193566">
+	<androidx.coordinatorlayout.widget.CoordinatorLayout
+		android:id="@+id/_coordinator"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<com.google.android.material.appbar.AppBarLayout
+			android:id="@+id/_app_bar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:theme="@style/MoonMeet.AppBarOverlay">
+			<androidx.appcompat.widget.Toolbar
+				android:id="@+id/_toolbar"
+				android:layout_width="match_parent"
+				android:layout_height="?attr/actionBarSize"
+				android:background="?attr/colorPrimary"
+				app:popupTheme="@style/MoonMeet.PopupOverlay" />
+		</com.google.android.material.appbar.AppBarLayout>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			app:layout_behavior="@string/appbar_scrolling_view_behavior">
+			<LinearLayout
+				android:id="@+id/topbar"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="#ECF0F3"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:fitsSystemWindows="true"
+				android:minHeight="?attr/actionBarSize">
+				<ImageView
+					android:id="@+id/imageview1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="14dp"
+					android:src="@drawable/ic_menu_white"
+					android:scaleType="center" />
+				<TextView
+					android:id="@+id/topbar_txt"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:padding="14dp"
+					android:gravity="center_vertical"
+					android:text="Moon Meet"
+					android:textSize="18sp"
+					android:textColor="#193566" />
+				<LinearLayout
+					android:id="@+id/topbar_space"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:padding="8dp"
+					android:orientation="horizontal"
+					android:layout_weight="1" />
+				<ImageView
+					android:id="@+id/search"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="14dp"
+					android:src="@drawable/ic_ab_search"
+					android:scaleType="center" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear2"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:padding="8dp"
+				android:background="#ECF0F3"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical">
+				<TextView
+					android:id="@+id/no_internet1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Oups!"
+					android:textSize="30sp"
+					android:textStyle="bold"
+					android:textColor="#193566" />
+				<TextView
+					android:id="@+id/no_internet2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="2dp"
+					android:paddingRight="2dp"
+					android:text="Looks like there's No Internet Connection."
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:alpha="0.87" />
+				<TextView
+					android:id="@+id/no_internet3"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+					android:padding="8dp"
+					android:gravity="center_horizontal"
+					android:text="You are not connected to the internet,\nMake sure Wi-Fi is on, Airplane Mode is off\nand try again."
+					android:textSize="14sp"
+					android:textColor="#000000"
+					android:alpha="0.87" />
+				<TextView
+					android:id="@+id/no_internet4"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="20dp"
+					android:paddingTop="8dp"
+					android:paddingRight="20dp"
+					android:paddingBottom="8dp"
+					android:background="#193566"
+					android:text="RETRY"
+					android:textSize="14sp"
+					android:textStyle="bold"
+					android:textColor="#FFFFFF" />
+			</LinearLayout>
+			<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+				android:id="@+id/swipe_layout"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+				<androidx.core.widget.NestedScrollView
+					android:id="@+id/scroll"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="#ECF0F3"
+					android:fillViewport="true">
+					<LinearLayout
+						android:id="@+id/main_layout"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:background="#ECF0F3"
+						android:orientation="vertical"
+						android:fillViewport="true">
+						<LinearLayout
+							android:id="@+id/stories_online_linear"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:paddingLeft="8dp"
+							android:paddingTop="4dp"
+							android:paddingRight="8dp"
+							android:paddingBottom="2dp"
+							android:orientation="horizontal"
+							android:fitsSystemWindows="true">
+							<TextView
+								android:id="@+id/stories_txt"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="right"
+								android:text="Stories"
+								android:textSize="14sp"
+								android:textColor="#193566" />
+							<TextView
+								android:id="@+id/active_txt"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Online"
+								android:textSize="14sp"
+								android:textColor="#546E7A" />
+						</LinearLayout>
+						<LinearLayout
+							android:id="@+id/stories_active_holder"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:fitsSystemWindows="true">
+							<LinearLayout
+								android:id="@+id/ppl_holder"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:paddingLeft="8dp"
+								android:paddingTop="8dp"
+								android:paddingBottom="8dp"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="vertical">
+								<ImageView
+									android:id="@+id/ppl_add_icon"
+									android:layout_width="50dp"
+									android:layout_height="50dp"
+									android:layout_margin="4dp"
+									android:src="@drawable/menu_add"
+									android:scaleType="center" />
+								<TextView
+									android:id="@+id/ppl_new_txt"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:paddingLeft="8dp"
+									android:paddingTop="4dp"
+									android:paddingRight="8dp"
+									android:paddingBottom="8dp"
+									android:text="Add Story"
+									android:textSize="12sp"
+									android:textColor="#000000"
+									android:alpha="0.8" />
+							</LinearLayout>
+							<LinearLayout
+								android:id="@+id/rv_holder"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:orientation="vertical">
+								<androidx.recyclerview.widget.RecyclerView
+									android:id="@+id/stories_rv"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:nestedScrollingEnabled="true" />
+								<androidx.recyclerview.widget.RecyclerView
+									android:id="@+id/active_rv"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:nestedScrollingEnabled="true" />
+							</LinearLayout>
+						</LinearLayout>
+						<LinearLayout
+							android:id="@+id/chats_no"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="vertical"
+							android:layout_gravity="center_horizontal|center_vertical">
+							<TextView
+								android:id="@+id/chats_no1"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:paddingLeft="8dp"
+								android:paddingTop="8dp"
+								android:paddingRight="8dp"
+								android:text="No Chats, yet."
+								android:textSize="20sp"
+								android:textStyle="bold"
+								android:textColor="#000000"
+								android:alpha="0.8" />
+							<TextView
+								android:id="@+id/chats_no2"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_horizontal"
+								android:text="Start chatting with someone to view here."
+								android:textSize="14sp"
+								android:textColor="#000000"
+								android:alpha="0.6" />
+						</LinearLayout>
+						<androidx.recyclerview.widget.RecyclerView
+							android:id="@+id/chats"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:nestedScrollingEnabled="true" />
+					</LinearLayout>
+				</androidx.core.widget.NestedScrollView>
+			</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+		</LinearLayout>
+		<com.google.android.material.floatingactionbutton.FloatingActionButton
+			android:id="@+id/_fab"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="16dp"
+			android:layout_gravity="right|bottom"
+			app:srcCompat="@drawable/floating_pencil"
+			app:tint="@color/MoonWhiteColor"
+			android:animateLayoutChanges="true" />
+	</androidx.coordinatorlayout.widget.CoordinatorLayout>
+	<LinearLayout
+		android:id="@+id/_nav_view"
+		android:layout_width="320dp"
+		android:layout_height="match_parent"
+		android:layout_gravity="start"
+		android:background="#FFECF0F3"
+		app:insetForeground="#FF193566">
+		<include layout="@layout/_drawer_launch" />
+	</LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

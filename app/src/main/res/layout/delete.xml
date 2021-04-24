@@ -1,0 +1,111 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/main"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical">
+		<androidx.cardview.widget.CardView
+			android:id="@+id/cardview"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			app:cardElevation="0dp"
+			app:cardCornerRadius="7dp">
+			<LinearLayout
+				android:id="@+id/linearinsidecard"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#ECF0F3"
+				android:orientation="vertical">
+				<TextView
+					android:id="@+id/delete_text"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Delete Message"
+					android:textSize="14sp"
+					android:textColor="#193566" />
+				<LinearLayout
+					android:id="@+id/textholder"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:paddingTop="8dp"
+					android:paddingRight="8dp"
+					android:paddingBottom="8dp"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/delete_description"
+						android:focusable="false"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Are you sure you want to delete this message \? this operation can be undone"
+						android:textSize="14sp"
+						android:textColor="#000000"
+						android:alpha="0.8" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/actions_holder"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/foreveryone"
+						android:focusable="false"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Delete for everyone"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#193566"
+						android:alpha="0.85" />
+					<LinearLayout
+						android:id="@+id/space"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:orientation="horizontal"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/cancel"
+						android:focusable="false"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Cancel"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#193566"
+						android:alpha="0.85" />
+					<LinearLayout
+						android:id="@+id/space_two"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:orientation="horizontal" />
+					<TextView
+						android:id="@+id/for_me"
+						android:focusable="false"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Delete for me"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#193566"
+						android:alpha="0.85" />
+				</LinearLayout>
+			</LinearLayout>
+		</androidx.cardview.widget.CardView>
+	</LinearLayout>
+</LinearLayout>

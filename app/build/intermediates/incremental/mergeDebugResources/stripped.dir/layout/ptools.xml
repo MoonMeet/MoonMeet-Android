@@ -1,0 +1,101 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/ly"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="4dp"
+		android:layout_marginTop="5dp"
+		android:layout_marginRight="4dp"
+		android:layout_marginBottom="2dp"
+		android:padding="4dp"
+		android:background="#ECF0F3"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/lin1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal"
+			android:clickable="true"
+			android:focusable="true"
+			android:foreground="?android:attr/selectableItemBackground">
+			<ImageView
+				android:id="@+id/pen"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/msg_link"
+				android:scaleType="center" />
+			<TextView
+				android:id="@+id/tx1"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Copy Name"
+				android:textSize="16sp"
+				android:textColor="#828282" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/lin2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal"
+			android:clickable="true"
+			android:focusable="true"
+			android:foreground="?android:attr/selectableItemBackground">
+			<ImageView
+				android:id="@+id/door"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/msg_link"
+				android:scaleType="center" />
+			<TextView
+				android:id="@+id/tx2"
+				android:focusable="false"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="10dp"
+				android:text="Copy Username"
+				android:textSize="16sp"
+				android:textColor="#828282" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/lin3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal"
+			android:clickable="true"
+			android:focusable="true"
+			android:foreground="?android:attr/selectableItemBackground">
+			<ImageView
+				android:id="@+id/copy"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/msg_link"
+				android:scaleType="center" />
+			<TextView
+				android:id="@+id/tx3"
+				android:focusable="false"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="10dp"
+				android:text="Copy Bio"
+				android:textSize="16sp"
+				android:textColor="#828282" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

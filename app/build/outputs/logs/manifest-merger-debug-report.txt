@@ -1,0 +1,1002 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:2:1-323:12
+INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:2:1-323:12
+INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:2:1-323:12
+INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:2:1-323:12
+MERGED from [androidx.databinding:viewbinding:7.0.0-alpha14] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\94b933d42817ec65b91dda01b27e0d7c\transformed\jetified-viewbinding-7.0.0-alpha14\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:17:1-83:12
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\9e04b50a9526105569e01f14344af023\transformed\browser-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\927c9dcc0ba4424a40736df1d73e7bef\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\13fe9a8ab33bcbf858681125bfe89c91\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.camera:camera-camera2:1.0.0-alpha01] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\eede098c54070ee9757bb790124e5557\transformed\jetified-camera-camera2-1.0.0-alpha01\AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.camera:camera-core:1.0.0-alpha01] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\b4fadf94488f2d8e1af4ca94c434c2c4\transformed\jetified-camera-core-1.0.0-alpha01\AndroidManifest.xml:17:1-22:12
+MERGED from [:AXEmojiView] C:\Users\Hamza Sbai\Desktop\MoonMeet\AXEmojiView\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\6fec5f8df369d1421ba30a46ee6101a2\transformed\material-1.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.tbuonomo:dotsindicator:4.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\e4d6c02f3b521fbf8583ed105b53696e\transformed\jetified-dotsindicator-4.2\AndroidManifest.xml:2:1-13:12
+MERGED from [com.andrognito.patternlockview:patternlockview:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\382530d82c28e486f429ff3391e8d8da\transformed\jetified-patternlockview-1.0.0\AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\3897bfe63fb2b75b3ed436a23cb6dcc8\transformed\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\5ac9f3f8b22324486d79af9df5555df2\transformed\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\76e4f8edde8a811b1946c1880f134471\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.2.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\cc0da456b9def846e04b0d10c098c6ed\transformed\recyclerview-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-database:19.7.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\03a19952ca5f27488835f3db37c04c4c\transformed\jetified-firebase-database-19.7.0\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.firebase:firebase-storage:19.2.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d755732d545d225d462e37566fe4d80d\transformed\jetified-firebase-storage-19.2.2\AndroidManifest.xml:15:1-39:12
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\9a05a5c97fd7d898c82bb2d5cf90f495\transformed\jetified-glide-4.11.0\AndroidManifest.xml:2:1-12:12
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\fc4675c6d45dd769936fe2d2118f3bcb\transformed\jetified-circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\a78a4e183c8e960e94de696163c01df4\transformed\multidex-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d33ec386fc3981cb61de7e6415da0fcd\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\b97e6082db3d3dc5452ed5a426f856ba\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\42d9aacd8e34f8cfcbcc9df0458bec4a\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\a7ebed39ba863b0288a1bab298b855a2\transformed\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\34098305dd16dbad80a7ac36e577d11e\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ddcc4e24b273bd822d3cffb4916e6b36\transformed\jetified-play-services-auth-api-phone-17.4.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\f51a7b15c6036255afb25195292d280f\transformed\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-database-collection:17.0.1] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d3336a9624986fb7bbd976c1181641ba\transformed\jetified-firebase-database-collection-17.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ee9cd8a11481e1c75a3596b4aaf65d8d\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\6a444d31677524ffea5931ac131713d2\transformed\jetified-firebase-auth-interop-19.0.2\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:15:1-49:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\15115695da07f5f06ad64fcc263788ba\transformed\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\6fd21c07e9cf08de868605caa476b5ab\transformed\jetified-play-services-basement-17.1.0\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\cc0fe3bde76bf39b6730821159ff4c21\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\afbfdbebf78a7d36b3148d3faac0b872\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\674189fd88c99958044e5483390e040c\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\2ff729e73257629b1ff4aa26a0d21c2a\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\93986dca1d5012ca55e0f6aa9d1e34a1\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ecdcd16927a610d794f31d9b29d77e5\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\a5b65b12b03b17190834f8957b5748c8\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\fdfa549c07f77129459f5d6f05c8dd98\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\288214d1ce1b1b42de85f18ddc8a756f\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\bcb00fb50c302f2bbebacac64b407ea8\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\eea10586403e9d8c98760c1be98cb6d1\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ac46ac61cc345a2c6604dbe7cddf5ec0\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\370ddc11b33346ec66b587601ad19ed9\transformed\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\f02a4d93f39a2f350705ecaa613d8a28\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.3.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ed82f7d558904cc07e03ebb09e8f46d0\transformed\core-1.3.2\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\f78f85ae3f3c49a4a5efb4d635fd61f4\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-components:16.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\3891eb0019f870f44447cef86ff00dd6\transformed\jetified-firebase-components-16.1.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\dc30582bff44510fb5d1bb8506681317\transformed\jetified-gifdecoder-4.11.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\1292392da49409b55067acdaae21d27e\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\f0f3923fc8f58716968ca46647c2c4a7\transformed\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\59d16fdf1ab71071099716eeae438703\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\e101e49143bba2e09c2f25f12687e229\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\a53ba2e083fbc55cbd484403dae031ed\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\a088d6589bf6c86a87b29395232597f2\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\6976c21095a9c74230bb08d4c33c75a9\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d64e2d14721d66bea2585914abb0b714\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4cfebfd314e45c9198c3468b3321c45a\transformed\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\f632c75a0d67dfa796b6ae1b625ea655\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:2:1-323:12
+INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:2:1-323:12
+INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:2:1-323:12
+	package
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:3:5-32
+		INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:2:1-323:12
+		INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:2:1-323:12
+		INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-database:19.7.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\03a19952ca5f27488835f3db37c04c4c\transformed\jetified-firebase-database-19.7.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-database:19.7.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\03a19952ca5f27488835f3db37c04c4c\transformed\jetified-firebase-database-19.7.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-storage:19.2.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d755732d545d225d462e37566fe4d80d\transformed\jetified-firebase-storage-19.2.2\AndroidManifest.xml:27:5-67
+MERGED from [com.google.firebase:firebase-storage:19.2.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d755732d545d225d462e37566fe4d80d\transformed\jetified-firebase-storage-19.2.2\AndroidManifest.xml:27:5-67
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.VIBRATE
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:6:5-66
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:6:22-63
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:7:5-79
+MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-database:19.7.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\03a19952ca5f27488835f3db37c04c4c\transformed\jetified-firebase-database-19.7.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-database:19.7.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\03a19952ca5f27488835f3db37c04c4c\transformed\jetified-firebase-database-19.7.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-storage:19.2.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d755732d545d225d462e37566fe4d80d\transformed\jetified-firebase-storage-19.2.2\AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-storage:19.2.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d755732d545d225d462e37566fe4d80d\transformed\jetified-firebase-storage-19.2.2\AndroidManifest.xml:26:5-79
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:7:22-76
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:8:5-65
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:8:22-62
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:9:5-80
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:9:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:10:22-78
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:11:5-71
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:11:22-68
+uses-permission#android.permission.MANAGE_EXTERNAL_STORAGE
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:12:5-82
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:12:22-79
+uses-permission#android.permission.USE_FINGERPRINT
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:13:5-74
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:13:22-71
+application
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:15:5-321:19
+MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:26:5-81:19
+MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:26:5-81:19
+MERGED from [androidx.camera:camera-camera2:1.0.0-alpha01] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\eede098c54070ee9757bb790124e5557\transformed\jetified-camera-camera2-1.0.0-alpha01\AndroidManifest.xml:22:5-29:19
+MERGED from [androidx.camera:camera-camera2:1.0.0-alpha01] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\eede098c54070ee9757bb790124e5557\transformed\jetified-camera-camera2-1.0.0-alpha01\AndroidManifest.xml:22:5-29:19
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\6fec5f8df369d1421ba30a46ee6101a2\transformed\material-1.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\6fec5f8df369d1421ba30a46ee6101a2\transformed\material-1.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.tbuonomo:dotsindicator:4.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\e4d6c02f3b521fbf8583ed105b53696e\transformed\jetified-dotsindicator-4.2\AndroidManifest.xml:11:5-47
+MERGED from [com.tbuonomo:dotsindicator:4.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\e4d6c02f3b521fbf8583ed105b53696e\transformed\jetified-dotsindicator-4.2\AndroidManifest.xml:11:5-47
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\3897bfe63fb2b75b3ed436a23cb6dcc8\transformed\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\3897bfe63fb2b75b3ed436a23cb6dcc8\transformed\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-database:19.7.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\03a19952ca5f27488835f3db37c04c4c\transformed\jetified-firebase-database-19.7.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-database:19.7.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\03a19952ca5f27488835f3db37c04c4c\transformed\jetified-firebase-database-19.7.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-storage:19.2.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d755732d545d225d462e37566fe4d80d\transformed\jetified-firebase-storage-19.2.2\AndroidManifest.xml:29:5-37:19
+MERGED from [com.google.firebase:firebase-storage:19.2.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d755732d545d225d462e37566fe4d80d\transformed\jetified-firebase-storage-19.2.2\AndroidManifest.xml:29:5-37:19
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\9a05a5c97fd7d898c82bb2d5cf90f495\transformed\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\9a05a5c97fd7d898c82bb2d5cf90f495\transformed\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\fc4675c6d45dd769936fe2d2118f3bcb\transformed\jetified-circleimageview-3.1.0\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\fc4675c6d45dd769936fe2d2118f3bcb\transformed\jetified-circleimageview-3.1.0\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\f51a7b15c6036255afb25195292d280f\transformed\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\f51a7b15c6036255afb25195292d280f\transformed\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ee9cd8a11481e1c75a3596b4aaf65d8d\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ee9cd8a11481e1c75a3596b4aaf65d8d\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\6a444d31677524ffea5931ac131713d2\transformed\jetified-firebase-auth-interop-19.0.2\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\6a444d31677524ffea5931ac131713d2\transformed\jetified-firebase-auth-interop-19.0.2\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:25:5-47:19
+MERGED from [com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:25:5-47:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\15115695da07f5f06ad64fcc263788ba\transformed\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\15115695da07f5f06ad64fcc263788ba\transformed\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\6fd21c07e9cf08de868605caa476b5ab\transformed\jetified-play-services-basement-17.1.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\6fd21c07e9cf08de868605caa476b5ab\transformed\jetified-play-services-basement-17.1.0\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.3.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ed82f7d558904cc07e03ebb09e8f46d0\transformed\core-1.3.2\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ed82f7d558904cc07e03ebb09e8f46d0\transformed\core-1.3.2\AndroidManifest.xml:24:5-89
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\dc30582bff44510fb5d1bb8506681317\transformed\jetified-gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\dc30582bff44510fb5d1bb8506681317\transformed\jetified-gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\1292392da49409b55067acdaae21d27e\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\1292392da49409b55067acdaae21d27e\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+	android:requestLegacyExternalStorage
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:23:9-52
+	android:supportsRtl
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:24:9-35
+	android:label
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:22:9-41
+	android:appComponentFactory
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:18:9-77
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:20:9-43
+	android:fullBackupContent
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:19:9-41
+	android:icon
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:21:9-42
+	android:allowBackup
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:17:9-35
+	android:theme
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:25:9-40
+	android:usesCleartextTraffic
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:26:9-44
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:16:9-44
+activity#org.mark.moonmeet.MainActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:27:9-40:20
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:33:13-51
+	android:launchMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:32:13-44
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:31:13-47
+	android:exported
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:30:13-36
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:34:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:29:13-106
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:28:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:35:13-39:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:36:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:38:17-77
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:38:27-74
+activity#org.mark.moonmeet.BaseActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:41:9-43:39
+	android:exported
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:43:13-36
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:42:13-41
+activity#org.mark.moonmeet.IntroActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:44:9-49:55
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:48:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:47:13-47
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:49:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:46:13-106
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:45:13-42
+activity#org.mark.moonmeet.OtpActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:50:9-56:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:54:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:53:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:56:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:55:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:52:13-106
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:51:13-40
+activity#org.mark.moonmeet.CountrycodeActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:57:9-63:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:61:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:60:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:63:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:62:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:59:13-106
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:58:13-48
+activity#org.mark.moonmeet.SetupActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:64:9-70:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:68:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:67:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:70:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:69:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:66:13-106
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:65:13-42
+activity#org.mark.moonmeet.LaunchActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:71:9-76:55
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:75:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:74:13-47
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:76:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:73:13-106
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:72:13-43
+activity#org.mark.moonmeet.TermsandprivacyActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:77:9-84:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:81:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:80:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:84:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:82:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:79:13-106
+	android:theme
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:83:13-44
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:78:13-52
+activity#org.mark.moonmeet.NewstoryActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:85:9-92:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:89:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:88:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:92:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:90:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:87:13-106
+	android:theme
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:91:13-44
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:86:13-45
+activity#org.mark.moonmeet.StoryActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:93:9-100:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:97:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:96:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:100:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:98:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:95:13-106
+	android:theme
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:99:13-44
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:94:13-42
+activity#org.mark.moonmeet.SearchActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:101:9-108:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:105:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:104:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:108:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:106:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:103:13-106
+	android:theme
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:107:13-44
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:102:13-43
+activity#org.mark.moonmeet.StoryviewActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:109:9-116:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:113:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:112:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:116:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:114:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:111:13-106
+	android:theme
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:115:13-44
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:110:13-46
+activity#org.mark.moonmeet.DiscoverActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:117:9-124:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:121:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:120:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:124:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:122:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:119:13-106
+	android:theme
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:123:13-44
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:118:13-45
+activity#org.mark.moonmeet.ChatActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:125:9-132:58
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:129:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:128:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:132:13-55
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:130:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:127:13-106
+	android:theme
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:131:13-44
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:126:13-41
+activity#org.mark.moonmeet.SettingsActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:133:9-140:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:137:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:136:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:140:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:138:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:135:13-106
+	android:theme
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:139:13-44
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:134:13-45
+activity#org.mark.moonmeet.ChangeusernameActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:141:9-147:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:145:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:144:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:147:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:146:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:143:13-106
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:142:13-51
+activity#org.mark.moonmeet.ChangebioActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:148:9-154:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:152:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:151:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:154:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:153:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:150:13-106
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:149:13-46
+activity#org.mark.moonmeet.UserprofileActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:155:9-162:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:159:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:158:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:162:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:160:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:157:13-106
+	android:theme
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:161:13-44
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:156:13-48
+activity#org.mark.moonmeet.PhotoviewerActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:163:9-170:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:167:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:166:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:170:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:168:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:165:13-106
+	android:theme
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:169:13-44
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:164:13-48
+activity#org.mark.moonmeet.DevicesActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:171:9-178:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:175:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:174:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:178:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:176:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:173:13-106
+	android:theme
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:177:13-44
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:172:13-44
+activity#org.mark.moonmeet.PrivacySettingsActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:179:9-186:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:183:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:182:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:186:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:184:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:181:13-106
+	android:theme
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:185:13-44
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:180:13-52
+activity#org.mark.moonmeet.PasscodeLockActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:187:9-192:55
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:191:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:190:13-47
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:192:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:189:13-106
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:188:13-49
+activity#org.mark.moonmeet.PasscodeSetupActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:193:9-198:55
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:197:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:196:13-47
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:198:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:195:13-106
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:194:13-50
+activity#org.mark.moonmeet.FaqInfoActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:199:9-206:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:203:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:202:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:206:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:204:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:201:13-106
+	android:theme
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:205:13-44
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:200:13-44
+activity#org.mark.moonmeet.EditNameActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:207:9-213:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:211:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:210:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:213:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:212:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:209:13-106
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:208:13-45
+activity#org.mark.moonmeet.SignoutActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:214:9-220:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:218:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:217:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:220:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:219:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:216:13-106
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:215:13-44
+activity#org.mark.moonmeet.AnnouncementsActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:221:9-227:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:225:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:224:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:227:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:226:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:223:13-106
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:222:13-50
+activity#org.mark.moonmeet.AnnouncementPostActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:228:9-234:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:232:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:231:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:234:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:233:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:230:13-106
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:229:13-53
+activity#org.mark.moonmeet.ShopActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:235:9-241:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:239:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:238:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:241:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:240:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:237:13-106
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:236:13-41
+activity#org.mark.moonmeet.AddToSellActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:242:9-248:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:246:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:245:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:248:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:247:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:244:13-106
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:243:13-46
+activity#org.mark.moonmeet.ViewShopActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:249:9-255:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:253:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:252:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:255:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:254:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:251:13-106
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:250:13-45
+activity#org.mark.moonmeet.CameraActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:256:9-262:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:260:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:259:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:262:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:261:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:258:13-106
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:257:13-43
+activity#org.mark.moonmeet.CameraPreviewActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:263:9-269:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:267:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:266:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:269:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:268:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:265:13-106
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:264:13-50
+activity#org.mark.moonmeet.ImagePickerActivity
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:270:9-276:57
+	android:screenOrientation
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:274:13-51
+	android:hardwareAccelerated
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:273:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:276:13-54
+	android:supportsPictureInPicture
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:275:13-52
+	android:configChanges
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:272:13-106
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:271:13-48
+meta-data#com.google.android.gms.version
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:278:9-280:69
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\6fd21c07e9cf08de868605caa476b5ab\transformed\jetified-play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\6fd21c07e9cf08de868605caa476b5ab\transformed\jetified-play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:280:13-66
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:279:13-58
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:282:9-286:39
+MERGED from [com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
+MERGED from [com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
+	android:authorities
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:284:13-73
+	android:exported
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:285:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
+	android:initOrder
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:286:13-36
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:283:13-77
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:288:9-300:19
+MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:74:9-80:19
+MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:74:9-80:19
+MERGED from [com.google.firebase:firebase-database:19.7.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\03a19952ca5f27488835f3db37c04c4c\transformed\jetified-firebase-database-19.7.0\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-database:19.7.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\03a19952ca5f27488835f3db37c04c4c\transformed\jetified-firebase-database-19.7.0\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-storage:19.2.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d755732d545d225d462e37566fe4d80d\transformed\jetified-firebase-storage-19.2.2\AndroidManifest.xml:30:9-36:19
+MERGED from [com.google.firebase:firebase-storage:19.2.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d755732d545d225d462e37566fe4d80d\transformed\jetified-firebase-storage-19.2.2\AndroidManifest.xml:30:9-36:19
+MERGED from [com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:33:9-46:19
+MERGED from [com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:33:9-46:19
+	android:exported
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:290:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:37:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:289:13-84
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:291:13-293:85
+MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:77:13-79:85
+MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:77:13-79:85
+	android:value
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:293:17-82
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:292:17-109
+meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:294:13-296:85
+MERGED from [com.google.firebase:firebase-database:19.7.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\03a19952ca5f27488835f3db37c04c4c\transformed\jetified-firebase-database-19.7.0\AndroidManifest.xml:32:13-34:85
+MERGED from [com.google.firebase:firebase-database:19.7.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\03a19952ca5f27488835f3db37c04c4c\transformed\jetified-firebase-database-19.7.0\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:296:17-82
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:295:17-109
+meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:297:13-299:85
+MERGED from [com.google.firebase:firebase-storage:19.2.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d755732d545d225d462e37566fe4d80d\transformed\jetified-firebase-storage-19.2.2\AndroidManifest.xml:33:13-35:85
+MERGED from [com.google.firebase:firebase-storage:19.2.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d755732d545d225d462e37566fe4d80d\transformed\jetified-firebase-storage-19.2.2\AndroidManifest.xml:33:13-35:85
+	android:value
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:299:17-82
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:298:17-107
+provider#androidx.core.content.FileProvider
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:302:9-310:20
+	android:grantUriPermissions
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:306:13-47
+	android:authorities
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:304:13-61
+	android:exported
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:305:13-37
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:303:13-62
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:307:13-309:58
+	android:resource
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:309:17-55
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:308:17-67
+provider#androidx.camera.camera2.impl.Camera2Initializer
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:311:9-316:43
+MERGED from [androidx.camera:camera-camera2:1.0.0-alpha01] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\eede098c54070ee9757bb790124e5557\transformed\jetified-camera-camera2-1.0.0-alpha01\AndroidManifest.xml:23:9-28:43
+MERGED from [androidx.camera:camera-camera2:1.0.0-alpha01] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\eede098c54070ee9757bb790124e5557\transformed\jetified-camera-camera2-1.0.0-alpha01\AndroidManifest.xml:23:9-28:43
+	android:authorities
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:313:13-65
+	android:multiprocess
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:316:13-40
+	android:exported
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:314:13-37
+	android:initOrder
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:315:13-36
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:312:13-75
+uses-library#org.apache.http.legacy
+ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:318:9-320:40
+	android:required
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:320:13-37
+	android:name
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:319:13-50
+uses-sdk
+INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:7.0.0-alpha14] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\94b933d42817ec65b91dda01b27e0d7c\transformed\jetified-viewbinding-7.0.0-alpha14\AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:7.0.0-alpha14] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\94b933d42817ec65b91dda01b27e0d7c\transformed\jetified-viewbinding-7.0.0-alpha14\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:21:5-44
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\9e04b50a9526105569e01f14344af023\transformed\browser-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\9e04b50a9526105569e01f14344af023\transformed\browser-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\927c9dcc0ba4424a40736df1d73e7bef\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\927c9dcc0ba4424a40736df1d73e7bef\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\13fe9a8ab33bcbf858681125bfe89c91\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\13fe9a8ab33bcbf858681125bfe89c91\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.camera:camera-camera2:1.0.0-alpha01] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\eede098c54070ee9757bb790124e5557\transformed\jetified-camera-camera2-1.0.0-alpha01\AndroidManifest.xml:20:5-44
+MERGED from [androidx.camera:camera-camera2:1.0.0-alpha01] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\eede098c54070ee9757bb790124e5557\transformed\jetified-camera-camera2-1.0.0-alpha01\AndroidManifest.xml:20:5-44
+MERGED from [androidx.camera:camera-core:1.0.0-alpha01] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\b4fadf94488f2d8e1af4ca94c434c2c4\transformed\jetified-camera-core-1.0.0-alpha01\AndroidManifest.xml:20:5-44
+MERGED from [androidx.camera:camera-core:1.0.0-alpha01] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\b4fadf94488f2d8e1af4ca94c434c2c4\transformed\jetified-camera-core-1.0.0-alpha01\AndroidManifest.xml:20:5-44
+MERGED from [:AXEmojiView] C:\Users\Hamza Sbai\Desktop\MoonMeet\AXEmojiView\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:AXEmojiView] C:\Users\Hamza Sbai\Desktop\MoonMeet\AXEmojiView\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\6fec5f8df369d1421ba30a46ee6101a2\transformed\material-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\6fec5f8df369d1421ba30a46ee6101a2\transformed\material-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.tbuonomo:dotsindicator:4.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\e4d6c02f3b521fbf8583ed105b53696e\transformed\jetified-dotsindicator-4.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.tbuonomo:dotsindicator:4.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\e4d6c02f3b521fbf8583ed105b53696e\transformed\jetified-dotsindicator-4.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.andrognito.patternlockview:patternlockview:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\382530d82c28e486f429ff3391e8d8da\transformed\jetified-patternlockview-1.0.0\AndroidManifest.xml:8:5-10:41
+MERGED from [com.andrognito.patternlockview:patternlockview:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\382530d82c28e486f429ff3391e8d8da\transformed\jetified-patternlockview-1.0.0\AndroidManifest.xml:8:5-10:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\3897bfe63fb2b75b3ed436a23cb6dcc8\transformed\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\3897bfe63fb2b75b3ed436a23cb6dcc8\transformed\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\5ac9f3f8b22324486d79af9df5555df2\transformed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\5ac9f3f8b22324486d79af9df5555df2\transformed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\76e4f8edde8a811b1946c1880f134471\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\76e4f8edde8a811b1946c1880f134471\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\cc0da456b9def846e04b0d10c098c6ed\transformed\recyclerview-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\cc0da456b9def846e04b0d10c098c6ed\transformed\recyclerview-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-database:19.7.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\03a19952ca5f27488835f3db37c04c4c\transformed\jetified-firebase-database-19.7.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-database:19.7.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\03a19952ca5f27488835f3db37c04c4c\transformed\jetified-firebase-database-19.7.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-storage:19.2.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d755732d545d225d462e37566fe4d80d\transformed\jetified-firebase-storage-19.2.2\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-storage:19.2.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d755732d545d225d462e37566fe4d80d\transformed\jetified-firebase-storage-19.2.2\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\9a05a5c97fd7d898c82bb2d5cf90f495\transformed\jetified-glide-4.11.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\9a05a5c97fd7d898c82bb2d5cf90f495\transformed\jetified-glide-4.11.0\AndroidManifest.xml:6:5-8:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\fc4675c6d45dd769936fe2d2118f3bcb\transformed\jetified-circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\fc4675c6d45dd769936fe2d2118f3bcb\transformed\jetified-circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\a78a4e183c8e960e94de696163c01df4\transformed\multidex-2.0.1\AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\a78a4e183c8e960e94de696163c01df4\transformed\multidex-2.0.1\AndroidManifest.xml:20:5-43
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d33ec386fc3981cb61de7e6415da0fcd\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d33ec386fc3981cb61de7e6415da0fcd\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\b97e6082db3d3dc5452ed5a426f856ba\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\b97e6082db3d3dc5452ed5a426f856ba\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\42d9aacd8e34f8cfcbcc9df0458bec4a\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\42d9aacd8e34f8cfcbcc9df0458bec4a\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\a7ebed39ba863b0288a1bab298b855a2\transformed\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\a7ebed39ba863b0288a1bab298b855a2\transformed\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\34098305dd16dbad80a7ac36e577d11e\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\34098305dd16dbad80a7ac36e577d11e\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ddcc4e24b273bd822d3cffb4916e6b36\transformed\jetified-play-services-auth-api-phone-17.4.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ddcc4e24b273bd822d3cffb4916e6b36\transformed\jetified-play-services-auth-api-phone-17.4.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\f51a7b15c6036255afb25195292d280f\transformed\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\f51a7b15c6036255afb25195292d280f\transformed\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database-collection:17.0.1] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d3336a9624986fb7bbd976c1181641ba\transformed\jetified-firebase-database-collection-17.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:17.0.1] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d3336a9624986fb7bbd976c1181641ba\transformed\jetified-firebase-database-collection-17.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ee9cd8a11481e1c75a3596b4aaf65d8d\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ee9cd8a11481e1c75a3596b4aaf65d8d\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\6a444d31677524ffea5931ac131713d2\transformed\jetified-firebase-auth-interop-19.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\6a444d31677524ffea5931ac131713d2\transformed\jetified-firebase-auth-interop-19.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\15115695da07f5f06ad64fcc263788ba\transformed\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\15115695da07f5f06ad64fcc263788ba\transformed\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\6fd21c07e9cf08de868605caa476b5ab\transformed\jetified-play-services-basement-17.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\6fd21c07e9cf08de868605caa476b5ab\transformed\jetified-play-services-basement-17.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\cc0fe3bde76bf39b6730821159ff4c21\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\cc0fe3bde76bf39b6730821159ff4c21\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\afbfdbebf78a7d36b3148d3faac0b872\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\afbfdbebf78a7d36b3148d3faac0b872\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\674189fd88c99958044e5483390e040c\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\674189fd88c99958044e5483390e040c\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\2ff729e73257629b1ff4aa26a0d21c2a\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\2ff729e73257629b1ff4aa26a0d21c2a\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\93986dca1d5012ca55e0f6aa9d1e34a1\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\93986dca1d5012ca55e0f6aa9d1e34a1\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ecdcd16927a610d794f31d9b29d77e5\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ecdcd16927a610d794f31d9b29d77e5\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\a5b65b12b03b17190834f8957b5748c8\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\a5b65b12b03b17190834f8957b5748c8\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\fdfa549c07f77129459f5d6f05c8dd98\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\fdfa549c07f77129459f5d6f05c8dd98\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\288214d1ce1b1b42de85f18ddc8a756f\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\288214d1ce1b1b42de85f18ddc8a756f\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\bcb00fb50c302f2bbebacac64b407ea8\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\bcb00fb50c302f2bbebacac64b407ea8\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\eea10586403e9d8c98760c1be98cb6d1\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\eea10586403e9d8c98760c1be98cb6d1\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ac46ac61cc345a2c6604dbe7cddf5ec0\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ac46ac61cc345a2c6604dbe7cddf5ec0\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\370ddc11b33346ec66b587601ad19ed9\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\370ddc11b33346ec66b587601ad19ed9\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\f02a4d93f39a2f350705ecaa613d8a28\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\f02a4d93f39a2f350705ecaa613d8a28\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.3.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ed82f7d558904cc07e03ebb09e8f46d0\transformed\core-1.3.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.2] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ed82f7d558904cc07e03ebb09e8f46d0\transformed\core-1.3.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\f78f85ae3f3c49a4a5efb4d635fd61f4\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\f78f85ae3f3c49a4a5efb4d635fd61f4\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-components:16.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\3891eb0019f870f44447cef86ff00dd6\transformed\jetified-firebase-components-16.1.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:16.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\3891eb0019f870f44447cef86ff00dd6\transformed\jetified-firebase-components-16.1.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\dc30582bff44510fb5d1bb8506681317\transformed\jetified-gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\dc30582bff44510fb5d1bb8506681317\transformed\jetified-gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\1292392da49409b55067acdaae21d27e\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\1292392da49409b55067acdaae21d27e\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\f0f3923fc8f58716968ca46647c2c4a7\transformed\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\f0f3923fc8f58716968ca46647c2c4a7\transformed\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\59d16fdf1ab71071099716eeae438703\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\59d16fdf1ab71071099716eeae438703\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\e101e49143bba2e09c2f25f12687e229\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\e101e49143bba2e09c2f25f12687e229\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\a53ba2e083fbc55cbd484403dae031ed\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\a53ba2e083fbc55cbd484403dae031ed\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\a088d6589bf6c86a87b29395232597f2\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\a088d6589bf6c86a87b29395232597f2\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\6976c21095a9c74230bb08d4c33c75a9\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\6976c21095a9c74230bb08d4c33c75a9\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d64e2d14721d66bea2585914abb0b714\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d64e2d14721d66bea2585914abb0b714\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4cfebfd314e45c9198c3468b3321c45a\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4cfebfd314e45c9198c3468b3321c45a\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\f632c75a0d67dfa796b6ae1b625ea655\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\f632c75a0d67dfa796b6ae1b625ea655\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml
+activity#com.google.firebase.auth.internal.GenericIdpActivity
+ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:27:9-44:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:29:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:31:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:30:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:32:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:28:13-80
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
+ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:33:13-43:29
+action#android.intent.action.VIEW
+ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:34:17-69
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:34:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:36:17-76
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:36:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:37:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:37:27-75
+data
+ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:39:17-42:51
+	android:path
+		ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:41:21-37
+	android:host
+		ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:40:21-49
+	android:scheme
+		ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:42:21-48
+activity#com.google.firebase.auth.internal.RecaptchaActivity
+ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:45:9-62:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:47:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:49:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:48:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:50:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:46:13-79
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:recaptcha
+ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:51:13-61:29
+service#com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService
+ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:64:9-73:19
+	android:enabled
+		ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:66:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:67:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:65:13-101
+intent-filter#action:name:com.google.firebase.auth.api.gms.service.START+category:name:android.intent.category.DEFAULT
+ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:68:13-72:29
+action#com.google.firebase.auth.api.gms.service.START
+ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:69:17-89
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:69:25-86
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ee9cd8a11481e1c75a3596b4aaf65d8d\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ee9cd8a11481e1c75a3596b4aaf65d8d\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ee9cd8a11481e1c75a3596b4aaf65d8d\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ee9cd8a11481e1c75a3596b4aaf65d8d\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+meta-data#com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar
+ADDED from [com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
