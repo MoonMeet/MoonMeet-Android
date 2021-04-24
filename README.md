@@ -14,7 +14,8 @@
 ### Commit message
 When you've made changes to one or more files, you have to *commit* that file. You also need a *message* for that *commit*.
 
-You should read these guidelines: https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/
+You should read these guidelines:
+https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/
 
 And that summarized:
  - Short and detailed
