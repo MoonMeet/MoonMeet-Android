@@ -1,5 +1,6 @@
 ### MoonMeet
 ![GitHub contributors](https://img.shields.io/github/contributors/AlucardTN/MoonMeet) ![GitHub last commit](https://img.shields.io/github/last-commit/AlucardTN/MoonMeet)
+![Maintenance](https://img.shields.io/maintenance/yes/2021)
 
 -A new era of chatting and meeting people !
 
