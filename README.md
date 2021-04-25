@@ -36,6 +36,15 @@ Examples:
  - `refactor: Reformat code at File.java`
  - ...
 
+### Compilation Guide
+
+You will require updated Android Studio and Android SDK
+
+1. Download the Moon Meet source code from https://github.com/AlucardTN/MoonMeet( git clone https://github.com/AlucardTN/MoonMeet.git)
+
+2.  Go to https://console.firebase.google.com/, create one android app with application IDs org.mark.moonmeet and , turn on firebase messaging and download google-services.json.
+3. Open the project in the Studio (note that it should be opened, NOT imported).
+
 ### Thanks for contributing
 Thanks, they help to keep **Moon Meet** alive. It's better to have multiple people work on a project, for more ideas, less bugs
 (sadly sometimes more), and generally quicker development. Each (helpful) contribution that gets thankfully accepted.
