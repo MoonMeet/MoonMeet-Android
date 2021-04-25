@@ -37,9 +37,8 @@ Examples:
  - ...
 
 ### Thanks for contributing
-Thanks, they help to keep **Sketchware Pro** alive. It's better to have multiple people work on a project, for more ideas, less bugs
-(sadly sometimes more), and generally quicker development. Each (helpful) contribution that gets thankfully accepted,
-gets noted down in the "About Modders" activity. We'll contact you how to note your contributions to Sketchware Pro.
+Thanks, they help to keep **Moon Meet** alive. It's better to have multiple people work on a project, for more ideas, less bugs
+(sadly sometimes more), and generally quicker development. Each (helpful) contribution that gets thankfully accepted.
 
 ### Authors:
 - Rayen Mark [(@AlucardTN)](https://github.com/AlucardTN) - Mobile App Dev.
