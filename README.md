@@ -15,6 +15,7 @@
 When you've made changes to one or more files, you have to *commit* that file. You also need a *message* for that *commit*.
 
 You should read these guidelines:
+
 https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/
 
 And that summarized:
@@ -46,6 +47,10 @@ gets noted down in the "About Modders" activity. We'll contact you how to note y
 ### Social
 - [Facebook](https://www.facebook.com/moonmeet.inc)
 - [Telegram](https://t.me/MoonMeet)
+
+### Special Thanks
+- [Telegram](https://github.com/DrKLO/Telegram)
+- [AXEmojiView](https://github.com/Aghajari/AXEmojiView)
 
 ### License
    ```
