@@ -1,31 +1,18 @@
 package org.mark.moonmeet;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.content.res.Configuration;
 import android.graphics.Color;
-import android.graphics.Point;
-import android.graphics.Shader;
-import android.graphics.drawable.BitmapDrawable;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.KeyEvent;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
-import android.widget.RelativeLayout;
 
-import org.mark.moonmeet.components.LayoutHelper;
-import org.mark.moonmeet.components.RecyclerListView;
 import org.mark.moonmeet.ui.ActionBarLayout;
 import org.mark.moonmeet.ui.BaseFragment;
-import org.mark.moonmeet.ui.DrawerLayoutContainer;
-import org.mark.moonmeet.ui.Theme;
-import org.mark.moonmeet.utils.AndroidUtilities;
 import org.mark.moonmeet.utils.NotificationCenter;
 
 import java.util.ArrayList;

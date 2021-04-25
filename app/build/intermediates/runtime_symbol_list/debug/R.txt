@@ -2253,12 +2253,10 @@ int id TextView_Reason 0x7f090025
 int id TopBar 0x7f090026
 int id URL_EditText 0x7f090027
 int id YouGotBannedText 0x7f090028
-int id _app_bar 0x7f090029
 int id _coordinator 0x7f09002a
 int id _drawer 0x7f09002b
 int id _fab 0x7f09002c
 int id _nav_view 0x7f09002d
-int id _toolbar 0x7f09002e
 int id accelerate 0x7f09002f
 int id accessibility_action_clickable_span 0x7f090030
 int id accessibility_custom_action_0 0x7f090031

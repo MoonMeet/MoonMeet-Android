@@ -1,7 +1,7 @@
 org/mark/moonmeet/databinding/PasscodeSetupBinding.java
  org.mark.moonmeet.databinding.PasscodeSetupBinding
-org/mark/moonmeet/BaseActivity.java
- org.mark.moonmeet.BaseActivity
+org/mark/moonmeet/transformer/ZoomInTransformer.java
+ org.mark.moonmeet.transformer.ZoomInTransformer
 org/mark/moonmeet/emoji/WhatsAppStickers.java
  org.mark.moonmeet.emoji.WhatsAppStickers
 org/mark/moonmeet/databinding/DevicesBinding.java
@@ -32,9 +32,8 @@ android/recyclerview/widget/GridLayoutManager.java
  android.recyclerview.widget.GridLayoutManager$SpanSizeLookup
 org/mark/moonmeet/databinding/UpdateBscBinding.java
  org.mark.moonmeet.databinding.UpdateBscBinding
-org/mark/moonmeet/ui/ActionBarMenu.java
- org.mark.moonmeet.ui.ActionBarMenu
- org.mark.moonmeet.ui.ActionBarMenu$1
+org/mark/moonmeet/databinding/IntroBinding.java
+ org.mark.moonmeet.databinding.IntroBinding
 org/mark/moonmeet/databinding/ChangeusernameBinding.java
  org.mark.moonmeet.databinding.ChangeusernameBinding
 org/mark/moonmeet/messenger/BuildConfig.java
@@ -175,14 +174,27 @@ org/mark/moonmeet/databinding/ViewscBinding.java
  org.mark.moonmeet.databinding.ViewscBinding
 android/recyclerview/widget/BatchingListUpdateCallback.java
  android.recyclerview.widget.BatchingListUpdateCallback
-org/mark/moonmeet/HomeActivity.java
- org.mark.moonmeet.HomeActivity
- org.mark.moonmeet.HomeActivity$1
- org.mark.moonmeet.HomeActivity$2
- org.mark.moonmeet.HomeActivity$IntroFrame
- org.mark.moonmeet.HomeActivity$IntroFrame$1
- org.mark.moonmeet.HomeActivity$IntroFrame$2
- org.mark.moonmeet.HomeActivity$IntroFrame$3
+org/mark/moonmeet/MainActivity.java
+ org.mark.moonmeet.MainActivity
+ org.mark.moonmeet.MainActivity$1
+ org.mark.moonmeet.MainActivity$1$1
+ org.mark.moonmeet.MainActivity$1$2
+ org.mark.moonmeet.MainActivity$1$3
+ org.mark.moonmeet.MainActivity$1$4
+ org.mark.moonmeet.MainActivity$10
+ org.mark.moonmeet.MainActivity$11
+ org.mark.moonmeet.MainActivity$12
+ org.mark.moonmeet.MainActivity$12$1
+ org.mark.moonmeet.MainActivity$13
+ org.mark.moonmeet.MainActivity$14
+ org.mark.moonmeet.MainActivity$2
+ org.mark.moonmeet.MainActivity$3
+ org.mark.moonmeet.MainActivity$4
+ org.mark.moonmeet.MainActivity$5
+ org.mark.moonmeet.MainActivity$6
+ org.mark.moonmeet.MainActivity$7
+ org.mark.moonmeet.MainActivity$8
+ org.mark.moonmeet.MainActivity$9
 org/mark/moonmeet/ui/AdjustPanLayoutHelper.java
  org.mark.moonmeet.ui.AdjustPanLayoutHelper
  org.mark.moonmeet.ui.AdjustPanLayoutHelper$1
@@ -393,9 +405,8 @@ org/mark/moonmeet/EditNameActivity.java
  org.mark.moonmeet.EditNameActivity$7
  org.mark.moonmeet.EditNameActivity$8
  org.mark.moonmeet.EditNameActivity$9
-org/mark/moonmeet/ui/BaseFragment.java
- org.mark.moonmeet.ui.BaseFragment
- org.mark.moonmeet.ui.BaseFragment$1
+android/recyclerview/widget/GridLayoutManagerFixed.java
+ android.recyclerview.widget.GridLayoutManagerFixed
 android/recyclerview/widget/ViewBoundsCheck.java
  android.recyclerview.widget.ViewBoundsCheck
  android.recyclerview.widget.ViewBoundsCheck$BoundFlags
@@ -421,14 +432,8 @@ android/recyclerview/widget/OpReorderer.java
  android.recyclerview.widget.OpReorderer$Callback
 org/mark/moonmeet/databinding/SettingsBinding.java
  org.mark.moonmeet.databinding.SettingsBinding
-org/mark/moonmeet/ui/ActionBar.java
- org.mark.moonmeet.ui.ActionBar
- org.mark.moonmeet.ui.ActionBar$1
- org.mark.moonmeet.ui.ActionBar$2
- org.mark.moonmeet.ui.ActionBar$3
- org.mark.moonmeet.ui.ActionBar$4
- org.mark.moonmeet.ui.ActionBar$5
- org.mark.moonmeet.ui.ActionBar$ActionBarMenuOnItemClick
+org/mark/moonmeet/TermsandprivacyActivity.java
+ org.mark.moonmeet.TermsandprivacyActivity
 org/mark/moonmeet/databinding/AnnouncementscBinding.java
  org.mark.moonmeet.databinding.AnnouncementscBinding
 org/mark/moonmeet/PrivacySettingsActivity.java
@@ -1009,8 +1014,8 @@ org/mark/moonmeet/ui/BottomSheet.java
  org.mark.moonmeet.ui.BottomSheet$ContainerView
  org.mark.moonmeet.ui.BottomSheet$ContainerView$1
  org.mark.moonmeet.ui.BottomSheet$LocaleController
-org/mark/moonmeet/databinding/LaunchBinding.java
- org.mark.moonmeet.databinding.LaunchBinding
+org/mark/moonmeet/emoji/LoadingView.java
+ org.mark.moonmeet.emoji.LoadingView
 org/mark/moonmeet/messenger/DispatchQueue.java
  org.mark.moonmeet.messenger.DispatchQueue
  org.mark.moonmeet.messenger.DispatchQueue$1
@@ -1043,31 +1048,17 @@ android/recyclerview/widget/MessageThreadUtil.java
  android.recyclerview.widget.MessageThreadUtil$SyncQueueItem
 android/recyclerview/widget/ItemTouchUIUtilImpl.java
  android.recyclerview.widget.ItemTouchUIUtilImpl
-org/mark/moonmeet/ui/DrawerLayoutContainer.java
- org.mark.moonmeet.ui.DrawerLayoutContainer
- org.mark.moonmeet.ui.DrawerLayoutContainer$1
- org.mark.moonmeet.ui.DrawerLayoutContainer$2
- org.mark.moonmeet.ui.DrawerLayoutContainer$3
- org.mark.moonmeet.ui.DrawerLayoutContainer$PreviewForegroundDrawable
-org/mark/moonmeet/ui/ActionBarLayout.java
- org.mark.moonmeet.ui.ActionBarLayout
- org.mark.moonmeet.ui.ActionBarLayout$1
- org.mark.moonmeet.ui.ActionBarLayout$10
- org.mark.moonmeet.ui.ActionBarLayout$11
- org.mark.moonmeet.ui.ActionBarLayout$12
- org.mark.moonmeet.ui.ActionBarLayout$13
- org.mark.moonmeet.ui.ActionBarLayout$14
- org.mark.moonmeet.ui.ActionBarLayout$15
- org.mark.moonmeet.ui.ActionBarLayout$2
- org.mark.moonmeet.ui.ActionBarLayout$3
- org.mark.moonmeet.ui.ActionBarLayout$4
- org.mark.moonmeet.ui.ActionBarLayout$5
- org.mark.moonmeet.ui.ActionBarLayout$6
- org.mark.moonmeet.ui.ActionBarLayout$7
- org.mark.moonmeet.ui.ActionBarLayout$8
- org.mark.moonmeet.ui.ActionBarLayout$9
- org.mark.moonmeet.ui.ActionBarLayout$ActionBarLayoutDelegate
- org.mark.moonmeet.ui.ActionBarLayout$LinearLayoutContainer
+android/recyclerview/widget/SnapHelper.java
+ android.recyclerview.widget.SnapHelper
+ android.recyclerview.widget.SnapHelper$1
+ android.recyclerview.widget.SnapHelper$2
+org/mark/moonmeet/utils/NotificationCenter.java
+ org.mark.moonmeet.utils.NotificationCenter
+ org.mark.moonmeet.utils.NotificationCenter$1
+ org.mark.moonmeet.utils.NotificationCenter$BuildVars
+ org.mark.moonmeet.utils.NotificationCenter$DelayedPost
+ org.mark.moonmeet.utils.NotificationCenter$NotificationCenterDelegate
+ org.mark.moonmeet.utils.NotificationCenter$PostponeNotificationCallback
 org/mark/moonmeet/utils/AndroidUtilities.java
  org.mark.moonmeet.utils.AndroidUtilities
  org.mark.moonmeet.utils.AndroidUtilities$1
@@ -1097,27 +1088,12 @@ org/mark/moonmeet/ChangeusernameActivity.java
  org.mark.moonmeet.ChangeusernameActivity$7
  org.mark.moonmeet.ChangeusernameActivity$8
  org.mark.moonmeet.ChangeusernameActivity$9
-org/mark/moonmeet/MainActivity.java
- org.mark.moonmeet.MainActivity
- org.mark.moonmeet.MainActivity$1
- org.mark.moonmeet.MainActivity$1$1
- org.mark.moonmeet.MainActivity$1$2
- org.mark.moonmeet.MainActivity$1$3
- org.mark.moonmeet.MainActivity$1$4
- org.mark.moonmeet.MainActivity$10
- org.mark.moonmeet.MainActivity$11
- org.mark.moonmeet.MainActivity$12
- org.mark.moonmeet.MainActivity$12$1
- org.mark.moonmeet.MainActivity$13
- org.mark.moonmeet.MainActivity$14
- org.mark.moonmeet.MainActivity$2
- org.mark.moonmeet.MainActivity$3
- org.mark.moonmeet.MainActivity$4
- org.mark.moonmeet.MainActivity$5
- org.mark.moonmeet.MainActivity$6
- org.mark.moonmeet.MainActivity$7
- org.mark.moonmeet.MainActivity$8
- org.mark.moonmeet.MainActivity$9
+android/recyclerview/widget/AsyncListUtil.java
+ android.recyclerview.widget.AsyncListUtil
+ android.recyclerview.widget.AsyncListUtil$1
+ android.recyclerview.widget.AsyncListUtil$2
+ android.recyclerview.widget.AsyncListUtil$DataCallback
+ android.recyclerview.widget.AsyncListUtil$ViewCallback
 org/mark/moonmeet/emoji/ShopSticker.java
  org.mark.moonmeet.emoji.ShopSticker
 android/recyclerview/widget/AsyncListDiffer.java
@@ -1208,10 +1184,46 @@ org/mark/moonmeet/components/SoftKeyboardPopup.java
  org.mark.moonmeet.components.SoftKeyboardPopup$5
  org.mark.moonmeet.components.SoftKeyboardPopup$6
  org.mark.moonmeet.components.SoftKeyboardPopup$7
-android/recyclerview/widget/SnapHelper.java
- android.recyclerview.widget.SnapHelper
- android.recyclerview.widget.SnapHelper$1
- android.recyclerview.widget.SnapHelper$2
+org/mark/moonmeet/SettingsActivity.java
+ org.mark.moonmeet.SettingsActivity
+ org.mark.moonmeet.SettingsActivity$1
+ org.mark.moonmeet.SettingsActivity$10
+ org.mark.moonmeet.SettingsActivity$11
+ org.mark.moonmeet.SettingsActivity$11$1
+ org.mark.moonmeet.SettingsActivity$11$2
+ org.mark.moonmeet.SettingsActivity$11$3
+ org.mark.moonmeet.SettingsActivity$12
+ org.mark.moonmeet.SettingsActivity$13
+ org.mark.moonmeet.SettingsActivity$14
+ org.mark.moonmeet.SettingsActivity$15
+ org.mark.moonmeet.SettingsActivity$16
+ org.mark.moonmeet.SettingsActivity$17
+ org.mark.moonmeet.SettingsActivity$18
+ org.mark.moonmeet.SettingsActivity$19
+ org.mark.moonmeet.SettingsActivity$2
+ org.mark.moonmeet.SettingsActivity$20
+ org.mark.moonmeet.SettingsActivity$21
+ org.mark.moonmeet.SettingsActivity$22
+ org.mark.moonmeet.SettingsActivity$23
+ org.mark.moonmeet.SettingsActivity$24
+ org.mark.moonmeet.SettingsActivity$25
+ org.mark.moonmeet.SettingsActivity$26
+ org.mark.moonmeet.SettingsActivity$27
+ org.mark.moonmeet.SettingsActivity$28
+ org.mark.moonmeet.SettingsActivity$29
+ org.mark.moonmeet.SettingsActivity$3
+ org.mark.moonmeet.SettingsActivity$30
+ org.mark.moonmeet.SettingsActivity$31
+ org.mark.moonmeet.SettingsActivity$32
+ org.mark.moonmeet.SettingsActivity$33
+ org.mark.moonmeet.SettingsActivity$34
+ org.mark.moonmeet.SettingsActivity$35
+ org.mark.moonmeet.SettingsActivity$4
+ org.mark.moonmeet.SettingsActivity$5
+ org.mark.moonmeet.SettingsActivity$6
+ org.mark.moonmeet.SettingsActivity$7
+ org.mark.moonmeet.SettingsActivity$8
+ org.mark.moonmeet.SettingsActivity$9
 org/mark/moonmeet/ui/ActionBarMenuSubItem.java
  org.mark.moonmeet.ui.ActionBarMenuSubItem
 org/mark/moonmeet/utils/ISwipeControllerActions.java
@@ -1221,30 +1233,8 @@ org/mark/moonmeet/messenger/BuildVars.java
 org/mark/moonmeet/adapters/ActiveAdapter.java
  org.mark.moonmeet.adapters.ActiveAdapter
  org.mark.moonmeet.adapters.ActiveAdapter$ViewHolder
-org/mark/moonmeet/ui/ActionBarMenuItem.java
- org.mark.moonmeet.ui.ActionBarMenuItem
- org.mark.moonmeet.ui.ActionBarMenuItem$1
- org.mark.moonmeet.ui.ActionBarMenuItem$10
- org.mark.moonmeet.ui.ActionBarMenuItem$11
- org.mark.moonmeet.ui.ActionBarMenuItem$12
- org.mark.moonmeet.ui.ActionBarMenuItem$13
- org.mark.moonmeet.ui.ActionBarMenuItem$14
- org.mark.moonmeet.ui.ActionBarMenuItem$15
- org.mark.moonmeet.ui.ActionBarMenuItem$2
- org.mark.moonmeet.ui.ActionBarMenuItem$3
- org.mark.moonmeet.ui.ActionBarMenuItem$4
- org.mark.moonmeet.ui.ActionBarMenuItem$5
- org.mark.moonmeet.ui.ActionBarMenuItem$6
- org.mark.moonmeet.ui.ActionBarMenuItem$7
- org.mark.moonmeet.ui.ActionBarMenuItem$8
- org.mark.moonmeet.ui.ActionBarMenuItem$9
- org.mark.moonmeet.ui.ActionBarMenuItem$ActionBarMenuItemDelegate
- org.mark.moonmeet.ui.ActionBarMenuItem$ActionBarMenuItemSearchListener
- org.mark.moonmeet.ui.ActionBarMenuItem$ActionBarSubMenuItemDelegate
- org.mark.moonmeet.ui.ActionBarMenuItem$SearchFilterView
- org.mark.moonmeet.ui.ActionBarMenuItem$SearchFilterView$1
- org.mark.moonmeet.ui.ActionBarMenuItem$SearchFilterView$2
- org.mark.moonmeet.ui.ActionBarMenuItem$SearchFilterView$3
+org/mark/moonmeet/databinding/LaunchBinding.java
+ org.mark.moonmeet.databinding.LaunchBinding
 org/mark/moonmeet/databinding/BshchatsBinding.java
  org.mark.moonmeet.databinding.BshchatsBinding
 org/mark/moonmeet/BuildConfig.java
@@ -1281,27 +1271,70 @@ org/mark/moonmeet/databinding/ChangebioBinding.java
  org.mark.moonmeet.databinding.ChangebioBinding
 org/mark/moonmeet/components/CombinedDrawable.java
  org.mark.moonmeet.components.CombinedDrawable
-android/recyclerview/widget/GridLayoutManagerFixed.java
- android.recyclerview.widget.GridLayoutManagerFixed
-org/mark/moonmeet/emoji/LoadingView.java
- org.mark.moonmeet.emoji.LoadingView
-org/mark/moonmeet/databinding/IntroBinding.java
- org.mark.moonmeet.databinding.IntroBinding
-org/mark/moonmeet/transformer/ZoomInTransformer.java
- org.mark.moonmeet.transformer.ZoomInTransformer
-org/mark/moonmeet/utils/NotificationCenter.java
- org.mark.moonmeet.utils.NotificationCenter
- org.mark.moonmeet.utils.NotificationCenter$1
- org.mark.moonmeet.utils.NotificationCenter$BuildVars
- org.mark.moonmeet.utils.NotificationCenter$DelayedPost
- org.mark.moonmeet.utils.NotificationCenter$NotificationCenterDelegate
- org.mark.moonmeet.utils.NotificationCenter$PostponeNotificationCallback
-android/recyclerview/widget/AsyncListUtil.java
- android.recyclerview.widget.AsyncListUtil
- android.recyclerview.widget.AsyncListUtil$1
- android.recyclerview.widget.AsyncListUtil$2
- android.recyclerview.widget.AsyncListUtil$DataCallback
- android.recyclerview.widget.AsyncListUtil$ViewCallback
+org/mark/moonmeet/SecondBase.java
+ org.mark.moonmeet.SecondBase
+ org.mark.moonmeet.SecondBase$1
+ org.mark.moonmeet.SecondBase$1$1
+ org.mark.moonmeet.SecondBase$2
+ org.mark.moonmeet.SecondBase$3
+ org.mark.moonmeet.SecondBase$4
+org/mark/moonmeet/PasscodeLockActivity.java
+ org.mark.moonmeet.PasscodeLockActivity
+ org.mark.moonmeet.PasscodeLockActivity$1
+ org.mark.moonmeet.PasscodeLockActivity$FingerprintHandler
+ org.mark.moonmeet.PasscodeLockActivity$FingerprintHandler$1
+ org.mark.moonmeet.PasscodeLockActivity$FingerprintHandler$2
+org/mark/moonmeet/ui/ActionBarMenu.java
+ org.mark.moonmeet.ui.ActionBarMenu
+ org.mark.moonmeet.ui.ActionBarMenu$1
+org/mark/moonmeet/BaseActivity.java
+ org.mark.moonmeet.BaseActivity
+org/mark/moonmeet/HomeActivity.java
+ org.mark.moonmeet.HomeActivity
+ org.mark.moonmeet.HomeActivity$1
+ org.mark.moonmeet.HomeActivity$2
+ org.mark.moonmeet.HomeActivity$IntroFrame
+ org.mark.moonmeet.HomeActivity$IntroFrame$1
+ org.mark.moonmeet.HomeActivity$IntroFrame$2
+ org.mark.moonmeet.HomeActivity$IntroFrame$3
+org/mark/moonmeet/ui/ActionBarMenuItem.java
+ org.mark.moonmeet.ui.ActionBarMenuItem
+ org.mark.moonmeet.ui.ActionBarMenuItem$1
+ org.mark.moonmeet.ui.ActionBarMenuItem$10
+ org.mark.moonmeet.ui.ActionBarMenuItem$11
+ org.mark.moonmeet.ui.ActionBarMenuItem$12
+ org.mark.moonmeet.ui.ActionBarMenuItem$13
+ org.mark.moonmeet.ui.ActionBarMenuItem$14
+ org.mark.moonmeet.ui.ActionBarMenuItem$15
+ org.mark.moonmeet.ui.ActionBarMenuItem$2
+ org.mark.moonmeet.ui.ActionBarMenuItem$3
+ org.mark.moonmeet.ui.ActionBarMenuItem$4
+ org.mark.moonmeet.ui.ActionBarMenuItem$5
+ org.mark.moonmeet.ui.ActionBarMenuItem$6
+ org.mark.moonmeet.ui.ActionBarMenuItem$7
+ org.mark.moonmeet.ui.ActionBarMenuItem$8
+ org.mark.moonmeet.ui.ActionBarMenuItem$9
+ org.mark.moonmeet.ui.ActionBarMenuItem$ActionBarMenuItemDelegate
+ org.mark.moonmeet.ui.ActionBarMenuItem$ActionBarMenuItemSearchListener
+ org.mark.moonmeet.ui.ActionBarMenuItem$ActionBarSubMenuItemDelegate
+ org.mark.moonmeet.ui.ActionBarMenuItem$SearchFilterView
+ org.mark.moonmeet.ui.ActionBarMenuItem$SearchFilterView$1
+ org.mark.moonmeet.ui.ActionBarMenuItem$SearchFilterView$2
+ org.mark.moonmeet.ui.ActionBarMenuItem$SearchFilterView$3
+org/mark/moonmeet/ui/ActionBar.java
+ org.mark.moonmeet.ui.ActionBar
+ org.mark.moonmeet.ui.ActionBar$1
+ org.mark.moonmeet.ui.ActionBar$2
+ org.mark.moonmeet.ui.ActionBar$3
+ org.mark.moonmeet.ui.ActionBar$4
+ org.mark.moonmeet.ui.ActionBar$5
+ org.mark.moonmeet.ui.ActionBar$ActionBarMenuOnItemClick
+org/mark/moonmeet/ui/DrawerLayoutContainer.java
+ org.mark.moonmeet.ui.DrawerLayoutContainer
+ org.mark.moonmeet.ui.DrawerLayoutContainer$1
+ org.mark.moonmeet.ui.DrawerLayoutContainer$2
+ org.mark.moonmeet.ui.DrawerLayoutContainer$3
+ org.mark.moonmeet.ui.DrawerLayoutContainer$PreviewForegroundDrawable
 org/mark/moonmeet/OtpActivity.java
  org.mark.moonmeet.OtpActivity
  org.mark.moonmeet.OtpActivity$1
@@ -1331,49 +1364,30 @@ org/mark/moonmeet/OtpActivity.java
  org.mark.moonmeet.OtpActivity$7
  org.mark.moonmeet.OtpActivity$8
  org.mark.moonmeet.OtpActivity$9
-org/mark/moonmeet/LaunchActivity.java
- org.mark.moonmeet.LaunchActivity
- org.mark.moonmeet.LaunchActivity$1
- org.mark.moonmeet.LaunchActivity$1$1
- org.mark.moonmeet.LaunchActivity$1$2
- org.mark.moonmeet.LaunchActivity$1$3
- org.mark.moonmeet.LaunchActivity$2
- org.mark.moonmeet.LaunchActivity$2$1
- org.mark.moonmeet.LaunchActivity$2$2
- org.mark.moonmeet.LaunchActivity$2$3
- org.mark.moonmeet.LaunchActivity$3
- org.mark.moonmeet.LaunchActivity$3$1
- org.mark.moonmeet.LaunchActivity$3$2
- org.mark.moonmeet.LaunchActivity$3$3
- org.mark.moonmeet.LaunchActivity$4
- org.mark.moonmeet.LaunchActivity$4$1
- org.mark.moonmeet.LaunchActivity$4$2
- org.mark.moonmeet.LaunchActivity$4$3
- org.mark.moonmeet.LaunchActivity$5
- org.mark.moonmeet.LaunchActivity$6
- org.mark.moonmeet.LaunchActivity$7
- org.mark.moonmeet.LaunchActivity$8
-org/mark/moonmeet/PasscodeLockActivity.java
- org.mark.moonmeet.PasscodeLockActivity
- org.mark.moonmeet.PasscodeLockActivity$1
- org.mark.moonmeet.PasscodeLockActivity$FingerprintHandler
- org.mark.moonmeet.PasscodeLockActivity$FingerprintHandler$1
- org.mark.moonmeet.PasscodeLockActivity$FingerprintHandler$2
+org/mark/moonmeet/ui/ActionBarLayout.java
+ org.mark.moonmeet.ui.ActionBarLayout
+ org.mark.moonmeet.ui.ActionBarLayout$1
+ org.mark.moonmeet.ui.ActionBarLayout$10
+ org.mark.moonmeet.ui.ActionBarLayout$11
+ org.mark.moonmeet.ui.ActionBarLayout$12
+ org.mark.moonmeet.ui.ActionBarLayout$13
+ org.mark.moonmeet.ui.ActionBarLayout$14
+ org.mark.moonmeet.ui.ActionBarLayout$15
+ org.mark.moonmeet.ui.ActionBarLayout$2
+ org.mark.moonmeet.ui.ActionBarLayout$3
+ org.mark.moonmeet.ui.ActionBarLayout$4
+ org.mark.moonmeet.ui.ActionBarLayout$5
+ org.mark.moonmeet.ui.ActionBarLayout$6
+ org.mark.moonmeet.ui.ActionBarLayout$7
+ org.mark.moonmeet.ui.ActionBarLayout$8
+ org.mark.moonmeet.ui.ActionBarLayout$9
+ org.mark.moonmeet.ui.ActionBarLayout$ActionBarLayoutDelegate
+ org.mark.moonmeet.ui.ActionBarLayout$LinearLayoutContainer
 org/mark/moonmeet/adapters/StoryAdapter.java
  org.mark.moonmeet.adapters.StoryAdapter
  org.mark.moonmeet.adapters.StoryAdapter$1
  org.mark.moonmeet.adapters.StoryAdapter$1$1
  org.mark.moonmeet.adapters.StoryAdapter$ViewHolder
-org/mark/moonmeet/TermsandprivacyActivity.java
- org.mark.moonmeet.TermsandprivacyActivity
- org.mark.moonmeet.TermsandprivacyActivity$1
-org/mark/moonmeet/SecondBase.java
- org.mark.moonmeet.SecondBase
- org.mark.moonmeet.SecondBase$1
- org.mark.moonmeet.SecondBase$1$1
- org.mark.moonmeet.SecondBase$2
- org.mark.moonmeet.SecondBase$3
- org.mark.moonmeet.SecondBase$4
 org/mark/moonmeet/SetupActivity.java
  org.mark.moonmeet.SetupActivity
  org.mark.moonmeet.SetupActivity$1
@@ -1422,43 +1436,28 @@ org/mark/moonmeet/SetupActivity.java
  org.mark.moonmeet.SetupActivity$7
  org.mark.moonmeet.SetupActivity$8
  org.mark.moonmeet.SetupActivity$9
-org/mark/moonmeet/SettingsActivity.java
- org.mark.moonmeet.SettingsActivity
- org.mark.moonmeet.SettingsActivity$1
- org.mark.moonmeet.SettingsActivity$10
- org.mark.moonmeet.SettingsActivity$11
- org.mark.moonmeet.SettingsActivity$11$1
- org.mark.moonmeet.SettingsActivity$11$2
- org.mark.moonmeet.SettingsActivity$11$3
- org.mark.moonmeet.SettingsActivity$12
- org.mark.moonmeet.SettingsActivity$13
- org.mark.moonmeet.SettingsActivity$14
- org.mark.moonmeet.SettingsActivity$15
- org.mark.moonmeet.SettingsActivity$16
- org.mark.moonmeet.SettingsActivity$17
- org.mark.moonmeet.SettingsActivity$18
- org.mark.moonmeet.SettingsActivity$19
- org.mark.moonmeet.SettingsActivity$2
- org.mark.moonmeet.SettingsActivity$20
- org.mark.moonmeet.SettingsActivity$21
- org.mark.moonmeet.SettingsActivity$22
- org.mark.moonmeet.SettingsActivity$23
- org.mark.moonmeet.SettingsActivity$24
- org.mark.moonmeet.SettingsActivity$25
- org.mark.moonmeet.SettingsActivity$26
- org.mark.moonmeet.SettingsActivity$27
- org.mark.moonmeet.SettingsActivity$28
- org.mark.moonmeet.SettingsActivity$29
- org.mark.moonmeet.SettingsActivity$3
- org.mark.moonmeet.SettingsActivity$30
- org.mark.moonmeet.SettingsActivity$31
- org.mark.moonmeet.SettingsActivity$32
- org.mark.moonmeet.SettingsActivity$33
- org.mark.moonmeet.SettingsActivity$34
- org.mark.moonmeet.SettingsActivity$35
- org.mark.moonmeet.SettingsActivity$4
- org.mark.moonmeet.SettingsActivity$5
- org.mark.moonmeet.SettingsActivity$6
- org.mark.moonmeet.SettingsActivity$7
- org.mark.moonmeet.SettingsActivity$8
- org.mark.moonmeet.SettingsActivity$9
+org/mark/moonmeet/LaunchActivity.java
+ org.mark.moonmeet.LaunchActivity
+ org.mark.moonmeet.LaunchActivity$1
+ org.mark.moonmeet.LaunchActivity$1$1
+ org.mark.moonmeet.LaunchActivity$1$2
+ org.mark.moonmeet.LaunchActivity$1$3
+ org.mark.moonmeet.LaunchActivity$2
+ org.mark.moonmeet.LaunchActivity$2$1
+ org.mark.moonmeet.LaunchActivity$2$2
+ org.mark.moonmeet.LaunchActivity$2$3
+ org.mark.moonmeet.LaunchActivity$3
+ org.mark.moonmeet.LaunchActivity$3$1
+ org.mark.moonmeet.LaunchActivity$3$2
+ org.mark.moonmeet.LaunchActivity$3$3
+ org.mark.moonmeet.LaunchActivity$4
+ org.mark.moonmeet.LaunchActivity$4$1
+ org.mark.moonmeet.LaunchActivity$4$2
+ org.mark.moonmeet.LaunchActivity$4$3
+ org.mark.moonmeet.LaunchActivity$5
+ org.mark.moonmeet.LaunchActivity$6
+ org.mark.moonmeet.LaunchActivity$7
+ org.mark.moonmeet.LaunchActivity$8
+org/mark/moonmeet/ui/BaseFragment.java
+ org.mark.moonmeet.ui.BaseFragment
+ org.mark.moonmeet.ui.BaseFragment$1

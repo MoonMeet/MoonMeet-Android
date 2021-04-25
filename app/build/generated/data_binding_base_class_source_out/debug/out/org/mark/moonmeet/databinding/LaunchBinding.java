@@ -9,15 +9,12 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.Toolbar;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.core.widget.NestedScrollView;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -29,12 +26,6 @@ public final class LaunchBinding implements ViewBinding {
   private final DrawerLayout rootView;
 
   @NonNull
-  public final AppBarLayout AppBar;
-
-  @NonNull
-  public final CoordinatorLayout Coordinator;
-
-  @NonNull
   public final DrawerLayout Drawer;
 
   @NonNull
@@ -42,9 +33,6 @@ public final class LaunchBinding implements ViewBinding {
 
   @NonNull
   public final LinearLayout NavView;
-
-  @NonNull
-  public final Toolbar Toolbar;
 
   @NonNull
   public final RecyclerView activeRv;
@@ -127,9 +115,8 @@ public final class LaunchBinding implements ViewBinding {
   @NonNull
   public final TextView topbarTxt;
 
-  private LaunchBinding(@NonNull DrawerLayout rootView, @NonNull AppBarLayout AppBar,
-      @NonNull CoordinatorLayout Coordinator, @NonNull DrawerLayout Drawer,
-      @NonNull FloatingActionButton Fab, @NonNull LinearLayout NavView, @NonNull Toolbar Toolbar,
+  private LaunchBinding(@NonNull DrawerLayout rootView, @NonNull DrawerLayout Drawer,
+      @NonNull FloatingActionButton Fab, @NonNull LinearLayout NavView,
       @NonNull RecyclerView activeRv, @NonNull TextView activeTxt, @NonNull RecyclerView chats,
       @NonNull LinearLayout chatsNo, @NonNull TextView chatsNo1, @NonNull TextView chatsNo2,
       @NonNull ImageView imageview1, @NonNull LinearLayout linear2,
@@ -142,12 +129,9 @@ public final class LaunchBinding implements ViewBinding {
       @NonNull SwipeRefreshLayout swipeLayout, @NonNull LinearLayout topbar,
       @NonNull LinearLayout topbarSpace, @NonNull TextView topbarTxt) {
     this.rootView = rootView;
-    this.AppBar = AppBar;
-    this.Coordinator = Coordinator;
     this.Drawer = Drawer;
     this.Fab = Fab;
     this.NavView = NavView;
-    this.Toolbar = Toolbar;
     this.activeRv = activeRv;
     this.activeTxt = activeTxt;
     this.chats = chats;
@@ -204,18 +188,6 @@ public final class LaunchBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id._app_bar;
-      AppBarLayout AppBar = ViewBindings.findChildViewById(rootView, id);
-      if (AppBar == null) {
-        break missingId;
-      }
-
-      id = R.id._coordinator;
-      CoordinatorLayout Coordinator = ViewBindings.findChildViewById(rootView, id);
-      if (Coordinator == null) {
-        break missingId;
-      }
-
       DrawerLayout Drawer = (DrawerLayout) rootView;
 
       id = R.id._fab;
@@ -227,12 +199,6 @@ public final class LaunchBinding implements ViewBinding {
       id = R.id._nav_view;
       LinearLayout NavView = ViewBindings.findChildViewById(rootView, id);
       if (NavView == null) {
-        break missingId;
-      }
-
-      id = R.id._toolbar;
-      Toolbar Toolbar = ViewBindings.findChildViewById(rootView, id);
-      if (Toolbar == null) {
         break missingId;
       }
 
@@ -398,11 +364,11 @@ public final class LaunchBinding implements ViewBinding {
         break missingId;
       }
 
-      return new LaunchBinding((DrawerLayout) rootView, AppBar, Coordinator, Drawer, Fab, NavView,
-          Toolbar, activeRv, activeTxt, chats, chatsNo, chatsNo1, chatsNo2, imageview1, linear2,
-          mainLayout, noInternet1, noInternet2, noInternet3, noInternet4, pplAddIcon, pplHolder,
-          pplNewTxt, rvHolder, scroll, search, storiesActiveHolder, storiesOnlineLinear, storiesRv,
-          storiesTxt, swipeLayout, topbar, topbarSpace, topbarTxt);
+      return new LaunchBinding((DrawerLayout) rootView, Drawer, Fab, NavView, activeRv, activeTxt,
+          chats, chatsNo, chatsNo1, chatsNo2, imageview1, linear2, mainLayout, noInternet1,
+          noInternet2, noInternet3, noInternet4, pplAddIcon, pplHolder, pplNewTxt, rvHolder, scroll,
+          search, storiesActiveHolder, storiesOnlineLinear, storiesRv, storiesTxt, swipeLayout,
+          topbar, topbarSpace, topbarTxt);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

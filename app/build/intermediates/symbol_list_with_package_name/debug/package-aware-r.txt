@@ -2254,12 +2254,10 @@ id TextView_Reason
 id TopBar
 id URL_EditText
 id YouGotBannedText
-id _app_bar
 id _coordinator
 id _drawer
 id _fab
 id _nav_view
-id _toolbar
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0

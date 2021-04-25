@@ -68,7 +68,7 @@ import java.util.TimerTask;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class LaunchActivity extends AppCompatActivity implements ActionBarLayout.ActionBarLayoutDelegate {
+public class LaunchActivity extends AppCompatActivity {
 
     private Timer _timer = new Timer();
     private FirebaseDatabase _firebase = FirebaseDatabase.getInstance();
@@ -194,30 +194,30 @@ public class LaunchActivity extends AppCompatActivity implements ActionBarLayout
     private RequestNetwork InternetCheck;
     private RequestNetwork.RequestListener _InternetCheck_request_listener;
     private Intent toKa7la = new Intent();
-    private FrameLayout fragmentView;
+    /*private FrameLayout fragmentView;
     private ActionBarLayout actionBarLayout;
-    private final ArrayList<BaseFragment> mainFragmentStack = new ArrayList<>();
+    private final ArrayList<BaseFragment> mainFragmentStack = new ArrayList<>();*/
 
     @Override
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        fragmentView = new FrameLayout(getApplicationContext());
+        /*fragmentView = new FrameLayout(getApplicationContext());
         actionBarLayout = new ActionBarLayout(this);
         fragmentView.addView(actionBarLayout);
         actionBarLayout.init(mainFragmentStack);
-        actionBarLayout.setDelegate(this);
-        LayoutInflater.from(getApplicationContext()).inflate(R.layout.launch, (ViewGroup) fragmentView);
+        actionBarLayout.setDelegate(this);*/
+        setContentView(R.layout.launch);
         initialize(bundle);
-        FirebaseApp.initializeApp(getApplicationContext());
+        FirebaseApp.initializeApp(this);
         initializeLogic();
     }
 
     private void initialize(Bundle bundle) {
-        _app_bar = (AppBarLayout) findViewById(R.id._app_bar);
-        _coordinator = (CoordinatorLayout) findViewById(R.id._coordinator);
-        _toolbar = (Toolbar) findViewById(R.id._toolbar);
-        _toolbar.setVisibility(View.GONE);
-        _toolbar.setNavigationOnClickListener(_v -> onBackPressed());
+        /**_app_bar = (AppBarLayout) findViewById(R.id._app_bar);
+         _coordinator = (CoordinatorLayout) findViewById(R.id._coordinator);
+         _toolbar = (Toolbar) findViewById(R.id._toolbar);
+         _toolbar.setVisibility(View.GONE);
+         _toolbar.setNavigationOnClickListener(_v -> onBackPressed());**/
         _fab = (FloatingActionButton) findViewById(R.id._fab);
 
         _drawer = (DrawerLayout) findViewById(R.id._drawer);
@@ -228,10 +228,10 @@ public class LaunchActivity extends AppCompatActivity implements ActionBarLayout
         LinearLayout _nav_view = (LinearLayout) findViewById(R.id._nav_view);
 
         topbar = (LinearLayout) findViewById(R.id.topbar);
-        //topbar.setVisibility(View.GONE); // TODO : change that shit to telegram ActionBar
+        //topbar.setVisibility(View.GONE); // TODO : change that shit to ActionBar
         linear2 = (LinearLayout) findViewById(R.id.linear2);
         swipe_layout = (SwipeRefreshLayout) findViewById(R.id.swipe_layout);
-        imageview1 = (ImageView) findViewById(R.id.imageview1);
+        imageview1 = findViewById(R.id.imageview1);
         topbar_txt = (TextView) findViewById(R.id.topbar_txt);
         topbar_space = (LinearLayout) findViewById(R.id.topbar_space);
         search = (ImageView) findViewById(R.id.search);
@@ -1067,9 +1067,9 @@ OneSignalPushToken = pushToken;
         UserChats_LS.clear();
         toDelivryActive.clear();
         Active_LS.clear();
-        /**stories.addChildEventListener(_stories_child_listener);
+        stories.addChildEventListener(_stories_child_listener);
         users.addChildEventListener(_users_child_listener);
-        UserChats.addChildEventListener(_UserChats_child_listener);**/;
+        UserChats.addChildEventListener(_UserChats_child_listener);
     }
 
     public void _Drawer() {
@@ -1143,31 +1143,6 @@ OneSignalPushToken = pushToken;
         window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
         window.setStatusBarColor(getResources().getColor(R.color.StatusBarColor));
         window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-
-    }
-
-    @Override
-    public boolean onPreIme() {
-        return false;
-    }
-
-    @Override
-    public boolean needPresentFragment(BaseFragment fragment, boolean removeLast, boolean forceWithoutAnimation, ActionBarLayout layout) {
-        return false;
-    }
-
-    @Override
-    public boolean needAddFragmentToStack(BaseFragment fragment, ActionBarLayout layout) {
-        return false;
-    }
-
-    @Override
-    public boolean needCloseLastFragment(ActionBarLayout layout) {
-        return false;
-    }
-
-    @Override
-    public void onRebuildAllFragments(ActionBarLayout layout, boolean all) {
 
     }
 }

@@ -6,37 +6,34 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.view.Menu;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewParent;
 import android.view.accessibility.AccessibilityManager;
-import android.widget.FrameLayout;
+
+import androidx.annotation.IdRes;
 
 import org.mark.moonmeet.MoonMeetApplication;
 import org.mark.moonmeet.messenger.FileLog;
 
 public class BaseFragment {
 
-    private boolean isFinished = false;
+    public static int lastClassGuid = 1;
     protected Dialog visibleDialog = null;
 
     protected View fragmentView;
     protected ActionBarLayout parentLayout;
     protected ActionBar actionBar;
-	protected boolean inPreviewMode;
+    protected boolean inPreviewMode;
     protected boolean inBubbleMode;
     protected int classGuid = 0;
     protected Bundle arguments;
     protected boolean swipeBackEnabled = true;
     protected boolean hasOwnBackground = false;
-
-    public static int lastClassGuid = 1;
+    private boolean isFinished = false;
 
     public BaseFragment() {
         classGuid = lastClassGuid++;
@@ -50,8 +47,8 @@ public class BaseFragment {
     public ActionBar getActionBar() {
         return actionBar;
     }
-	
-	public boolean isSwipeBackEnabled(MotionEvent event) {
+
+    public boolean isSwipeBackEnabled(MotionEvent event) {
         return true;
     }
 
@@ -66,16 +63,17 @@ public class BaseFragment {
     public Bundle getArguments() {
         return arguments;
     }
-	public boolean canBeginSlide() {
+
+    public boolean canBeginSlide() {
         return true;
-    }
-	
-	public void setInBubbleMode(boolean value) {
-        inBubbleMode = value;
     }
 
     public boolean isInBubbleMode() {
         return inBubbleMode;
+    }
+
+    public void setInBubbleMode(boolean value) {
+        inBubbleMode = value;
     }
 
     protected void setInPreviewMode(boolean value) {
@@ -88,8 +86,8 @@ public class BaseFragment {
             }
         }
     }
-	
-	protected void setParentActivityTitle(CharSequence title) {
+
+    protected void setParentActivityTitle(CharSequence title) {
         Activity activity = getParentActivity();
         if (activity != null) {
             activity.setTitle(title);
@@ -98,8 +96,8 @@ public class BaseFragment {
 
     protected void onPreviewOpenAnimationEnd() {
     }
-	
-	public void setParentFragment(BaseFragment fragment) {
+
+    public void setParentFragment(BaseFragment fragment) {
         setParentLayout(fragment.parentLayout);
         fragmentView = createView(parentLayout.getContext());
     }
@@ -133,7 +131,8 @@ public class BaseFragment {
         }
         parentLayout = null;
     }
-	protected void onRemoveFromParent() {
+
+    protected void onRemoveFromParent() {
 
     }
 
@@ -182,7 +181,7 @@ public class BaseFragment {
         ActionBar actionBar = new ActionBar(context);
         actionBar.setBackgroundColor(Theme.ACTION_BAR_COLOR);
         actionBar.setItemsBackgroundColor(Theme.ACTION_BAR_SELECTOR_COLOR);
-		if (inPreviewMode || inBubbleMode) {
+        if (inPreviewMode || inBubbleMode) {
             actionBar.setOccupyStatusBar(false);
         }
         return actionBar;
@@ -238,7 +237,8 @@ public class BaseFragment {
             e.printStackTrace();
         }
     }
-	public void movePreviewFragment(float dy) {
+
+    public void movePreviewFragment(float dy) {
         parentLayout.movePreviewFragment(dy);
     }
 
@@ -249,8 +249,8 @@ public class BaseFragment {
     public void onConfigurationChanged(android.content.res.Configuration newConfig) {
 
     }
-	
-	protected void onBecomeFullyVisible() {
+
+    protected void onBecomeFullyVisible() {
         AccessibilityManager mgr = (AccessibilityManager) MoonMeetApplication.applicationContext.getSystemService(Context.ACCESSIBILITY_SERVICE);
         if (mgr.isEnabled()) {
             ActionBar actionBar = getActionBar();
@@ -262,8 +262,8 @@ public class BaseFragment {
             }
         }
     }
-	
-	protected void onBecomeFullyHidden() {
+
+    protected void onBecomeFullyHidden() {
 
     }
 
@@ -355,11 +355,11 @@ public class BaseFragment {
     protected void onTransitionAnimationEnd(boolean isOpen, boolean backward) {
 
     }
-	
-	protected void onTransitionAnimationProgress(boolean isOpen, float progress) {
+
+    protected void onTransitionAnimationProgress(boolean isOpen, float progress) {
 
     }
-    
+
     protected AnimatorSet onCustomTransitionAnimation(boolean isOpen, final Runnable callback) {
         return null;
     }
@@ -410,14 +410,14 @@ public class BaseFragment {
         }
         return null;
     }
-	
+
     protected void onDialogDismiss(Dialog dialog) {
 
     }
-	
-	protected void onDelayedTransition(boolean start){
-		
-	}
+
+    protected void onDelayedTransition(boolean start) {
+
+    }
 
     public Dialog getVisibleDialog() {
         return visibleDialog;
@@ -426,12 +426,14 @@ public class BaseFragment {
     public void setVisibleDialog(Dialog dialog) {
         visibleDialog = dialog;
     }
-	public void setFragmentPanTranslationOffset(int offset) {
+
+    public void setFragmentPanTranslationOffset(int offset) {
         if (parentLayout != null) {
             parentLayout.setFragmentPanTranslationOffset(offset);
         }
     }
-    public <T extends View> T findViewById(int id) {
+
+    public <T extends View> T findViewById(@IdRes int id) {
         return fragmentView.findViewById(id);
     }
 }
