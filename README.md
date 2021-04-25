@@ -7,7 +7,7 @@
 ### Description
 - Moon Meet is a social media platform including chatting feature.
 - Moon Meet is a platform formed with Mobile Android App & Website.
-- Moon Meet is an Open Source Project licensed under the Apache License 2.0 license.
+- Moon Meet is an Open Source Project licensed under the GNU GPL License 2.0.
 - Moon Meet is an Open Source Project means that anyone can see, change, get the source code and can contribute to make this project more better.
 - Moon Meet nothing with its contributors, so let's contribute together to make it Alive !
 - Contribute !
@@ -63,16 +63,17 @@ Thanks, they help to keep **Moon Meet** alive. It's better to have multiple peop
 
 ### License
    ```
-   Copyright 2021 MoonMeet Authors.
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
+   Moon Meet Copyright(C) 2021 AlucardTN.
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License.
 
-   http://www.apache.org/licenses/LICENSE-2.0
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
 
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
+   You should have received a copy of the GNU General Public License along
+   with this program; if not, write to the Free Software Foundation, Inc.,
+   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
    ```
