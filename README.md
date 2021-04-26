@@ -1,6 +1,6 @@
 # MoonMeet
 ![GitHub contributors](https://img.shields.io/github/contributors/AlucardTN/MoonMeet) ![GitHub last commit](https://img.shields.io/github/last-commit/AlucardTN/MoonMeet)
-![Maintenance](https://img.shields.io/maintenance/yes/2021)
+![Maintenance](https://img.shields.io/maintenance/yes/2021) [![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)](https://github.com/AlucardTN/MoonMeet/blob/master/LICENSE)
 
 -A new era of chatting and meeting people !
 
