@@ -68,7 +68,7 @@
 					android:background="#ECF0F3"
 					android:gravity="center_vertical"
 					android:orientation="horizontal">
-					<com.aghajari.emojiview.view.AXEmojiTextView
+					<org.mark.axemojiview.view.AXEmojiTextView
 						android:id="@+id/message_text"
 						android:focusable="false"
 						android:layout_width="wrap_content"

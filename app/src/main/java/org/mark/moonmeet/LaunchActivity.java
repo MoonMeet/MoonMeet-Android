@@ -987,16 +987,12 @@ OneSignalPushToken = pushToken;
         stories_rv.setDrawingCacheEnabled(true);
         stories_rv.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH);
         stories_rv.setItemAnimator(new MoonMeetItemAnimator());
-
         LinearLayoutManager aLinearLayoutManager = new LinearLayoutManager(MoonMeetApplication.applicationContext, LinearLayoutManager.HORIZONTAL, false);
         active_rv.setLayoutManager(aLinearLayoutManager);
         active_rv.setItemViewCacheSize(60);
         active_rv.setDrawingCacheEnabled(true);
         active_rv.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH);
         active_rv.setItemAnimator(new MoonMeetItemAnimator());
-        chats.setHasFixedSize(true);
-        stories_rv.setHasFixedSize(true);
-        active_rv.setHasFixedSize(true);
         // Fonts
         _round(ppl_add_icon, SketchwareUtil.getDip(MoonMeetApplication.applicationContext, (int) (360)), "#FFDADADA");
         stories_txt.setTypeface(Typeface.createFromAsset(MoonMeetApplication.applicationContext.getAssets(), "fonts/rmedium.ttf"), 0);

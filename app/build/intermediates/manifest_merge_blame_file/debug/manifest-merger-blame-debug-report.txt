@@ -2,7 +2,7 @@
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="org.mark.moonmeet"
 4    android:versionCode="2"
-5    android:versionName="2.8.0" >
+5    android:versionName="2.9.0" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
@@ -59,705 +59,704 @@
 30-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:23:9-52
 31        android:supportsRtl="true"
 31-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:24:9-35
-32        android:testOnly="true"
-33        android:theme="@style/MoonMeet"
-33-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:25:9-40
-34        android:usesCleartextTraffic="true" >
-34-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:26:9-44
-35        <activity
-35-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:27:9-40:20
-36            android:name="org.mark.moonmeet.MainActivity"
-36-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:28:13-41
-37            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-37-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:29:13-106
-38            android:exported="true"
-38-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:30:13-36
-39            android:hardwareAccelerated="true"
-39-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:31:13-47
-40            android:launchMode="singleTask"
-40-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:32:13-44
-41            android:screenOrientation="fullSensor"
-41-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:33:13-51
-42            android:supportsPictureInPicture="true" >
-42-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:34:13-52
-43            <intent-filter>
-43-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:35:13-39:29
-44                <action android:name="android.intent.action.MAIN" />
-44-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:36:17-69
-44-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:36:25-66
-45
-46                <category android:name="android.intent.category.LAUNCHER" />
-46-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:38:17-77
-46-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:38:27-74
-47            </intent-filter>
-48        </activity>
-49        <activity
-49-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:41:9-43:39
-50            android:name="org.mark.moonmeet.BaseActivity"
-50-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:42:13-41
-51            android:exported="true" />
-51-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:43:13-36
-52        <activity
-52-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:44:9-49:55
-53            android:name="org.mark.moonmeet.IntroActivity"
-53-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:45:13-42
-54            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-54-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:46:13-106
-55            android:hardwareAccelerated="true"
-55-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:47:13-47
-56            android:screenOrientation="fullSensor"
-56-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:48:13-51
-57            android:supportsPictureInPicture="true" />
-57-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:49:13-52
-58        <activity
-58-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:50:9-56:57
-59            android:name="org.mark.moonmeet.OtpActivity"
-59-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:51:13-40
-60            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-60-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:52:13-106
-61            android:hardwareAccelerated="true"
-61-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:53:13-47
-62            android:screenOrientation="fullSensor"
-62-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:54:13-51
-63            android:supportsPictureInPicture="true"
-63-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:55:13-52
-64            android:windowSoftInputMode="stateHidden" />
-64-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:56:13-54
-65        <activity
-65-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:57:9-63:57
-66            android:name="org.mark.moonmeet.CountrycodeActivity"
-66-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:58:13-48
-67            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-67-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:59:13-106
-68            android:hardwareAccelerated="true"
-68-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:60:13-47
-69            android:screenOrientation="fullSensor"
-69-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:61:13-51
-70            android:supportsPictureInPicture="true"
-70-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:62:13-52
-71            android:windowSoftInputMode="stateHidden" />
-71-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:63:13-54
-72        <activity
-72-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:64:9-70:57
-73            android:name="org.mark.moonmeet.SetupActivity"
-73-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:65:13-42
-74            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-74-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:66:13-106
-75            android:hardwareAccelerated="true"
-75-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:67:13-47
-76            android:screenOrientation="fullSensor"
-76-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:68:13-51
-77            android:supportsPictureInPicture="true"
-77-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:69:13-52
-78            android:windowSoftInputMode="stateHidden" />
-78-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:70:13-54
-79        <activity
-79-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:71:9-76:55
-80            android:name="org.mark.moonmeet.LaunchActivity"
-80-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:72:13-43
-81            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-81-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:73:13-106
-82            android:hardwareAccelerated="true"
-82-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:74:13-47
-83            android:screenOrientation="fullSensor"
-83-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:75:13-51
-84            android:supportsPictureInPicture="true" />
-84-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:76:13-52
-85        <activity
-85-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:77:9-84:57
-86            android:name="org.mark.moonmeet.TermsandprivacyActivity"
-86-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:78:13-52
-87            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-87-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:79:13-106
-88            android:hardwareAccelerated="true"
-88-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:80:13-47
-89            android:screenOrientation="fullSensor"
-89-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:81:13-51
-90            android:supportsPictureInPicture="true"
-90-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:82:13-52
-91            android:theme="@style/MoonMeet"
-91-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:83:13-44
-92            android:windowSoftInputMode="stateHidden" />
-92-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:84:13-54
-93        <activity
-93-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:85:9-92:57
-94            android:name="org.mark.moonmeet.NewstoryActivity"
-94-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:86:13-45
-95            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-95-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:87:13-106
-96            android:hardwareAccelerated="true"
-96-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:88:13-47
-97            android:screenOrientation="fullSensor"
-97-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:89:13-51
-98            android:supportsPictureInPicture="true"
-98-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:90:13-52
-99            android:theme="@style/MoonMeet"
-99-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:91:13-44
-100            android:windowSoftInputMode="stateHidden" />
-100-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:92:13-54
-101        <activity
-101-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:93:9-100:57
-102            android:name="org.mark.moonmeet.StoryActivity"
-102-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:94:13-42
-103            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-103-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:95:13-106
-104            android:hardwareAccelerated="true"
-104-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:96:13-47
-105            android:screenOrientation="fullSensor"
-105-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:97:13-51
-106            android:supportsPictureInPicture="true"
-106-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:98:13-52
-107            android:theme="@style/MoonMeet"
-107-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:99:13-44
-108            android:windowSoftInputMode="stateHidden" />
-108-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:100:13-54
-109        <activity
-109-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:101:9-108:57
-110            android:name="org.mark.moonmeet.SearchActivity"
-110-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:102:13-43
-111            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-111-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:103:13-106
-112            android:hardwareAccelerated="true"
-112-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:104:13-47
-113            android:screenOrientation="fullSensor"
-113-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:105:13-51
-114            android:supportsPictureInPicture="true"
-114-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:106:13-52
-115            android:theme="@style/MoonMeet"
-115-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:107:13-44
-116            android:windowSoftInputMode="stateHidden" />
-116-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:108:13-54
-117        <activity
-117-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:109:9-116:57
-118            android:name="org.mark.moonmeet.StoryviewActivity"
-118-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:110:13-46
-119            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-119-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:111:13-106
-120            android:hardwareAccelerated="true"
-120-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:112:13-47
-121            android:screenOrientation="fullSensor"
-121-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:113:13-51
-122            android:supportsPictureInPicture="true"
-122-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:114:13-52
-123            android:theme="@style/MoonMeet"
-123-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:115:13-44
-124            android:windowSoftInputMode="stateHidden" />
-124-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:116:13-54
-125        <activity
-125-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:117:9-124:57
-126            android:name="org.mark.moonmeet.DiscoverActivity"
-126-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:118:13-45
-127            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-127-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:119:13-106
-128            android:hardwareAccelerated="true"
-128-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:120:13-47
-129            android:screenOrientation="fullSensor"
-129-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:121:13-51
-130            android:supportsPictureInPicture="true"
-130-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:122:13-52
-131            android:theme="@style/MoonMeet"
-131-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:123:13-44
-132            android:windowSoftInputMode="stateHidden" />
-132-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:124:13-54
-133        <activity
-133-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:125:9-132:58
-134            android:name="org.mark.moonmeet.ChatActivity"
-134-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:126:13-41
-135            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-135-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:127:13-106
-136            android:hardwareAccelerated="true"
-136-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:128:13-47
-137            android:screenOrientation="fullSensor"
-137-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:129:13-51
-138            android:supportsPictureInPicture="true"
-138-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:130:13-52
-139            android:theme="@style/MoonMeet"
-139-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:131:13-44
-140            android:windowSoftInputMode="adjustResize" />
-140-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:132:13-55
-141        <activity
-141-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:133:9-140:57
-142            android:name="org.mark.moonmeet.SettingsActivity"
-142-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:134:13-45
-143            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-143-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:135:13-106
-144            android:hardwareAccelerated="true"
-144-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:136:13-47
-145            android:screenOrientation="fullSensor"
-145-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:137:13-51
-146            android:supportsPictureInPicture="true"
-146-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:138:13-52
-147            android:theme="@style/MoonMeet"
-147-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:139:13-44
-148            android:windowSoftInputMode="stateHidden" />
-148-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:140:13-54
-149        <activity
-149-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:141:9-147:57
-150            android:name="org.mark.moonmeet.ChangeusernameActivity"
-150-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:142:13-51
-151            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-151-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:143:13-106
-152            android:hardwareAccelerated="true"
-152-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:144:13-47
-153            android:screenOrientation="fullSensor"
-153-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:145:13-51
-154            android:supportsPictureInPicture="true"
-154-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:146:13-52
-155            android:windowSoftInputMode="stateHidden" />
-155-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:147:13-54
-156        <activity
-156-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:148:9-154:57
-157            android:name="org.mark.moonmeet.ChangebioActivity"
-157-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:149:13-46
-158            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-158-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:150:13-106
-159            android:hardwareAccelerated="true"
-159-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:151:13-47
-160            android:screenOrientation="fullSensor"
-160-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:152:13-51
-161            android:supportsPictureInPicture="true"
-161-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:153:13-52
-162            android:windowSoftInputMode="stateHidden" />
-162-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:154:13-54
-163        <activity
-163-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:155:9-162:57
-164            android:name="org.mark.moonmeet.UserprofileActivity"
-164-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:156:13-48
-165            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-165-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:157:13-106
-166            android:hardwareAccelerated="true"
-166-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:158:13-47
-167            android:screenOrientation="fullSensor"
-167-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:159:13-51
-168            android:supportsPictureInPicture="true"
-168-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:160:13-52
-169            android:theme="@style/MoonMeet"
-169-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:161:13-44
-170            android:windowSoftInputMode="stateHidden" />
-170-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:162:13-54
-171        <activity
-171-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:163:9-170:57
-172            android:name="org.mark.moonmeet.PhotoviewerActivity"
-172-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:164:13-48
-173            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-173-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:165:13-106
-174            android:hardwareAccelerated="true"
-174-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:166:13-47
-175            android:screenOrientation="fullSensor"
-175-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:167:13-51
-176            android:supportsPictureInPicture="true"
-176-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:168:13-52
-177            android:theme="@style/MoonMeet"
-177-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:169:13-44
-178            android:windowSoftInputMode="stateHidden" />
-178-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:170:13-54
-179        <activity
-179-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:171:9-178:57
-180            android:name="org.mark.moonmeet.DevicesActivity"
-180-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:172:13-44
-181            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-181-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:173:13-106
-182            android:hardwareAccelerated="true"
-182-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:174:13-47
-183            android:screenOrientation="fullSensor"
-183-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:175:13-51
-184            android:supportsPictureInPicture="true"
-184-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:176:13-52
-185            android:theme="@style/MoonMeet"
-185-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:177:13-44
-186            android:windowSoftInputMode="stateHidden" />
-186-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:178:13-54
-187        <activity
-187-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:179:9-186:57
-188            android:name="org.mark.moonmeet.PrivacySettingsActivity"
-188-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:180:13-52
-189            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-189-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:181:13-106
-190            android:hardwareAccelerated="true"
-190-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:182:13-47
-191            android:screenOrientation="fullSensor"
-191-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:183:13-51
-192            android:supportsPictureInPicture="true"
-192-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:184:13-52
-193            android:theme="@style/MoonMeet"
-193-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:185:13-44
-194            android:windowSoftInputMode="stateHidden" />
-194-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:186:13-54
-195        <activity
-195-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:187:9-192:55
-196            android:name="org.mark.moonmeet.PasscodeLockActivity"
-196-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:188:13-49
-197            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-197-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:189:13-106
-198            android:hardwareAccelerated="true"
-198-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:190:13-47
-199            android:screenOrientation="fullSensor"
-199-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:191:13-51
-200            android:supportsPictureInPicture="true" />
-200-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:192:13-52
-201        <activity
-201-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:193:9-198:55
-202            android:name="org.mark.moonmeet.PasscodeSetupActivity"
-202-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:194:13-50
-203            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-203-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:195:13-106
-204            android:hardwareAccelerated="true"
-204-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:196:13-47
-205            android:screenOrientation="fullSensor"
-205-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:197:13-51
-206            android:supportsPictureInPicture="true" />
-206-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:198:13-52
-207        <activity
-207-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:199:9-206:57
-208            android:name="org.mark.moonmeet.FaqInfoActivity"
-208-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:200:13-44
-209            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-209-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:201:13-106
-210            android:hardwareAccelerated="true"
-210-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:202:13-47
-211            android:screenOrientation="fullSensor"
-211-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:203:13-51
-212            android:supportsPictureInPicture="true"
-212-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:204:13-52
-213            android:theme="@style/MoonMeet"
-213-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:205:13-44
-214            android:windowSoftInputMode="stateHidden" />
-214-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:206:13-54
-215        <activity
-215-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:207:9-213:57
-216            android:name="org.mark.moonmeet.EditNameActivity"
-216-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:208:13-45
-217            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-217-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:209:13-106
-218            android:hardwareAccelerated="true"
-218-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:210:13-47
-219            android:screenOrientation="fullSensor"
-219-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:211:13-51
-220            android:supportsPictureInPicture="true"
-220-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:212:13-52
-221            android:windowSoftInputMode="stateHidden" />
-221-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:213:13-54
-222        <activity
-222-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:214:9-220:57
-223            android:name="org.mark.moonmeet.SignoutActivity"
-223-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:215:13-44
-224            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-224-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:216:13-106
-225            android:hardwareAccelerated="true"
-225-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:217:13-47
-226            android:screenOrientation="fullSensor"
-226-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:218:13-51
-227            android:supportsPictureInPicture="true"
-227-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:219:13-52
-228            android:windowSoftInputMode="stateHidden" />
-228-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:220:13-54
-229        <activity
-229-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:221:9-227:57
-230            android:name="org.mark.moonmeet.AnnouncementsActivity"
-230-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:222:13-50
-231            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-231-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:223:13-106
-232            android:hardwareAccelerated="true"
-232-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:224:13-47
-233            android:screenOrientation="fullSensor"
-233-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:225:13-51
-234            android:supportsPictureInPicture="true"
-234-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:226:13-52
-235            android:windowSoftInputMode="stateHidden" />
-235-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:227:13-54
-236        <activity
-236-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:228:9-234:57
-237            android:name="org.mark.moonmeet.AnnouncementPostActivity"
-237-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:229:13-53
-238            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-238-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:230:13-106
-239            android:hardwareAccelerated="true"
-239-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:231:13-47
-240            android:screenOrientation="fullSensor"
-240-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:232:13-51
-241            android:supportsPictureInPicture="true"
-241-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:233:13-52
-242            android:windowSoftInputMode="stateHidden" />
-242-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:234:13-54
-243        <activity
-243-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:235:9-241:57
-244            android:name="org.mark.moonmeet.ShopActivity"
-244-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:236:13-41
-245            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-245-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:237:13-106
-246            android:hardwareAccelerated="true"
-246-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:238:13-47
-247            android:screenOrientation="fullSensor"
-247-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:239:13-51
-248            android:supportsPictureInPicture="true"
-248-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:240:13-52
-249            android:windowSoftInputMode="stateHidden" />
-249-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:241:13-54
-250        <activity
-250-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:242:9-248:57
-251            android:name="org.mark.moonmeet.AddToSellActivity"
-251-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:243:13-46
-252            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-252-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:244:13-106
-253            android:hardwareAccelerated="true"
-253-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:245:13-47
-254            android:screenOrientation="fullSensor"
-254-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:246:13-51
-255            android:supportsPictureInPicture="true"
-255-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:247:13-52
-256            android:windowSoftInputMode="stateHidden" />
-256-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:248:13-54
-257        <activity
-257-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:249:9-255:57
-258            android:name="org.mark.moonmeet.ViewShopActivity"
-258-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:250:13-45
-259            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-259-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:251:13-106
-260            android:hardwareAccelerated="true"
-260-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:252:13-47
-261            android:screenOrientation="fullSensor"
-261-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:253:13-51
-262            android:supportsPictureInPicture="true"
-262-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:254:13-52
-263            android:windowSoftInputMode="stateHidden" />
-263-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:255:13-54
-264        <activity
-264-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:256:9-262:57
-265            android:name="org.mark.moonmeet.CameraActivity"
-265-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:257:13-43
-266            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-266-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:258:13-106
-267            android:hardwareAccelerated="true"
-267-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:259:13-47
-268            android:screenOrientation="fullSensor"
-268-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:260:13-51
-269            android:supportsPictureInPicture="true"
-269-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:261:13-52
-270            android:windowSoftInputMode="stateHidden" />
-270-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:262:13-54
-271        <activity
-271-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:263:9-269:57
-272            android:name="org.mark.moonmeet.CameraPreviewActivity"
-272-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:264:13-50
-273            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-273-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:265:13-106
-274            android:hardwareAccelerated="true"
-274-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:266:13-47
-275            android:screenOrientation="fullSensor"
-275-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:267:13-51
-276            android:supportsPictureInPicture="true"
-276-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:268:13-52
-277            android:windowSoftInputMode="stateHidden" />
-277-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:269:13-54
-278        <activity
-278-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:270:9-276:57
-279            android:name="org.mark.moonmeet.ImagePickerActivity"
-279-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:271:13-48
-280            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-280-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:272:13-106
-281            android:hardwareAccelerated="true"
-281-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:273:13-47
-282            android:screenOrientation="fullSensor"
-282-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:274:13-51
-283            android:supportsPictureInPicture="true"
-283-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:275:13-52
-284            android:windowSoftInputMode="stateHidden" />
-284-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:276:13-54
-285
-286        <meta-data
-286-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:278:9-280:69
-287            android:name="com.google.android.gms.version"
-287-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:279:13-58
-288            android:value="@integer/google_play_services_version" />
-288-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:280:13-66
-289
-290        <provider
-290-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:282:9-286:39
-291            android:name="com.google.firebase.provider.FirebaseInitProvider"
-291-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:283:13-77
-292            android:authorities="org.mark.moonmeet.firebaseinitprovider"
-292-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:284:13-73
-293            android:directBootAware="true"
-293-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
-294            android:exported="false"
-294-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:285:13-37
-295            android:initOrder="100" />
-295-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:286:13-36
-296
-297        <service
-297-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:288:9-300:19
-298            android:name="com.google.firebase.components.ComponentDiscoveryService"
-298-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:289:13-84
-299            android:directBootAware="true"
-299-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
-300            android:exported="false" >
-300-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:290:13-37
-301            <meta-data
-301-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:291:13-293:85
-302                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-302-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:292:17-109
-303                android:value="com.google.firebase.components.ComponentRegistrar" />
-303-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:293:17-82
-304            <meta-data
-304-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:294:13-296:85
-305                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-305-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:295:17-109
-306                android:value="com.google.firebase.components.ComponentRegistrar" />
-306-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:296:17-82
-307            <meta-data
-307-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:297:13-299:85
-308                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-308-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:298:17-107
-309                android:value="com.google.firebase.components.ComponentRegistrar" />
-309-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:299:17-82
-310            <!--
-311                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
-312                clients to use it as well, by defining this registrar in their own core/common library.
-313            -->
-314            <meta-data
-314-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
-315                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
-315-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
-316                android:value="com.google.firebase.components.ComponentRegistrar" />
-316-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
-317        </service>
-318
-319        <provider
-319-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:302:9-310:20
-320            android:name="androidx.core.content.FileProvider"
-320-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:303:13-62
-321            android:authorities="org.mark.moonmeet.provider"
-321-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:304:13-61
-322            android:exported="false"
-322-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:305:13-37
-323            android:grantUriPermissions="true" >
-323-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:306:13-47
-324            <meta-data
-324-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:307:13-309:58
-325                android:name="android.support.FILE_PROVIDER_PATHS"
-325-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:308:17-67
-326                android:resource="@xml/provider_paths" />
-326-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:309:17-55
-327        </provider>
-328        <provider
-328-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:311:9-316:43
-329            android:name="androidx.camera.camera2.impl.Camera2Initializer"
-329-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:312:13-75
-330            android:authorities="org.mark.moonmeet.camerax-init"
-330-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:313:13-65
-331            android:exported="false"
-331-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:314:13-37
-332            android:initOrder="100"
-332-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:315:13-36
-333            android:multiprocess="true" />
-333-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:316:13-40
-334
-335        <uses-library
-335-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:318:9-320:40
-336            android:name="org.apache.http.legacy"
-336-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:319:13-50
-337            android:required="false" />
-337-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:320:13-37
-338
-339        <activity
-339-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:27:9-44:20
-340            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-340-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:28:13-80
-341            android:excludeFromRecents="true"
-341-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:29:13-46
-342            android:exported="true"
-342-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:30:13-36
-343            android:launchMode="singleTask"
-343-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:31:13-44
-344            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-344-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:32:13-72
-345            <intent-filter>
-345-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:33:13-43:29
-346                <action android:name="android.intent.action.VIEW" />
-346-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:34:17-69
-346-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:34:25-66
-347
-348                <category android:name="android.intent.category.DEFAULT" />
-348-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:36:17-76
-348-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:36:27-73
-349                <category android:name="android.intent.category.BROWSABLE" />
-349-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:37:17-78
-349-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:37:27-75
-350
-351                <data
-351-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:39:17-42:51
-352                    android:host="firebase.auth"
-352-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:40:21-49
-353                    android:path="/"
-353-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:41:21-37
-354                    android:scheme="genericidp" />
-354-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:42:21-48
-355            </intent-filter>
-356        </activity>
-357        <activity
-357-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:45:9-62:20
-358            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-358-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:46:13-79
-359            android:excludeFromRecents="true"
-359-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:47:13-46
-360            android:exported="true"
-360-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:48:13-36
-361            android:launchMode="singleTask"
-361-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:49:13-44
-362            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-362-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:50:13-72
-363            <intent-filter>
-363-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:51:13-61:29
-364                <action android:name="android.intent.action.VIEW" />
-364-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:34:17-69
-364-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:34:25-66
-365
-366                <category android:name="android.intent.category.DEFAULT" />
-366-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:36:17-76
-366-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:36:27-73
-367                <category android:name="android.intent.category.BROWSABLE" />
-367-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:37:17-78
-367-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:37:27-75
-368
-369                <data
-369-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:39:17-42:51
-370                    android:host="firebase.auth"
-370-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:40:21-49
-371                    android:path="/"
-371-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:41:21-37
-372                    android:scheme="recaptcha" />
-372-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:42:21-48
-373            </intent-filter>
-374        </activity>
-375
-376        <service
-376-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:64:9-73:19
-377            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
-377-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:65:13-101
-378            android:enabled="true"
-378-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:66:13-35
-379            android:exported="false" >
-379-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:67:13-37
-380            <intent-filter>
-380-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:68:13-72:29
-381                <action android:name="com.google.firebase.auth.api.gms.service.START" />
-381-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:69:17-89
-381-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:69:25-86
-382
-383                <category android:name="android.intent.category.DEFAULT" />
-383-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:36:17-76
-383-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:36:27-73
-384            </intent-filter>
-385        </service>
-386
-387        <activity
-387-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ee9cd8a11481e1c75a3596b4aaf65d8d\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
-388            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-388-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ee9cd8a11481e1c75a3596b4aaf65d8d\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
-389            android:exported="false"
-389-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ee9cd8a11481e1c75a3596b4aaf65d8d\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
-390            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-390-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ee9cd8a11481e1c75a3596b4aaf65d8d\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
-391    </application>
-392
-393</manifest>
+32        android:theme="@style/MoonMeet"
+32-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:25:9-40
+33        android:usesCleartextTraffic="true" >
+33-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:26:9-44
+34        <activity
+34-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:27:9-40:20
+35            android:name="org.mark.moonmeet.MainActivity"
+35-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:28:13-41
+36            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+36-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:29:13-106
+37            android:exported="true"
+37-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:30:13-36
+38            android:hardwareAccelerated="true"
+38-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:31:13-47
+39            android:launchMode="singleTask"
+39-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:32:13-44
+40            android:screenOrientation="fullSensor"
+40-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:33:13-51
+41            android:supportsPictureInPicture="true" >
+41-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:34:13-52
+42            <intent-filter>
+42-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:35:13-39:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:36:17-69
+43-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:36:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:38:17-77
+45-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:38:27-74
+46            </intent-filter>
+47        </activity>
+48        <activity
+48-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:41:9-43:39
+49            android:name="org.mark.moonmeet.BaseActivity"
+49-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:42:13-41
+50            android:exported="true" />
+50-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:43:13-36
+51        <activity
+51-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:44:9-49:55
+52            android:name="org.mark.moonmeet.IntroActivity"
+52-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:45:13-42
+53            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+53-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:46:13-106
+54            android:hardwareAccelerated="true"
+54-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:47:13-47
+55            android:screenOrientation="fullSensor"
+55-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:48:13-51
+56            android:supportsPictureInPicture="true" />
+56-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:49:13-52
+57        <activity
+57-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:50:9-56:57
+58            android:name="org.mark.moonmeet.OtpActivity"
+58-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:51:13-40
+59            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+59-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:52:13-106
+60            android:hardwareAccelerated="true"
+60-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:53:13-47
+61            android:screenOrientation="fullSensor"
+61-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:54:13-51
+62            android:supportsPictureInPicture="true"
+62-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:55:13-52
+63            android:windowSoftInputMode="stateHidden" />
+63-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:56:13-54
+64        <activity
+64-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:57:9-63:57
+65            android:name="org.mark.moonmeet.CountrycodeActivity"
+65-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:58:13-48
+66            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+66-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:59:13-106
+67            android:hardwareAccelerated="true"
+67-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:60:13-47
+68            android:screenOrientation="fullSensor"
+68-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:61:13-51
+69            android:supportsPictureInPicture="true"
+69-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:62:13-52
+70            android:windowSoftInputMode="stateHidden" />
+70-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:63:13-54
+71        <activity
+71-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:64:9-70:57
+72            android:name="org.mark.moonmeet.SetupActivity"
+72-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:65:13-42
+73            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+73-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:66:13-106
+74            android:hardwareAccelerated="true"
+74-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:67:13-47
+75            android:screenOrientation="fullSensor"
+75-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:68:13-51
+76            android:supportsPictureInPicture="true"
+76-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:69:13-52
+77            android:windowSoftInputMode="stateHidden" />
+77-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:70:13-54
+78        <activity
+78-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:71:9-76:55
+79            android:name="org.mark.moonmeet.LaunchActivity"
+79-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:72:13-43
+80            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+80-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:73:13-106
+81            android:hardwareAccelerated="true"
+81-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:74:13-47
+82            android:screenOrientation="fullSensor"
+82-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:75:13-51
+83            android:supportsPictureInPicture="true" />
+83-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:76:13-52
+84        <activity
+84-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:77:9-84:57
+85            android:name="org.mark.moonmeet.TermsandprivacyActivity"
+85-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:78:13-52
+86            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+86-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:79:13-106
+87            android:hardwareAccelerated="true"
+87-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:80:13-47
+88            android:screenOrientation="fullSensor"
+88-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:81:13-51
+89            android:supportsPictureInPicture="true"
+89-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:82:13-52
+90            android:theme="@style/MoonMeet"
+90-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:83:13-44
+91            android:windowSoftInputMode="stateHidden" />
+91-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:84:13-54
+92        <activity
+92-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:85:9-92:57
+93            android:name="org.mark.moonmeet.NewstoryActivity"
+93-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:86:13-45
+94            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+94-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:87:13-106
+95            android:hardwareAccelerated="true"
+95-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:88:13-47
+96            android:screenOrientation="fullSensor"
+96-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:89:13-51
+97            android:supportsPictureInPicture="true"
+97-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:90:13-52
+98            android:theme="@style/MoonMeet"
+98-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:91:13-44
+99            android:windowSoftInputMode="stateHidden" />
+99-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:92:13-54
+100        <activity
+100-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:93:9-100:57
+101            android:name="org.mark.moonmeet.StoryActivity"
+101-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:94:13-42
+102            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+102-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:95:13-106
+103            android:hardwareAccelerated="true"
+103-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:96:13-47
+104            android:screenOrientation="fullSensor"
+104-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:97:13-51
+105            android:supportsPictureInPicture="true"
+105-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:98:13-52
+106            android:theme="@style/MoonMeet"
+106-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:99:13-44
+107            android:windowSoftInputMode="stateHidden" />
+107-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:100:13-54
+108        <activity
+108-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:101:9-108:57
+109            android:name="org.mark.moonmeet.SearchActivity"
+109-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:102:13-43
+110            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+110-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:103:13-106
+111            android:hardwareAccelerated="true"
+111-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:104:13-47
+112            android:screenOrientation="fullSensor"
+112-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:105:13-51
+113            android:supportsPictureInPicture="true"
+113-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:106:13-52
+114            android:theme="@style/MoonMeet"
+114-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:107:13-44
+115            android:windowSoftInputMode="stateHidden" />
+115-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:108:13-54
+116        <activity
+116-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:109:9-116:57
+117            android:name="org.mark.moonmeet.StoryviewActivity"
+117-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:110:13-46
+118            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+118-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:111:13-106
+119            android:hardwareAccelerated="true"
+119-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:112:13-47
+120            android:screenOrientation="fullSensor"
+120-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:113:13-51
+121            android:supportsPictureInPicture="true"
+121-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:114:13-52
+122            android:theme="@style/MoonMeet"
+122-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:115:13-44
+123            android:windowSoftInputMode="stateHidden" />
+123-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:116:13-54
+124        <activity
+124-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:117:9-124:57
+125            android:name="org.mark.moonmeet.DiscoverActivity"
+125-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:118:13-45
+126            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+126-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:119:13-106
+127            android:hardwareAccelerated="true"
+127-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:120:13-47
+128            android:screenOrientation="fullSensor"
+128-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:121:13-51
+129            android:supportsPictureInPicture="true"
+129-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:122:13-52
+130            android:theme="@style/MoonMeet"
+130-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:123:13-44
+131            android:windowSoftInputMode="stateHidden" />
+131-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:124:13-54
+132        <activity
+132-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:125:9-132:58
+133            android:name="org.mark.moonmeet.ChatActivity"
+133-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:126:13-41
+134            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+134-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:127:13-106
+135            android:hardwareAccelerated="true"
+135-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:128:13-47
+136            android:screenOrientation="fullSensor"
+136-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:129:13-51
+137            android:supportsPictureInPicture="true"
+137-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:130:13-52
+138            android:theme="@style/MoonMeet"
+138-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:131:13-44
+139            android:windowSoftInputMode="adjustResize" />
+139-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:132:13-55
+140        <activity
+140-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:133:9-140:57
+141            android:name="org.mark.moonmeet.SettingsActivity"
+141-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:134:13-45
+142            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+142-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:135:13-106
+143            android:hardwareAccelerated="true"
+143-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:136:13-47
+144            android:screenOrientation="fullSensor"
+144-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:137:13-51
+145            android:supportsPictureInPicture="true"
+145-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:138:13-52
+146            android:theme="@style/MoonMeet"
+146-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:139:13-44
+147            android:windowSoftInputMode="stateHidden" />
+147-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:140:13-54
+148        <activity
+148-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:141:9-147:57
+149            android:name="org.mark.moonmeet.ChangeusernameActivity"
+149-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:142:13-51
+150            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+150-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:143:13-106
+151            android:hardwareAccelerated="true"
+151-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:144:13-47
+152            android:screenOrientation="fullSensor"
+152-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:145:13-51
+153            android:supportsPictureInPicture="true"
+153-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:146:13-52
+154            android:windowSoftInputMode="stateHidden" />
+154-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:147:13-54
+155        <activity
+155-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:148:9-154:57
+156            android:name="org.mark.moonmeet.ChangebioActivity"
+156-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:149:13-46
+157            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+157-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:150:13-106
+158            android:hardwareAccelerated="true"
+158-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:151:13-47
+159            android:screenOrientation="fullSensor"
+159-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:152:13-51
+160            android:supportsPictureInPicture="true"
+160-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:153:13-52
+161            android:windowSoftInputMode="stateHidden" />
+161-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:154:13-54
+162        <activity
+162-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:155:9-162:57
+163            android:name="org.mark.moonmeet.UserprofileActivity"
+163-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:156:13-48
+164            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+164-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:157:13-106
+165            android:hardwareAccelerated="true"
+165-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:158:13-47
+166            android:screenOrientation="fullSensor"
+166-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:159:13-51
+167            android:supportsPictureInPicture="true"
+167-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:160:13-52
+168            android:theme="@style/MoonMeet"
+168-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:161:13-44
+169            android:windowSoftInputMode="stateHidden" />
+169-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:162:13-54
+170        <activity
+170-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:163:9-170:57
+171            android:name="org.mark.moonmeet.PhotoviewerActivity"
+171-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:164:13-48
+172            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+172-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:165:13-106
+173            android:hardwareAccelerated="true"
+173-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:166:13-47
+174            android:screenOrientation="fullSensor"
+174-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:167:13-51
+175            android:supportsPictureInPicture="true"
+175-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:168:13-52
+176            android:theme="@style/MoonMeet"
+176-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:169:13-44
+177            android:windowSoftInputMode="stateHidden" />
+177-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:170:13-54
+178        <activity
+178-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:171:9-178:57
+179            android:name="org.mark.moonmeet.DevicesActivity"
+179-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:172:13-44
+180            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+180-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:173:13-106
+181            android:hardwareAccelerated="true"
+181-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:174:13-47
+182            android:screenOrientation="fullSensor"
+182-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:175:13-51
+183            android:supportsPictureInPicture="true"
+183-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:176:13-52
+184            android:theme="@style/MoonMeet"
+184-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:177:13-44
+185            android:windowSoftInputMode="stateHidden" />
+185-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:178:13-54
+186        <activity
+186-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:179:9-186:57
+187            android:name="org.mark.moonmeet.PrivacySettingsActivity"
+187-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:180:13-52
+188            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+188-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:181:13-106
+189            android:hardwareAccelerated="true"
+189-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:182:13-47
+190            android:screenOrientation="fullSensor"
+190-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:183:13-51
+191            android:supportsPictureInPicture="true"
+191-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:184:13-52
+192            android:theme="@style/MoonMeet"
+192-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:185:13-44
+193            android:windowSoftInputMode="stateHidden" />
+193-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:186:13-54
+194        <activity
+194-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:187:9-192:55
+195            android:name="org.mark.moonmeet.PasscodeLockActivity"
+195-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:188:13-49
+196            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+196-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:189:13-106
+197            android:hardwareAccelerated="true"
+197-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:190:13-47
+198            android:screenOrientation="fullSensor"
+198-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:191:13-51
+199            android:supportsPictureInPicture="true" />
+199-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:192:13-52
+200        <activity
+200-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:193:9-198:55
+201            android:name="org.mark.moonmeet.PasscodeSetupActivity"
+201-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:194:13-50
+202            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+202-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:195:13-106
+203            android:hardwareAccelerated="true"
+203-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:196:13-47
+204            android:screenOrientation="fullSensor"
+204-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:197:13-51
+205            android:supportsPictureInPicture="true" />
+205-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:198:13-52
+206        <activity
+206-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:199:9-206:57
+207            android:name="org.mark.moonmeet.FaqInfoActivity"
+207-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:200:13-44
+208            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+208-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:201:13-106
+209            android:hardwareAccelerated="true"
+209-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:202:13-47
+210            android:screenOrientation="fullSensor"
+210-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:203:13-51
+211            android:supportsPictureInPicture="true"
+211-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:204:13-52
+212            android:theme="@style/MoonMeet"
+212-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:205:13-44
+213            android:windowSoftInputMode="stateHidden" />
+213-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:206:13-54
+214        <activity
+214-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:207:9-213:57
+215            android:name="org.mark.moonmeet.EditNameActivity"
+215-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:208:13-45
+216            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+216-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:209:13-106
+217            android:hardwareAccelerated="true"
+217-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:210:13-47
+218            android:screenOrientation="fullSensor"
+218-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:211:13-51
+219            android:supportsPictureInPicture="true"
+219-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:212:13-52
+220            android:windowSoftInputMode="stateHidden" />
+220-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:213:13-54
+221        <activity
+221-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:214:9-220:57
+222            android:name="org.mark.moonmeet.SignoutActivity"
+222-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:215:13-44
+223            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+223-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:216:13-106
+224            android:hardwareAccelerated="true"
+224-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:217:13-47
+225            android:screenOrientation="fullSensor"
+225-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:218:13-51
+226            android:supportsPictureInPicture="true"
+226-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:219:13-52
+227            android:windowSoftInputMode="stateHidden" />
+227-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:220:13-54
+228        <activity
+228-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:221:9-227:57
+229            android:name="org.mark.moonmeet.AnnouncementsActivity"
+229-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:222:13-50
+230            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+230-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:223:13-106
+231            android:hardwareAccelerated="true"
+231-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:224:13-47
+232            android:screenOrientation="fullSensor"
+232-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:225:13-51
+233            android:supportsPictureInPicture="true"
+233-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:226:13-52
+234            android:windowSoftInputMode="stateHidden" />
+234-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:227:13-54
+235        <activity
+235-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:228:9-234:57
+236            android:name="org.mark.moonmeet.AnnouncementPostActivity"
+236-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:229:13-53
+237            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+237-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:230:13-106
+238            android:hardwareAccelerated="true"
+238-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:231:13-47
+239            android:screenOrientation="fullSensor"
+239-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:232:13-51
+240            android:supportsPictureInPicture="true"
+240-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:233:13-52
+241            android:windowSoftInputMode="stateHidden" />
+241-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:234:13-54
+242        <activity
+242-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:235:9-241:57
+243            android:name="org.mark.moonmeet.ShopActivity"
+243-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:236:13-41
+244            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+244-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:237:13-106
+245            android:hardwareAccelerated="true"
+245-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:238:13-47
+246            android:screenOrientation="fullSensor"
+246-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:239:13-51
+247            android:supportsPictureInPicture="true"
+247-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:240:13-52
+248            android:windowSoftInputMode="stateHidden" />
+248-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:241:13-54
+249        <activity
+249-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:242:9-248:57
+250            android:name="org.mark.moonmeet.AddToSellActivity"
+250-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:243:13-46
+251            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+251-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:244:13-106
+252            android:hardwareAccelerated="true"
+252-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:245:13-47
+253            android:screenOrientation="fullSensor"
+253-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:246:13-51
+254            android:supportsPictureInPicture="true"
+254-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:247:13-52
+255            android:windowSoftInputMode="stateHidden" />
+255-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:248:13-54
+256        <activity
+256-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:249:9-255:57
+257            android:name="org.mark.moonmeet.ViewShopActivity"
+257-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:250:13-45
+258            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+258-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:251:13-106
+259            android:hardwareAccelerated="true"
+259-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:252:13-47
+260            android:screenOrientation="fullSensor"
+260-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:253:13-51
+261            android:supportsPictureInPicture="true"
+261-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:254:13-52
+262            android:windowSoftInputMode="stateHidden" />
+262-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:255:13-54
+263        <activity
+263-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:256:9-262:57
+264            android:name="org.mark.moonmeet.CameraActivity"
+264-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:257:13-43
+265            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+265-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:258:13-106
+266            android:hardwareAccelerated="true"
+266-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:259:13-47
+267            android:screenOrientation="fullSensor"
+267-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:260:13-51
+268            android:supportsPictureInPicture="true"
+268-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:261:13-52
+269            android:windowSoftInputMode="stateHidden" />
+269-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:262:13-54
+270        <activity
+270-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:263:9-269:57
+271            android:name="org.mark.moonmeet.CameraPreviewActivity"
+271-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:264:13-50
+272            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+272-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:265:13-106
+273            android:hardwareAccelerated="true"
+273-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:266:13-47
+274            android:screenOrientation="fullSensor"
+274-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:267:13-51
+275            android:supportsPictureInPicture="true"
+275-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:268:13-52
+276            android:windowSoftInputMode="stateHidden" />
+276-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:269:13-54
+277        <activity
+277-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:270:9-276:57
+278            android:name="org.mark.moonmeet.ImagePickerActivity"
+278-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:271:13-48
+279            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+279-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:272:13-106
+280            android:hardwareAccelerated="true"
+280-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:273:13-47
+281            android:screenOrientation="fullSensor"
+281-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:274:13-51
+282            android:supportsPictureInPicture="true"
+282-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:275:13-52
+283            android:windowSoftInputMode="stateHidden" />
+283-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:276:13-54
+284
+285        <meta-data
+285-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:278:9-280:69
+286            android:name="com.google.android.gms.version"
+286-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:279:13-58
+287            android:value="@integer/google_play_services_version" />
+287-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:280:13-66
+288
+289        <provider
+289-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:282:9-286:39
+290            android:name="com.google.firebase.provider.FirebaseInitProvider"
+290-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:283:13-77
+291            android:authorities="org.mark.moonmeet.firebaseinitprovider"
+291-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:284:13-73
+292            android:directBootAware="true"
+292-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
+293            android:exported="false"
+293-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:285:13-37
+294            android:initOrder="100" />
+294-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:286:13-36
+295
+296        <service
+296-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:288:9-300:19
+297            android:name="com.google.firebase.components.ComponentDiscoveryService"
+297-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:289:13-84
+298            android:directBootAware="true"
+298-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
+299            android:exported="false" >
+299-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:290:13-37
+300            <meta-data
+300-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:291:13-293:85
+301                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+301-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:292:17-109
+302                android:value="com.google.firebase.components.ComponentRegistrar" />
+302-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:293:17-82
+303            <meta-data
+303-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:294:13-296:85
+304                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+304-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:295:17-109
+305                android:value="com.google.firebase.components.ComponentRegistrar" />
+305-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:296:17-82
+306            <meta-data
+306-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:297:13-299:85
+307                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+307-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:298:17-107
+308                android:value="com.google.firebase.components.ComponentRegistrar" />
+308-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:299:17-82
+309            <!--
+310                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+311                clients to use it as well, by defining this registrar in their own core/common library.
+312            -->
+313            <meta-data
+313-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
+314                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+314-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
+315                android:value="com.google.firebase.components.ComponentRegistrar" />
+315-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\d928fd71c8b7bf410d2f49a193d80cfc\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
+316        </service>
+317
+318        <provider
+318-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:302:9-310:20
+319            android:name="androidx.core.content.FileProvider"
+319-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:303:13-62
+320            android:authorities="org.mark.moonmeet.provider"
+320-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:304:13-61
+321            android:exported="false"
+321-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:305:13-37
+322            android:grantUriPermissions="true" >
+322-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:306:13-47
+323            <meta-data
+323-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:307:13-309:58
+324                android:name="android.support.FILE_PROVIDER_PATHS"
+324-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:308:17-67
+325                android:resource="@xml/provider_paths" />
+325-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:309:17-55
+326        </provider>
+327        <provider
+327-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:311:9-316:43
+328            android:name="androidx.camera.camera2.impl.Camera2Initializer"
+328-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:312:13-75
+329            android:authorities="org.mark.moonmeet.camerax-init"
+329-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:313:13-65
+330            android:exported="false"
+330-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:314:13-37
+331            android:initOrder="100"
+331-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:315:13-36
+332            android:multiprocess="true" />
+332-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:316:13-40
+333
+334        <uses-library
+334-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:318:9-320:40
+335            android:name="org.apache.http.legacy"
+335-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:319:13-50
+336            android:required="false" />
+336-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:320:13-37
+337
+338        <activity
+338-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:27:9-44:20
+339            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+339-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:28:13-80
+340            android:excludeFromRecents="true"
+340-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:29:13-46
+341            android:exported="true"
+341-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:30:13-36
+342            android:launchMode="singleTask"
+342-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:31:13-44
+343            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+343-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:32:13-72
+344            <intent-filter>
+344-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:33:13-43:29
+345                <action android:name="android.intent.action.VIEW" />
+345-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:34:17-69
+345-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:34:25-66
+346
+347                <category android:name="android.intent.category.DEFAULT" />
+347-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:36:17-76
+347-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:36:27-73
+348                <category android:name="android.intent.category.BROWSABLE" />
+348-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:37:17-78
+348-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:37:27-75
+349
+350                <data
+350-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:39:17-42:51
+351                    android:host="firebase.auth"
+351-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:40:21-49
+352                    android:path="/"
+352-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:41:21-37
+353                    android:scheme="genericidp" />
+353-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:42:21-48
+354            </intent-filter>
+355        </activity>
+356        <activity
+356-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:45:9-62:20
+357            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+357-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:46:13-79
+358            android:excludeFromRecents="true"
+358-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:47:13-46
+359            android:exported="true"
+359-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:48:13-36
+360            android:launchMode="singleTask"
+360-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:49:13-44
+361            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+361-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:50:13-72
+362            <intent-filter>
+362-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:51:13-61:29
+363                <action android:name="android.intent.action.VIEW" />
+363-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:34:17-69
+363-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:34:25-66
+364
+365                <category android:name="android.intent.category.DEFAULT" />
+365-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:36:17-76
+365-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:36:27-73
+366                <category android:name="android.intent.category.BROWSABLE" />
+366-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:37:17-78
+366-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:37:27-75
+367
+368                <data
+368-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:39:17-42:51
+369                    android:host="firebase.auth"
+369-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:40:21-49
+370                    android:path="/"
+370-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:41:21-37
+371                    android:scheme="recaptcha" />
+371-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:42:21-48
+372            </intent-filter>
+373        </activity>
+374
+375        <service
+375-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:64:9-73:19
+376            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+376-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:65:13-101
+377            android:enabled="true"
+377-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:66:13-35
+378            android:exported="false" >
+378-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:67:13-37
+379            <intent-filter>
+379-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:68:13-72:29
+380                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+380-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:69:17-89
+380-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:69:25-86
+381
+382                <category android:name="android.intent.category.DEFAULT" />
+382-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:36:17-76
+382-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:36:27-73
+383            </intent-filter>
+384        </service>
+385
+386        <activity
+386-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ee9cd8a11481e1c75a3596b4aaf65d8d\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+387            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+387-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ee9cd8a11481e1c75a3596b4aaf65d8d\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+388            android:exported="false"
+388-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ee9cd8a11481e1c75a3596b4aaf65d8d\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+389            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+389-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\ee9cd8a11481e1c75a3596b4aaf65d8d\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+390    </application>
+391
+392</manifest>

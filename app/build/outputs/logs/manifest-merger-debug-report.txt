@@ -4,7 +4,6 @@ ADDED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:2:1-323:12
 INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:2:1-323:12
 INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:2:1-323:12
-MERGED from [androidx.databinding:viewbinding:7.0.0-alpha14] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\94b933d42817ec65b91dda01b27e0d7c\transformed\jetified-viewbinding-7.0.0-alpha14\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:17:1-83:12
 MERGED from [androidx.browser:browser:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\9e04b50a9526105569e01f14344af023\transformed\browser-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\927c9dcc0ba4424a40736df1d73e7bef\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -792,8 +791,6 @@ uses-sdk
 INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml
-MERGED from [androidx.databinding:viewbinding:7.0.0-alpha14] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\94b933d42817ec65b91dda01b27e0d7c\transformed\jetified-viewbinding-7.0.0-alpha14\AndroidManifest.xml:20:5-44
-MERGED from [androidx.databinding:viewbinding:7.0.0-alpha14] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\94b933d42817ec65b91dda01b27e0d7c\transformed\jetified-viewbinding-7.0.0-alpha14\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\4ffb37722b95283d7cd88e5252ed2299\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:21:5-44
 MERGED from [androidx.browser:browser:1.0.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\9e04b50a9526105569e01f14344af023\transformed\browser-1.0.0\AndroidManifest.xml:20:5-44

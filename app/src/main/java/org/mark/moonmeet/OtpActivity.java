@@ -2,6 +2,8 @@ package org.mark.moonmeet;
 
 import android.animation.ObjectAnimator;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -24,6 +26,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.TooltipCompat;
+import androidx.core.app.DialogCompat;
 import androidx.fragment.app.FragmentManager;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -32,8 +35,10 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.firebase.FirebaseException;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthSettings;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
+import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -43,6 +48,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.GenericTypeIndicator;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+
+import org.mark.moonmeet.utils.AndroidUtilities;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -146,6 +153,8 @@ public class OtpActivity extends AppCompatActivity {
 	private SharedPreferences sp_mydt;
 	private DatabaseReference userchats = _firebase.getReference("userchats");
 	private ChildEventListener _userchats_child_listener;
+	private AlertDialog.Builder alertDialog;
+	private FirebaseAuthSettings firebaseAuthSettings;
 	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
@@ -203,16 +212,21 @@ public class OtpActivity extends AppCompatActivity {
 		sixer_edittext = findViewById(R.id.sixer_edittext);
 		sixer_divider = findViewById(R.id.sixer_divider);
 		Fauth = FirebaseAuth.getInstance();
+		firebaseAuthSettings = Fauth.getFirebaseAuthSettings();
 		sp_df = getSharedPreferences("sp_df", Activity.MODE_PRIVATE);
 		dial_calling = new RequestNetwork(this);
 		sp_mydt = getSharedPreferences("sp_mydt", Activity.MODE_PRIVATE);
+		alertDialog = new AlertDialog.Builder(OtpActivity.this);
 		
-		done.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View _view) {
-				String phoneDebug = plus.getText().toString().concat(dial_code.getText().toString().concat(number_edittext.getText().toString()));
-				PhoneAuthProvider.getInstance().verifyPhoneNumber(phoneDebug, 60, TimeUnit.SECONDS, OtpActivity.this, Pauth);
-			}
+		done.setOnClickListener(_view -> {
+			String phoneNumber = plus.getText().toString().concat(dial_code.getText().toString().concat(number_edittext.getText().toString()));
+			PhoneAuthOptions options = PhoneAuthOptions.newBuilder(Fauth)
+					.setPhoneNumber(phoneNumber)
+					.setTimeout(60L, TimeUnit.SECONDS)
+					.setActivity(OtpActivity.this)
+					.setCallbacks(Pauth)
+					.build();
+			PhoneAuthProvider.verifyPhoneNumber(options);
 		});
 		
 		country_text.setOnClickListener(_view -> {
@@ -252,7 +266,7 @@ public class OtpActivity extends AppCompatActivity {
 			
 			@Override
 			public void afterTextChanged(Editable _param1) {
-				
+
 			}
 		});
 		
@@ -279,7 +293,18 @@ public class OtpActivity extends AppCompatActivity {
 			}
 		});
 		
-		didnt_get.setOnClickListener(_view -> PhoneAuthProvider.getInstance().verifyPhoneNumber(plus.getText().toString().concat(dial_code.getText().toString().concat(number_edittext.getText().toString())), 60, TimeUnit.SECONDS, OtpActivity.this, Pauth, Pauth_resendToken));
+		didnt_get.setOnClickListener(_view -> {
+			Toast.makeText(OtpActivity.this, "Resending Verification Code...", 0).show();
+			String phoneNumber = plus.getText().toString().concat(dial_code.getText().toString().concat(number_edittext.getText().toString()));
+			PhoneAuthOptions options = PhoneAuthOptions.newBuilder(Fauth)
+					.setPhoneNumber(phoneNumber)
+					.setTimeout(60L, TimeUnit.SECONDS)
+					.setActivity(OtpActivity.this)
+					.setCallbacks(Pauth)
+					.setForceResendingToken(Pauth_resendToken)
+					.build();
+			PhoneAuthProvider.verifyPhoneNumber(options);
+		});
 		
 		first_edittext.addTextChangedListener(new TextWatcher() {
 			@Override
@@ -411,16 +436,12 @@ public class OtpActivity extends AppCompatActivity {
 			@Override
 			public void onVerificationFailed(@NonNull FirebaseException e) {
 				String _exception = e.getMessage();
-				MaterialAlertDialogBuilder alertDialogBuilder = new MaterialAlertDialogBuilder(getApplicationContext());
-				alertDialogBuilder.setTitle("Verification Failed");
-				if(_exception != null && _exception.equals("")) {
-					_exception = "Error retrieving connection from our servers, you may try again later.";
-				}
-				alertDialogBuilder.setMessage(_exception);
-				alertDialogBuilder.setPositiveButton("Dismiss", (dialog, which) -> {
+				alertDialog.setTitle("verification Failed");
+				alertDialog.setMessage(_exception.toString());
+				alertDialog.setPositiveButton("Dismiss", (dialog, which) -> {
 
 				});
-				alertDialogBuilder.show();
+				alertDialog.show();
 			}
 			
 			@Override
@@ -655,16 +676,13 @@ public class OtpActivity extends AppCompatActivity {
 					OtpActivity.this.startActivity(toContinue);
 				}
 			} else {
-				MaterialAlertDialogBuilder materialAlertDialogBuilder = new MaterialAlertDialogBuilder(OtpActivity.this);
-				materialAlertDialogBuilder.setTitle("Verification Failed");
-				if (_errorMessage != null && _errorMessage.equals("")) {
-					_errorMessage = "Error retrieving connection from our servers, you may try again later.";
-				}
-				materialAlertDialogBuilder.setMessage(_errorMessage);
-				materialAlertDialogBuilder.setPositiveButton("Dismiss", (dialog1, which) -> {
+				AlertDialog.Builder dialog = new AlertDialog.Builder(OtpActivity.this);
+				dialog.setTitle("Verification Failed");
+				dialog.setMessage(_errorMessage.toString());
+				dialog.setPositiveButton("Dismiss", (dialog1, which) -> {
 
 				});
-				materialAlertDialogBuilder.show();
+				dialog.show();
 			}
 		};
 		
@@ -866,8 +884,8 @@ public class OtpActivity extends AppCompatActivity {
 			VerificationDialogFragmentActivity dialog = new VerificationDialogFragmentActivity();
 			dialog.show( getSupportFragmentManager(),"1");
 			fg.executePendingTransactions(); Objects.requireNonNull(dialog.getDialog()).setOnDismissListener(new DialogInterface.OnDismissListener() { @Override public void onDismiss(DialogInterface dialogInterface) {
-					 
-					 
+
+
 					if (sp_df.getString("cancelled", "").equals("yes")) {
 						Verification = false;
 						dial_code.setText("");

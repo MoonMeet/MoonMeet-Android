@@ -1413,7 +1413,6 @@ OneSignalPushToken = pushToken;
         chats_rv.setDrawingCacheEnabled(true);
         chats_rv.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH);
         chats_rv.setItemAnimator(new MoonMeetItemAnimator());
-        chats_rv.setHasFixedSize(true);
         // initialize ItemTouchHelper
         SwipeController controller = new SwipeController(this, position -> {
             int mPosition = position;
