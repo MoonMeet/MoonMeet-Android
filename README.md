@@ -41,7 +41,7 @@ And that summarized:
    - `docs:` Everything related to documentation
    - `chore:` Code maintenance (you can also use emojis to represent commit types)
 
-Examples:
+**Examples:**
  - `feat: Speed up ChatAdapter with new technique`
  - `fix: Fix provider_paths.xml crash on app launch`
  - `refactor: Reformat code at File.java`
@@ -62,8 +62,8 @@ Thanks, they help to keep **Moon Meet** alive. It's better to have multiple peop
 (sadly sometimes more), and generally quicker development. Each (helpful) contribution that gets thankfully accepted.
 
 ### Authors:
-- Rayen Mark [(@AlucardTN)](https://github.com/AlucardTN) - Mobile App Dev.
-- Aziz Becha [(@AzizVirus)](https://github.com/AzizVirus) - Web App Dev.
+- **Rayen Mark** [(@AlucardTN)](https://github.com/AlucardTN) - Mobile App Dev.
+- **Aziz Becha** [(@AzizVirus)](https://github.com/AzizVirus) - Web App Dev.
 
 ### Social
 - [Facebook](https://www.facebook.com/moonmeet.inc)
