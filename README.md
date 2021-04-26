@@ -1,6 +1,7 @@
 # MoonMeet
 ![GitHub contributors](https://img.shields.io/github/contributors/AlucardTN/MoonMeet) ![GitHub last commit](https://img.shields.io/github/last-commit/AlucardTN/MoonMeet)
-![Maintenance](https://img.shields.io/maintenance/yes/2021) [![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)](https://github.com/AlucardTN/MoonMeet/blob/master/LICENSE) ![Visitor](https://visitor-badge.laobi.icu/badge?page_id=AlucardTN.MoonMeet)
+![Maintenance](https://img.shields.io/maintenance/yes/2021) ![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg) ![Visitor](https://visitor-badge.laobi.icu/badge?page_id=AlucardTN.MoonMeet)
+![Overall Stats](https://github-readme-stats.vercel.app/api?username=laxmena&count_private=true&show_icons=true&hide=contribs)
 
 -A new era of chatting and meeting people !
 
