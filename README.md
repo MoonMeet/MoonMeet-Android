@@ -12,6 +12,18 @@
 - Moon Meet nothing with its contributors, so let's contribute together to make it Alive !
 - Contribute !
 
+### Screenshots
+<p float="left">
+
+<img src="https://user-images.githubusercontent.com/63454940/116109508-c2570280-a6ac-11eb-85ac-102667973578.jpg" width="270" height="450">
+<img src="https://user-images.githubusercontent.com/63454940/116109558-cedb5b00-a6ac-11eb-8d14-6826d554ba30.jpg" width="270" height="450">
+<img src="https://user-images.githubusercontent.com/63454940/116109567-d3077880-a6ac-11eb-9c21-a630d0106dd8.png" width="270" height="450">
+<img src="https://user-images.githubusercontent.com/63454940/116111289-6beac380-a6ae-11eb-8661-6d4f29bd7d32.jpg" width="270" height="450">
+<img src="https://user-images.githubusercontent.com/63454940/116111758-db60b300-a6ae-11eb-95eb-ca1ff666f086.jpg" width="270" height="450">
+<img src="https://user-images.githubusercontent.com/63454940/116112170-3a262c80-a6af-11eb-96a1-5f7e7b52cf01.png" width="270" height="450">
+</p>
+
+
 ### Commit message
 When you've made changes to one or more files, you have to *commit* that file. You also need a *message* for that *commit*.
 
@@ -77,15 +89,3 @@ Thanks, they help to keep **Moon Meet** alive. It's better to have multiple peop
    with this program; if not, write to the Free Software Foundation, Inc.,
    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
    ```
-   
-### Screenshots
-<p float="left">
-
-<img src="https://user-images.githubusercontent.com/63454940/116109508-c2570280-a6ac-11eb-85ac-102667973578.jpg" width="270" height="450">
-<img src="https://user-images.githubusercontent.com/63454940/116109558-cedb5b00-a6ac-11eb-8d14-6826d554ba30.jpg" width="270" height="450">
-<img src="https://user-images.githubusercontent.com/63454940/116109567-d3077880-a6ac-11eb-9c21-a630d0106dd8.png" width="270" height="450">
-<img src="https://user-images.githubusercontent.com/63454940/116111289-6beac380-a6ae-11eb-8661-6d4f29bd7d32.jpg" width="270" height="450">
-<img src="https://user-images.githubusercontent.com/63454940/116111758-db60b300-a6ae-11eb-95eb-ca1ff666f086.jpg" width="270" height="450">
-<img src="https://user-images.githubusercontent.com/63454940/116112170-3a262c80-a6af-11eb-96a1-5f7e7b52cf01.png" width="270" height="450">
-</p>
-
