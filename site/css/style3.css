@@ -1,0 +1,68 @@
+.sidenav {
+    height: 100%;
+    width: 350px;
+    position: fixed;
+    z-index: 9999;
+    top: 55px;
+    right: 0;
+    background-color: #193566;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: white;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFF;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav > .mmeet {
+    margin-top:-45px;
+   /* margin-bottom: 2px;*/
+  }
+
+  .sidenav a:hover {
+    color: rgb(165, 165, 165);
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  span.opennav {
+     margin-right: 10px;
+     width: 30px;
+     color: #FFF;
+     padding: 8px 8px;
+     border-radius: 20%;
+     background-color:#193566;
+  }
+
+  .heart {
+    fill: red;
+    position: relative;
+    top: 5px;
+    width: 25px;
+    animation: pulse 1s ease infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+  }
+  .chat_history  {
+    border-radius: 02%;
+  }

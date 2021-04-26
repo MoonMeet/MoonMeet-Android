@@ -1,0 +1,25 @@
+.btn-primary {
+    background-color:#193566;
+    border-color: #193566;
+  }
+  .panel-primary > .panel-heading {
+    background-color:#193566
+  }
+  .panel-primary > .panel-heading {
+  color: #fff;
+  background-color: #193566;
+  border-color: #193566;
+  }
+  .panel-primary {
+  border-color: #193566;
+  }
+  .dropbtn, span.opennav {
+  background-color:#193566;
+  
+  }
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .btn-primary:active
+  {background-color:  #234b90;}
+  .dropbtn:hover {background-color:  #234b90;}
+  span.opennav {background-color:  #234b90;}

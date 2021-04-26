@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+</body>
+</html>
+<?php include("admin/private/log.php"); ?>

@@ -1,0 +1,39 @@
+.sidenav-right {
+    height: 100%;
+    width: 422px;
+    position: fixed;
+    z-index: 9999;
+    top: 58px;
+    left: 0px;
+    background-color: #193566;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+    color: white;
+  }
+  
+  .sidenav-right a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFF;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav-right > .mmeet {
+    margin-top:-45px;
+   /* margin-bottom: 2px;*/
+  }
+
+  .sidenav-right a:hover {
+    color: rgb(165, 165, 165);
+  }
+  
+  .sidenav-right .closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+

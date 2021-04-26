@@ -1,0 +1,5 @@
+project-id: moonmeet1920
+api-key: AIzaSyBDLpxX9YYtP9i7w1MaHR2ZZIDE-n4P0Bc
+storage bucket url: moonmeet1920.appspot.com
+database-url: https://moonmeet1920.firebaseio.com
+authDomain: http://moonmeet1920.firebaseapp.com

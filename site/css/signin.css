@@ -1,0 +1,144 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.field-icon {
+  float: right;
+  margin-left: -45px;
+  margin-top: 10px;
+  position: relative;
+  z-index: 1000;
+} 
+
+body {
+    background: #5C258D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#float-right {
+  background: #f1f1f166;  /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 40px 75px 0px 30px;
+    width: 45%;
+    border-radius: 2%;
+    animation: page 1s forwards 1;
+}
+#float-left {
+    padding: 160px 0px 0px 0px;
+    width: 45%;
+    margin: 0px auto;
+}
+#float-left h3{
+    font-size: 50px;
+}
+#float-left h3, #float-left h6 {
+    color: white;
+}
+.image-up img{
+    width: 15%;
+    animation: up 1s infinite alternate;
+}
+.image-down img {
+    width: 15%;
+    animation: down 1s infinite alternate;
+}
+.col-lg-6 .container {
+    margin: 0px auto;
+} 
+/* #reset-btn {
+    margin-left: 40px;
+} */
+/* #btn {
+    display: -webkit-inline-box;
+} */
+.home-btn-hide {
+    margin: 0px auto;
+    display: none;
+}
+.show-sm {
+    display: none;
+}
+
+
+/*PHP error*/
+.error {
+    width: 100%;
+}
+.error p {
+    margin-bottom: 0rem;
+}
+
+
+@media (max-width: 992px) {
+    #float-left img {
+        width: 40px;
+    }
+    .signin-container {
+        position: relative;
+        top: -185px;
+    }
+    .show-sm {
+        display: block;
+    }
+    .hide-sm {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    #btn .col-lg-6 {
+        padding-left: 15px;
+    }
+    #float-left h3{
+        font-size: 27px;
+    }
+    .names {
+        padding-top: 15px;
+    }
+}
+@media (max-width: 576px) {
+    #float-right {
+        border-radius: 0%;
+        width: 58%;
+    }
+    .home-btn {
+        display: none;
+    }
+    .home-btn-hide {
+        display: block;
+        padding-bottom: 20px;
+    }
+    #float-left h3{
+        font-size: 27px;
+    }
+    #float-left h6{
+        font-size: 15px;
+    }
+}
+@keyframes page {
+    0% {
+        width: 45%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes up {
+    0% {
+        transform: translatey(-40px)
+    }
+    100% {
+        transform: translatey();
+    }
+}
+
+@keyframes down {
+    0% {
+        transform: translatey()
+    }
+    100% {
+        transform: translatey(-40px);
+    }
+}
