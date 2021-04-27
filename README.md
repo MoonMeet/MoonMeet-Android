@@ -1,16 +1,29 @@
-### MoonMeet
-![GitHub contributors](https://img.shields.io/github/contributors/AlucardTN/MoonMeet) ![GitHub last commit](https://img.shields.io/github/last-commit/AlucardTN/MoonMeet)
-![Maintenance](https://img.shields.io/maintenance/yes/2021)
+# MoonMeet
+![GitHub contributors ](https://img.shields.io/github/contributors/AlucardTN/MoonMeet) ![GitHub last commit](https://img.shields.io/github/last-commit/AlucardTN/MoonMeet)
+![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)
+![Visitor](https://visitor-badge.laobi.icu/badge?page_id=AlucardTN.MoonMeet)
 
--A new era of chatting and meeting people !
+- A new era of chatting and meeting people !
 
 ### Description
-- Moon Meet is a social media platform including chatting feature.
-- Moon Meet is a platform formed with Mobile Android App & Website.
-- Moon Meet is an Open Source Project licensed under the GNU GPL License 2.0.
-- Moon Meet is an Open Source Project means that anyone can see, change, get the source code and can contribute to make this project more better.
-- Moon Meet nothing with its contributors, so let's contribute together to make it Alive !
+- **Moon Meet** is a social media platform including chatting feature.
+- **Moon Meet** is a platform formed with Mobile Android App & Website.
+- **Moon Meet** is an Open Source Project licensed under the GNU GPL License 2.0.
+- **Moon Meet** is an Open Source Project means that anyone can see, change, get the source code and can contribute to make this project more better.
+- **Moon Meet** nothing with its contributors, so let's contribute together to make it Alive !
 - Contribute !
+
+### Screenshots
+<p float="left">
+
+<img src="https://user-images.githubusercontent.com/63454940/116109508-c2570280-a6ac-11eb-85ac-102667973578.jpg" width="270" height="450">
+<img src="https://user-images.githubusercontent.com/63454940/116109558-cedb5b00-a6ac-11eb-8d14-6826d554ba30.jpg" width="270" height="450">
+<img src="https://user-images.githubusercontent.com/63454940/116109567-d3077880-a6ac-11eb-9c21-a630d0106dd8.png" width="270" height="450">
+<img src="https://user-images.githubusercontent.com/63454940/116111289-6beac380-a6ae-11eb-8661-6d4f29bd7d32.jpg" width="270" height="450">
+<img src="https://user-images.githubusercontent.com/63454940/116111758-db60b300-a6ae-11eb-95eb-ca1ff666f086.jpg" width="270" height="450">
+<img src="https://user-images.githubusercontent.com/63454940/116112170-3a262c80-a6af-11eb-96a1-5f7e7b52cf01.png" width="270" height="450">
+</p>
+
 
 ### Commit message
 When you've made changes to one or more files, you have to *commit* that file. You also need a *message* for that *commit*.
@@ -29,7 +42,7 @@ And that summarized:
    - `docs:` Everything related to documentation
    - `chore:` Code maintenance (you can also use emojis to represent commit types)
 
-Examples:
+**Examples:**
  - `feat: Speed up ChatAdapter with new technique`
  - `fix: Fix provider_paths.xml crash on app launch`
  - `refactor: Reformat code at File.java`
@@ -50,8 +63,8 @@ Thanks, they help to keep **Moon Meet** alive. It's better to have multiple peop
 (sadly sometimes more), and generally quicker development. Each (helpful) contribution that gets thankfully accepted.
 
 ### Authors:
-- Rayen Mark [(@AlucardTN)](https://github.com/AlucardTN) - Mobile App Dev.
-- Aziz Becha [(@AzizVirus)](https://github.com/AzizVirus) - Web App Dev.
+- **Rayen Mark** [(@AlucardTN)](https://github.com/AlucardTN) - Mobile App Dev.
+- **Aziz Becha** [(@AzizVirus)](https://github.com/AzizVirus) - Web App Dev.
 
 ### Social
 - [Facebook](https://www.facebook.com/moonmeet.inc)
