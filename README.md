@@ -17,7 +17,7 @@
  <img alt="GitHub" src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/>
  	<img alt="Android" src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
  </p>
-**A new era of chatting and meeting people !**
+* A new era of chatting and meeting people !
 
 ### Description
 - **Moon Meet** is a social media platform including chatting feature.
