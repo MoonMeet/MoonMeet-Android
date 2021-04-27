@@ -173,4 +173,4 @@ $(document).ready(function(){
 if (!isset($_GET["query"])) {
   header("location: home");
 } 
-include("admin/private/log.php"); ?>
+ ?>

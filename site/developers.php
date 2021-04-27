@@ -192,4 +192,3 @@
 </div>
 </body>
 </html>
-<?php include("admin/private/log.php"); ?>

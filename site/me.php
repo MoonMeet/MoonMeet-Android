@@ -292,4 +292,3 @@ $(document).ready(function(){
   </section>
 </body>
 </html>
-<?php include("admin/private/log.php"); ?>

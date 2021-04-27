@@ -642,5 +642,4 @@ function fetch_posts()
 
        </div>
      </div>
-     <?php include("admin/private/log.php"); ?>
 </html>

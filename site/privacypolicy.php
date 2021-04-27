@@ -60,4 +60,3 @@ This policy is effective as of 23-11-2020</h3>
     </div>
 </body>
 </html>
-<?php include("admin/private/log.php"); ?>

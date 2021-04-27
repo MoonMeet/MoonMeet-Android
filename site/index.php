@@ -228,7 +228,7 @@ html {
     </a>
   </div>
 </body>
-<?php include_once("includes/footer.php"); include("admin/private/log.php"); ?>
+<?php include_once("includes/footer.php"); ?>
 <section class="loading-overlay">
       <center>
       <div style="position: fixed; top:40%; right:45%;">

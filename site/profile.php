@@ -608,4 +608,4 @@ if ($profile_image == "") {
       </div>
   </section>
 </body>
-</html><?php } include("admin/private/log.php"); ?>
+</html><?php }  ?>
