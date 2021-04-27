@@ -168,7 +168,7 @@ if(isset($_POST['login']))
         font-size: 13px;
     }
     .login-form a {
-        color: #f64152;
+        color: #163566;
     }
 </style>
 </head>
@@ -195,7 +195,7 @@ if(isset($_POST['login']))
 		<button type="submit" name="login" class="btn btn-primary btn-block btn-lg"><i class="fa fa-sign-in"></i> Login</button>
                      
     </form>			
-    <div class="text-center small">Vous n'avez pas un compte ?<a href="register"> Créez un compte</a></div>
+    <div class="text-center small">Don&apos;t have an account ?<a href="register"> Create an account Here.</a></div>
 </div>
 </body>
 </html>
