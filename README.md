@@ -1,10 +1,11 @@
 ### MoonMeet
 <p align="center">
-![GitHub contributors ](https://img.shields.io/github/contributors/AlucardTN/MoonMeet) ![GitHub last commit](https://img.shields.io/github/last-commit/AlucardTN/MoonMeet)
-![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)
-![Visitor](https://visitor-badge.laobi.icu/badge?page_id=AlucardTN.MoonMeet)
-      <img alt="Issues" src="https://img.shields.io/github/issues/AlucardTN/MoonMeet?color=0088ff" />
-      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/AlucardTN/MoonMeet?color=0088ff?color=0088ff" />
+<img src="https://img.shields.io/github/contributors/AlucardTN/MoonMeet" />
+<img src="https://img.shields.io/github/last-commit/AlucardTN/MoonMeet" />
+<img src="https://img.shields.io/badge/license-GPL-blue.svg" />
+<img src="https://visitor-badge.laobi.icu/badge?page_id=AlucardTN.MoonMeet" />
+<img  src="https://img.shields.io/github/issues/AlucardTN/MoonMeet?color=0088ff" />
+<img  src="https://img.shields.io/github/issues-pr/AlucardTN/MoonMeet?color=0088ff?color=0088ff" />
 </p>
 - A new era of chatting and meeting people !
 
