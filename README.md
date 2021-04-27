@@ -1,5 +1,5 @@
 # MoonMeet
-![GitHub contributors (https://img.shields.io/github/contributors/AlucardTN/MoonMeet) ![GitHub last commit](https://img.shields.io/github/last-commit/AlucardTN/MoonMeet)
+![GitHub contributors ](https://img.shields.io/github/contributors/AlucardTN/MoonMeet) ![GitHub last commit](https://img.shields.io/github/last-commit/AlucardTN/MoonMeet)
 ![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)
 ![Visitor](https://visitor-badge.laobi.icu/badge?page_id=AlucardTN.MoonMeet)
 
