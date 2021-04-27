@@ -2,7 +2,7 @@
 session_start(); 
 $text = rand(100000,999999); 
 $_SESSION["vercode"] = $text; 
-$height = 45; 
+$height = 42; 
 $width = 100;   
 $image_p = imagecreate($width, $height); 
 $blue = imagecolorallocate($image_p, 17, 53, 102); 

@@ -47,7 +47,7 @@ $url.= $_SERVER['REQUEST_URI'];
   <link rel="stylesheet" href="css/profile.css">
   <title><?php echo $username, " - Profile" ?></title>
   <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-     <link rel="stylesheet" href="css/bootstrap-3/bootstrap.min.css">
+     <link rel="stylesheet" href="css/bootstrap-3/bootstrap.css">
   <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <script src="js/script.js"></script>
 </head>

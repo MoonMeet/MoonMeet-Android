@@ -33,7 +33,7 @@ if ($profile_image == "") {
      <meta name="author" content="Aziz Becha">
 
  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-   <link rel="stylesheet" href="css/bootstrap-3/bootstrap.min.css">
+   <link rel="stylesheet" href="css/bootstrap-3/bootstrap.css">
 
    <link rel="stylesheet" type="text/css" href="css/style2.css">
                 <link rel="stylesheet" type="text/css" href="css/style3.css">

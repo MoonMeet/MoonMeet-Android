@@ -11,7 +11,7 @@ $sql = "SELECT * FROM login ORDER BY RAND() LIMIT 50 ";
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="css/bootstrap-3/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-3/bootstrap.css">
 <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <meta charset="UTF-8">

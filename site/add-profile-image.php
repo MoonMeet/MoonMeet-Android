@@ -45,7 +45,7 @@ $id = $_SESSION['user_id'];
 <html> 
 <head>
 <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-<link rel="stylesheet" href="css/bootstrap-3/bootstrap.min.css"> 
+<link rel="stylesheet" href="css/bootstrap-3/bootstrap.css"> 
 <title>Uplaod Profile image</title> 
 </head>
   <body>

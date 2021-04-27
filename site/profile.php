@@ -51,7 +51,7 @@ header('location: 404'); } else {
   <link rel="stylesheet" href="css/profile.css">
   <title><?php echo $user, " - Profile"; ?></title>
   <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-     <link rel="stylesheet" href="css/bootstrap-3/bootstrap.min.css">
+     <link rel="stylesheet" href="css/bootstrap-3/bootstrap.css">
   <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.js"></script>
@@ -383,7 +383,7 @@ $(document).ready(function(){
   <link rel="stylesheet" href="css/profile.css">
   <title><?php echo $_SESSION['username'], " - Profile"; ?></title>
   <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/bootstrap-3/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-3/bootstrap.css">
   <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.js"></script>

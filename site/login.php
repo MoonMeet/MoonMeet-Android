@@ -77,56 +77,126 @@ if(isset($_POST['login']))
 
 ?>
 <!DOCTYPE html>
-    <head>
-        <title>Login to Moon Meet</title>
-		<link rel="stylesheet" href="css/bootstrap-3/bootstrap.min.css">
-		<link rel="stylesheet" href="css/buttons.css">
-		<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
-		<meta property="og:image" content="images/logo.png">
-     <meta property="og:description" content="Moon Meet is an instant messaging application that gives you a good acces to connect with friends, make relationships, share stories etc..">
-     <meta property="og:title" content="Moon Meet">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="keywords" content="moonmeet, Moonmeet, Moon meet, moon meet, Moon Meet, social media, new era of messaging, aziz becha, Aziz becha">
-     <meta name="author" content="Aziz Becha">
-     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<script>//document.addEventListener('contextmenu', event => event.preventDefault());</script>
-		  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    </head>
-    <body>
-        <div class="container">
-			<center><img src="images/logo" class="img-responsive" style="max-width:200px" alt="" srcset=""></center>
-			<div class="panel panel-primary">
-  				<div class="panel-heading"><strong>Login to Moon Meet</strong></div>
-				<div class="panel-body">
-					<h4 align="center" class="text-danger"><?php echo $message; ?></h4>
-	               <div class="demo-form">
-				   <form method="post" enctype="multipart/form-data">
-						<div class="form-group form-group-lg">
-							<h4><strong>Enter Username, Email or Phone</strong></h4>
-							<input autofocus type="text" name="username" class="form-control" placeholder="Enter Username, Email or Phone" required />
-						</div>
-						<div class="form-group form-group-lg">
-						<h4><strong>Enter Password</strong></h4>
-							<input type="password" name="password" placeholder="Enter Password" class="form-control" required/>
-						</div>
-						<div class="form-group">
-
-            <h4><strong>Verification Code: </strong><img src="captcha.php" ></h4>
-
-            <input type="text" name="vercode" class="form-control" placeholder="Verfication Code" required="required">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-3/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="images/logo" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+    <title>Login to Moon Meet</title>
+    <style>
+    body {
+        color: #999;
+		background: #f5f5f5;
+	}
+	.form-control {
+		box-shadow: none;
+		border-color: #ddd;
+	}
+	.form-control:focus {
+		border-color: #163566; 
+	}
+	.login-form {
+        width: 350px;
+		margin: 0 auto;
+		padding: 30px 0;
+        margin-top:3%
+	}
+    .login-form form {
+        color: #434343;
+		border-radius: 1px;
+    	margin-bottom: 15px;
+        background: #fff;
+		border: 1px solid #0000;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+	}
+	.login-form h4 {
+		text-align: center;
+		font-size: 22px;
+        margin-bottom: 20px;
+	}
+    .login-form .avatar img {
+        
+		margin: 0 auto 30px;
+        justify-content: center;
+		width: 170px;
+		height: 170px;
+		border-radius: 50%;
+		z-index: 9;
+		padding: 15px;
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+	}
+    .login-form .avatar i {
+        font-size: 62px;
+    }
+    .login-form .form-group {
+        margin-bottom: 20px;
+    }
+	.login-form .form-control, .login-form .btn {
+		min-height: 40px;
+		border-radius: 2px; 
+        transition: all 0.5s;
+	}
+	.login-form .close {
+        position: absolute;
+		top: 15px;
+		right: 15px;
+	}
+	.login-form .btn {
+		
+		border: none;
+		line-height: normal;
+	}
+	.login-form .btn:hover, .login-form .btn:focus {
+		/*background: #42ae68;*/
+	}
+    .login-form .checkbox-inline {
+        float: left;
+    }
+    .login-form input[type="checkbox"] {
+        margin-top: 2px;
+    }
+    .login-form .forgot-link {
+        float: right;
+    }
+    .login-form .small {
+        font-size: 13px;
+    }
+    .login-form a {
+        color: #f64152;
+    }
+</style>
+</head>
+<body>
+<div class="login-form"><br>
+    <form method="post">
+    <?php echo $message; ?>
+		<div class="avatar"><img class="img img-responsive" src="images/logo" alt=""></div>
+    	<h4 class="modal-title">Login to Moon Meet</h4>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Username, E-mail or Phone" name="username" required="required">
         </div>
-
-						<div class="form-group">
-							<button type="submit" name="login" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit' data-action='submit' class="btn btn-primary btn-lg btn-block g-recaptcha"><strong><i class="fa fa-sign-in"></i> Login</strong></button>
-						</div>
-					</form>
-				   </div>
-				   <h4>Forgot Your Password ? <a href="recover">Click Here</a></h4>
-					<h4>Don't have an account ?</h4><a class="btn btn-primary btn" style="color:white" href="register"><strong>Register</strong></a>
-				</div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Password" name="password" required="required">
+        </div>
+		<div class="form-group" style="margin-right:40px">
+            <div class="col-sm-9" style="margin-left:-15px">
+			   <input type="text" class="form-control" placeholder="Verification Code" name="vercode" required="required">
 			</div>
-		</div>
-    </body>
+			<div class="col-sm-3">
+              <img src="captcha.php" alt="" srcset="">		
+			</div>
+        </div><br><br><br>
+		<button type="submit" name="login" class="btn btn-primary btn-block btn-lg"><i class="fa fa-sign-in"></i> Login</button>
+                     
+    </form>			
+    <div class="text-center small">Vous n'avez pas un compte ?<a href="register"> Créez un compte</a></div>
+</div>
+</body>
 </html>
 

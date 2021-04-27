@@ -16,7 +16,7 @@
   <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
   <script src="js/code.jquery.com/jquery-1.12.4.js"></script>
  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
-<link rel="stylesheet" href="css/bootstrap-3/bootstrap.min.css">  <link rel="stylesheet" href="css/style1.css">
+<link rel="stylesheet" href="css/bootstrap-3/bootstrap.css">  <link rel="stylesheet" href="css/style1.css">
   <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 
              <link rel="stylesheet" href="css/style2.css">
