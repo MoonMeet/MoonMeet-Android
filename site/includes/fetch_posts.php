@@ -9,6 +9,8 @@ include("database_connection2.php");
   <i data-toggle='modal' data-target='#postOptions' class='fa fa-ellipsis-v' style='float:right;color:black;font-size:30px;cursor:pointer;padding-left:20px;padding-bottom:20px;'></i>
   <br><i style='margin-top:8px;' data-toggle='modal' data-target='#myModal' style='font-size:25px' class='fa fa-clock-o'></i>   ".time_ago($row['posted_on']) . "</h4>
   <div class='' style='background-color:'><h2 style='color:black'>" . $row['post'] ."</h2></div>
+  <br>
+  <button type='submit' class='btn btn-primary btn-block btn-lg'><i class='fa fa-thumbs-up'></i> Like</button>
   </div>
   ";
 }
