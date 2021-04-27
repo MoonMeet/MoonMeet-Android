@@ -2,7 +2,8 @@
 ![GitHub contributors ](https://img.shields.io/github/contributors/AlucardTN/MoonMeet) ![GitHub last commit](https://img.shields.io/github/last-commit/AlucardTN/MoonMeet)
 ![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)
 ![Visitor](https://visitor-badge.laobi.icu/badge?page_id=AlucardTN.MoonMeet)
-
+      <img alt="Issues" src="https://img.shields.io/github/issues/AlucardTN/MoonMeet?color=0088ff" />
+      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/AlucardTN/MoonMeet?color=0088ff?color=0088ff" />
 - A new era of chatting and meeting people !
 
 ### Description
