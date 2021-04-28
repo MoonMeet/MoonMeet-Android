@@ -371,7 +371,7 @@ function fetch_posts()
 <strong style="font-size:1.2em"><i style="font-size:24px;margin-right:3px" class="fa">&#xf10b;</i>  Moon Meet Mobile App</strong>
     </div>
    <div class="panel-body">
-  <h4 style="text-align:center;color:#193566;"><strong>You can also use Moon Meet on your phone by downloading the Mobile Application</strong></h4>
+  <h4 style="text-align:center;color:#193566;"><strong><i class="fa fa-android"></i> You can also use Moon Meet on your phone by downloading the Mobile Application</strong></h4>
   <img class="img img-thumbnail" style="width:100%;" src="images/screenshots/3" alt="" srcset="">
   <a href="download" target="_blank" class="btn btn-primary btn-block btn-lg"><i class="fa fa-download"></i><strong> Download</strong></a>
    </div>
