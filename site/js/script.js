@@ -52,4 +52,39 @@ function play_sound() {
   var audio = new Audio('sounds/pop-sound-effect.mp3');
   audio.play();
 }
+
+$(document).on('click', '#likebtn', function(){
+  var post_id = $("#post").attr('post_id');
+  var action = 'like';
+  $.ajax({
+      url:"includes/like.php",
+      method:"POST",
+      data:{post_id:post_id, action:action},
+      success:function(data)
+      {
+          alert(data);
+          fetch_post();
+      }
+  })
+  function fetch_post_like_user_list()
+    {
+        var fetch_data = '';
+        var element = $(this);
+        var post_id = element.data('post_id');
+        var action = 'like_user_list';
+        $.ajax({
+            url:"action.php",
+            method:"POST",
+            async: false,
+            data:{post_id:post_id, action:action},
+            success:function(data)
+            {
+                fetch_data = data;
+            }
+        });
+        return fetch_data;
+    }
+});
+
+
 })

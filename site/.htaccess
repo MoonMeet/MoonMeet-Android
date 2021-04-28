@@ -1,2 +1,2 @@
 RewriteEngine on
-ErrorDocument 404 http://localhost/moon-meet/404
+ErrorDocument 404 http://%{HTTP_HOST}/404

@@ -1,0 +1,50 @@
+<html>
+<head>
+    <script src="js/code.jquery.com/jquery-1.12.4.js"></script>
+<script type="text/javascript">
+function check_url()
+{
+ var regex = /https?:\/\/[\-A-Za-z0-9+&@#\/%?=~_|$!:,.;]*/g;
+ if($('#text').val().match(regex))
+ {
+  $("#link_label").html("Your Text Contains Link");
+ }
+}
+</script>
+<style>
+body
+{
+ text-align:center;
+ width:100%;
+ margin:0 auto;
+ padding:0px;
+ font-family:helvetica;
+ background-color:#81F7BE;
+}
+#wrapper
+{
+ text-align:center;
+ margin:0 auto;
+ padding:0px;
+ width:995px;
+}
+#text
+{
+ width:300px;
+ height:150px;
+ padding:10px;
+ font-size:16px;
+}
+</style>
+</head>
+<body>
+<div id="wrapper">
+
+<div id="text_div">
+ <textarea id="text" onkeyup="check_url()"; placeholder="Enter Text With URL To Detect"></textarea>
+ <p id="link_label"></p>
+</div>
+
+</div>
+</body>
+</html>
