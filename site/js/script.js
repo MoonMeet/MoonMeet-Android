@@ -52,7 +52,7 @@ function play_sound() {
   var audio = new Audio('sounds/pop-sound-effect.mp3');
   audio.play();
 }
-
+/*
 $(document).on('click', '#likebtn', function(){
   var post_id = $("#post").attr('post_id');
   var action = 'like';
@@ -84,7 +84,7 @@ $(document).on('click', '#likebtn', function(){
         });
         return fetch_data;
     }
-});
+});*/
 
 
 })
