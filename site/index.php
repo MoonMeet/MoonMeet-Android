@@ -28,54 +28,26 @@
 
 });
              </script>
-             <style>
-               .tl_page_head {
-  position: fixed;
-  background-color: #eceff4;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width:100%;
-  top:0;
-  z-index:99999999999;
-  margin-bottom:300px;
 
-}
-html {
-  overflow-x:hidden;
-}
-@media (max-width: 768px) {
-
-  .nbar {
-    position: absolute;
-    background-color: #f5f5f5;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom:2000px;
-    top:0;
-    z-index:99999999999;
-
-  }
-}
-
-             </style>
 </head>
-<body style="background-color:white">
-<div class="nbar">
-<div class="tl_page_head navbar navbar-static-top navbar navbar-tg">
-    <div class="navbar-inner">
-      <div class="container clearfix">
-        <ul class="nav navbar-nav navbar-right"><li class="dropdown top_lang_select"><li class=""><a style="color: #193566;" class="" href="login"><strong>Login</strong></a></li>
-<ul class="dropdown-menu"><li class=""><a href="?setln=ko">한국어</a></li></ul></li><li class="navbar-twitter hidden-xs"><a style="color: #193566;" href="register" target="_blank"><i class="icon icon-twitter"></i> <strong>Register</strong></a></li></ul>
-<ul class="nav navbar-nav">
-<li class=""><a style="color: #193566;" class="active" href="/"><strong>Home</strong></a></li>
-<li class=""><a style="color: #193566;" href="#what-is-moonmeet"><strong>What Is Moon Meet</strong></a></li>
-<li class=""><a style="color: #193566;" href="#why-moonmeet"><strong>Why Moon Meet</strong></a></li>
-<li class=""><a style="color: #193566;" href="#how-to-get-moonmeet"><strong>How To Get Moon Meet</strong></a></li>
-<li class=""><a style="color: #193566;" href="faq"><strong>FAQ</strong></a></li>
-<li class=""><a style="color: #193566;" href="developers"><strong>Developers</strong></a></li>
-</ul>
-      </div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" style="color:white;font-weight:bold" href="#"><i class="fa fa-moon-o"></i> Moon Meet</a>
     </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
   </div>
-</div>
+</nav>
+<body style="background-color:white">
+
 <center>
  <div style="width:55%" class="container">
   <div style="width:60%">
