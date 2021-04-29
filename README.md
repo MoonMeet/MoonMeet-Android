@@ -11,7 +11,7 @@
 
 
 </p>
-- A new era of chatting and meeting people !
+- A new era of chatting and meeting people.
 
 ### Description
 - **Moon Meet** is a social media platform including chatting feature.
