@@ -40,7 +40,7 @@
   <div class="container-fluid">
   <div class="navbar-header">
     <img class="img-navbar" src="images/logo" alt="logo" style="width:55px; margin-top:-5px">
-    <a style="color:black" class="navbar-brand" href="#"><strong style="color:white">Developers@Moon Meet</strong></a>
+    <a style="color:black" class="navbar-brand" href=""><strong style="color:white">Developers@Moon Meet</strong></a>
     </div>
 
     <form class="navbar-form navbar-left" method="GET" action="search?query=">
@@ -54,10 +54,10 @@
     </ul>
     <ul style="float:none" class="nav navbar-nav ">
       <li class="active"><a href="home"><strong>Home</strong></a></li>
-      <li><a href="discover"><strong>GitHub</strong></a></li>
-      <li><a href="report"><strong>Facebook</strong></a></li>
-      <li><a href="developers"><strong>Linkedin</strong></a></li>
-      <li><a href="developers"><strong>Report</strong></a></li>
+      <li><a href="discover.php"><strong>GitHub</strong></a></li>
+      <li><a href="report.php"><strong>Facebook</strong></a></li>
+      <li><a href="developers.php"><strong>Linkedin</strong></a></li>
+      <li><a href="developers.php"><strong>Report</strong></a></li>
     </ul>
   </div>
 </nav>
@@ -71,7 +71,7 @@
       
       <h2 align="center" >Aziz Becha</h2>
         <img  class="img img-responsive img-thumbnail"  src="images/dev.aziz" alt="Lights" style="width:70%">
-        <center><h3><a href="azizbecha">@azizbecha</a></h3></center>
+        <center><h3><a href="azizbecha.php">@azizbecha</a></h3></center>
         <div class="caption">
           <blockquote><strong>Aziz Becha</strong> A.K.A AzizVirus is a Web Developper and Ethical Hacker from Tunisia <br>
           He is the developper of the website of the social network <strong>Moon Meet</strong><br> <strong>Post: </strong> CEO & Founder / Developer at Moon Meet <br>

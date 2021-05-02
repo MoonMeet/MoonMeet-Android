@@ -134,7 +134,7 @@ $(document).ready(function(){
               <img class="media-object mw150 img-responsive img-thumbnail img-circle" style="max-width:171.5px" src="<?php echo $profile_image; ?> " alt="...">
             </a>
             <center><h3><?php echo $badge; ?></h3>
-            <h3><a class="btn btn-danger" href="add-profile-image">Change Image</a></h3></center>
+            <h3><a class="btn btn-danger" href="add-profile-image.php">Change Image</a></h3></center>
           </div>                      
           <div class="media-body va-m">
           <div class="well ">

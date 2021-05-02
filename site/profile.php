@@ -214,7 +214,7 @@ $(document).ready(function(){
                 <h2 class="media-heading"><?php echo $popularity; ?> <i class="fa fa-star"></i></h2>-->
             </div>
 
-            <a href="report" class="btn btn-danger"><strong><i class="fa fa-warning"></i> Report User</strong></a>
+            <a href="report.php" class="btn btn-danger"><strong><i class="fa fa-warning"></i> Report User</strong></a>
             <button onclick="shareonfb();" class="btn btn-primary"><strong><i class="fa fa-facebook"></i> Share On Facebook <i class="fa fa-share-alt"></i></strong></button>
             <button class="btn btn-info" onclick="shareontwitter();">Share On Twitter</button>
 <script>
@@ -457,7 +457,7 @@ if ($profile_image == "") {
               <img class="media-object mw150 img-responsive img-thumbnail img-circle" style="max-width:171.5px" src="<?php echo $profile_image; ?> " alt="...">
             </a>
             <center><h3> <?php echo $badge; ?></h3>
-            <h3><a class="btn btn-danger" href="add-profile-image">Change Image</a></h3>
+            <h3><a class="btn btn-danger" href="add-profile-image.php">Change Image</a></h3>
             </center>
           </div>
           <div class="media-body va-m">

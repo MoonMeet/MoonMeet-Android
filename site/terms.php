@@ -28,14 +28,14 @@ If you’re using the app outside of an area with Wi-Fi, you should remember tha
 <h3>With respect to Aziz Becha &  Rayen Mark’s responsibility for your use of the app / site, when you’re using the app, it’s important to bear in mind that although we endeavour to ensure that it is updated and correct at all times, we do rely on third parties to provide information to us so that we can make it available to you. Aziz Becha & Rayen Mark accepts no liability for any loss, direct or indirect, you experience as a result of relying wholly on this functionality of the app.
 </h3>
 <h3>At some point, we may wish to update the site / app. The app is currently available on Android – the requirements for system(and for any additional systems we decide to extend the availability of the app to) may change, and you’ll need to download the updates if you want to keep using the app. Aziz Becha & Rayen Mark does not promise that it will always update the app / site so that it is relevant to you and/or works with the Android version that you have installed on your device. However, you promise to always accept updates to the application when offered to you, We may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you. Unless we tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must stop using the app, and (if needed) delete it from your device.</h3>
-<h3>Reporting bugs / problems / unrespect of <a href="rules">Rules</a> is a responsibilyty for all th platform users because reporting these things will help very much to upgrade the platform and enjoy a friendly environnement.</h3>
+<h3>Reporting bugs / problems / unrespect of <a href="rules.php">Rules</a> is a responsibilyty for all th platform users because reporting these things will help very much to upgrade the platform and enjoy a friendly environnement.</h3>
 <h2><strong>Changes to This Terms and Conditions:</strong></h2>
 <h3>I may update our Terms and Conditions from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Terms and Conditions on this page.
 </h3>
 <h3>These terms and conditions are effective as of 23-11-2020.</h3>
 
-   <h3>Also you must read carefully the <a href="rules">Rules</a> And respect them to have a good environnement around you and other users.</h3>   
-      <h3>Read The <strong>Privacy Policy <a href="privacypolicy">Here</a>.</strong></h3>
+   <h3>Also you must read carefully the <a href="rules.php">Rules</a> And respect them to have a good environnement around you and other users.</h3>   
+      <h3>Read The <strong>Privacy Policy <a href="privacypolicy.php">Here</a>.</strong></h3>
        
           </div>
     </div>

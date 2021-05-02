@@ -173,11 +173,11 @@ function play_sound() {
 
     <ul style="float:none" class="nav navbar-nav ">
       <li class="active"><a href="#"><strong><i class="fa fa-home"></i> Home</strong></a></li>
-      <li><a href="discover"><strong><i class="fa fa-user-plus"></i>  Discover People</strong></a></li>
-      <li><a href="faq"><strong><i class="fa fa-question-circle"style="font-size:18px"></i> FAQ</strong></a></li>
-      <li><a href="report"><strong><i class="fa fa-bug"></i> Report</strong></a></li>
-      <li><a href="developers" style="margin-top:-1.5px;"><strong><i style="font-size:20px" class="fa fa-code"></i> Developers</strong></a></li>
-      <li><a href="settings"><strong><i class="fa fa-cog" style="font-size:16px"></i> Settings</strong></a></li>
+      <li><a href="discover.php"><strong><i class="fa fa-user-plus"></i>  Discover People</strong></a></li>
+      <li><a href="faq.php"><strong><i class="fa fa-question-circle"style="font-size:18px"></i> FAQ</strong></a></li>
+      <li><a href="report.php"><strong><i class="fa fa-bug"></i> Report</strong></a></li>
+      <li><a href="developers.php" style="margin-top:-1.5px;"><strong><i style="font-size:20px" class="fa fa-code"></i> Developers</strong></a></li>
+      <li><a href="settings.php"><strong><i class="fa fa-cog" style="font-size:16px"></i> Settings</strong></a></li>
       <button type="submit" class="btn btn-primary up"><i class="fa fa-arrow-up"></i></i></button>
       <button style="margin-top:7px;" type="submit" class="btn btn-primary refresh"><i class="fa fa-refresh"></i></i></button>
 
@@ -307,22 +307,22 @@ function fetch_posts()
 </div>
 <div id="mySidenav" class="sidenav" style="background-color:#193566;">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-close"></i></a>
-  <a class="mmeet" href="welcome"><i class="fa fa-moon-o"></i> <strong>Moon Meet</strong></a>
-  <a class="user" style="margin-left: 25px; margin-top:-12px;" href="me"> @ <strong><?php echo $_SESSION['username']; ?></strong></a>
+  <a class="mmeet" href="home.php"><i class="fa fa-moon-o"></i> <strong>Moon Meet</strong></a>
+  <a class="user" style="margin-left: 25px; margin-top:-12px;" href="me.php"> @ <strong><?php echo $_SESSION['username']; ?></strong></a>
 
     <div style="padding:1px; background-color:white;margin-bottom:20px;"></div>
-  <a href="me" style="margin-top:-10px;"><strong><i class="fa fa-user-circle"></i> My Profile</strong></a>
-  <a href="discover"><strong> <i class="fa fa-search"></i> Discover People</strong></a>
-  <a href="invite"><strong><i class="fa fa-user-plus"></i> Invite Friends</strong></a>
-  <a href="announcements"><i class="fa fa-bullhorn"></i> <strong>Announcements</strong></a>
-  <a href="settings"><strong><i class="fa fa-cog"></i> Settings</strong></a>
-  <a href="ka7lashop"><strong><i class="fa fa-gamepad"></i> Ka7la Shop</strong></a>
-  <a href="report"><i class="fa fa-bug"></i> <strong>Report a problem</strong></a>
-  <a href="developers"><i class="fa fa-code"></i> <strong>Developers</strong></a>
-  <a href="rules"><i class="fa fa-gavel"></i> <strong>Rules</strong></a>
-  <a href="privacypolicy"><i class="fa fa-file"></i> <strong>Privacy Policy</strong></a>
-  <a href="terms"><i class="fa fa-file-word-o"></i> <strong>Terms & Conditions</strong></a>
-  <a href="logout"><i class="fa fa-sign-out"></i> <strong>Logout</strong></a>
+  <a href="me.php" style="margin-top:-10px;"><strong><i class="fa fa-user-circle"></i> My Profile</strong></a>
+  <a href="discover.php"><strong> <i class="fa fa-search"></i> Discover People</strong></a>
+  <a href="invite.php"><strong><i class="fa fa-user-plus"></i> Invite Friends</strong></a>
+  <a href="announcements.php"><i class="fa fa-bullhorn"></i> <strong>Announcements</strong></a>
+  <a href="settings.php"><strong><i class="fa fa-cog"></i> Settings</strong></a>
+  <!--<a href="ka7lashop"><strong><i class="fa fa-gamepad"></i> Ka7la Shop</strong></a>-->
+  <a href="report.php"><i class="fa fa-bug"></i> <strong>Report a problem</strong></a>
+  <a href="developers.php"><i class="fa fa-code"></i> <strong>Developers</strong></a>
+  <a href="rules.php"><i class="fa fa-gavel"></i> <strong>Rules</strong></a>
+  <a href="privacypolicy.php"><i class="fa fa-file"></i> <strong>Privacy Policy</strong></a>
+  <a href="terms.php"><i class="fa fa-file-word-o"></i> <strong>Terms & Conditions</strong></a>
+  <a href="logout.php"><i class="fa fa-sign-out"></i> <strong>Logout</strong></a>
   <style>
 
 /* #1e407b */
@@ -351,7 +351,7 @@ function fetch_posts()
         </div>
         <div class="modal-body">
         <img class="img img-rounded img-thumbnail" style="width:50%; height:60%;" src="<?php echo $profile_image ?>" alt="">
-     <br> <br><a href="add-profile-image" class="btn btn-danger btn-block btn-lg"><strong>Change</strong></a>
+     <br> <br><a href="add-profile-image.php" class="btn btn-danger btn-block btn-lg"><strong>Change</strong></a>
       </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-close"></i> <strong>Close</strong></button>
@@ -373,7 +373,7 @@ function fetch_posts()
    <div class="panel-body">
   <h4 style="text-align:center;color:#193566;"><strong><i class="fa fa-android"></i> You can also use Moon Meet on your phone by downloading the Mobile Application</strong></h4>
   <img class="img img-thumbnail" style="width:100%;" src="images/screenshots/3" alt="" srcset="">
-  <a href="download" target="_blank" class="btn btn-primary btn-block btn-lg"><i class="fa fa-download"></i><strong> Download</strong></a>
+  <a href="download.php" target="_blank" class="btn btn-primary btn-block btn-lg"><i class="fa fa-download"></i><strong> Download</strong></a>
    </div>
   </div>
 <!--<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmoonmeet.inc%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>-->
@@ -554,7 +554,7 @@ function fetch_posts()
       <div class="modal-body">
         <h4>If you think that this post really can dammage the platform or doesn't respect the rules, Report it now !</h4>
           <br>
-        <a href="report" class="btn btn-danger btn-block btn-lg"><strong>Report</strong></a>
+        <a href="report.php" class="btn btn-danger btn-block btn-lg"><strong>Report</strong></a>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

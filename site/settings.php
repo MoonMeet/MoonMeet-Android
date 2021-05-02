@@ -135,7 +135,7 @@ foreach($connect->query("SELECT * FROM login WHERE username = '$username'") as $
                <li><strong class="badge badge-danger">No Fake Accounts: </strong> Any fake account and accounts without identity will be already reported and banned !</li>
                <li><strong class="badge badge-danger">No Fake Informations: </strong> Any fake account / information will be already deleted !</li>
                <li><strong class="badge badge-danger">Find & be Found: </strong> Any user on this platform will found random persons and random persons will found him and anyone will be automaticly recommended for others ! (No one is choosen)</li>
-               <li><strong class="badge badge-danger">Reports: </strong> Reporting bugs / problems / fake accounts / illegal actions is a responsibility for all the platform users so to enjoy a friendly environnemnt, every user must report every bug / problem / fake account / illegal action / bad words... By submitting the message <a href="report">Here</a></li>
+               <li><strong class="badge badge-danger">Reports: </strong> Reporting bugs / problems / fake accounts / illegal actions is a responsibility for all the platform users so to enjoy a friendly environnemnt, every user must report every bug / problem / fake account / illegal action / bad words... By submitting the message <a href="report.php">Here</a></li>
              </h2>
            </ul>
        </div>
@@ -147,7 +147,7 @@ foreach($connect->query("SELECT * FROM login WHERE username = '$username'") as $
 <h3>Aziz Becha & Rayen Mark built the Moon Meet app & site as a Free app & Site. This SERVICE is provided by Rayen Mark & Aziz Becha at no cost and is intended for use as is.</h3>
 <h3>This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.</h3>
 <h3>If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that you add here are not used to anything like tracking or these stuffs. I will not use or share your information with anyone except as described in this Privacy Policy.</h3>
-<h3>The terms used in this Privacy Policy have the same meanings as in our <a href="terms">Terms and Conditions</a>, which is accessible at Moon Meet unless otherwise defined in this Privacy Policy.</h3>
+<h3>The terms used in this Privacy Policy have the same meanings as in our <a href="terms.php">Terms and Conditions</a>, which is accessible at Moon Meet unless otherwise defined in this Privacy Policy.</h3>
 <h2><strong>Information Collection and Use:</strong></h2>  
 <h3>For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information, including but not limited to We only collect username, firstname, lastname, or any public information. The information that I request will be retained on your device and is not collected by me in any way.</h3>
 <h3>The app / site does use third party services that may collect information used to identify you.</h3>
@@ -182,7 +182,7 @@ To facilitate our Service;To provide the Service on our behalf;To perform Servic
 This policy is effective as of 23-11-2020</h3>
 <h2><strong>Contact Us:</strong></h2>
 <h3>If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at <a href="mailto:aziz07becha@gmail.com">aziz07becha@gmail.com</a> or <a href="mailto:Rayensbai2@gmail.com">Rayensbai2@gmail.com</a></h3>
-<h3>Or report <a href="report">Here</a> or message <a href="message">here</a>.</h3>
+<h3>Or report <a href="report.php">Here</a> or message <a href="message.php">here</a>.</h3>
        </div>
        </div>
        <div class="alert alert-light" id="terms">
@@ -201,14 +201,14 @@ If you’re using the app outside of an area with Wi-Fi, you should remember tha
 <h3>With respect to Aziz Becha &  Rayen Mark’s responsibility for your use of the app / site, when you’re using the app, it’s important to bear in mind that although we endeavour to ensure that it is updated and correct at all times, we do rely on third parties to provide information to us so that we can make it available to you. Aziz Becha & Rayen Mark accepts no liability for any loss, direct or indirect, you experience as a result of relying wholly on this functionality of the app.
 </h3>
 <h3>At some point, we may wish to update the site / app. The app is currently available on Android – the requirements for system(and for any additional systems we decide to extend the availability of the app to) may change, and you’ll need to download the updates if you want to keep using the app. Aziz Becha & Rayen Mark does not promise that it will always update the app / site so that it is relevant to you and/or works with the Android version that you have installed on your device. However, you promise to always accept updates to the application when offered to you, We may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you. Unless we tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must stop using the app, and (if needed) delete it from your device.</h3>
-<h3>Reporting bugs / problems / unrespect of <a href="rules">Rules</a> is a responsibilyty for all th platform users because reporting these things will help very much to upgrade the platform and enjoy a friendly environnement.</h3>
+<h3>Reporting bugs / problems / unrespect of <a href="rules.php">Rules</a> is a responsibilyty for all th platform users because reporting these things will help very much to upgrade the platform and enjoy a friendly environnement.</h3>
 <h2><strong>Changes to This Terms and Conditions:</strong></h2>
 <h3>I may update our Terms and Conditions from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Terms and Conditions on this page.
 </h3>
 <h3>These terms and conditions are effective as of 23-11-2020.</h3>
 
-   <h3>Also you must read carefully the <a href="rules">Rules</a> And respect them to have a good environnement around you and other users.</h3>   
-      <h3>Read The <strong>Privacy Policy <a href="privacypolicy">Here</a>.</strong></h3>
+   <h3>Also you must read carefully the <a href="rules.php">Rules</a> And respect them to have a good environnement around you and other users.</h3>   
+      <h3>Read The <strong>Privacy Policy <a href="privacypolicy.php">Here</a>.</strong></h3>
 
        </div>
        </div>

@@ -18,7 +18,7 @@
 <h3>Aziz Becha & Rayen Mark built the Moon Meet app & site as a Free app & Site. This SERVICE is provided by Rayen Mark & Aziz Becha at no cost and is intended for use as is.</h3>
 <h3>This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.</h3>
 <h3>If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that you add here are not used to anything like tracking or these stuffs. I will not use or share your information with anyone except as described in this Privacy Policy.</h3>
-<h3>The terms used in this Privacy Policy have the same meanings as in our <a href="terms">Terms and Conditions</a>, which is accessible at Moon Meet unless otherwise defined in this Privacy Policy.</h3>
+<h3>The terms used in this Privacy Policy have the same meanings as in our <a href="terms.php">Terms and Conditions</a>, which is accessible at Moon Meet unless otherwise defined in this Privacy Policy.</h3>
 <h2><strong>Information Collection and Use:</strong></h2>  
 <h3>For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information, including but not limited to We only collect username, firstname, lastname, or any public information. The information that I request will be retained on your device and is not collected by me in any way.</h3>
 <h3>The app / site does use third party services that may collect information used to identify you.</h3>
@@ -53,7 +53,7 @@ To facilitate our Service;To provide the Service on our behalf;To perform Servic
 This policy is effective as of 23-11-2020</h3>
 <h2><strong>Contact Us:</strong></h2>
 <h3>If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at <a href="mailto:aziz07becha@gmail.com">aziz07becha@gmail.com</a> or <a href="mailto:Rayensbai2@gmail.com">Rayensbai2@gmail.com</a></h3>
-<h3>Or report <a href="report">Here</a> or message <a href="message">here</a>.</h3>
+<h3>Or report <a href="report">Here</a> or message <a href="message.php">here</a>.</h3>
      </div>
      <script>document.addEventListener('contextmenu', event => event.preventDefault());
 </script>

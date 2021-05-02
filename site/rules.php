@@ -25,7 +25,7 @@
                <li><strong class="badge badge-danger">No Fake Accounts: </strong> Any fake account and accounts without identity will be already reported and banned !</li>
                <li><strong class="badge badge-danger">No Fake Informations: </strong> Any fake account / information will be already deleted !</li>
                <li><strong class="badge badge-danger">Find & be Found: </strong> Any user on this platform will found random persons and random persons will found him and anyone will be automaticly recommended for others ! (No one is choosen)</li>
-               <li><strong class="badge badge-danger">Reports: </strong> Reporting bugs / problems / fake accounts / illegal actions is a responsibility for all the platform users so to enjoy a friendly environnemnt, every user must report every bug / problem / fake account / illegal action / bad words... By submitting the message <a href="report">Here</a></li>
+               <li><strong class="badge badge-danger">Reports: </strong> Reporting bugs / problems / fake accounts / illegal actions is a responsibility for all the platform users so to enjoy a friendly environnemnt, every user must report every bug / problem / fake account / illegal action / bad words... By submitting the message <a href="report.php">Here</a></li>
              </h2>
            </ul>
         </div>

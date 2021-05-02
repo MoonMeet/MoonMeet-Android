@@ -195,7 +195,7 @@ if(isset($_POST['login']))
 		<button type="submit" name="login" class="btn btn-primary btn-block btn-lg"><i class="fa fa-sign-in"></i> Login</button>
                      
     </form>			
-    <div class="text-center small">Don&apos;t have an account ?<a href="register"> Create an account Here.</a></div>
+    <div class="text-center small">Don&apos;t have an account ?<a href="register.php"> Create an account Here.</a></div>
 </div>
 </body>
 </html>

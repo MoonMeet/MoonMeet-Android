@@ -167,7 +167,7 @@ if(isset($_POST["register"]))
                                 <input type="text" name="bio" class="form-control" placeholder="Tell us something about you" value="" required>
                             </div>
 		 <div class="form-group">
-		 <h6 class="alert alert-danger">By Clicking Here, You Accept Our <a href="terms">Terms & Conditions</a></h6>
+		 <h6 class="alert alert-danger">By Clicking Here, You Accept Our <a href="terms.php">Terms & Conditions</a></h6>
 							<input type="submit" name="register" class="btn btn-primary" value="Register" />
 						</div>
 		   </div>
