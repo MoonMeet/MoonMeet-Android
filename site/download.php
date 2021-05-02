@@ -10,7 +10,7 @@ QRcode::png($lien, 'image-qrcode.png');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap-4/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="images/logo" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <title>Download Moon Meet Mobile Application</title>
 </head>
 <style>
@@ -62,13 +62,13 @@ QRcode::png($lien, 'image-qrcode.png');
        <br>
        <div class="row">
           <div class="col-sm">
-<center><img src="images/screenshots/1" class="img img-responsive rounded" style="width:50%;margin-bottom:1em;" alt=""></center>          </div>
+<center><img src="images/screenshots/1.jpg" class="img img-responsive rounded" style="width:50%;margin-bottom:1em;" alt=""></center>          </div>
           <div class="col-sm">
-          <center><img src="images/screenshots/3" class="img img-responsive rounded" style="width:50%;margin-bottom:1em" alt="">
+          <center><img src="images/screenshots/3.jpg" class="img img-responsive rounded" style="width:50%;margin-bottom:1em" alt="">
 
 </center>           </div>
            <div class="col-sm">
-           <center><img src="images/screenshots/2" class="img img-responsive rounded" style="width:50%;margin-bottom:1em" alt="">
+           <center><img src="images/screenshots/2.jpg" class="img img-responsive rounded" style="width:50%;margin-bottom:1em" alt="">
 
 </center>           </div>
        </div>

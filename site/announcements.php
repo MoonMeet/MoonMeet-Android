@@ -12,7 +12,7 @@ if (!isset($_SESSION['user_id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap-4/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="images/logo" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <title>Announcements - Moon Meet</title>
 </head>
 <body>
@@ -34,12 +34,12 @@ if (!isset($_SESSION['user_id'])) {
   foreach($connect->query($announcements_query) as $row) {
   echo '
   <div class="alert alert-light" style="background-color:#ecf0f3;box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-          <h2 style="color:#193566"><img src="images/logo" class="img img-responsive" style="width:100px;height:100px;" alt="">'.$row['title'].'</h2>
+          <h2 style="color:#193566"><img src="images/logo.png" class="img img-responsive" style="width:100px;height:100px;" alt="">'.$row['title'].'</h2>
           <h3 style="color:#193566;margin-top:-16px;">'.time_ago($row['date']).'</h3>
           <div class="divider">
           </div>
            <h3 style="margin-top:10px;">'.$row['content'].'</h3>
-          <center><img src="images/screenshots/2" class="img img-responsive img-thumbnail" style="width:18%;margin-top:10px;" alt=""></center>
+          <center><img src="images/screenshots/2.jpg" class="img img-responsive img-thumbnail" style="width:18%;margin-top:10px;" alt=""></center>
           <br>
           <div class="divider">
           </div>

@@ -108,7 +108,7 @@ if(isset($_POST["register"]))
 		<div class="container">
 		<div class="card">
 		<div class="card-body">
-		<center><img src="images/logo" class="img-responsive" style="max-width:200px; margin-top:-50px;" alt="" srcset="">
+		<center><img src="images/logo.png" class="img-responsive" style="max-width:200px; margin-top:-50px;" alt="" srcset="">
 		<h3>Moon Meet</h3></center><br>
 		   <div class="form-content">
 		   <span><?php echo $message; ?></span>

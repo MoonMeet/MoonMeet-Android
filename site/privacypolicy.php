@@ -10,7 +10,7 @@
 <body>
     <div class="container">
        <center>
-      <img src="images/logo" style="width:250px; margin-top:-42px;margin-bottom: -30px;" alt=""></center>
+      <img src="images/logo.png" style="width:250px; margin-top:-42px;margin-bottom: -30px;" alt=""></center>
      <div class="well">
      <center>
        <h2><strong>Moon Meet Privacy Policy</strong></h2>

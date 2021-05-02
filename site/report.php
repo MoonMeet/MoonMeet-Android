@@ -24,7 +24,7 @@ if(!isset($_SESSION['user_id']))
 </script>
   <div class="container">
                     <div class="logo">
-                      <center><img style="width:190px" src="images/logo" alt="" srcset=""></center>
+                      <center><img style="width:190px" src="images/logo.png" alt="" srcset=""></center>
                     </div>
                     <?php
                 if (isset($_GET['report_sent'])) {

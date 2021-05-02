@@ -51,7 +51,7 @@
 <center>
  <div style="width:55%" class="container">
   <div style="width:60%">
-     <img class="img-rounded" style="width:80%;margin-bottom:-50px;margin-top:-30px" src="images/logo" alt="Moon Meet">
+     <img class="img-rounded" style="width:80%;margin-bottom:-50px;margin-top:-30px" src="images/logo.png" alt="Moon Meet">
 
   </div>
  </div>
@@ -84,19 +84,19 @@
     <div class="col-sm-4">
     <center>
      <h1 style="color: #193566;">Easy To Use</h1>
-      <img class="img-responsive img-circle" style="width:47%" src="images/easy_to_use" alt="" srcset="">
+      <img class="img-responsive img-circle" style="width:47%" src="images/easy_to_use.png" alt="" srcset="">
       <h3 style=""><strong style="color: #193566;">Moon Meet</strong> is very simple and easy to use</h3></center>
     </div>
     <div class="col-sm-4">
     <center>
      <h1 style="color: #193566;">Social</h1>
-      <img class="img-responsive" style="width:95%; border-radius:40%" src="images/social-image" alt="" srcset="">
+      <img class="img-responsive" style="width:95%; border-radius:40%" src="images/social-image.jpg" alt="" srcset="">
       <h3 style=""><strong style="color: #193566;">Moon Meet</strong> is a good way and platform to make chatting groups or new relationships</h3></center>
     </div>
     <div class="col-sm-4">
     <center>
      <h1 style="color: #193566;">Expressive</h1>
-      <img class="img-responsive" style="width:90%" src="images/expressive-image" alt="" srcset="">
+      <img class="img-responsive" style="width:90%" src="images/expressive-image.jpg" alt="" srcset="">
       <h3 style=""><strong style="color: #193566;">Moon Meet</strong> is the best way to share your occupations with others</h3></center>
     </div>
    </div>
@@ -106,19 +106,19 @@
     <div class="col-sm-4">
     <center>
      <h1 style="color: #193566;">Original</h1>
-      <img class="img-responsive img-circle" style="width:55%" src="images/original-image" alt="" srcset="">
+      <img class="img-responsive img-circle" style="width:55%" src="images/original-image.jpg" alt="" srcset="">
       <h3 style=""><strong style="color: #193566;">Moon Meet</strong> is very simple and easy to use</h3></center>
     </div>
     <div class="col-sm-4">
     <center>
      <h1 style="color: #193566;">New</h1><br>
-      <img class="img-responsive" style="width:80%; " src="images/new-image" alt="" srcset=""><br>
+      <img class="img-responsive" style="width:80%; " src="images/new-image.png" alt="" srcset=""><br>
       <h3 style=""><strong style="color: #193566;">Moon Meet</strong> is a new-developped app that contains a modern features</h3></center>
     </div>
     <div class="col-sm-4">
     <center>
      <strong><h1 style="color: #193566;">Well Designed</h1></strong><br>
-      <img class="img-responsive img-circle" style="width:130%;" src="images/design-image" alt="" srcset="">
+      <img class="img-responsive img-circle" style="width:130%;" src="images/design-image.png" alt="" srcset="">
       <h3 style=""><strong style="color: #193566;">Moon Meet</strong> is Well Designed and have a good style that user will love it</h3></center>
     </div>
    </div>
@@ -156,9 +156,9 @@
  <div class="container">
    <strong><h1 style="text-align:center; color:#193566;">There Is Some Images From The App Below</h1></strong><br>
    <div class="row">
-     <img src="images/coverapp" alt="" srcset="">
+     <img src="images/coverapp.png" alt="" srcset="">
    </div><br><br><br>
-   <img src="images/Capture" class="img-thumbnail" alt="" srcset="">
+   <img src="images/Capture.png" class="img-thumbnail" alt="" srcset="">
  </div>
  <br>
  <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -173,19 +173,19 @@
     <div class="carousel-inner">
       <div class="item active">
         <<center>
-<img style="width:20%" src="images/screenshots/1" alt="New york" style="width:100%;">
+<img style="width:20%" src="images/screenshots/1.jpg" alt="New york" style="width:100%;">
 </center>
       </div>
 
       <div class="item">
       <center>
-<img style="width:20%" src="images/screenshots/1" alt="New york" style="width:100%;">
+<img style="width:20%" src="images/screenshots/1.jpg" alt="New york" style="width:100%;">
 </center>
       </div>
 
       <div class="item">
 <center>
-<img style="width:20%" src="images/screenshots/1" alt="New york" style="width:100%;">
+<img style="width:20%" src="images/screenshots/1.jpg" alt="New york" style="width:100%;">
 </center>      </div>
     </div>
 

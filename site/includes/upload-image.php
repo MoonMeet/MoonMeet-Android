@@ -1,7 +1,6 @@
 <?php
 error_reporting(0); 
-?> 
-<?php
+
   $msg = ""; 
   
   // If upload button is clicked ... 

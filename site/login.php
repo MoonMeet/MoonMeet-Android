@@ -85,7 +85,7 @@ if(isset($_POST['login']))
     <link rel="stylesheet" href="css/bootstrap-3/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="images/logo" type="image/x-icon">
+<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
         <link rel="stylesheet" href="css/style.css">
     <title>Login to Moon Meet</title>
     <style>
@@ -176,7 +176,7 @@ if(isset($_POST['login']))
 <div class="login-form"><br>
     <form method="post">
     <?php echo $message; ?>
-		<div class="avatar"><img class="img img-responsive" src="images/logo" alt=""></div>
+		<div class="avatar"><img class="img img-responsive" src="images/logo.png" alt=""></div>
     	<h4 class="modal-title">Login to Moon Meet</h4>
         <div class="form-group">
             <input type="text" class="form-control" placeholder="Username, E-mail or Phone" name="username" required="required">

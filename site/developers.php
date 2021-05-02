@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
   
-  <link rel="stylesheet" href="css/bootstrap-3/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-3/bootstrap.min.css">
   <link rel="stylesheet" href="css/style1.css">
   <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -92,7 +92,7 @@
   <div class="col-md-6">
     <div class="thumbnail">
     <h2 align="center" >Rayen Sbai</h2>
-        <img src="images/dev.rayen" class="img img-responsive img-thumbnail" alt="Fjords" style="width:75%">
+        <img src="images/dev.rayen.jpg" class="img img-responsive img-thumbnail" alt="Fjords" style="width:75%">
         <center><h3><a href="rayensbai">@rayensbai</a></h3></center>
         <div class="caption">
         <blockquote><strong>Rayen Sbai</strong> A.K.A Rayen Mark is a Mobile Developper and Java Developper from Tunisia <br>
@@ -118,24 +118,24 @@
 </script>
   <div class="row">
   <div class="col-sm-2">
-    <img src="images/html-logo" class="img-responsive" alt="" srcset="">
+    <img src="images/html-logo.png" class="img-responsive" alt="" srcset="">
     </div>
     <div class="col-sm-2">
-    <img src="images/css-logo" style="width:70%" class="img-responsive" alt="" srcset="">
+    <img src="images/css-logo.png" style="width:70%" class="img-responsive" alt="" srcset="">
     </div>
     <div class="col-sm-2">
     <br><br><br>
-    <img src="images/php-logo" style="width:120%;" class="img-responsive" alt="" srcset="">
+    <img src="images/php-logo.png" style="width:120%;" class="img-responsive" alt="" srcset="">
     </div>
     <div class="col-sm-2">
     <br>
-    <img src="images/js-logo" style="width:85%" class="img-responsive" alt="" srcset="">
+    <img src="images/js-logo.jpg" style="width:85%" class="img-responsive" alt="" srcset="">
     </div>
     <div class="col-sm-2">
-       <center><img style="width:55%" src="images/java-logo" alt="" srcset=""></center>
+       <center><img style="width:55%" src="images/java-logo.png" alt="" srcset=""></center>
       </div>
       <div class="col-sm-2">
-       <center><img style="width:90%" src="images/kotlin-logo" alt="" srcset=""></center>
+       <center><img style="width:90%" src="images/kotlin-logo.jpg" alt="" srcset=""></center>
       </div>
     </div>
   </div>
@@ -144,13 +144,13 @@
 <center><h2>Used Frameworks</h2></center>
     <div class="row">
       <div class="col-sm-4">
-         <img style="width:65%" class="img-responsive" src="images/bootstrap-logo" alt="bootstrap">
+         <img style="width:65%" class="img-responsive" src="images/bootstrap-logo.png" alt="bootstrap">
       </div>
       <div class="col-sm-4">
-         <img style="width:70%" class="img-responsive" src="images/jquery-logo" alt="jquery">
+         <img style="width:70%" class="img-responsive" src="images/jquery-logo.png" alt="jquery">
       </div>
       <div class="col-sm-4">
-         <img style="height:30%" class="img-responsive" src="images/ajax-logo" alt="ajax">
+         <img style="height:30%" class="img-responsive" src="images/ajax-logo.jpg" alt="ajax">
       </div>
      </div>
       </div>

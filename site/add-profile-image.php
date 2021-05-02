@@ -57,7 +57,7 @@ $id = $_SESSION['user_id'];
 	<center>                  <script>document.addEventListener('contextmenu', event => event.preventDefault());
 </script>
 	<h2>Upload profile Image For Others To See It</h2>
-	<img src="images/profile-example" style="width:50%" class="img img-responsive img-thumbnail" alt="" srcset="">
+	<img src="images/profile-example.png" style="width:50%" class="img img-responsive img-thumbnail" alt="" srcset="">
 <br><br><br><br>
 	<form method="POST" action="" enctype="multipart/form-data"> 
       <input class="" type="file" name="image" value="Upload image"/> 

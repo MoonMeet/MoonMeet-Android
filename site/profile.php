@@ -254,7 +254,7 @@ $(document).ready(function(){
                 <tbody>
                 <tr>
                     <td>
-                      <span class="fa fa-"><img src="images/logo" class="img-responsive" style="max-width:35px" alt=""></span>
+                      <span class="fa fa-"><img src="images/logo.png" class="img-responsive" style="max-width:35px" alt=""></span>
                     </td>
                     <td style=""><?php echo $user; ?></td>
                     </tr>

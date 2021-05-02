@@ -3,7 +3,7 @@
         <div class="container">
         <div>
                     <div>
-                    <center><img src="images/logo" class="img-responsive" style="width:130px" alt="" srcset="">
+                    <center><img src="images/logo.png" class="img-responsive" style="width:130px" alt="" srcset="">
                     <h2>Moon Meet</h2>
                 </center>
                     
