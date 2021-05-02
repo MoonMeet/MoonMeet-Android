@@ -551,11 +551,13 @@ if ($profile_image == "") {
           <div>           <?php
                      if(isset($_POST['subpost']))
                      {
-
+  
                          $poster = $_SESSION['username'];
                          $post = trim(filter_var($_POST["publication"],FILTER_SANITIZE_SPECIAL_CHARS));
-
+  
                          $q = "INSERT INTO `posts`(`by_user`, `post`) VALUES ('$poster','$post')";
+                         str_replace($post,"'","&apos;");
+                         str_replace($post, '"', "&quot;");
                          $countLength = (strlen($post));
                          if ($countLength >= "300") {
                             echo "<div id='post-will-not-be-posted' class='alert alert-danger' role='alert'>
@@ -564,9 +566,9 @@ if ($profile_image == "") {
                           </div>";
                          }
                          elseif ($countLength <= "300") {
-
+  
                           $req = $connect->exec($q); {
-
+  
                             echo "<div class='alert alert-success' role='alert'>
                             <strong>Your Post was submitted !</strong>
                           </div>";
@@ -577,7 +579,7 @@ if ($profile_image == "") {
                           </div>";
                           }}
                          }
-
+  
                      ?>
 
                     <form method="POST">

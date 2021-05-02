@@ -4,6 +4,8 @@ include('database_connection2.php');
 
 session_start();
 $chat_message = trim(filter_var($_POST["chat_message"],FILTER_SANITIZE_SPECIAL_CHARS));
+str_replace($chat_message,"'","&apos;");
+str_replace($chat_message,'"',"&quot;");
 $data = array(
 	':to_user_id'		=>	$_POST['to_user_id'],
 	':from_user_id'		=>	$_SESSION['user_id'],

@@ -511,6 +511,8 @@ function fetch_posts()
                        $post = trim(filter_var($_POST["publication"],FILTER_SANITIZE_SPECIAL_CHARS));
 
                        $q = "INSERT INTO `posts`(`by_user`, `post`) VALUES ('$poster','$post')";
+                       str_replace($post,"'","&apos;");
+                       str_replace($post, '"', "&quot;");
                        $countLength = (strlen($post));
                        if ($countLength >= "300") {
                           echo "<div id='post-will-not-be-posted' class='alert alert-danger' role='alert'>

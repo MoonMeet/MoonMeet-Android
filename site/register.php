@@ -22,6 +22,34 @@ if(isset($_POST["register"]))
 	$bio = trim(filter_var($_POST["bio"],FILTER_SANITIZE_SPECIAL_CHARS));
 	$username = trim(filter_var($_POST["username"],FILTER_SANITIZE_SPECIAL_CHARS));
 	$password = trim(filter_var($_POST["password"],FILTER_SANITIZE_SPECIAL_CHARS));
+	str_replace($firstname,"'","&apos;");
+    str_replace($firstname, '"', "&quot;");
+	//----------------------------------
+	str_replace($lastname,"'","&apos;");
+    str_replace($lastname, '"', "&quot;");
+	//----------------------------------
+	str_replace($email,"'","&apos;");
+    str_replace($email, '"', "&quot;");
+	//----------------------------------
+	str_replace($phone,"'","&apos;");
+    str_replace($phone, '"', "&quot;");
+	//----------------------------------
+	str_replace($birthdate,"'","&apos;");
+    str_replace($birthdate, '"', "&quot;");
+	//----------------------------------
+	str_replace($gender,"'","&apos;");
+    str_replace($gender, '"', "&quot;");
+	//----------------------------------
+	str_replace($bio,"'","&apos;");
+    str_replace($bio, '"', "&quot;");
+	//----------------------------------
+	str_replace($username,"'","&apos;");
+    str_replace($username, '"', "&quot;");
+	//----------------------------------
+	str_replace($password,"'","&apos;");
+    str_replace($password, '"', "&quot;");
+	//----------------------------------
+
 	$check_query = "
 	SELECT * FROM login
 	WHERE username = :username

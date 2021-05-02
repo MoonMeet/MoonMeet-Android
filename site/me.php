@@ -212,12 +212,12 @@ $(document).ready(function(){
                     <td>
                       <span style="font-size:30px" class="fa fa-circle"></span>
                     </td>
-                    <td style="text-transform: capitalize;"><?php echo $balance; ?></td>
+                    <td style="text-transform: capitalize;"><?php //echo $balance; ?></td>
                     <tr>
                     <td>
                       <span style="font-size:30px" class="fa fa-star"></span>
                     </td>
-                    <td style="text-transform: capitalize;"><?php echo $popularity; ?></td>-->
+                    <td style="text-transform: capitalize;"><?php //echo $popularity; ?></td>-->
                     <tr>
                   
                 </tbody>
@@ -232,42 +232,37 @@ $(document).ready(function(){
                    <?php 
 
                   		
-                    if(isset($_POST['subpost']))
-                    {		
-                      $words = "script";
-                        $poster = $_SESSION['username'];
-                        $post = str_replace("'", " ", $_POST['publication']);
-                        $q = "INSERT INTO `posts`(`by_user`, `post`) VALUES ('$poster','$post')";
-                        // INSERT INTO posts (zdz,qsdsq)
-                        $countLength = (strlen($post));
-                        if ($countLength >= "300") {
-                           echo "<div id='post-will-not-be-posted' class='alert alert-danger' role='alert'>
-                           <span class='close' onclick='hidepostwillnotbepublished();'>X</span>
-                           <strong>Max Characters Is 300 ! Post Will Not Be Published ...</strong>
-                         </div>";
-                        }
-                        elseif ($countLength <= "300") {
-                         if(strpos($post, $words) !== false){
-                           echo "<div id='post-will-not-be-posted' class='alert alert-danger' role='alert'>
-                           <span class='close' onclick='hidepostwillnotbepublished();'>X</span>
-                           <strong>Malisious code detected ...</strong>
-                         </div>";
-                       } else{
-                           
-                       
-                         $req = $connect->exec($q); {
-                          
-                           echo "<div class='alert alert-success' role='alert'>
-                           <strong>Your Post was submitted !</strong>
-                         </div>";
-                          }
-                         if (!$req) {
-                           echo "<div class='alert alert-danger' role='alert'>
-                           <strong>Your Post was not submitted ! Try Later ...</strong>
-                         </div>";
-                         }}
-                        }
-                    }
+if(isset($_POST['subpost']))
+{
+
+    $poster = $_SESSION['username'];
+    $post = trim(filter_var($_POST["publication"],FILTER_SANITIZE_SPECIAL_CHARS));
+
+    $q = "INSERT INTO `posts`(`by_user`, `post`) VALUES ('$poster','$post')";
+    str_replace($post,"'","&apos;");
+    str_replace($post, '"', "&quot;");
+    $countLength = (strlen($post));
+    if ($countLength >= "300") {
+       echo "<div id='post-will-not-be-posted' class='alert alert-danger' role='alert'>
+       <span class='close' onclick='hidepostwillnotbepublished();'>X</span>
+       <strong>Max Characters Is 300 ! Post Will Not Be Published ...</strong>
+     </div>";
+    }
+    elseif ($countLength <= "300") {
+
+     $req = $connect->exec($q); {
+
+       echo "<div class='alert alert-success' role='alert'>
+       <strong>Your Post was submitted !</strong>
+     </div>";
+      }
+     if (!$req) {
+       echo "<div class='alert alert-danger' role='alert'>
+       <strong>Your Post was not submitted ! Try Later ...</strong>
+     </div>";
+     }}
+    }
+
                    ?>
                   
                     <form method="POST">

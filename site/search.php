@@ -7,6 +7,8 @@ if (!isset($user_id)){
 }
 if (isset($_GET['query'])) {
   $query = $_GET['query'];
+  str_replace($query, "'", "");
+  str_replace($query, '"', "")
 
   if (empty($query)) {
     header("location: home");
