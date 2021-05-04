@@ -413,8 +413,8 @@
     <bool name="mtrl_btn_textappearance_all_caps">true</bool>
     <color name="Black">#FF000000</color>
     <color name="MoonRippleColor">#FFDADADA</color>
-    <color name="MoonWhiteColor">#FFECF0F3</color>
-    <color name="StatusBarColor">#FFECF0F3</color>
+    <color name="MoonWhiteColor">#FFFFFF</color>
+    <color name="StatusBarColor">#FFFFFF</color>
     <color name="White">#FFFFFFFF</color>
     <color name="abc_decor_view_status_guard">#ff000000</color>
     <color name="abc_decor_view_status_guard_light">#ffffffff</color>
@@ -423,6 +423,7 @@
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
+    <color name="actionbar">#D8193566</color>
     <color name="androidx_core_ripple_material_light">#1f000000</color>
     <color name="androidx_core_secondary_text_default_material_light">#8a000000</color>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
@@ -449,7 +450,7 @@
     <color name="colorControlHighlight">#FFDADADA</color>
     <color name="colorControlNormal">#193566</color>
     <color name="colorPrimary">#193566</color>
-    <color name="colorPrimaryDark">#ECF0F3</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
     <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
     <color name="common_google_signin_btn_text_dark_disabled">#1F000000</color>
     <color name="common_google_signin_btn_text_dark_focused">@android:color/black</color>
@@ -1380,13 +1381,16 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="default_web_client_id" translatable="false">119469912377-sl215jofnbn0s6qk1t1jlscji31u35iq.apps.googleusercontent.com</string>
     <string name="error_icon_content_description">Error</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
     <string name="firebase_database_url" translatable="false">https://moonmeet1920.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">119469912377</string>
     <string name="google_api_key" translatable="false">AIzaSyBDLpxX9YYtP9i7w1MaHR2ZZIDE-n4P0Bc</string>
     <string name="google_app_id" translatable="false">1:119469912377:android:3c6addd83d97dafbb2b8e8</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBDLpxX9YYtP9i7w1MaHR2ZZIDE-n4P0Bc</string>
     <string name="google_storage_bucket" translatable="false">moonmeet1920.appspot.com</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string description="Content description for an icon that appears in the title area of a dialog" name="icon_content_description">Dialog Icon</string>
@@ -1454,6 +1458,10 @@
     <string name="project_id" translatable="false">moonmeet1920</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <style name="ActionBar.Transparent.TMessages.Item" parent="android:TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18sp</item>
+    </style>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="AndroidThemeColorAccentYellow" ns2:ignore="NewApi">
@@ -3424,11 +3432,24 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="colorControlHighlight">@color/colorControlHighlight</item>
         <item name="colorControlNormal">@color/colorControlNormal</item>
-        <item name="android:windowActivityTransitions">true</item>
-        <item name="android:windowContentTransitions">true</item>
         <item name="android:windowDisablePreview">true</item>
-        <item name="android:windowAllowEnterTransitionOverlap">true</item>
-        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@color/MoonWhiteColor</item>
+        <item name="android:windowBackground">@color/MoonWhiteColor</item>
+        <item name="android:itemTextAppearance">@style/ActionBar.Transparent.TMessages.Item</item>
+        <item name="android:listViewStyle">@style/Theme.TMessages.ListView</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/list_selector</item>
+        <item name="android:actionBarItemBackground">@drawable/bar_selector_style</item>
+        <item name="android:actionModeBackground">@color/MoonWhiteColor</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:colorEdgeEffect">#0f000000</item>
+        <item name="android:splitMotionEvents">false</item>
     </style>
     <style name="MoonMeet.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
     <style name="MoonMeet.FullScreen" parent="MoonMeet">
@@ -4117,6 +4138,12 @@
     <item name="windowActionBar">false</item>
     <item name="windowNoTitle">true</item>
   </style>
+    <style name="Theme.TMessages.ListView" parent="@android:style/Widget.ListView">
+        <item name="android:listSelector">@drawable/list_selector</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:divider">#dcdcdc</item>
+    </style>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>

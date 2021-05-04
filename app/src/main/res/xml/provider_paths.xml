@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <paths>
+	    <external-path
+			name="files_root"
+			path="Android/data/org.mark.moonmeet/files"/>
 		<external-cache-path
 			name="external_cache_files"
 			path="." />

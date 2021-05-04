@@ -22,7 +22,7 @@
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:padding="8dp"
-				android:background="#ECF0F3"
+				android:background="#FFFFFF"
 				android:orientation="horizontal">
 				<TextView
 					android:id="@+id/ttl1_txt"
@@ -55,7 +55,7 @@
 				android:id="@+id/message_lin"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:background="#ECF0F3"
+				android:background="#FFFFFF"
 				android:orientation="horizontal">
 				<LinearLayout
 					android:id="@+id/itemmessage"
@@ -65,7 +65,7 @@
 					android:paddingTop="4dp"
 					android:paddingRight="8dp"
 					android:paddingBottom="4dp"
-					android:background="#ECF0F3"
+					android:background="#FFFFFF"
 					android:gravity="center_vertical"
 					android:orientation="horizontal">
 					<org.mark.axemojiview.view.AXEmojiTextView
@@ -109,7 +109,7 @@
 				android:id="@+id/item1_lin"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:background="#ECF0F3"
+				android:background="#FFFFFF"
 				android:orientation="vertical">
 				<LinearLayout
 					android:id="@+id/item1"
@@ -148,7 +148,7 @@
 				android:id="@+id/item2_lin"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:background="#ECF0F3"
+				android:background="#FFFFFF"
 				android:orientation="vertical">
 				<LinearLayout
 					android:id="@+id/item2"
@@ -187,7 +187,7 @@
 				android:id="@+id/item3_lin"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:background="#ECF0F3"
+				android:background="#FFFFFF"
 				android:orientation="vertical">
 				<LinearLayout
 					android:id="@+id/item3"
@@ -226,7 +226,7 @@
 				android:id="@+id/item4_lin"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:background="#ECF0F3"
+				android:background="#FFFFFF"
 				android:orientation="vertical">
 				<LinearLayout
 					android:id="@+id/item4"
@@ -274,7 +274,7 @@
 					android:paddingTop="4dp"
 					android:paddingRight="8dp"
 					android:paddingBottom="4dp"
-					android:background="#ECF0F3"
+					android:background="#FFFFFF"
 					android:gravity="center_vertical"
 					android:orientation="horizontal">
 					<TextView

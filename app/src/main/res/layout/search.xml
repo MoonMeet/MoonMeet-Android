@@ -9,7 +9,7 @@
 		android:id="@+id/all_tabs_holder"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:background="#ECF0F3"
+		android:background="#FFFFFF"
 		android:orientation="vertical">
 		<LinearLayout
 			android:id="@+id/topbar"
@@ -42,7 +42,7 @@
 				android:id="@+id/tbl_alltabs2"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:background="#ECF0F3"
+				android:background="#FFFFFF"
 				android:orientation="horizontal">
 				<LinearLayout
 					android:id="@+id/tab1_btn"
@@ -148,7 +148,7 @@
 		android:id="@+id/scroll"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:background="#ECF0F3"
+		android:background="#FFFFFF"
 		android:layout_weight="1"
 		android:fillViewport="true">
 		<LinearLayout

@@ -1,17 +1,18 @@
 package org.mark.moonmeet;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Build;
-import android.os.Bundle;
 import android.util.SparseBooleanArray;
 import android.util.TypedValue;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
@@ -19,12 +20,13 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.tbuonomo.viewpagerdotsindicator.DotsIndicator;
 
-import org.mark.moonmeet.transformer.*;
+import org.mark.moonmeet.transformer.ZoomOutSlideTransformer;
+import org.mark.moonmeet.ui.BaseFragment;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-public class IntroActivity extends AppCompatActivity {
+public class IntroActivity extends BaseFragment {
 	
 	private LinearLayout holder;
 	private ViewPager viewpager1;
@@ -33,15 +35,19 @@ public class IntroActivity extends AppCompatActivity {
 	
 	
 	@Override
-	protected void onCreate(Bundle _savedInstanceState) {
-		super.onCreate(_savedInstanceState);
-		setContentView(R.layout.intro);
-		initialize(_savedInstanceState);
-		com.google.firebase.FirebaseApp.initializeApp(this);
+	public View createView(Context context) {
+		fragmentView = new FrameLayout(context);
+		actionBar.setAddToContainer(false);
+		LayoutInflater inflater = LayoutInflater.from(context);
+		View view = inflater.inflate(R.layout.intro,(ViewGroup) fragmentView, false);
+		((ViewGroup) fragmentView).addView(view, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+		initialize(context);
+		com.google.firebase.FirebaseApp.initializeApp(getThis());
 		initializeLogic();
+		return fragmentView;
 	}
 	
-	private void initialize(Bundle _savedInstanceState) {
+	private void initialize(Context context) {
 		holder = findViewById(R.id.holder);
 		viewpager1 = findViewById(R.id.viewpager1);
 		linear_dots_box = findViewById(R.id.linear_dots_box);
@@ -49,25 +55,17 @@ public class IntroActivity extends AppCompatActivity {
 	}
 	
 	private void initializeLogic() {
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-			getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-		}
 		viewpager1.setAdapter(new MyFragmentAdapter(getApplicationContext(), getSupportFragmentManager(), 3));
 		viewpager1.setPageTransformer(true, new ZoomOutSlideTransformer());
 		dots_indicator.setViewPager(viewpager1);
 	}
-	
-	@Override
-	protected void onActivityResult(int _requestCode, int _resultCode, Intent _data) {
-		super.onActivityResult(_requestCode, _resultCode, _data);
-	}
-	
+
 	public class MyFragmentAdapter extends FragmentStatePagerAdapter {
 		Context context;
 		int tabCount;
-		
+
 		public MyFragmentAdapter(Context context, FragmentManager fm, int tabCount) {
-			super(fm);
+			super(fm, FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
 			this.context = context;
 			this.tabCount = tabCount;
 		}
@@ -98,10 +96,16 @@ public class IntroActivity extends AppCompatActivity {
 		}
 		
 	}
-	
+
 	@Override
-	public void onBackPressed() {
+	public boolean isSwipeBackEnabled(MotionEvent event) {
+		return false;
+	}
+
+	@Override
+	public boolean onBackPressed() {
 		finishAffinity();
+		return true;
 	}
 	
 
@@ -143,16 +147,16 @@ public class IntroActivity extends AppCompatActivity {
 	
 	@Deprecated
 	public float getDip(int _input) {
-		return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, _input, getResources().getDisplayMetrics());
+		return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, _input, getThis().getResources().getDisplayMetrics());
 	}
 	
 	@Deprecated
 	public int getDisplayWidthPixels() {
-		return getResources().getDisplayMetrics().widthPixels;
+		return getThis().getResources().getDisplayMetrics().widthPixels;
 	}
 	
 	@Deprecated
 	public int getDisplayHeightPixels() {
-		return getResources().getDisplayMetrics().heightPixels;
+		return getThis().getResources().getDisplayMetrics().heightPixels;
 	}
 }

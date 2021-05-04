@@ -13,7 +13,7 @@
 			android:id="@+id/topbar"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:background="#ECF0F3"
+			android:background="#FFFFFF"
 			android:gravity="center_vertical"
 			android:orientation="horizontal">
 			<ImageView
@@ -51,7 +51,7 @@
 			android:id="@+id/scroller"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
-			android:background="#ECF0F3"
+			android:background="#FFFFFF"
 			android:fillViewport="true">
 			<LinearLayout
 				android:id="@+id/main"
@@ -252,7 +252,7 @@
 					android:layout_width="match_parent"
 					android:layout_height="20dp"
 					android:padding="8dp"
-					android:background="#ECF0F3"
+					android:background="#FFFFFF"
 					android:orientation="horizontal"
 					android:alpha="0.6" />
 				<LinearLayout
@@ -375,7 +375,7 @@
 					android:layout_width="match_parent"
 					android:layout_height="20dp"
 					android:padding="8dp"
-					android:background="#ECF0F3"
+					android:background="#FFFFFF"
 					android:orientation="horizontal"
 					android:alpha="0.6" />
 				<LinearLayout
@@ -504,7 +504,7 @@
 					android:layout_height="wrap_content"
 					android:padding="8dp"
 					android:gravity="center_horizontal|center_vertical"
-					android:text="Moon Meet for Android v2.3.0B"
+					android:text="Moon Meet for Android v3.0.0"
 					android:textSize="14sp"
 					android:textColor="#193566" />
 			</LinearLayout>

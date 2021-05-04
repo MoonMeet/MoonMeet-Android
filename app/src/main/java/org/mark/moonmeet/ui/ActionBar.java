@@ -657,19 +657,19 @@ public class ActionBar extends FrameLayout {
                 int availableWidth = width - (menu != null ? menu.getMeasuredWidth() : 0) - AndroidUtilities.dp(16) - textLeft - titleRightMargin;
 
                 if (((fromBottom && i == 0) || (!fromBottom && i == 1)) && overlayTitleAnimation && titleAnimationRunning) {
-                    titleTextView[i].setTextSize(!AndroidUtilities.isTablet() && getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE ? 18 : 20);
+                    titleTextView[i].setTextSize(!AndroidUtilities.isTablet() && getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE ? 16 : 17);
                 } else {
                     if (titleTextView[0] != null && titleTextView[0].getVisibility() != GONE && subtitleTextView != null && subtitleTextView.getVisibility() != GONE) {
                         if (titleTextView[i] != null) {
-                            titleTextView[i].setTextSize(AndroidUtilities.isTablet() ? 20 : 18);
+                            titleTextView[i].setTextSize(AndroidUtilities.isTablet() ? 17 : 15);
                         }
-                        subtitleTextView.setTextSize(AndroidUtilities.isTablet() ? 16 : 14);
+                        subtitleTextView.setTextSize(AndroidUtilities.isTablet() ? 14 : 12);
                     } else {
                         if (titleTextView[i] != null && titleTextView[i].getVisibility() != GONE) {
-                            titleTextView[i].setTextSize(!AndroidUtilities.isTablet() && getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE ? 18 : 20);
+                            titleTextView[i].setTextSize(!AndroidUtilities.isTablet() && getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE ? 16 : 18);
                         }
                         if (subtitleTextView != null && subtitleTextView.getVisibility() != GONE) {
-                            subtitleTextView.setTextSize(!AndroidUtilities.isTablet() && getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE ? 14 : 16);
+                            subtitleTextView.setTextSize(!AndroidUtilities.isTablet() && getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE ? 15 : 13);
                         }
                     }
                 }

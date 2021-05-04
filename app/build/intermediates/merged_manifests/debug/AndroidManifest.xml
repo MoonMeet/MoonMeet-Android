@@ -2,11 +2,26 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.mark.moonmeet"
     android:versionCode="2"
-    android:versionName="2.9.0" >
+    android:versionName="3.0.0" >
 
     <uses-sdk
         android:minSdkVersion="21"
         android:targetSdkVersion="30" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -29,6 +44,7 @@
         android:label="@string/app_name"
         android:requestLegacyExternalStorage="true"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/MoonMeet"
         android:usesCleartextTraffic="true" >
         <activity
@@ -36,9 +52,7 @@
             android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
             android:exported="true"
             android:hardwareAccelerated="true"
-            android:launchMode="singleTask"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true" >
+            android:windowSoftInputMode="stateHidden|adjustResize|stateVisible" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -46,241 +60,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="org.mark.moonmeet.BaseActivity"
-            android:exported="true" />
-        <activity
-            android:name="org.mark.moonmeet.IntroActivity"
+            android:name="org.mark.moonmeet.FragmentStack"
             android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+            android:exported="true"
             android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true" />
-        <activity
-            android:name="org.mark.moonmeet.OtpActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.CountrycodeActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.SetupActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.LaunchActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true" />
-        <activity
-            android:name="org.mark.moonmeet.TermsandprivacyActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:theme="@style/MoonMeet"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.NewstoryActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:theme="@style/MoonMeet"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.StoryActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:theme="@style/MoonMeet"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.SearchActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:theme="@style/MoonMeet"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.StoryviewActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:theme="@style/MoonMeet"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.DiscoverActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:theme="@style/MoonMeet"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.ChatActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:theme="@style/MoonMeet"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name="org.mark.moonmeet.SettingsActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:theme="@style/MoonMeet"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.ChangeusernameActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.ChangebioActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.UserprofileActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:theme="@style/MoonMeet"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.PhotoviewerActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:theme="@style/MoonMeet"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.DevicesActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:theme="@style/MoonMeet"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.PrivacySettingsActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:theme="@style/MoonMeet"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.PasscodeLockActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true" />
-        <activity
-            android:name="org.mark.moonmeet.PasscodeSetupActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true" />
-        <activity
-            android:name="org.mark.moonmeet.FaqInfoActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:theme="@style/MoonMeet"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.EditNameActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.SignoutActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.AnnouncementsActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.AnnouncementPostActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.ShopActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.AddToSellActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.ViewShopActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.CameraActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.CameraPreviewActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="org.mark.moonmeet.ImagePickerActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="fullSensor"
-            android:supportsPictureInPicture="true"
-            android:windowSoftInputMode="stateHidden" />
+            android:windowSoftInputMode="stateHidden|adjustResize|stateVisible" />
 
         <meta-data
             android:name="com.google.android.gms.version"

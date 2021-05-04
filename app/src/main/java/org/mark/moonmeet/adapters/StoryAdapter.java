@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +19,7 @@ import org.mark.moonmeet.R;
 import org.mark.moonmeet.SketchwareUtil;
 import org.mark.moonmeet.StoryActivity;
 import org.mark.moonmeet.utils.AndroidUtilities;
+import org.mark.moonmeet.utils.NotificationCenter;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -75,12 +77,7 @@ public class StoryAdapter extends RecyclerView.Adapter<StoryAdapter.ViewHolder> 
                 TimeString = new TimerTask() {
                     @Override
                     public void run() {
-                        AndroidUtilities.runOnUIThread(new Runnable() {
-                            @Override
-                            public void run() {
-                                StoriesUID.clear();
-                            }
-                        });
+                        AndroidUtilities.runOnUIThread(() -> StoriesUID.clear());
                     }
                 };
                 _timer.schedule(TimeString, (int)(250));
@@ -100,7 +97,7 @@ public class StoryAdapter extends RecyclerView.Adapter<StoryAdapter.ViewHolder> 
                     }
                     if (sp_seen.getString(storiesMap.get(_data.get((int)_position).get("uid").toString()).toString(), "").equals("")) {
                         android.graphics.drawable.GradientDrawable gd = new android.graphics.drawable.GradientDrawable();
-                        gd.setColor(Color.parseColor("#FFECF0F3"));
+                        gd.setColor(Color.parseColor("#FFFFFF"));
                         gd.setStroke((int)5, Color.parseColor("#FF193566"));
                         gd.setCornerRadii(new float[]{(int) SketchwareUtil.getDip(mContext, (int)(100)),(int)SketchwareUtil.getDip(mContext, (int)(100)),(int)SketchwareUtil.getDip(mContext, (int)(100)),(int)SketchwareUtil.getDip(mContext, (int)(100)),(int)SketchwareUtil.getDip(mContext, (int)(100)),(int)SketchwareUtil.getDip(mContext, (int)(100)),(int)SketchwareUtil.getDip(mContext, (int)(100)),(int)SketchwareUtil.getDip(mContext, (int)(100))});
                         storylin.setBackground(gd);
@@ -108,7 +105,7 @@ public class StoryAdapter extends RecyclerView.Adapter<StoryAdapter.ViewHolder> 
                     else {
                         android.graphics.drawable.GradientDrawable gd = new android.graphics.drawable.GradientDrawable();
 
-                        gd.setColor(Color.parseColor("#FFECF0F3"));
+                        gd.setColor(Color.parseColor("#FFFFFF"));
 
                         gd.setStroke((int)5, Color.parseColor("#FFDADADA"));
 
@@ -135,9 +132,7 @@ public class StoryAdapter extends RecyclerView.Adapter<StoryAdapter.ViewHolder> 
                         }
                     }
                     linear1.setOnClickListener(_view1 -> {
-                        toAddStory.setClass(mContext, StoryActivity.class);
-                        toAddStory.putExtra("uid", _data.get((int)_position).get("uid").toString());
-                        mContext.startActivity(toAddStory);
+                        NotificationCenter.getInstance().postNotificationName(NotificationCenter.didClickStory, _data.get((int)_position).get("uid").toString());
                     });
                 }
                 else {

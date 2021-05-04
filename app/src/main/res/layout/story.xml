@@ -7,7 +7,7 @@
 		android:id="@+id/linear1"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:background="#ECF0F3"
+		android:background="#FFFFFF"
 		android:gravity="center_horizontal"
 		android:orientation="vertical"
 		android:fitsSystemWindows="true">
@@ -23,7 +23,7 @@
 			android:layout_height="wrap_content"
 			android:paddingLeft="2dp"
 			android:paddingRight="2dp"
-			android:background="#ECF0F3"
+			android:background="#FFFFFF"
 			android:gravity="center_vertical"
 			android:orientation="horizontal"
 			android:fitsSystemWindows="true">
@@ -168,7 +168,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:padding="2dp"
-			android:background="#ECF0F3"
+			android:background="#FFFFFF"
 			android:orientation="horizontal"
 			android:fitsSystemWindows="true">
 			<ImageView

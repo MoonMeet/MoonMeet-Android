@@ -1,7 +1,5 @@
 package org.mark.moonmeet;
 
-import static com.google.firebase.FirebaseApp.initializeApp;
-
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.app.Activity;
@@ -22,20 +20,17 @@ import android.provider.MediaStore;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
-import android.util.TypedValue;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowInsets;
 import android.view.WindowManager;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -69,10 +64,11 @@ import org.mark.axemojiview.view.AXEmojiTextView;
 import org.mark.axemojiview.view.AXSingleEmojiView;
 import org.mark.moonmeet.adapters.ChatAdapter;
 import org.mark.moonmeet.components.SoftKeyboardPopup;
+import org.mark.moonmeet.ui.BaseFragment;
 import org.mark.moonmeet.utils.AndroidUtilities;
 import org.mark.moonmeet.utils.CubicBezierInterpolator;
-import org.mark.moonmeet.utils.ISwipeControllerActions;
 import org.mark.moonmeet.utils.MoonMeetItemAnimator;
+import org.mark.moonmeet.utils.NotificationCenter;
 import org.mark.moonmeet.utils.SwipeController;
 
 import java.io.File;
@@ -80,13 +76,12 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class ChatActivity extends AppCompatActivity {
+public class ChatActivity extends BaseFragment implements NotificationCenter.NotificationCenterDelegate {
 
     public final int REQ_CD_IMAGE_PICKER = 101;
     public final int REQ_CD_VIDEO_PICKER = 102;
@@ -200,7 +195,7 @@ public class ChatActivity extends AppCompatActivity {
     private MaterialTextView name_moon;
     private MaterialTextView state_moon;
     private LinearLayout nomsgyet;
-    public RecyclerView chats_rv;
+    private RecyclerView chats_rv;
     private MaterialTextView nomsgyet_full_txt;
     private MaterialTextView nomsgyet_mini_txt;
     private LinearLayout img_lin_top_divider;
@@ -298,26 +293,47 @@ public class ChatActivity extends AppCompatActivity {
     private Intent toPickImage = new Intent();
     private ObjectAnimator obj = new ObjectAnimator();
     private ChatAdapter chatAdapter;
-    private String Manufacturer;
 
-    @Override
-    protected void onCreate(Bundle _savedInstanceState) {
-        super.onCreate(_savedInstanceState);
-        setContentView(R.layout.chat);
-        initialize(_savedInstanceState);
-        initializeApp(this);
-        initializeLogic();
-        Manufacturer = android.os.Build.MANUFACTURER;
-        if (!Manufacturer.toLowerCase().equals("Xiaomi")) {
-            Log.d("ChatActivity", Manufacturer.toString());
-            updateStatusBar();
-            _initKeyboardAnim();
-        } else {
-            Log.d("ChatActivity", Manufacturer.toString());
-        }
+    public ChatActivity(String chat_uid) {
+        this.uid = chat_uid;
+        this.type = "private";
     }
 
-    private void initialize(Bundle _savedInstanceState) {
+    @Override
+    public boolean onFragmentCreate() {
+        NotificationCenter.getInstance().addObserver(this, NotificationCenter.didClickImage);
+        NotificationCenter.getInstance().addObserver(this, NotificationCenter.getNeedPresentCamera);
+        NotificationCenter.getInstance().addObserver(this, NotificationCenter.getNeedPresentImagePicker);
+        NotificationCenter.getInstance().addObserver(this, NotificationCenter.getChatReplyData);
+        NotificationCenter.getInstance().addObserver(this, NotificationCenter.didDeleteMessage);
+        NotificationCenter.getInstance().addObserver(this, NotificationCenter.didDeleteMessageForever);
+        return super.onFragmentCreate();
+    }
+
+    @Override
+    public void onFragmentDestroy() {
+        NotificationCenter.getInstance().removeObserver(this, NotificationCenter.didClickImage);
+        NotificationCenter.getInstance().removeObserver(this, NotificationCenter.getNeedPresentCamera);
+        NotificationCenter.getInstance().removeObserver(this, NotificationCenter.getNeedPresentImagePicker);
+        NotificationCenter.getInstance().removeObserver(this, NotificationCenter.getChatReplyData);
+        NotificationCenter.getInstance().removeObserver(this, NotificationCenter.didDeleteMessage);
+        NotificationCenter.getInstance().removeObserver(this, NotificationCenter.didDeleteMessageForever);
+        super.onFragmentDestroy();
+    }
+
+    @Override
+    public View createView(Context context) {
+        fragmentView = new FrameLayout(context);
+        actionBar.setAddToContainer(false);
+        LayoutInflater inflater = LayoutInflater.from(context);
+        View view = inflater.inflate(R.layout.chat, ((ViewGroup) fragmentView), false);
+        ((ViewGroup) fragmentView).addView(view);
+        initialize(context);
+        initializeLogic();
+        return fragmentView;
+    }
+
+    private void initialize(Context context) {
         mLinearContent = (LinearLayout) findViewById(R.id.mLinearContent);
         bar = (LinearLayout) findViewById(R.id.bar);
         topbar_divider = (LinearLayout) findViewById(R.id.topbar_divider);
@@ -369,13 +385,13 @@ public class ChatActivity extends AppCompatActivity {
         point = (MaterialTextView) findViewById(R.id.point);
         send_voice = (ShapeableImageView) findViewById(R.id.send_voice);
         Fauth = FirebaseAuth.getInstance();
-        sp_lm = getSharedPreferences("lastmessage", Activity.MODE_PRIVATE);
+        sp_lm = getParentActivity().getSharedPreferences("lastmessage", Activity.MODE_PRIVATE);
         image_picker.setType("image/*");
         image_picker.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
         video_picker.setType("videos/*");
         video_picker.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
-        D = new AlertDialog.Builder(this);
-        Vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        D = new AlertDialog.Builder(getParentActivity());
+        Vibrator = (Vibrator) getParentActivity().getSystemService(Context.VIBRATOR_SERVICE);
         _file_Camera_Picker = FileUtil.createNewPictureFile(getApplicationContext());
         Uri _uri_Camera_Picker = null;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
@@ -387,50 +403,59 @@ public class ChatActivity extends AppCompatActivity {
         Camera_Picker.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         attach_picker.setType("*/*");
         attach_picker.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
-        CatchedImagePath = getSharedPreferences("CatchedImagePath", Activity.MODE_PRIVATE);
+        CatchedImagePath = getParentActivity().getSharedPreferences("CatchedImagePath", Activity.MODE_PRIVATE);
 
-        back.setOnClickListener(_view -> finish());
+        back.setOnClickListener(_view -> finishFragment());
 
         name_holder.setOnClickListener(_view -> {
-            toViewProfile.setClass(getApplicationContext(), UserprofileActivity.class);
-            toViewProfile.putExtra("uid", uid);
-            startActivity(toViewProfile);
+            Bundle bundle = new Bundle();
+            bundle.putString("uid", uid);
+            presentFragment(new UserprofileActivity(bundle), false);
         });
 
         info.setOnClickListener(_view -> {
-            toViewProfile.setClass(getApplicationContext(), UserprofileActivity.class);
-            toViewProfile.putExtra("uid", uid);
-            startActivity(toViewProfile);
+            Bundle bundle = new Bundle();
+            bundle.putString("uid", uid);
+            presentFragment(new UserprofileActivity(bundle), false);
         });
 
-        close_img_lin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View _view) {
-                picurl = "";
-                picpath = "";
-                picname = "";
-                img_lin.setVisibility(View.GONE);
-            }
+        close_img_lin.setOnClickListener(_view -> {
+            picurl = "";
+            picpath = "";
+            picname = "";
+            img_lin.setVisibility(View.GONE);
         });
 
-        choose_image.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View _view) {
-                img_lin.setVisibility(View.GONE);
-                startActivityForResult(image_picker, REQ_CD_IMAGE_PICKER);
-            }
+        choose_image.setOnClickListener(_view -> {
+            img_lin.setVisibility(View.GONE);
+            startActivityForResult(image_picker, REQ_CD_IMAGE_PICKER);
         });
 
-        send_image.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View _view) {
-                if (!picpath.equals("") && !picname.equals("")) {
+        send_image.setOnClickListener(_view -> {
+            if (!picpath.equals("") && !picname.equals("")) {
+                try {
+
+                    image_fs.child(picname).putFile(Uri.fromFile(new File(picpath))).addOnFailureListener(_image_fs_failure_listener).addOnProgressListener(_image_fs_upload_progress_listener).continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
+                        @Override
+                        public Task<Uri> then(Task<UploadTask.TaskSnapshot> task) throws Exception {
+                            return image_fs.child(picname).getDownloadUrl();
+                        }
+                    }).addOnCompleteListener(_image_fs_upload_success_listener);
+                    img_tools_lin.setVisibility(View.GONE);
+                    img_prog_lin.setVisibility(View.VISIBLE);
+                    upload_status.setText("Uploading...");
+                } catch (Exception e) {
+
+                    SketchwareUtil.showMessage(getApplicationContext(), (e.toString()));
+                }
+            } else {
+                if (!camera_path.equals("") && !camera_name.equals("")) {
                     try {
 
-                        image_fs.child(picname).putFile(Uri.fromFile(new File(picpath))).addOnFailureListener(_image_fs_failure_listener).addOnProgressListener(_image_fs_upload_progress_listener).continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
+                        image_fs.child(camera_name).putFile(Uri.fromFile(new File(camera_path))).addOnFailureListener(_image_fs_failure_listener).addOnProgressListener(_image_fs_upload_progress_listener).continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
                             @Override
                             public Task<Uri> then(Task<UploadTask.TaskSnapshot> task) throws Exception {
-                                return image_fs.child(picname).getDownloadUrl();
+                                return image_fs.child(camera_name).getDownloadUrl();
                             }
                         }).addOnCompleteListener(_image_fs_upload_success_listener);
                         img_tools_lin.setVisibility(View.GONE);
@@ -441,24 +466,7 @@ public class ChatActivity extends AppCompatActivity {
                         SketchwareUtil.showMessage(getApplicationContext(), (e.toString()));
                     }
                 } else {
-                    if (!camera_path.equals("") && !camera_name.equals("")) {
-                        try {
-
-                            image_fs.child(camera_name).putFile(Uri.fromFile(new File(camera_path))).addOnFailureListener(_image_fs_failure_listener).addOnProgressListener(_image_fs_upload_progress_listener).continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
-                                @Override
-                                public Task<Uri> then(Task<UploadTask.TaskSnapshot> task) throws Exception {
-                                    return image_fs.child(camera_name).getDownloadUrl();
-                                }
-                            }).addOnCompleteListener(_image_fs_upload_success_listener);
-                            img_tools_lin.setVisibility(View.GONE);
-                            img_prog_lin.setVisibility(View.VISIBLE);
-                            upload_status.setText("Uploading...");
-                        } catch (Exception e) {
-
-                            SketchwareUtil.showMessage(getApplicationContext(), (e.toString()));
-                        }
-                    } else {
-						/*
+                    /*
 if (!"".equals("") && !"".equals("")) {
 
 }
@@ -466,60 +474,40 @@ else {
 
 }
 */
-                    }
                 }
             }
         });
 
-        close_reply.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View _view) {
-                _Replying(false);
+        close_reply.setOnClickListener(_view -> _Replying(false));
+
+        stickers.setOnClickListener(_view -> {
+            if (layout.getVisibility() == View.GONE) {
+                layout.setVisibility(View.VISIBLE);
+                layout.show();
+            } else {
+                layout.setVisibility(View.GONE);
+                layout.openKeyboard();
             }
         });
 
-        stickers.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View _view) {
-                if (layout.getVisibility() == View.GONE) {
-                    layout.setVisibility(View.VISIBLE);
-                    layout.show();
+        attach.setOnClickListener(_view -> menuKeyboard.show());
+
+        mic_and_send.setOnClickListener(_view -> {
+            if (message.getText().toString().trim().equals("")) {
+                _setUpLoveSend();
+            } else {
+                if (message.getText().toString().trim().length() > 550) {
+                    SketchwareUtil.showMessage(getApplicationContext(), "Sorry, you message is too long ! ( limit is 550 characters )");
                 } else {
-                    layout.setVisibility(View.GONE);
-                    layout.openKeyboard();
+                    _SendMessage();
                 }
             }
         });
 
-        attach.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View _view) {
-                menuKeyboard.show();
-            }
-        });
-
-        mic_and_send.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View _view) {
-                if (message.getText().toString().trim().equals("")) {
-                    _setUpLoveSend();
-                } else {
-                    if (message.getText().toString().trim().length() > 550) {
-                        SketchwareUtil.showMessage(getApplicationContext(), "Sorry, you message is too long ! ( limit is 550 characters )");
-                    } else {
-                        _SendMessage();
-                    }
-                }
-            }
-        });
-
-        message.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View _view) {
-                if (layout.getVisibility() == View.VISIBLE) {
-                    layout.dismiss();
-                    layout.setVisibility(View.GONE);
-                }
+        message.setOnClickListener(_view -> {
+            if (layout.getVisibility() == View.VISIBLE) {
+                layout.dismiss();
+                layout.setVisibility(View.GONE);
             }
         });
 
@@ -548,26 +536,20 @@ else {
             }
         });
 
-        close_voice.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View _view) {
-                bottom_message_linear.setVisibility(View.VISIBLE);
-                micro_divider.setVisibility(View.GONE);
-                micro_linear.setVisibility(View.GONE);
-                record_length.setText("0");
-                _Recording(false);
-            }
+        close_voice.setOnClickListener(_view -> {
+            bottom_message_linear.setVisibility(View.VISIBLE);
+            micro_divider.setVisibility(View.GONE);
+            micro_linear.setVisibility(View.GONE);
+            record_length.setText("0");
+            _Recording(false);
         });
 
-        send_voice.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View _view) {
-                record_length.setText("0");
-                bottom_message_linear.setVisibility(View.VISIBLE);
-                micro_divider.setVisibility(View.GONE);
-                micro_linear.setVisibility(View.GONE);
-                _sendAudioRecord();
-            }
+        send_voice.setOnClickListener(_view -> {
+            record_length.setText("0");
+            bottom_message_linear.setVisibility(View.VISIBLE);
+            micro_divider.setVisibility(View.GONE);
+            micro_linear.setVisibility(View.GONE);
+            _sendAudioRecord();
         });
 
         _users_child_listener = new ChildEventListener() {
@@ -692,176 +674,140 @@ MyOSPushToken = _childValue.get("OneSignalPushToken").toString();
         };
         users.addChildEventListener(_users_child_listener);
 
-        _video_fs_upload_progress_listener = new OnProgressListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onProgress(UploadTask.TaskSnapshot _param1) {
-                double _progressValue = (100.0 * _param1.getBytesTransferred()) / _param1.getTotalByteCount();
+        _video_fs_upload_progress_listener = (OnProgressListener<UploadTask.TaskSnapshot>) _param1 -> {
+            double _progressValue = (100.0 * _param1.getBytesTransferred()) / _param1.getTotalByteCount();
 
-            }
         };
 
-        _video_fs_download_progress_listener = new OnProgressListener<FileDownloadTask.TaskSnapshot>() {
-            @Override
-            public void onProgress(FileDownloadTask.TaskSnapshot _param1) {
-                double _progressValue = (100.0 * _param1.getBytesTransferred()) / _param1.getTotalByteCount();
+        _video_fs_download_progress_listener = (OnProgressListener<FileDownloadTask.TaskSnapshot>) _param1 -> {
+            double _progressValue = (100.0 * _param1.getBytesTransferred()) / _param1.getTotalByteCount();
 
-            }
         };
 
-        _video_fs_upload_success_listener = new OnCompleteListener<Uri>() {
-            @Override
-            public void onComplete(Task<Uri> _param1) {
-                final String _downloadUrl = _param1.getResult().toString();
+        _video_fs_upload_success_listener = _param1 -> {
+            final String _downloadUrl = _param1.getResult().toString();
 
-            }
         };
 
-        _video_fs_download_success_listener = new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
-            @Override
-            public void onSuccess(FileDownloadTask.TaskSnapshot _param1) {
-                final long _totalByteCount = _param1.getTotalByteCount();
+        _video_fs_download_success_listener = _param1 -> {
+            final long _totalByteCount = _param1.getTotalByteCount();
 
-            }
         };
 
-        _video_fs_delete_success_listener = new OnSuccessListener() {
-            @Override
-            public void onSuccess(Object _param1) {
+        _video_fs_delete_success_listener = _param1 -> {
 
-            }
         };
 
-        _video_fs_failure_listener = new OnFailureListener() {
-            @Override
-            public void onFailure(Exception _param1) {
-                final String _message = _param1.getMessage();
+        _video_fs_failure_listener = _param1 -> {
+            final String _message = _param1.getMessage();
 
-            }
         };
 
-        _image_fs_upload_progress_listener = new OnProgressListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onProgress(UploadTask.TaskSnapshot _param1) {
-                double _progressValue = (100.0 * _param1.getBytesTransferred()) / _param1.getTotalByteCount();
-                image_send_progress.setProgress((int) _progressValue);
-            }
+        _image_fs_upload_progress_listener = (OnProgressListener<UploadTask.TaskSnapshot>) _param1 -> {
+            double _progressValue = (100.0 * _param1.getBytesTransferred()) / _param1.getTotalByteCount();
+            image_send_progress.setProgress((int) _progressValue);
         };
 
-        _image_fs_download_progress_listener = new OnProgressListener<FileDownloadTask.TaskSnapshot>() {
-            @Override
-            public void onProgress(FileDownloadTask.TaskSnapshot _param1) {
-                double _progressValue = (100.0 * _param1.getBytesTransferred()) / _param1.getTotalByteCount();
+        _image_fs_download_progress_listener = (OnProgressListener<FileDownloadTask.TaskSnapshot>) _param1 -> {
+            double _progressValue = (100.0 * _param1.getBytesTransferred()) / _param1.getTotalByteCount();
 
-            }
         };
 
-        _image_fs_upload_success_listener = new OnCompleteListener<Uri>() {
-            @Override
-            public void onComplete(Task<Uri> _param1) {
-                final String _downloadUrl = _param1.getResult().toString();
-                CALENDAR = Calendar.getInstance();
-                CALENDAR_EXTRA = Calendar.getInstance();
-                image_mid = Chat1.push().getKey();
-                RecentMediaMap = new HashMap<>();
-                RecentMediaMap.put("image", _downloadUrl);
-                RecentMediaMap.put("uid", FirebaseAuth.getInstance().getCurrentUser().getUid());
-                RecentMediaMap.put("mid", image_mid);
-                RecentMediaMap.put("firstname", My_Firstname);
-                RecentMediaMap.put("lastname", My_Lastname);
-                RecentMediaMap.put("tofirstname", User_Firstname);
-                RecentMediaMap.put("tolastname", User_Lastname);
-                if (!picname.equals("")) {
-                    RecentMediaMap.put("image_name", picname);
-                } else {
-                    if (!camera_name.equals("")) {
-                        RecentMediaMap.put("image_name", camera_name);
-                    }
+        _image_fs_upload_success_listener = _param1 -> {
+            final String _downloadUrl = _param1.getResult().toString();
+            CALENDAR = Calendar.getInstance();
+            CALENDAR_EXTRA = Calendar.getInstance();
+            image_mid = Chat1.push().getKey();
+            RecentMediaMap = new HashMap<>();
+            RecentMediaMap.put("image", _downloadUrl);
+            RecentMediaMap.put("uid", FirebaseAuth.getInstance().getCurrentUser().getUid());
+            RecentMediaMap.put("mid", image_mid);
+            RecentMediaMap.put("firstname", My_Firstname);
+            RecentMediaMap.put("lastname", My_Lastname);
+            RecentMediaMap.put("tofirstname", User_Firstname);
+            RecentMediaMap.put("tolastname", User_Lastname);
+            if (!picname.equals("")) {
+                RecentMediaMap.put("image_name", picname);
+            } else {
+                if (!camera_name.equals("")) {
+                    RecentMediaMap.put("image_name", camera_name);
                 }
-                RecentMediaMap.put("type", "image");
-                RecentMediaMap.put("status", "Sent");
-                RecentMediaMap.put("time", String.valueOf((long) (CALENDAR.getTimeInMillis())));
-                RecentMedia.child(FirebaseAuth.getInstance().getCurrentUser().getUid().concat("/".concat(RecentMediaMap.get("mid").toString()))).updateChildren(RecentMediaMap);
-                RecentMediaMap.clear();
-                message_map = new HashMap<>();
-                message_map.put("mid", image_mid);
+            }
+            RecentMediaMap.put("type", "image");
+            RecentMediaMap.put("status", "Sent");
+            RecentMediaMap.put("time", String.valueOf((long) (CALENDAR.getTimeInMillis())));
+            RecentMedia.child(FirebaseAuth.getInstance().getCurrentUser().getUid().concat("/".concat(RecentMediaMap.get("mid").toString()))).updateChildren(RecentMediaMap);
+            RecentMediaMap.clear();
+            message_map = new HashMap<>();
+            message_map.put("mid", image_mid);
+            message_map.put("uid", FirebaseAuth.getInstance().getCurrentUser().getUid());
+            message_map.put("firstname", My_Firstname);
+            message_map.put("lastname", My_Lastname);
+            message_map.put("tofirstname", User_Firstname);
+            message_map.put("tolastname", User_Lastname);
+            if (!picname.equals("")) {
+                message_map.put("image_name", picname);
+            } else {
+                if (!camera_name.equals("")) {
+                    message_map.put("image_name", camera_name);
+                }
+            }
+            message_map.put("image", _downloadUrl);
+            message_map.put("type", "image");
+            message_map.put("status", "Sent");
+            message_map.put("time", String.valueOf((long) (CALENDAR.getTimeInMillis())));
+            Chat1.child(message_map.get("mid").toString()).updateChildren(message_map);
+            if (!uid.equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
+                Chat2.child(message_map.get("mid").toString()).updateChildren(message_map);
+            }
+            message_map.clear();
+            message_map = new HashMap<>();
+            message_map.put("last_message_uid", FirebaseAuth.getInstance().getCurrentUser().getUid());
+            message_map.put("last_message_mid", mid);
+            message_map.put("last_message_status", "Sent");
+            message_map.put("last_message_type", "image");
+            message_map.put("last_message_time", String.valueOf((long) (CALENDAR_EXTRA.getTimeInMillis())));
+            message_map.put("lastseen", String.valueOf((long) (CALENDAR_EXTRA.getTimeInMillis())));
+            message_map.put("uid", uid);
+            message_map.put("firstname", User_Firstname);
+            message_map.put("lastname", User_Lastname);
+            message_map.put("avatar", User_Avatar);
+            UserChats.child(FirebaseAuth.getInstance().getCurrentUser().getUid().concat("/".concat(uid))).updateChildren(message_map);
+            if (!uid.equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
                 message_map.put("uid", FirebaseAuth.getInstance().getCurrentUser().getUid());
                 message_map.put("firstname", My_Firstname);
                 message_map.put("lastname", My_Lastname);
-                message_map.put("tofirstname", User_Firstname);
-                message_map.put("tolastname", User_Lastname);
-                if (!picname.equals("")) {
-                    message_map.put("image_name", picname);
-                } else {
-                    if (!camera_name.equals("")) {
-                        message_map.put("image_name", camera_name);
-                    }
-                }
-                message_map.put("image", _downloadUrl);
-                message_map.put("type", "image");
-                message_map.put("status", "Sent");
-                message_map.put("time", String.valueOf((long) (CALENDAR.getTimeInMillis())));
-                Chat1.child(message_map.get("mid").toString()).updateChildren(message_map);
-                if (!uid.equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
-                    Chat2.child(message_map.get("mid").toString()).updateChildren(message_map);
-                }
+                message_map.put("avatar", My_Avatar);
+                UserChats.child(uid.concat("/".concat(FirebaseAuth.getInstance().getCurrentUser().getUid()))).updateChildren(message_map);
                 message_map.clear();
-                message_map = new HashMap<>();
-                message_map.put("last_message_uid", FirebaseAuth.getInstance().getCurrentUser().getUid());
-                message_map.put("last_message_mid", mid);
-                message_map.put("last_message_status", "Sent");
-                message_map.put("last_message_type", "image");
-                message_map.put("last_message_time", String.valueOf((long) (CALENDAR_EXTRA.getTimeInMillis())));
-                message_map.put("lastseen", String.valueOf((long) (CALENDAR_EXTRA.getTimeInMillis())));
-                message_map.put("uid", uid);
-                message_map.put("firstname", User_Firstname);
-                message_map.put("lastname", User_Lastname);
-                message_map.put("avatar", User_Avatar);
-                UserChats.child(FirebaseAuth.getInstance().getCurrentUser().getUid().concat("/".concat(uid))).updateChildren(message_map);
-                if (!uid.equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
-                    message_map.put("uid", FirebaseAuth.getInstance().getCurrentUser().getUid());
-                    message_map.put("firstname", My_Firstname);
-                    message_map.put("lastname", My_Lastname);
-                    message_map.put("avatar", My_Avatar);
-                    UserChats.child(uid.concat("/".concat(FirebaseAuth.getInstance().getCurrentUser().getUid()))).updateChildren(message_map);
-                    message_map.clear();
-                }
-                if (!uid.equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
-                    um_n = 0;
-                    for (int _repeat118 = 0; _repeat118 < (int) (Private_Map.size()); _repeat118++) {
-                        if (Private_Map.get((int) um_n).get("uid").toString().equals(FirebaseAuth.getInstance().getCurrentUser().getUid()) && Private_Map.get((int) um_n).get("status").toString().equals("Sent")) {
-                            user_unreadmessages.add(Private_Map.get((int) um_n).get("mid").toString());
-                        }
-                        um_n++;
+            }
+            if (!uid.equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
+                um_n = 0;
+                for (int _repeat118 = 0; _repeat118 < (int) (Private_Map.size()); _repeat118++) {
+                    if (Private_Map.get((int) um_n).get("uid").toString().equals(FirebaseAuth.getInstance().getCurrentUser().getUid()) && Private_Map.get((int) um_n).get("status").toString().equals("Sent")) {
+                        user_unreadmessages.add(Private_Map.get((int) um_n).get("mid").toString());
                     }
-                    message_map.put("UnreadMessagesNum", String.valueOf((long) (user_unreadmessages.size() + 1)));
-                    UserChats.child(uid.concat("/".concat(FirebaseAuth.getInstance().getCurrentUser().getUid()))).updateChildren(message_map);
-                    user_unreadmessages.clear();
+                    um_n++;
                 }
-                img_lin.setVisibility(View.GONE);
+                message_map.put("UnreadMessagesNum", String.valueOf((long) (user_unreadmessages.size() + 1)));
+                UserChats.child(uid.concat("/".concat(FirebaseAuth.getInstance().getCurrentUser().getUid()))).updateChildren(message_map);
+                user_unreadmessages.clear();
             }
+            img_lin.setVisibility(View.GONE);
         };
 
-        _image_fs_download_success_listener = new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
-            @Override
-            public void onSuccess(FileDownloadTask.TaskSnapshot _param1) {
-                final long _totalByteCount = _param1.getTotalByteCount();
+        _image_fs_download_success_listener = _param1 -> {
+            final long _totalByteCount = _param1.getTotalByteCount();
 
-            }
         };
 
-        _image_fs_delete_success_listener = new OnSuccessListener() {
-            @Override
-            public void onSuccess(Object _param1) {
+        _image_fs_delete_success_listener = _param1 -> {
 
-            }
         };
 
-        _image_fs_failure_listener = new OnFailureListener() {
-            @Override
-            public void onFailure(Exception _param1) {
-                final String _message = _param1.getMessage();
+        _image_fs_failure_listener = _param1 -> {
+            final String _message = _param1.getMessage();
 
-            }
         };
 
         _Chat1_child_listener = new ChildEventListener() {
@@ -871,9 +817,42 @@ MyOSPushToken = _childValue.get("OneSignalPushToken").toString();
                 };
                 final String _childKey = _param1.getKey();
                 final HashMap<String, Object> _childValue = _param1.getValue(_ind);
-                if (msgs_str.contains(_childValue.get("mid").toString())) {
+                if (_childValue.containsKey("mid")) {
+                    if (msgs_str.contains(_childValue.get("mid").toString())) {
 
+                    } else {
+                        Private_Map.add(_childValue);
+                        msgs_str.add(_childValue.get("mid").toString());
+                        chats_rv.getAdapter().notifyItemInserted(chats_rv.getAdapter().getItemCount() - 1);
+                        if (Private_Map.size() > 0) {
+                            ((LinearLayoutManager) chats_rv.getLayoutManager()).scrollToPositionWithOffset((int) Private_Map.size() - 1, (int) 0);
+                            nomsgyet.setVisibility(View.GONE);
+                        } else {
+                            if (Private_Map.size() < 1) {
+                                nomsgyet.setVisibility(View.VISIBLE);
+                            }
+                        }
+                        if (_childValue.containsKey("status") && (_childValue.containsKey("mid") && _childValue.containsKey("uid"))) {
+                            if (_childValue.get("status").toString().equals("Sent") && _childValue.get("uid").toString().equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
+                                UnReadMap = new HashMap<>();
+                                UnReadMap.put("status", "Seen");
+                                allmessages.child(FirebaseAuth.getInstance().getCurrentUser().getUid().concat("/".concat(uid.concat("/".concat(_childValue.get("mid").toString()))))).updateChildren(UnReadMap);
+                                if (!FirebaseAuth.getInstance().getCurrentUser().getUid().equals(uid)) {
+                                    allmessages.child(uid.concat("/".concat(FirebaseAuth.getInstance().getCurrentUser().getUid().concat("/".concat(_childValue.get("mid").toString()))))).updateChildren(UnReadMap);
+                                }
+                            }
+                            UnReadMap.clear();
+                            UnReadMap = new HashMap<>();
+                            UnReadMap.put("UnreadMessagesNum", String.valueOf((long) (0)));
+                            UserChats.child(FirebaseAuth.getInstance().getCurrentUser().getUid().concat("/".concat(uid))).updateChildren(UnReadMap);
+                            UnReadMap.clear();
+                        }
+                    }
                 } else {
+                    HashMap<String, Object> dumbMap = new HashMap<>();
+                    dumbMap.put("mid", Chat1.push().getKey());
+                    Chat1.child(dumbMap.get("mid").toString()).updateChildren(dumbMap);
+                    dumbMap.clear();
                     Private_Map.add(_childValue);
                     msgs_str.add(_childValue.get("mid").toString());
                     chats_rv.getAdapter().notifyItemInserted(chats_rv.getAdapter().getItemCount() - 1);
@@ -884,21 +863,6 @@ MyOSPushToken = _childValue.get("OneSignalPushToken").toString();
                         if (Private_Map.size() < 1) {
                             nomsgyet.setVisibility(View.VISIBLE);
                         }
-                    }
-                    if (_childValue.containsKey("status") && (_childValue.containsKey("mid") && _childValue.containsKey("uid"))) {
-                        if (_childValue.get("status").toString().equals("Sent") && _childValue.get("uid").toString().equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
-                            UnReadMap = new HashMap<>();
-                            UnReadMap.put("status", "Seen");
-                            allmessages.child(FirebaseAuth.getInstance().getCurrentUser().getUid().concat("/".concat(uid.concat("/".concat(_childValue.get("mid").toString()))))).updateChildren(UnReadMap);
-                            if (!FirebaseAuth.getInstance().getCurrentUser().getUid().equals(uid)) {
-                                allmessages.child(uid.concat("/".concat(FirebaseAuth.getInstance().getCurrentUser().getUid().concat("/".concat(_childValue.get("mid").toString()))))).updateChildren(UnReadMap);
-                            }
-                        }
-                        UnReadMap.clear();
-                        UnReadMap = new HashMap<>();
-                        UnReadMap.put("UnreadMessagesNum", String.valueOf((long) (0)));
-                        UserChats.child(FirebaseAuth.getInstance().getCurrentUser().getUid().concat("/".concat(uid))).updateChildren(UnReadMap);
-                        UnReadMap.clear();
                     }
                 }
             }
@@ -930,12 +894,7 @@ MyOSPushToken = _childValue.get("OneSignalPushToken").toString();
                 ScrollingTimer = new TimerTask() {
                     @Override
                     public void run() {
-                        runOnUiThread(new Runnable() {
-                            @Override
-                            public void run() {
-                                ((LinearLayoutManager) chats_rv.getLayoutManager()).scrollToPositionWithOffset((int) CurrentDeletingPosition, (int) 0);
-                            }
-                        });
+                        AndroidUtilities.runOnUIThread(() -> ((LinearLayoutManager) chats_rv.getLayoutManager()).scrollToPositionWithOffset((int) CurrentDeletingPosition, (int) 0));
                     }
                 };
                 _timer.schedule(ScrollingTimer, (int) (120));
@@ -992,71 +951,53 @@ MyOSPushToken = _childValue.get("OneSignalPushToken").toString();
         };
         Chat2.addChildEventListener(_Chat2_child_listener);
 
-        _audio_fs_upload_progress_listener = new OnProgressListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onProgress(UploadTask.TaskSnapshot _param1) {
-                double _progressValue = (100.0 * _param1.getBytesTransferred()) / _param1.getTotalByteCount();
+        _audio_fs_upload_progress_listener = (OnProgressListener<UploadTask.TaskSnapshot>) _param1 -> {
+            double _progressValue = (100.0 * _param1.getBytesTransferred()) / _param1.getTotalByteCount();
 
-            }
         };
 
-        _audio_fs_download_progress_listener = new OnProgressListener<FileDownloadTask.TaskSnapshot>() {
-            @Override
-            public void onProgress(FileDownloadTask.TaskSnapshot _param1) {
-                double _progressValue = (100.0 * _param1.getBytesTransferred()) / _param1.getTotalByteCount();
+        _audio_fs_download_progress_listener = (OnProgressListener<FileDownloadTask.TaskSnapshot>) _param1 -> {
+            double _progressValue = (100.0 * _param1.getBytesTransferred()) / _param1.getTotalByteCount();
 
-            }
         };
 
-        _audio_fs_upload_success_listener = new OnCompleteListener<Uri>() {
-            @Override
-            public void onComplete(Task<Uri> _param1) {
-                final String _downloadUrl = _param1.getResult().toString();
-                CALENDAR = Calendar.getInstance();
-                message_map = new HashMap<>();
-                mid_audio = Chat1.push().getKey();
-                message_map.put("firstname", My_Firstname);
-                message_map.put("lastname", My_Lastname);
-                message_map.put("tofirstname", User_Firstname);
-                message_map.put("tolastname", User_Lastname);
-                message_map.put("audio", _downloadUrl);
-                message_map.put("mid", mid_audio);
-                message_map.put("type", "audio");
-                message_map.put("time", String.valueOf((long) (CALENDAR.getTimeInMillis())));
-                Chat1.child(message_map.get("mid").toString()).updateChildren(message_map);
-                if (!uid.equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
-                    Chat2.child(message_map.get("mid").toString()).updateChildren(message_map);
-                    SketchwareUtil.showMessage(getApplicationContext(), "success upload audio");
-                }
-                message_map.clear();
-                AudioRecorderTimer.cancel();
-                FilePath = FileUtil.getExternalStorageDir().concat("/".concat("MoonMeet".concat("/".concat("AudioRecords".concat("/".concat(String.valueOf((long) (SketchwareUtil.getRandom((int) (1111111111), (int) (9999999999d)))).concat(".mp3")))))));
-                MediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.sound_out);
-                MediaPlayer.start();
+        _audio_fs_upload_success_listener = _param1 -> {
+            final String _downloadUrl = _param1.getResult().toString();
+            CALENDAR = Calendar.getInstance();
+            message_map = new HashMap<>();
+            mid_audio = Chat1.push().getKey();
+            message_map.put("firstname", My_Firstname);
+            message_map.put("lastname", My_Lastname);
+            message_map.put("tofirstname", User_Firstname);
+            message_map.put("tolastname", User_Lastname);
+            message_map.put("audio", _downloadUrl);
+            message_map.put("mid", mid_audio);
+            message_map.put("type", "audio");
+            message_map.put("time", String.valueOf((long) (CALENDAR.getTimeInMillis())));
+            Chat1.child(message_map.get("mid").toString()).updateChildren(message_map);
+            if (!uid.equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
+                Chat2.child(message_map.get("mid").toString()).updateChildren(message_map);
+                SketchwareUtil.showMessage(getApplicationContext(), "success upload audio");
             }
+            message_map.clear();
+            AudioRecorderTimer.cancel();
+            FilePath = FileUtil.getExternalStorageDir().concat("/".concat("MoonMeet".concat("/".concat("AudioRecords".concat("/".concat(String.valueOf((long) (SketchwareUtil.getRandom((int) (1111111111), (int) (9999999999d)))).concat(".mp3")))))));
+            MediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.sound_out);
+            MediaPlayer.start();
         };
 
-        _audio_fs_download_success_listener = new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
-            @Override
-            public void onSuccess(FileDownloadTask.TaskSnapshot _param1) {
-                final long _totalByteCount = _param1.getTotalByteCount();
+        _audio_fs_download_success_listener = _param1 -> {
+            final long _totalByteCount = _param1.getTotalByteCount();
 
-            }
         };
 
-        _audio_fs_delete_success_listener = new OnSuccessListener() {
-            @Override
-            public void onSuccess(Object _param1) {
+        _audio_fs_delete_success_listener = _param1 -> {
 
-            }
         };
 
-        _audio_fs_failure_listener = new OnFailureListener() {
-            @Override
-            public void onFailure(Exception _param1) {
-                final String _message = _param1.getMessage();
+        _audio_fs_failure_listener = _param1 -> {
+            final String _message = _param1.getMessage();
 
-            }
         };
 
         _UserChats_child_listener = new ChildEventListener() {
@@ -1227,93 +1168,63 @@ MyOSPushToken = _childValue.get("OneSignalPushToken").toString();
         };
         RecentMedia.addChildEventListener(_RecentMedia_child_listener);
 
-        Fauth_updateEmailListener = new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(Task<Void> _param1) {
-                final boolean _success = _param1.isSuccessful();
-                final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
+        Fauth_updateEmailListener = _param1 -> {
+            final boolean _success = _param1.isSuccessful();
+            final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
 
-            }
         };
 
-        Fauth_updatePasswordListener = new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(Task<Void> _param1) {
-                final boolean _success = _param1.isSuccessful();
-                final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
+        Fauth_updatePasswordListener = _param1 -> {
+            final boolean _success = _param1.isSuccessful();
+            final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
 
-            }
         };
 
-        Fauth_emailVerificationSentListener = new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(Task<Void> _param1) {
-                final boolean _success = _param1.isSuccessful();
-                final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
+        Fauth_emailVerificationSentListener = _param1 -> {
+            final boolean _success = _param1.isSuccessful();
+            final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
 
-            }
         };
 
-        Fauth_deleteUserListener = new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(Task<Void> _param1) {
-                final boolean _success = _param1.isSuccessful();
-                final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
+        Fauth_deleteUserListener = _param1 -> {
+            final boolean _success = _param1.isSuccessful();
+            final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
 
-            }
         };
 
-        Fauth_phoneAuthListener = new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(Task<AuthResult> task) {
-                final boolean _success = task.isSuccessful();
-                final String _errorMessage = task.getException() != null ? task.getException().getMessage() : "";
+        Fauth_phoneAuthListener = task -> {
+            final boolean _success = task.isSuccessful();
+            final String _errorMessage = task.getException() != null ? task.getException().getMessage() : "";
 
-            }
         };
 
-        Fauth_updateProfileListener = new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(Task<Void> _param1) {
-                final boolean _success = _param1.isSuccessful();
-                final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
+        Fauth_updateProfileListener = _param1 -> {
+            final boolean _success = _param1.isSuccessful();
+            final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
 
-            }
         };
 
-        Fauth_googleSignInListener = new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(Task<AuthResult> task) {
-                final boolean _success = task.isSuccessful();
-                final String _errorMessage = task.getException() != null ? task.getException().getMessage() : "";
+        Fauth_googleSignInListener = task -> {
+            final boolean _success = task.isSuccessful();
+            final String _errorMessage = task.getException() != null ? task.getException().getMessage() : "";
 
-            }
         };
 
-        _Fauth_create_user_listener = new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(Task<AuthResult> _param1) {
-                final boolean _success = _param1.isSuccessful();
-                final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
+        _Fauth_create_user_listener = _param1 -> {
+            final boolean _success = _param1.isSuccessful();
+            final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
 
-            }
         };
 
-        _Fauth_sign_in_listener = new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(Task<AuthResult> _param1) {
-                final boolean _success = _param1.isSuccessful();
-                final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
+        _Fauth_sign_in_listener = _param1 -> {
+            final boolean _success = _param1.isSuccessful();
+            final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
 
-            }
         };
 
-        _Fauth_reset_password_listener = new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(Task<Void> _param1) {
-                final boolean _success = _param1.isSuccessful();
+        _Fauth_reset_password_listener = _param1 -> {
+            final boolean _success = _param1.isSuccessful();
 
-            }
         };
     }
 
@@ -1338,11 +1249,11 @@ OneSignal.setSubscription(true);
 OneSignalUserID = userID;
 OneSignalPushToken = pushToken;
 */
-        final ViewGroup cView = getWindow().findViewById(android.R.id.content);
-        menuKeyboard = new SoftKeyboardPopup(this, chats_rv_holder, message, message, attach);
+        final ViewGroup cView = getParentActivity().getWindow().findViewById(android.R.id.content);
+        menuKeyboard = new SoftKeyboardPopup(getApplicationContext(), chats_rv_holder, message, message, attach);
         // Initialize Emoji Keyboard
         // AXEmoji Set-up
-        AXSingleEmojiView emojiView = new AXSingleEmojiView(this);
+        AXSingleEmojiView emojiView = new AXSingleEmojiView(getParentActivity());
         emojiView.setEditText(message);
         layout.initPopupView(emojiView);
         // Listeners EmojiPager
@@ -1356,18 +1267,12 @@ OneSignalPushToken = pushToken;
         layout.setPopupListener(new SimplePopupAdapter() {
             @Override
             public void onShow() {
-                if (!Manufacturer.equals("Xiaomi")) {
-                    resizeView(cView, cView.getHeight(), AndroidUtilities.getScreenHeight() - keyboard_height);
-                }
                 stickers.setImageResource(R.drawable.input_keyboard);
             }
 
             @Override
             public void onDismiss() {
                 stickers.setImageResource(R.drawable.smiles);
-                if (!Manufacturer.equals("Xiaomi")) {
-                    _initKeyboardAnim();
-                }
             }
 
             @Override
@@ -1376,14 +1281,9 @@ OneSignalPushToken = pushToken;
 
             @Override
             public void onKeyboardClosed() {
-                if (!Manufacturer.equals("Xiaomi")) {
-                    resizeView(cView, cView.getHeight(), AndroidUtilities.getScreenHeight());
-                }
+
             }
         });
-        // getExtra Key
-        uid = getIntent().getStringExtra("uid");
-        type = getIntent().getStringExtra("type");
         // Colors Set-up
         MyColor = "#FF193566";
         UserColor = "#FFF0F0F0";
@@ -1404,9 +1304,9 @@ OneSignalPushToken = pushToken;
         replying = false;
         recording = false;
         // Recycler View
-        chatAdapter = new ChatAdapter(uid, chats_rv, this, Private_Map);
+        chatAdapter = new ChatAdapter(uid, chats_rv, getParentActivity(), Private_Map);
         chats_rv.setAdapter(chatAdapter);
-        LinearLayoutManager mLinearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        LinearLayoutManager mLinearLayoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
         //mLinearLayoutManager.setStackFromEnd(true);
         chats_rv.setLayoutManager(mLinearLayoutManager);
         chats_rv.setItemViewCacheSize(60);
@@ -1414,7 +1314,7 @@ OneSignalPushToken = pushToken;
         chats_rv.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH);
         chats_rv.setItemAnimator(new MoonMeetItemAnimator());
         // initialize ItemTouchHelper
-        SwipeController controller = new SwipeController(this, position -> {
+        SwipeController controller = new SwipeController(getApplicationContext(), position -> {
             int mPosition = position;
             _replyValuesPositions();
             _getReplyData(mPosition);
@@ -1482,8 +1382,8 @@ OneSignalPushToken = pushToken;
     }
 
     @Override
-    protected void onActivityResult(int _requestCode, int _resultCode, Intent _data) {
-        super.onActivityResult(_requestCode, _resultCode, _data);
+    public void onActivityResultFragment(int _requestCode, int _resultCode, Intent _data) {
+        super.onActivityResultFragment(_requestCode, _resultCode, _data);
         switch (_requestCode) {
             case REQ_CD_IMAGE_PICKER:
                 if (_resultCode == Activity.RESULT_OK) {
@@ -1503,11 +1403,8 @@ OneSignalPushToken = pushToken;
                         if ((FileUtil.getFileLength(_filePath.get((int) (0))) / 1024) > 5120) {
                             D.setTitle("File too big");
                             D.setMessage("File size should be less than 5 MB");
-                            D.setPositiveButton("I understand", new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface _dialog, int _which) {
+                            D.setPositiveButton("I understand", (_dialog, _which) -> {
 
-                                }
                             });
                             D.create().show();
                         } else {
@@ -1564,11 +1461,8 @@ OneSignalPushToken = pushToken;
                         if ((FileUtil.getFileLength(_filePath) / 1024) > 5120) {
                             D.setTitle("File too big");
                             D.setMessage("File size should be less than 5 MB");
-                            D.setPositiveButton("I understand", new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface _dialog, int _which) {
+                            D.setPositiveButton("I understand", (_dialog, _which) -> {
 
-                                }
                             });
                             D.create().show();
                         } else {
@@ -1602,11 +1496,8 @@ OneSignalPushToken = pushToken;
                     if ((FileUtil.getFileLength(_filePath.get((int) (0))) / 1024) > 10240) {
                         D.setTitle("Attach File Too Big");
                         D.setMessage("Attach size should be less than 10 MB");
-                        D.setPositiveButton("I understand", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface _dialog, int _which) {
+                        D.setPositiveButton("I understand", (_dialog, _which) -> {
 
-                            }
                         });
                         D.create().show();
                     } else {
@@ -1625,13 +1516,14 @@ OneSignalPushToken = pushToken;
 
 
     @Override
-    public void onBackPressed() {
+    public boolean onBackPressed() {
         if (layout.isShowing()) {
             layout.setVisibility(View.GONE);
             layout.dismiss();
         } else {
-            finish();
+            finishFragment();
         }
+        return false;
     }
 
     @Override
@@ -1659,8 +1551,7 @@ OneSignalPushToken = pushToken;
     }
 
     @Override
-    public void onStart() {
-        super.onStart();
+    public void onTransitionAnimationEnd(boolean isOpen, boolean backward) {
         if (!CatchedImagePath.getString("LatestImagePath", "").equals("-")) {
             try {
 
@@ -1689,7 +1580,7 @@ OneSignalPushToken = pushToken;
             AudioRecorderTimer = new TimerTask() {
                 @Override
                 public void run() {
-                    runOnUiThread(() -> {
+                    AndroidUtilities.runOnUIThread(() -> {
                         AudioLengthVar++;
                         record_length.setText(String.valueOf((long) (AudioLengthVar)));
                     });
@@ -1926,7 +1817,7 @@ OneSignalPushToken = pushToken;
         AudioRecorderTimer = new TimerTask() {
             @Override
             public void run() {
-                runOnUiThread(() -> audio_fs.child(Uri.parse(FilePath).getLastPathSegment()).putFile(Uri.fromFile(new File(FileUtil.getExternalStorageDir().concat("/".concat("MoonMeet/".concat("AudioRecords/".concat(Uri.parse(FilePath).getLastPathSegment()))))))).addOnFailureListener(_audio_fs_failure_listener).addOnProgressListener(_audio_fs_upload_progress_listener).continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
+                AndroidUtilities.runOnUIThread(() -> audio_fs.child(Uri.parse(FilePath).getLastPathSegment()).putFile(Uri.fromFile(new File(FileUtil.getExternalStorageDir().concat("/".concat("MoonMeet/".concat("AudioRecords/".concat(Uri.parse(FilePath).getLastPathSegment()))))))).addOnFailureListener(_audio_fs_failure_listener).addOnProgressListener(_audio_fs_upload_progress_listener).continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
                     @Override
                     public Task<Uri> then(Task<UploadTask.TaskSnapshot> task) throws Exception {
                         return audio_fs.child(Uri.parse(FilePath).getLastPathSegment()).getDownloadUrl();
@@ -2034,70 +1925,6 @@ OneSignalPushToken = pushToken;
         reply_position = poss;
     }
 
-
-    public void _circleRipple(final String _color, final View _v) {
-        android.content.res.ColorStateList clrb = new android.content.res.ColorStateList(new int[][]{new int[]{}}, new int[]{Color.parseColor(_color)});
-        android.graphics.drawable.RippleDrawable ripdrb = new android.graphics.drawable.RippleDrawable(clrb, null, null);
-        _v.setBackground(ripdrb);
-    }
-
-    public void _initKeyboardAnim() {
-        if (!Manufacturer.equals("Xiaomi")) {
-            final int keyboardOffset = 300;
-            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
-
-            getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE | WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
-            final ViewGroup contentV = getWindow().findViewById(android.R.id.content);
-
-            getWindow().getDecorView().setOnApplyWindowInsetsListener(new View.OnApplyWindowInsetsListener() {
-
-                @Override
-                public WindowInsets onApplyWindowInsets(View view, WindowInsets inset) {
-                    if (view != null) {
-
-
-                        bar.setPadding(8, inset.getSystemWindowInsetTop(), 8, 8);
-                        int offset = inset.getSystemWindowInsetBottom() - inset.getStableInsetBottom();
-                        if (inset.getSystemWindowInsetBottom() > keyboardOffset) {
-                            int height = AndroidUtilities.getScreenHeight();
-
-                            int start = contentV.getHeight();
-                            int end = height - offset;
-                            resizeView(contentV, start, end);
-                        } else {
-                            resizeView(contentV, contentV.getHeight(), AndroidUtilities.getScreenHeight());
-                        }
-                    }
-                    return view.onApplyWindowInsets(inset);
-
-                }
-            });
-        }
-    }
-
-    //a function that resizes the decor view with animation
-    private void resizeView(final View view, int start, int end) {
-        ValueAnimator valueAnimator = ValueAnimator.ofInt(start, end);
-        valueAnimator.addUpdateListener(animation -> {
-            view.getLayoutParams().height = (int) animation.getAnimatedValue();
-            view.requestLayout();
-        });
-        valueAnimator.setInterpolator(CubicBezierInterpolator.EASE_BOTH);
-        valueAnimator.setDuration(260);
-        valueAnimator.start();
-    }
-
-    private void updateStatusBar() {
-        Window window = getWindow();
-        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR);
-        }
-        window.setStatusBarColor(getResources().getColor(R.color.StatusBarColor));
-    }
-
     public void _NotificationSenderServiceTask(final String _title, final String _message, final String _receiverID, final String _image) {
 		/*
 if (OneSignalSendingID.equals("")) {
@@ -2138,23 +1965,34 @@ try {
 */
     }
 
-    @Deprecated
-    public void showMessage(String _s) {
-        Toast.makeText(getApplicationContext(), _s, Toast.LENGTH_SHORT).show();
-    }
-
-    @Deprecated
-    public float getDip(int _input) {
-        return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, _input, getResources().getDisplayMetrics());
-    }
-
-    @Deprecated
-    public int getDisplayWidthPixels() {
-        return getResources().getDisplayMetrics().widthPixels;
-    }
-
-    @Deprecated
-    public int getDisplayHeightPixels() {
-        return getResources().getDisplayMetrics().heightPixels;
+    @Override
+    public void didReceivedNotification(int id, Object... args) {
+        if (id == NotificationCenter.didClickImage) {
+            presentFragment(new PhotoviewerActivity((String) args[0],(String) args[1],(String) args[2],(String) args[3],(String) args[4]));
+        }
+        if (id == NotificationCenter.getNeedPresentImagePicker) {
+            presentFragment(new ImagePickerActivity((Bundle) args[0]));
+        }
+        if (id == NotificationCenter.getNeedPresentCamera) {
+            presentFragment(new CameraActivity(), false);
+        }
+        if (id == NotificationCenter.getChatReplyData) {
+            _getReplyData((Double) args[0]);
+            _Replying(true);
+        }
+        if (id == NotificationCenter.didDeleteMessage) {
+            Private_Map.remove((double) args[0]);
+            Chat1.child((String) args[1]).removeValue();
+        }
+        if (id == NotificationCenter.didDeleteMessageForever) {
+            if (args[2].equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
+                CurrentDeletingPosition = (double) args[1];
+                Chat1.child((String) args[0]).removeValue();
+                Chat2.child((String) args[0]).removeValue();
+                Chat1.addChildEventListener(_Chat1_child_listener);
+                Chat2.addChildEventListener(_Chat2_child_listener);
+                Log.wtf(ChatActivity.class.getSimpleName(), "Current deleting position is : " + CurrentDeletingPosition);
+            }
+        }
     }
 }

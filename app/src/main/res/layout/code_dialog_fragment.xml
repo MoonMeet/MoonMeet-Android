@@ -22,7 +22,7 @@
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:padding="8dp"
-				android:background="#ECF0F3"
+				android:background="#FFFFFF"
 				android:gravity="center_horizontal|center_vertical"
 				android:orientation="vertical">
 				<LinearLayout
@@ -30,7 +30,7 @@
 					android:layout_width="350dp"
 					android:layout_height="wrap_content"
 					android:padding="8dp"
-					android:background="#ECF0F3"
+					android:background="#FFFFFF"
 					android:orientation="vertical">
 					<LinearLayout
 						android:id="@+id/top_linear"

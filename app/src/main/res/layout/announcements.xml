@@ -13,7 +13,7 @@
 			android:id="@+id/topbar"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:background="#ECF0F3"
+			android:background="#FFFFFF"
 			android:gravity="center_vertical"
 			android:orientation="horizontal">
 			<ImageView
@@ -51,7 +51,7 @@
 			android:id="@+id/holder"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
-			android:background="#ECF0F3"
+			android:background="#FFFFFF"
 			android:orientation="vertical"
 			android:layout_weight="1">
 			<LinearLayout
@@ -59,7 +59,7 @@
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
 				android:padding="8dp"
-				android:background="#ECF0F3"
+				android:background="#FFFFFF"
 				android:gravity="center_horizontal|center_vertical"
 				android:orientation="vertical"
 				android:layout_gravity="center_horizontal|center_vertical">

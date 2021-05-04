@@ -18,18 +18,11 @@ import org.mark.moonmeet.ui.BaseFragment;
 
 public class SecondBase extends BaseFragment {
 
-// replaced on create
-
-        private void initialize(Bundle _savedInstanceState) {
-        }
-
-        private void initializeLogic() {
-        }
-
         private HomeActivity homeActivity;
         private TermsandprivacyActivity t;
         private FrameLayout contentView;
         private ActionBarMenuItem searchItem;
+
         @Override
         public View createView(Context context){
             ActionBarMenu menu = actionBar.createMenu();
@@ -79,12 +72,7 @@ public class SecondBase extends BaseFragment {
 
             contentView = (FrameLayout) fragmentView;
 
-            fragmentView.setOnTouchListener(new View.OnTouchListener() {
-                @Override
-                public boolean onTouch(View view, MotionEvent ev) {
-                    return true;
-                }
-            });
+            fragmentView.setOnTouchListener((view, ev) -> true);
             actionBar.setBackgroundColor(0xfffe6262);
             actionBar.setTitle("BaseFragment example");
             homeActivity = new HomeActivity();
@@ -92,19 +80,10 @@ public class SecondBase extends BaseFragment {
             TextView intro = new TextView(context);
             intro.setText("Tap here to open the next fragment");
             intro.setTextSize(18);
-            intro.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    //presentFragment(new TermsandprivacyActivity());
-                }
-            });
-            intro.setOnLongClickListener(new View.OnLongClickListener(){
-                @Override
-                public boolean onLongClick (View v){
-
-                    presentFragment(homeActivity);
-                    return true;
-                }
+            intro.setOnClickListener(v -> presentFragment(new TermsandprivacyActivity()));
+            intro.setOnLongClickListener(v -> {
+                presentFragment(homeActivity);
+                return true;
             });
             ((ViewGroup)fragmentView).addView(intro, LayoutHelper.createFrame(-2,-2, Gravity.CENTER));
             //EditText editText = new EditText(context);

@@ -16,6 +16,19 @@ public class NotificationCenter {
 
     public static final int didChangeText = totalEvents++;
 
+    public static final int didClickStory = totalEvents++;
+    public static final int didClickConversation = totalEvents++;
+
+    public static final int didClickImage = totalEvents++;
+    public static final int didDeleteMessage = totalEvents++;
+    public static final int didDeleteMessageForever = totalEvents++;
+
+
+    public static final int getChatReplyData = totalEvents++;
+
+    public static final int getNeedPresentImagePicker = totalEvents++;
+    public static final int getNeedPresentCamera = totalEvents++;
+
     public static final int stopAllHeavyOperations = totalEvents++;
     public static final int startAllHeavyOperations = totalEvents++;
     public static final int didReplacedPhotoInMemCache = totalEvents++;

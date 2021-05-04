@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MoonMeet.iml" filepath="$PROJECT_DIR$/.idea/modules/MoonMeet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AXEmojiView/MoonMeet.AXEmojiView.iml" filepath="$PROJECT_DIR$/.idea/modules/AXEmojiView/MoonMeet.AXEmojiView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MoonMeet.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MoonMeet.app.iml" />
+    </modules>
+  </component>
+</project>

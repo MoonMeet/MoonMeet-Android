@@ -11,6 +11,7 @@
     <color name="focus_blue">#193566</color>
     <color name="md_red_500">#F44336</color>
     <color name="md_red_600">#E53935</color>
+    <color name="actionbar">#D8193566</color>
     <color name="md_red_700">#D32F2F</color>
     <color name="md_red_800">#C62828</color>
     <color name="md_red_900">#B71C1C</color>

@@ -2,7 +2,7 @@ package org.mark.moonmeet;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.DialogInterface;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.ColorStateList;
@@ -16,17 +16,15 @@ import android.os.Bundle;
 import android.os.StrictMode;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.appcompat.widget.TooltipCompat;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
@@ -40,7 +38,6 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.ChildEventListener;
@@ -53,10 +50,10 @@ import com.google.firebase.database.GenericTypeIndicator;
 import org.mark.moonmeet.adapters.ActiveAdapter;
 import org.mark.moonmeet.adapters.LastChatsAdapter;
 import org.mark.moonmeet.adapters.StoryAdapter;
-import org.mark.moonmeet.ui.ActionBarLayout;
 import org.mark.moonmeet.ui.BaseFragment;
 import org.mark.moonmeet.utils.AndroidUtilities;
 import org.mark.moonmeet.utils.MoonMeetItemAnimator;
+import org.mark.moonmeet.utils.NotificationCenter;
 
 import java.io.File;
 import java.lang.reflect.Method;
@@ -68,7 +65,7 @@ import java.util.TimerTask;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class LaunchActivity extends AppCompatActivity {
+public class LaunchActivity extends BaseFragment implements NotificationCenter.NotificationCenterDelegate {
 
     private Timer _timer = new Timer();
     private FirebaseDatabase _firebase = FirebaseDatabase.getInstance();
@@ -94,13 +91,8 @@ public class LaunchActivity extends AppCompatActivity {
     private ArrayList<HashMap<String, Object>> toDelivryActive = new ArrayList<>();
     private ArrayList<String> Active_LS = new ArrayList<>();
 
-    private LinearLayout topbar;
     private LinearLayout linear2;
     private SwipeRefreshLayout swipe_layout;
-    private ImageView imageview1;
-    private TextView topbar_txt;
-    private LinearLayout topbar_space;
-    private ImageView search;
     private TextView no_internet1;
     private TextView no_internet2;
     private TextView no_internet3;
@@ -129,7 +121,6 @@ public class LaunchActivity extends AppCompatActivity {
     private LinearLayout _drawer_saved_message_holder;
     private LinearLayout _drawer_settings_holder;
     private LinearLayout _drawer_announcement_holder;
-    private LinearLayout _drawer_ka7la_holder;
     private LinearLayout _drawer_divider2;
     private LinearLayout _drawer_invite_friends_holder;
     private LinearLayout _drawer_faq_holder;
@@ -150,9 +141,6 @@ public class LaunchActivity extends AppCompatActivity {
     private ImageView _drawer_settings_icon;
     private TextView _drawer_settings_txt;
     private ImageView _drawer_announcement_icon;
-    private TextView _drawer_announcement_txt;
-    private ImageView _drawer_ka7la_icon;
-    private TextView _drawer_ka7la_txt;
     private ImageView _drawer_invite_icon;
     private TextView _drawer_invite_txt;
     private ImageView _drawer_faq_icon;
@@ -193,48 +181,59 @@ public class LaunchActivity extends AppCompatActivity {
     private SharedPreferences ban_reason;
     private RequestNetwork InternetCheck;
     private RequestNetwork.RequestListener _InternetCheck_request_listener;
-    private Intent toKa7la = new Intent();
-    /*private FrameLayout fragmentView;
-    private ActionBarLayout actionBarLayout;
-    private final ArrayList<BaseFragment> mainFragmentStack = new ArrayList<>();*/
+    private LinearLayout topbar;
+    private ImageView imageview1;
+    private TextView topbar_txt;
+    private LinearLayout topbar_space;
+    private ImageView search;
+    private SharedPreferences CatchedImagePath;
 
-    @Override
-    public void onCreate(Bundle bundle) {
-        super.onCreate(bundle);
-        /*fragmentView = new FrameLayout(getApplicationContext());
-        actionBarLayout = new ActionBarLayout(this);
-        fragmentView.addView(actionBarLayout);
-        actionBarLayout.init(mainFragmentStack);
-        actionBarLayout.setDelegate(this);*/
-        setContentView(R.layout.launch);
-        initialize(bundle);
-        FirebaseApp.initializeApp(this);
-        initializeLogic();
+    public boolean isSwipeBackEnabled(MotionEvent event) {
+        return false;
     }
 
-    private void initialize(Bundle bundle) {
-        /**_app_bar = (AppBarLayout) findViewById(R.id._app_bar);
-         _coordinator = (CoordinatorLayout) findViewById(R.id._coordinator);
-         _toolbar = (Toolbar) findViewById(R.id._toolbar);
-         _toolbar.setVisibility(View.GONE);
-         _toolbar.setNavigationOnClickListener(_v -> onBackPressed());**/
+    @Override
+    public boolean onFragmentCreate() {
+        NotificationCenter.getInstance().addObserver(this, NotificationCenter.didClickConversation);
+        NotificationCenter.getInstance().addObserver(this, NotificationCenter.didClickStory);
+        return super.onFragmentCreate();
+    }
+
+    @Override
+    public void onFragmentDestroy() {
+        NotificationCenter.getInstance().removeObserver(this, NotificationCenter.didClickConversation);
+        NotificationCenter.getInstance().removeObserver(this, NotificationCenter.didClickStory);
+        super.onFragmentDestroy();
+    }
+
+    @Override
+    public View createView(Context context) {
+        fragmentView = new FrameLayout(context);
+        actionBar.setAddToContainer(false);
+        LayoutInflater inflater = LayoutInflater.from(context);
+        View view = inflater.inflate(R.layout.launch, (ViewGroup) fragmentView, false);
+        ((ViewGroup) fragmentView).addView(view);
+        initialize(context);
+        initializeLogic();
+        return fragmentView;
+    }
+
+    private void initialize(Context context) {
+
         _fab = (FloatingActionButton) findViewById(R.id._fab);
 
         _drawer = (DrawerLayout) findViewById(R.id._drawer);
-        ActionBarDrawerToggle _toggle = new ActionBarDrawerToggle(this, _drawer, _toolbar, R.string.app_name, R.string.app_name);
+        ActionBarDrawerToggle _toggle = new ActionBarDrawerToggle(getParentActivity(), _drawer, _toolbar, R.string.app_name, R.string.app_name);
         _drawer.addDrawerListener(_toggle);
         _toggle.syncState();
-
-        LinearLayout _nav_view = (LinearLayout) findViewById(R.id._nav_view);
-
         topbar = (LinearLayout) findViewById(R.id.topbar);
-        //topbar.setVisibility(View.GONE); // TODO : change that shit to ActionBar
-        linear2 = (LinearLayout) findViewById(R.id.linear2);
-        swipe_layout = (SwipeRefreshLayout) findViewById(R.id.swipe_layout);
+        LinearLayout _nav_view = (LinearLayout) findViewById(R.id._nav_view);
         imageview1 = findViewById(R.id.imageview1);
         topbar_txt = (TextView) findViewById(R.id.topbar_txt);
         topbar_space = (LinearLayout) findViewById(R.id.topbar_space);
         search = (ImageView) findViewById(R.id.search);
+        linear2 = (LinearLayout) findViewById(R.id.linear2);
+        swipe_layout = (SwipeRefreshLayout) findViewById(R.id.swipe_layout);
         no_internet1 = (TextView) findViewById(R.id.no_internet1);
         no_internet2 = (TextView) findViewById(R.id.no_internet2);
         no_internet3 = (TextView) findViewById(R.id.no_internet3);
@@ -250,6 +249,7 @@ public class LaunchActivity extends AppCompatActivity {
         ppl_holder = (LinearLayout) findViewById(R.id.ppl_holder);
         rv_holder = (LinearLayout) findViewById(R.id.rv_holder);
         ppl_add_icon = (ImageView) findViewById(R.id.ppl_add_icon);
+        ppl_add_icon = (ImageView) findViewById(R.id.ppl_add_icon);
         ppl_new_txt = (TextView) findViewById(R.id.ppl_new_txt);
         stories_rv = (RecyclerView) findViewById(R.id.stories_rv);
         active_rv = (RecyclerView) findViewById(R.id.active_rv);
@@ -263,7 +263,6 @@ public class LaunchActivity extends AppCompatActivity {
         _drawer_saved_message_holder = (LinearLayout) _nav_view.findViewById(R.id.saved_message_holder);
         _drawer_settings_holder = (LinearLayout) _nav_view.findViewById(R.id.settings_holder);
         _drawer_announcement_holder = (LinearLayout) _nav_view.findViewById(R.id.announcement_holder);
-        _drawer_ka7la_holder = (LinearLayout) _nav_view.findViewById(R.id.ka7la_holder);
         _drawer_divider2 = (LinearLayout) _nav_view.findViewById(R.id.divider2);
         _drawer_invite_friends_holder = (LinearLayout) _nav_view.findViewById(R.id.invite_friends_holder);
         _drawer_faq_holder = (LinearLayout) _nav_view.findViewById(R.id.faq_holder);
@@ -284,9 +283,6 @@ public class LaunchActivity extends AppCompatActivity {
         _drawer_settings_icon = (ImageView) _nav_view.findViewById(R.id.settings_icon);
         _drawer_settings_txt = (TextView) _nav_view.findViewById(R.id.settings_txt);
         _drawer_announcement_icon = (ImageView) _nav_view.findViewById(R.id.announcement_icon);
-        _drawer_announcement_txt = (TextView) _nav_view.findViewById(R.id.announcement_txt);
-        _drawer_ka7la_icon = (ImageView) _nav_view.findViewById(R.id.ka7la_icon);
-        _drawer_ka7la_txt = (TextView) _nav_view.findViewById(R.id.ka7la_txt);
         _drawer_invite_icon = (ImageView) _nav_view.findViewById(R.id.invite_icon);
         _drawer_invite_txt = (TextView) _nav_view.findViewById(R.id.invite_txt);
         _drawer_faq_icon = (ImageView) _nav_view.findViewById(R.id.faq_icon);
@@ -294,16 +290,16 @@ public class LaunchActivity extends AppCompatActivity {
         Fauth = FirebaseAuth.getInstance();
         sp_mydt = MoonMeetApplication.applicationContext.getSharedPreferences("sp_mydt", Activity.MODE_PRIVATE);
         sp_seen = MoonMeetApplication.applicationContext.getSharedPreferences("sp_seen", Activity.MODE_PRIVATE);
-        rn = new RequestNetwork(this);
+        CatchedImagePath = getParentActivity().getSharedPreferences("CatchedImagePath", Activity.MODE_PRIVATE);
+        rn = new RequestNetwork(getParentActivity());
         MyStoryData = MoonMeetApplication.applicationContext.getSharedPreferences("MyStoryData", Activity.MODE_PRIVATE);
-        ban_reason = getSharedPreferences("ban_reason", Activity.MODE_PRIVATE);
-        InternetCheck = new RequestNetwork(this);
+        ban_reason = context.getSharedPreferences("ban_reason", Activity.MODE_PRIVATE);
+        InternetCheck = new RequestNetwork(getParentActivity());
 
         imageview1.setOnClickListener(_view -> _drawer.openDrawer(GravityCompat.START));
 
         search.setOnClickListener(_view -> {
-            toAddStory.setClass(MoonMeetApplication.applicationContext, SearchActivity.class);
-            MoonMeetApplication.applicationContext.startActivity(toAddStory);
+            presentFragment(new SearchActivity(), false);
         });
 
         no_internet4.setOnClickListener(_view -> InternetCheck.startRequestNetwork(RequestNetworkController.GET, "https://www.google.com/", "connecting", _InternetCheck_request_listener));
@@ -327,17 +323,14 @@ public class LaunchActivity extends AppCompatActivity {
 
         ppl_holder.setOnClickListener(_view -> {
             if (ppl_new_txt.getText().toString().equals("Add Story")) {
-                toAddStory.setClass(MoonMeetApplication.applicationContext, NewstoryActivity.class);
-                MoonMeetApplication.applicationContext.startActivity(toAddStory);
+                presentFragment(new NewstoryActivity(), false);
             } else {
-                toAddStory.setClass(MoonMeetApplication.applicationContext, DiscoverActivity.class);
-                MoonMeetApplication.applicationContext.startActivity(toAddStory);
+                presentFragment(new DiscoverActivity(), false);
             }
         });
 
         _fab.setOnClickListener(_view -> {
-            toGoChat.setClass(MoonMeetApplication.applicationContext, DiscoverActivity.class);
-            MoonMeetApplication.applicationContext.startActivity(toGoChat);
+            presentFragment(new DiscoverActivity(), false);
         });
 
         _stories_child_listener = new ChildEventListener() {
@@ -555,6 +548,10 @@ FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(_onComple
                 };
                 final String _childKey = _param1.getKey();
                 final HashMap<String, Object> _childValue = _param1.getValue(_ind);
+                /* TODO : caught a null value of uid here when the app stay untouched for some minutes.
+                 * stack trace :  java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String com.google.firebase.auth.FirebaseUser.getUid()' on a null object reference
+                 * at org.mark.moonmeet.LaunchActivity$3.onChildChanged(LaunchActivity.java:566)
+                 */
                 if (_childKey.equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
                     calendar = Calendar.getInstance();
                     if (_childValue.containsKey("uid") && (_childValue.containsKey("avatar") && (_childValue.containsKey("firstname") && (_childValue.containsKey("lastname") && (_childValue.containsKey("phone") && (_childValue.containsKey("phone_status") && _childValue.containsKey("username"))))))) {
@@ -635,7 +632,7 @@ FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(_onComple
                             UserChats_LS.add(_childValue.get("uid").toString());
                             SketchwareUtil.sortListMap(toDeliveryLastChats, "last_message_time", false, false);
                         }
-                        chats.setAdapter(new LastChatsAdapter(MoonMeetApplication.applicationContext, storiesMap, toDeliveryLastChats));
+                        chats.setAdapter(new LastChatsAdapter(getParentActivity(), storiesMap, toDeliveryLastChats));
                         chats.getAdapter().notifyDataSetChanged();
                         chats_no.setVisibility(View.GONE);
                     }
@@ -710,7 +707,6 @@ FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(_onComple
                 linear2.setVisibility(View.VISIBLE);
                 topbar.setVisibility(View.GONE);
                 swipe_layout.setVisibility(View.GONE);
-                _fab.hide();
                 linear2.setLayoutParams(new LinearLayout.LayoutParams((int) LinearLayout.LayoutParams.MATCH_PARENT, (int) LinearLayout.LayoutParams.MATCH_PARENT));
             }
         };
@@ -734,18 +730,11 @@ FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(_onComple
         _drawer_saved_message_holder.setOnClickListener(_view -> AndroidUtilities.showToast("Coming Soon !"));
 
         _drawer_settings_holder.setOnClickListener(_view -> {
-            toDrawer.setClass(MoonMeetApplication.applicationContext, SettingsActivity.class);
-            MoonMeetApplication.applicationContext.startActivity(toDrawer);
+            presentFragment(new SettingsActivity(), false, false);
         });
 
         _drawer_announcement_holder.setOnClickListener(_view -> {
-            toDrawer.setClass(MoonMeetApplication.applicationContext, AnnouncementsActivity.class);
-            MoonMeetApplication.applicationContext.startActivity(toDrawer);
-        });
-
-        _drawer_ka7la_holder.setOnClickListener(_view -> {
-            toKa7la.setClass(MoonMeetApplication.applicationContext, ShopActivity.class);
-            MoonMeetApplication.applicationContext.startActivity(toKa7la);
+            presentFragment(new AnnouncementsActivity(), false, false);
         });
 
         _drawer_divider2.setOnClickListener(_view -> {
@@ -764,12 +753,12 @@ FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(_onComple
             Intent iten = new Intent(Intent.ACTION_SEND);
             iten.setType("*/*");
             iten.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(new File(apk)));
+            iten.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             MoonMeetApplication.applicationContext.startActivity(Intent.createChooser(iten, "Hey, I'm MoonMeet would you like to share me with your friends ?"));
         });
 
         _drawer_faq_holder.setOnClickListener(_view -> {
-            toDrawer.setClass(MoonMeetApplication.applicationContext, FaqInfoActivity.class);
-            MoonMeetApplication.applicationContext.startActivity(toDrawer);
+            presentFragment(new FaqInfoActivity(), false);
         });
 
         _drawer_part_1.setOnClickListener(_view -> {
@@ -829,21 +818,11 @@ FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(_onComple
         });
 
         _drawer_settings_icon.setOnClickListener(_view -> {
-            toDrawer.setClass(MoonMeetApplication.applicationContext, SettingsActivity.class);
-            MoonMeetApplication.applicationContext.startActivity(toDrawer);
+            presentFragment(new SettingsActivity(), false, false);
         });
 
         _drawer_settings_txt.setOnClickListener(_view -> {
-            toDrawer.setClass(MoonMeetApplication.applicationContext, SettingsActivity.class);
-            MoonMeetApplication.applicationContext.startActivity(toDrawer);
-        });
-
-        _drawer_ka7la_icon.setOnClickListener(_view -> {
-
-        });
-
-        _drawer_ka7la_txt.setOnClickListener(_view -> {
-
+            presentFragment(new SettingsActivity(), false, false);
         });
 
         _drawer_invite_icon.setOnClickListener(_view -> {
@@ -855,13 +834,11 @@ FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(_onComple
         });
 
         _drawer_faq_icon.setOnClickListener(_view -> {
-            toDrawer.setClass(MoonMeetApplication.applicationContext, FaqInfoActivity.class);
-            MoonMeetApplication.applicationContext.startActivity(toDrawer);
+            presentFragment(new FaqInfoActivity(), false);
         });
 
         _drawer_faq_txt.setOnClickListener(_view -> {
-            toDrawer.setClass(MoonMeetApplication.applicationContext, FaqInfoActivity.class);
-            MoonMeetApplication.applicationContext.startActivity(toDrawer);
+            presentFragment(new FaqInfoActivity(), false);
         });
 
         Fauth_updateEmailListener = _param1 -> {
@@ -945,7 +922,16 @@ OneSignal.setSubscription(true);
 OneSignalUserID = userID;
 OneSignalPushToken = pushToken;
 */
+        // Internet check
         InternetCheck.startRequestNetwork(RequestNetworkController.GET, "https://www.google.com/", "connecting", _InternetCheck_request_listener);
+        // Check if User Logged-in or not
+        if (FirebaseAuth.getInstance().getCurrentUser() == null) {
+            Bundle args = new Bundle();
+            args.putString("Country", ".");
+            args.putString("Code", ".");
+            presentFragment(new OtpActivity(args), false);
+            AndroidUtilities.showToast("Session Expired, please re-login.");
+        }
         // Strict VM Policy
         StrictMode.VmPolicy.Builder builder =
                 new StrictMode.VmPolicy.Builder();
@@ -960,11 +946,6 @@ OneSignalPushToken = pushToken;
                 AndroidUtilities.showToast(e.toString());
             }
         }
-        // Status Bar
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-        }
-        updateStatusBar();
         // ActionBar
         // Get Firebase Reference
         UserChats.removeEventListener(_UserChats_child_listener);
@@ -1033,29 +1014,21 @@ OneSignalPushToken = pushToken;
         TooltipCompat.setTooltipText(imageview1, "Drawer");
         _RippleEffects("#FFDADADA", imageview1);
         _RippleEffects("#FFDADADA", search);
-        scroll.getViewTreeObserver()
-                .addOnScrollChangedListener(() -> {
-                    if (scroll.getChildAt(0).getBottom()
-                            <= (scroll.getHeight() + scroll.getScrollY())) {
-                        _fab.hide();
-                    } else {
-                        _fab.show();
-                    }
-                });
+        _fab.show();
     }
 
     @Override
-    public void onBackPressed() {
+    public boolean onBackPressed() {
         if (_drawer.isDrawerOpen(GravityCompat.START)) {
             _drawer.closeDrawer(GravityCompat.START);
         } else {
             finishAffinity();
         }
+        return false;
     }
 
     @Override
-    public void onStart() {
-        super.onStart();
+    public void onTransitionAnimationEnd(boolean isOpen, boolean backward) {
         // Refreshing Data
         toDeliveryStory.clear();
         StoriesUID.clear();
@@ -1066,13 +1039,16 @@ OneSignalPushToken = pushToken;
         stories.addChildEventListener(_stories_child_listener);
         users.addChildEventListener(_users_child_listener);
         UserChats.addChildEventListener(_UserChats_child_listener);
+        if (!CatchedImagePath.getString("LatestImagePath", "").equals("-")) {
+            CatchedImagePath.edit().putString("LatestImagePath", "").apply();
+        }
     }
 
     public void _Drawer() {
         _drawer_divider1.setVisibility(View.GONE);
         _drawer_theme_switcher.setVisibility(View.INVISIBLE);
-        _drawer_theme_switcher.setImageTintList(new android.content.res.ColorStateList(new int[][]{{-android.R.attr.state_pressed}, {android.R.attr.state_pressed}}, new int[]{Color.parseColor("#FFECF0F3"),
-                Color.parseColor("#FFECF0F3")}));
+        _drawer_theme_switcher.setImageTintList(new android.content.res.ColorStateList(new int[][]{{-android.R.attr.state_pressed}, {android.R.attr.state_pressed}}, new int[]{Color.parseColor("#FFFFFF"),
+                Color.parseColor("#FFFFFF")}));
         _drawer_group_icon.setImageTintList(new android.content.res.ColorStateList(new int[][]{{-android.R.attr.state_pressed}, {android.R.attr.state_pressed}}, new int[]{Color.parseColor("#FF193566"),
                 Color.parseColor("#FF193566")}));
         _drawer_contact_icon.setImageTintList(new android.content.res.ColorStateList(new int[][]{{-android.R.attr.state_pressed}, {android.R.attr.state_pressed}}, new int[]{Color.parseColor("#FF193566"),
@@ -1087,8 +1063,6 @@ OneSignalPushToken = pushToken;
                 Color.parseColor("#FF193566")}));
         _drawer_announcement_icon.setImageTintList(new android.content.res.ColorStateList(new int[][]{{-android.R.attr.state_pressed}, {android.R.attr.state_pressed}}, new int[]{Color.parseColor("#FF193566"),
                 Color.parseColor("#FF193566")}));
-        _drawer_ka7la_icon.setImageTintList(new android.content.res.ColorStateList(new int[][]{{-android.R.attr.state_pressed}, {android.R.attr.state_pressed}}, new int[]{Color.parseColor("#FF193566"),
-                Color.parseColor("#FF193566")}));
     }
 
     public void _round(final View _view, final double _num, final String _color) {
@@ -1098,7 +1072,6 @@ OneSignalPushToken = pushToken;
 
 
             float f = (float) _num;
-
 
             gd.setCornerRadius(f);
             _view.setBackground(gd);
@@ -1111,10 +1084,8 @@ OneSignalPushToken = pushToken;
             builder.setTitle("Error")
                     .setMessage(error_code)
                     .setCancelable(false)
-                    .setNegativeButton("ОК", new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int id) {
+                    .setNegativeButton("ОК", (dialog, id) -> {
 
-                        }
                     });
             AlertDialog alert = builder.create();
             alert.show();
@@ -1128,17 +1099,13 @@ OneSignalPushToken = pushToken;
         _view.setBackground(ripdr);
     }
 
-
-    public void _UpdateStatus() {
-    }
-
-    private void updateStatusBar() {
-        Window window = getWindow();
-        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
-        window.setStatusBarColor(getResources().getColor(R.color.StatusBarColor));
-        window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-
+    @Override
+    public void didReceivedNotification(int id, Object... args) {
+        if (id == NotificationCenter.didClickConversation) {
+            presentFragment(new ChatActivity((String) args[0]), false);
+        }
+        if (id == NotificationCenter.didClickStory) {
+            presentFragment(new StoryActivity((String) args[0]), false);
+        }
     }
 }

@@ -7,7 +7,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:padding="8dp"
-		android:background="#ECF0F3"
+		android:background="#FFFFFF"
 		android:orientation="vertical"
 		android:layout_weight="1">
 		<LinearLayout
@@ -27,7 +27,7 @@
 				android:id="@+id/in_message_holder"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:background="#ECF0F3"
+				android:background="#FFFFFF"
 				android:orientation="vertical">
 				<LinearLayout
 					android:id="@+id/second_all_in_message_holder"

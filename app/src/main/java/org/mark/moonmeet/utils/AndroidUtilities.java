@@ -2,6 +2,7 @@ package org.mark.moonmeet.utils;
 
 import android.animation.ValueAnimator;
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.ContentUris;
 import android.content.Context;
 import android.content.Intent;
@@ -61,6 +62,7 @@ public class  AndroidUtilities {
     private static Field mStableInsetsField;
 
     private static Toast toast;
+    private static int adjustOwnerClassGuid = 0;
 
     static {
         leftBaseline = isTablet() ? 80 : 72;
@@ -132,6 +134,39 @@ public class  AndroidUtilities {
         }
     }
 
+    public static void requestAdjustResize(Activity activity, int classGuid) {
+        if (activity == null || isTablet()) {
+            return;
+        }
+        activity.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
+        adjustOwnerClassGuid = classGuid;
+    }
+
+    public static void requestAdjustNothing(Activity activity, int classGuid) {
+        if (activity == null || isTablet()) {
+            return;
+        }
+        activity.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_NOTHING);
+        adjustOwnerClassGuid = classGuid;
+    }
+
+    public static void setAdjustResizeToNothing(Activity activity, int classGuid) {
+        if (activity == null || isTablet()) {
+            return;
+        }
+        if (adjustOwnerClassGuid == 0 || adjustOwnerClassGuid == classGuid) {
+            activity.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_NOTHING);
+        }
+    }
+
+    public static void removeAdjustResize(Activity activity, int classGuid) {
+        if (activity == null || isTablet()) {
+            return;
+        }
+        if (adjustOwnerClassGuid == classGuid) {
+            activity.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
+        }
+    }
 
     public static Point getRealScreenSize() {
         Point size = new Point();

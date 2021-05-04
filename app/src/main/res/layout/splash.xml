@@ -1,0 +1,101 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/child_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/moon_first_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/moon_secondholder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:fitsSystemWindows="true">
+            <LinearLayout
+                android:id="@+id/the_big_moonmeet_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/moonmeet_logo"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/logo"
+                    android:scaleType="fitCenter" />
+                <TextView
+                    android:id="@+id/moonmeet_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moon Meet"
+                    android:textSize="25sp"
+                    android:textColor="#193566" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/the_little_moon_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/the_medium_moonmeet_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/tree_in_middle"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/tree"
+                        android:scaleType="fitCenter" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/the_small_moonmeet_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/medium_tree_left"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/tree"
+                        android:scaleType="fitCenter" />
+                    <ImageView
+                        android:id="@+id/small_tree_left"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/tree"
+                        android:scaleType="fitCenter" />
+                    <LinearLayout
+                        android:id="@+id/space_in_low"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1" />
+                    <ImageView
+                        android:id="@+id/small_tree_right"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/tree"
+                        android:scaleType="fitCenter" />
+                    <ImageView
+                        android:id="@+id/medium_tree_right"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/tree"
+                        android:scaleType="fitCenter" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

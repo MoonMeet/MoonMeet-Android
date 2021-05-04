@@ -1,7 +1,4 @@
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
-	xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical">
@@ -56,7 +53,7 @@
 				android:id="@+id/item1_lin"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:background="#ECF0F3"
+				android:background="#FFFFFF"
 				android:orientation="vertical">
 				<LinearLayout
 					android:id="@+id/item1"
@@ -95,7 +92,7 @@
 				android:id="@+id/item2_lin"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:background="#ECF0F3"
+				android:background="#FFFFFF"
 				android:orientation="vertical">
 				<LinearLayout
 					android:id="@+id/item2"
@@ -134,7 +131,7 @@
 				android:id="@+id/item3_lin"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:background="#ECF0F3"
+				android:background="#FFFFFF"
 				android:orientation="vertical">
 				<LinearLayout
 					android:id="@+id/item3"
@@ -173,7 +170,7 @@
 				android:id="@+id/item4_lin"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:background="#ECF0F3"
+				android:background="#FFFFFF"
 				android:orientation="vertical">
 				<LinearLayout
 					android:id="@+id/item4"

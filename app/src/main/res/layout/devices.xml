@@ -9,7 +9,7 @@
 		android:id="@+id/bar"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:background="#ECF0F3"
+		android:background="#FFFFFF"
 		android:gravity="center_vertical"
 		android:orientation="horizontal"
 		android:layout_gravity="center_vertical">
@@ -33,7 +33,7 @@
 		android:id="@+id/relative_layout_holder"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:background="#ECF0F3"
+		android:background="#FFFFFF"
 		android:orientation="vertical"
 		android:weightSum="1"
 		android:layout_weight="1">
@@ -41,7 +41,7 @@
 			android:id="@+id/fitslinearlayout"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
-			android:background="#ECF0F3"
+			android:background="#FFFFFF"
 			android:orientation="vertical"
 			android:weightSum="1"
 			android:layout_weight="1">
@@ -50,7 +50,7 @@
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
 				android:padding="8dp"
-				android:background="#ECF0F3"
+				android:background="#FFFFFF"
 				android:orientation="vertical"
 				android:weightSum="1"
 				android:layout_weight="1">

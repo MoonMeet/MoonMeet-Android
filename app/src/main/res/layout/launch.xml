@@ -12,57 +12,54 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_menu_white" />
+
+        <TextView
+            android:id="@+id/topbar_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="14dp"
+            android:text="Moon Meet"
+            android:textColor="#193566"
+            android:textSize="18sp" />
 
         <LinearLayout
-            android:id="@+id/topbar"
-            android:layout_width="match_parent"
+            android:id="@+id/topbar_space"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#ECF0F3"
-            android:fitsSystemWindows="true"
-            android:gravity="center_vertical"
-            android:minHeight="?attr/actionBarSize"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/imageview1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="14dp"
-                android:scaleType="center"
-                android:src="@drawable/ic_menu_white" />
-
-            <TextView
-                android:id="@+id/topbar_txt"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:padding="14dp"
-                android:text="Moon Meet"
-                android:textColor="#193566"
-                android:textSize="18sp" />
-
-            <LinearLayout
-                android:id="@+id/topbar_space"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:padding="8dp" />
-
-            <ImageView
-                android:id="@+id/search"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="14dp"
-                android:scaleType="center"
-                android:src="@drawable/ic_ab_search" />
-        </LinearLayout>
-
+            android:padding="14dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_ab_search" />
+    </LinearLayout>
         <LinearLayout
             android:id="@+id/linear2"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:background="#ECF0F3"
+            android:background="#FFFFFF"
             android:gravity="center_horizontal|center_vertical"
             android:orientation="vertical"
             android:padding="8dp">
@@ -125,14 +122,14 @@
                 android:id="@+id/scroll"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#ECF0F3"
+                android:background="#FFFFFF"
                 android:fillViewport="true">
 
                 <LinearLayout
                     android:id="@+id/main_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#ECF0F3"
+                    android:background="#FFFFFF"
                     android:fillViewport="true"
                     android:orientation="vertical">
 
@@ -271,25 +268,22 @@
             </androidx.core.widget.NestedScrollView>
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
     </LinearLayout>
+    <LinearLayout
+        android:id="@+id/_nav_view"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FFFFFF"
+        app:insetForeground="#FF193566">
 
+        <include layout="@layout/_drawer_launch" />
+    </LinearLayout>
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right|bottom"
         android:layout_margin="16dp"
-        android:animateLayoutChanges="true"
         app:srcCompat="@drawable/floating_pencil"
         app:tint="@color/MoonWhiteColor" />
-
-    <LinearLayout
-        android:id="@+id/_nav_view"
-        android:layout_width="320dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:background="#FFECF0F3"
-        app:insetForeground="#FF193566">
-
-        <include layout="@layout/_drawer_launch" />
-    </LinearLayout>
 </androidx.drawerlayout.widget.DrawerLayout>

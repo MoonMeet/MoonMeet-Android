@@ -1,6 +1,5 @@
 package org.mark.moonmeet;
 
-import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -65,15 +64,5 @@ public class MessagingFragmentActivity extends Fragment {
 	private void initializeLogic() {
 		textview2.setTypeface(Typeface.createFromAsset(getContext().getAssets(),"fonts/royal_404.ttf"), 1);
 		textview3.setTypeface(Typeface.createFromAsset(getContext().getAssets(),"fonts/royal_404.ttf"), 0);
-	}
-	
-	@Override
-	public void onActivityResult(int _requestCode, int _resultCode, Intent _data) {
-		super.onActivityResult(_requestCode, _resultCode, _data);
-		switch (_requestCode) {
-			
-			default:
-			break;
-		}
 	}
 }

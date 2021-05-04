@@ -1,7 +1,4 @@
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
-	xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical">
@@ -16,7 +13,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:paddingBottom="16dp"
-			android:background="#ECF0F3"
+			android:background="#FFFFFF"
 			android:orientation="vertical">
 			<LinearLayout
 				android:id="@+id/top_lin"
@@ -56,7 +53,7 @@
 				android:id="@+id/item1_lin"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:background="#ECF0F3"
+				android:background="#FFFFFF"
 				android:orientation="vertical">
 				<LinearLayout
 					android:id="@+id/item1"
@@ -105,7 +102,7 @@
 					android:paddingTop="4dp"
 					android:paddingRight="8dp"
 					android:paddingBottom="4dp"
-					android:background="#ECF0F3"
+					android:background="#FFFFFF"
 					android:gravity="center_vertical"
 					android:orientation="horizontal">
 					<TextView
@@ -145,7 +142,7 @@
 					android:paddingTop="4dp"
 					android:paddingRight="8dp"
 					android:paddingBottom="4dp"
-					android:background="#ECF0F3"
+					android:background="#FFFFFF"
 					android:gravity="center_vertical"
 					android:orientation="horizontal">
 					<TextView
@@ -185,7 +182,7 @@
 					android:paddingTop="4dp"
 					android:paddingRight="8dp"
 					android:paddingBottom="4dp"
-					android:background="#ECF0F3"
+					android:background="#FFFFFF"
 					android:gravity="center_vertical"
 					android:orientation="horizontal">
 					<TextView

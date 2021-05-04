@@ -56,7 +56,7 @@ public class ActiveAdapter extends RecyclerView.Adapter<ActiveAdapter.ViewHolder
         final de.hdodenhof.circleimageview.CircleImageView circleimageview1 = (de.hdodenhof.circleimageview.CircleImageView) _view.findViewById(R.id.circleimageview1);
         final LinearLayout linear2 = _view.findViewById(R.id.linear2);
 
-        _radius_4("#FF64BBA6", "#FFECF0F3", 8, 360, 360, 360, 360, linear2);
+        _radius_4("#FF64BBA6", "#FFFFFF", 8, 360, 360, 360, 360, linear2);
         RecyclerView.LayoutParams _lp = new RecyclerView.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT);
         _view.setLayoutParams(_lp);
         if (_data.get((int) _position).containsKey("uid") && (_data.get((int) _position).containsKey("firstname") && (_data.get((int) _position).containsKey("lastname") && (_data.get((int) _position).containsKey("avatar") && _data.get((int) _position).containsKey("last_seen"))))) {

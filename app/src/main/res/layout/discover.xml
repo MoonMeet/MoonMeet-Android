@@ -9,10 +9,9 @@
 		android:id="@+id/linear1"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:background="#ECF0F3"
+		android:background="#FFFFFF"
 		android:gravity="center_vertical"
-		android:orientation="horizontal"
-		android:fitsSystemWindows="true">
+		android:orientation="horizontal" >
 		<ImageView
 			android:id="@+id/imageview1"
 			android:layout_width="wrap_content"
@@ -34,14 +33,14 @@
 		android:id="@+id/holder"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:background="#ECF0F3"
+		android:background="#FFFFFF"
 		android:orientation="vertical">
 		<LinearLayout
 			android:id="@+id/nopplyet"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:padding="8dp"
-			android:background="#ECF0F3"
+			android:background="#FFFFFF"
 			android:gravity="center_horizontal|center_vertical"
 			android:orientation="vertical"
 			android:layout_gravity="center_horizontal|center_vertical">
@@ -75,8 +74,6 @@
 			android:id="@+id/recyclerview1"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
-			android:background="#ECF0F3"
-			android:layout_weight="1"
-			android:fitsSystemWindows="true" />
+			android:background="#FFFFFF" />
 	</FrameLayout>
 </LinearLayout>

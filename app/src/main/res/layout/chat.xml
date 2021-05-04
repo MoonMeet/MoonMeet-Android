@@ -7,14 +7,14 @@
 		android:id="@+id/mLinearContent"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:background="#ECF0F3"
+		android:background="#FFFFFF"
 		android:orientation="vertical"
 		android:layout_weight="1">
 		<LinearLayout
 			android:id="@+id/bar"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:background="#ECF0F3"
+			android:background="#FFFFFF"
 			android:orientation="horizontal">
 			<LinearLayout
 				android:id="@+id/alternativetoolbar"
@@ -131,7 +131,7 @@
 			android:id="@+id/img_lin"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:background="#ECF0F3"
+			android:background="#FFFFFF"
 			android:gravity="center_horizontal"
 			android:orientation="vertical">
 			<LinearLayout
@@ -169,7 +169,7 @@
 				android:id="@+id/img_tools_lin"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:background="#ECF0F3"
+				android:background="#FFFFFF"
 				android:gravity="center_vertical"
 				android:orientation="horizontal">
 				<com.google.android.material.textview.MaterialTextView
@@ -245,7 +245,7 @@
 			android:layout_height="wrap_content"
 			android:paddingLeft="8dp"
 			android:paddingRight="8dp"
-			android:background="#ECF0F3"
+			android:background="#FFFFFF"
 			android:gravity="center_vertical"
 			android:orientation="horizontal">
 			<com.google.android.material.imageview.ShapeableImageView
@@ -319,7 +319,7 @@
 			android:id="@+id/bottom_message_linear"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:background="#ECF0F3"
+			android:background="#FFFFFF"
 			android:orientation="horizontal">
 			<com.google.android.material.imageview.ShapeableImageView
 				android:id="@+id/stickers"
@@ -375,7 +375,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:padding="8dp"
-			android:background="#ECF0F3"
+			android:background="#FFFFFF"
 			android:gravity="center_horizontal|center_vertical"
 			android:orientation="horizontal">
 			<com.google.android.material.imageview.ShapeableImageView
@@ -413,7 +413,7 @@
 			android:id="@+id/layout"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:background="#ECF0F3"
+			android:background="#FFFFFF"
 			android:orientation="horizontal" />
 	</LinearLayout>
 </LinearLayout>

@@ -22,7 +22,7 @@ import java.util.HashMap;
 
 
 public class GetstartedFragmentActivity extends Fragment {
-	
+
 	private HashMap<String, Object> country_id = new HashMap<>();
 	private String country = "";
 	
@@ -47,13 +47,11 @@ public class GetstartedFragmentActivity extends Fragment {
 	
 	private Intent toContinue = new Intent();
 	private SharedPreferences vp;
-	
 	@NonNull
 	@Override
 	public View onCreateView(@NonNull LayoutInflater _inflater, @Nullable ViewGroup _container, @Nullable Bundle _savedInstanceState) {
 		View _view = _inflater.inflate(R.layout.getstarted_fragment, _container, false);
 		initialize(_savedInstanceState, _view);
-		com.google.firebase.FirebaseApp.initializeApp(getContext());
 		initializeLogic();
 		return _view;
 	}
@@ -84,14 +82,25 @@ public class GetstartedFragmentActivity extends Fragment {
 		textview2.setTypeface(Typeface.createFromAsset(getContext().getAssets(),"fonts/royal_404.ttf"), 1);
 		textview3.setTypeface(Typeface.createFromAsset(getContext().getAssets(),"fonts/royal_404.ttf"), 0);
 		next.setTypeface(Typeface.createFromAsset(getContext().getAssets(),"fonts/royal_404.ttf"), 1);
-		linear_continue.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View _view) {
-				vp.edit().putString("ViewPager", "done").commit();
-				toContinue.setClass(getContext(), OtpActivity.class);
-				toContinue.putExtra("Country", ".");
-				toContinue.putExtra("Code", ".");
-				startActivity(toContinue);
+		linear_continue.setOnClickListener(_view -> {
+			vp.edit().putString("ViewPager", "done").apply();
+			/*toContinue.setClass(getContext(), FragmentStack.class);
+			toContinue.putExtra("Country", ".");
+			toContinue.putExtra("Code", ".");
+			startActivity(toContinue);*/
+			Intent intent = new Intent(Intent.ACTION_MAIN);
+			intent.addCategory(Intent.CATEGORY_HOME);
+			intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+			intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+			intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+			intent.addFlags(Intent.FLAG_ACTIVITY_TASK_ON_HOME);
+			try {
+				Class ourClass = Class.forName("org.mark.moonmeet.MainActivity");
+				Intent startup = new Intent(getActivity(), ourClass);
+				getActivity().startActivity(startup);
+				getActivity().finish();
+			} catch (ClassNotFoundException e) {
+				e.printStackTrace();
 			}
 		});
 	}
@@ -99,10 +108,5 @@ public class GetstartedFragmentActivity extends Fragment {
 	@Override
 	public void onActivityResult(int _requestCode, int _resultCode, Intent _data) {
 		super.onActivityResult(_requestCode, _resultCode, _data);
-		switch (_requestCode) {
-			
-			default:
-			break;
-		}
 	}
 }

@@ -9,7 +9,7 @@
 		android:id="@+id/topbar"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:background="#ECF0F3"
+		android:background="#FFFFFF"
 		android:gravity="center_vertical"
 		android:orientation="horizontal"
 		android:fitsSystemWindows="true"
@@ -59,14 +59,14 @@
 		android:id="@+id/linear_back_holder"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:background="#ECF0F3"
+		android:background="#FFFFFF"
 		android:orientation="vertical">
 		<LinearLayout
 			android:id="@+id/nophtsyet_grid"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:padding="8dp"
-			android:background="#ECF0F3"
+			android:background="#FFFFFF"
 			android:gravity="center_horizontal|center_vertical"
 			android:orientation="vertical"
 			android:layout_gravity="center_horizontal|center_vertical"
@@ -111,7 +111,7 @@
 				android:padding="2dp"
 				android:text="TextView"
 				android:textSize="14sp"
-				android:textColor="#ECF0F3"
+				android:textColor="#FFFFFF"
 				android:singleLine="true" />
 		</LinearLayout>
 	</LinearLayout>

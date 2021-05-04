@@ -9,7 +9,7 @@
 		android:id="@+id/bar"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:background="#ECF0F3"
+		android:background="#FFFFFF"
 		android:gravity="center_vertical"
 		android:orientation="horizontal"
 		android:layout_gravity="center_vertical">
@@ -33,21 +33,21 @@
 		android:id="@+id/relative_layout_holder"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:background="#ECF0F3"
+		android:background="#FFFFFF"
 		android:orientation="vertical"
 		android:layout_weight="1">
 		<androidx.appcompat.widget.FitWindowsLinearLayout
 			android:id="@+id/fitslinearlayout"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:background="#ECF0F3"
+			android:background="#FFFFFF"
 			android:orientation="vertical"
 			android:layout_weight="1">
 			<androidx.appcompat.widget.LinearLayoutCompat
 				android:id="@+id/linearcompat"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:background="#ECF0F3"
+				android:background="#FFFFFF"
 				android:orientation="vertical"
 				android:layout_weight="1">
 				<LinearLayout

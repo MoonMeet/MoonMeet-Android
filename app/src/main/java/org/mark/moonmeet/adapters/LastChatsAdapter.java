@@ -9,6 +9,7 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.Typeface;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,6 +27,7 @@ import org.mark.axemojiview.view.AXEmojiTextView;
 import org.mark.moonmeet.ChatActivity;
 import org.mark.moonmeet.R;
 import org.mark.moonmeet.StoryActivity;
+import org.mark.moonmeet.utils.NotificationCenter;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -217,19 +219,14 @@ public class LastChatsAdapter extends RecyclerView.Adapter<LastChatsAdapter.View
                         _radius_4("#00000000", "#FFDADADA", 8, 100, 100, 100, 100, storylin);
                     }
                     storylin.setOnClickListener(_view12 -> {
-                        toViewStory.setClass(mContext, StoryActivity.class);
-                        toViewStory.putExtra("uid", _data.get((int)_position).get("uid").toString());
-                        mContext.startActivity(toViewStory);
+                       NotificationCenter.getInstance().postNotificationName(NotificationCenter.didClickStory, _data.get((int)_position).get("uid").toString());
                     });
                 }
                 else {
                     _radius_4("#00000000", "#00000000", 8, 100, 100, 100, 100, storylin);
                 }
                 linear1.setOnClickListener(_view1 -> {
-                    toGoChat.setClass(mContext, ChatActivity.class);
-                    toGoChat.putExtra("uid", _data.get((int)_position).get("uid").toString());
-                    toGoChat.putExtra("type", "private");
-                    mContext.startActivity(toGoChat);
+                    NotificationCenter.getInstance().postNotificationName(NotificationCenter.didClickConversation, _data.get(_position).get("uid").toString());
                 });
             }
             else {
@@ -258,9 +255,7 @@ public class LastChatsAdapter extends RecyclerView.Adapter<LastChatsAdapter.View
             builder.setTitle("Error")
                     .setMessage(error_code)
                     .setCancelable(false)
-                    .setNegativeButton("ОК", new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int id) {
-                        }
+                    .setNegativeButton("ОК", (dialog, id) -> {
                     });
             AlertDialog alert = builder.create();
             alert.show();

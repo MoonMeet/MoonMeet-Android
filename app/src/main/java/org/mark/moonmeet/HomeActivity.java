@@ -88,13 +88,7 @@ public class HomeActivity extends BaseFragment implements NotificationCenter.Not
 
         fragmentView.setBackgroundColor( Color.parseColor("#6200ee"));
 
-        fragmentView.setOnTouchListener(new View.OnTouchListener(){
-            @Override
-            public boolean  onTouch(View v, MotionEvent event){
-
-                return true;
-            }
-        });
+        fragmentView.setOnTouchListener((v, event) -> true);
 
 
         return fragmentView;

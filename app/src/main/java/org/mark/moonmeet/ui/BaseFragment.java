@@ -1,11 +1,13 @@
 package org.mark.moonmeet.ui;
 
 import android.animation.AnimatorSet;
-import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.AssetManager;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -15,6 +17,9 @@ import android.view.ViewGroup;
 import android.view.accessibility.AccessibilityManager;
 
 import androidx.annotation.IdRes;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 
 import org.mark.moonmeet.MoonMeetApplication;
 import org.mark.moonmeet.messenger.FileLog;
@@ -34,6 +39,9 @@ public class BaseFragment {
     protected boolean swipeBackEnabled = true;
     protected boolean hasOwnBackground = false;
     private boolean isFinished = false;
+    protected Resources mResources;
+    protected Context mBase;
+    protected Configuration mOverrideConfiguration;
 
     public BaseFragment() {
         classGuid = lastClassGuid++;
@@ -88,7 +96,7 @@ public class BaseFragment {
     }
 
     protected void setParentActivityTitle(CharSequence title) {
-        Activity activity = getParentActivity();
+        AppCompatActivity activity = getParentActivity();
         if (activity != null) {
             activity.setTitle(title);
         }
@@ -198,6 +206,13 @@ public class BaseFragment {
         parentLayout.closeLastFragment(animated);
     }
 
+    public void finishAffinity() {
+        if (isFinished || parentLayout == null) {
+            return;
+        }
+        parentLayout.parentActivity.finishAffinity();
+    }
+
     public void removeSelfFromStack() {
         if (isFinished || parentLayout == null) {
             return;
@@ -220,8 +235,7 @@ public class BaseFragment {
         return false;
     }
 
-    public void onResume() {
-
+    public void onResume() {;
     }
 
     public void onPause() {
@@ -303,16 +317,30 @@ public class BaseFragment {
         return parentLayout != null && parentLayout.presentFragment(fragment, removeLast, forceWithoutAnimation, true, false);
     }
 
-    public Activity getParentActivity() {
+    public AppCompatActivity getParentActivity() {
         if (parentLayout != null) {
             return parentLayout.parentActivity;
         }
         return null;
     }
 
+    public Object getSystemService(@NonNull String name) {
+        if (parentLayout == null) {
+            return null;
+        }
+        return parentLayout.parentActivity.getSystemService(name);
+    }
+
     public Context getActivity() {
         if (parentLayout != null) {
             return parentLayout.getContext();
+        }
+        return null;
+    }
+
+    public AppCompatActivity getThis() {
+        if (parentLayout != null) {
+            return parentLayout.parentActivity;
         }
         return null;
     }
@@ -328,6 +356,32 @@ public class BaseFragment {
         if (parentLayout != null) {
             parentLayout.startActivityForResult(intent, requestCode);
         }
+    }
+
+    public void startActivity(final Intent intent, final Bundle bundle) {
+        if (parentLayout != null) {
+            parentLayout.startActivity(intent, bundle);
+        }
+    }
+
+    public void startActivity(final Intent intent) {
+        if (parentLayout != null) {
+            parentLayout.startActivity(intent);
+        }
+    }
+
+    public AssetManager getAssets() {
+        // Ensure we're returning assets with the correct configuration.
+        return parentLayout.parentActivity.getAssets();
+    }
+
+    public Resources getResources() {
+        return parentLayout.parentActivity.getResources();
+    }
+
+    @NonNull
+    public FragmentManager getSupportFragmentManager() {
+        return parentLayout.getSupportFragmentManager();
     }
 
     public boolean dismissDialogOnPause(Dialog dialog) {

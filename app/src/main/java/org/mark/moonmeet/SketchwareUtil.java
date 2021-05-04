@@ -85,8 +85,8 @@ public class SketchwareUtil {
 		Collections.sort(listMap, new Comparator<HashMap<String, Object>>() {
 			public int compare(HashMap<String, Object> _compareMap1, HashMap<String, Object> _compareMap2) {
 				if (isNumber) {
-					int _count1 = Integer.valueOf(_compareMap1.get(key).toString());
-					int _count2 = Integer.valueOf(_compareMap2.get(key).toString());
+					int _count1 = Integer.parseInt(_compareMap1.get(key).toString());
+					int _count2 = Integer.parseInt(_compareMap2.get(key).toString());
 					if (ascending) {
 						return _count1 < _count2 ? -1 : _count1 < _count2 ? 1 : 0;
 					} else {

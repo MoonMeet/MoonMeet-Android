@@ -18,7 +18,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -28,11 +27,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import org.mark.axemojiview.view.AXEmojiTextView;
-import org.mark.moonmeet.ChatActivity;
-import org.mark.moonmeet.MoonMeetApplication;
-import org.mark.moonmeet.PhotoviewerActivity;
 import org.mark.moonmeet.R;
 import org.mark.moonmeet.SketchwareUtil;
+import org.mark.moonmeet.utils.AndroidUtilities;
+import org.mark.moonmeet.utils.NotificationCenter;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -49,7 +47,6 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
     Intent toView = new Intent();
     RecyclerView mRecyclerView;
     Timer _timer = new Timer();
-    ChatActivity chatActivity = new ChatActivity();
     FirebaseDatabase _firebase = FirebaseDatabase.getInstance();
     DatabaseReference reports = _firebase.getReference("reports");
     ChildEventListener _reports_child_listener;
@@ -131,13 +128,13 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
                     reply_img.setVisibility(View.GONE);
                     _radius_4("#FF193566", "#00000000", 0, SketchwareUtil.getDip(mContext, (int) (8)), SketchwareUtil.getDip(mContext, (int) (8)), SketchwareUtil.getDip(mContext, (int) (8)), SketchwareUtil.getDip(mContext, (int) (8)), background);
                     _radius_4("#FF193566", "#00000000", 0, SketchwareUtil.getDip(mContext, (int) (8)), SketchwareUtil.getDip(mContext, (int) (8)), 0, SketchwareUtil.getDip(mContext, (int) (8)), second_all_in_message_holder);
-                    _radius_4("#FFECF0F3", "#00000000", 0, 0, 0, 0, SketchwareUtil.getDip(mContext, (int) (16)), corner2);
-                    _radius_4("#FFECF0F3", "#00000000", 0, 6, 6, 6, 6, reply_in_top_divider);
-                    reply_name.setTextColor(0xFFECF0F3);
-                    reply_message.setTextColor(0xFFECF0F3);
+                    _radius_4("#FFFFFFFF", "#00000000", 0, 0, 0, 0, SketchwareUtil.getDip(mContext, (int) (16)), corner2);
+                    _radius_4("#FFFFFFFF", "#00000000", 0, 6, 6, 6, 6, reply_in_top_divider);
+                    reply_name.setTextColor(0xFFFFFFFF);
+                    reply_message.setTextColor(0xFFFFFFFF);
                     time2.setTextColor(0xFFFFFFFF);
-                    message.setTextColor(0xFFECF0F3);
-                    time.setTextColor(0xFFECF0F3);
+                    message.setTextColor(0xFFFFFFFF);
+                    time.setTextColor(0xFFFFFFFF);
                     image_holder.setBackgroundColor(0xFF193566);
                     background.setElevation((int) 1);
                 } else {
@@ -152,104 +149,49 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
                     reply_img.setVisibility(View.GONE);
                     _radius_4("#FF8C92AC", "#00000000", 0, SketchwareUtil.getDip(mContext, (int) (8)), SketchwareUtil.getDip(mContext, (int) (8)), SketchwareUtil.getDip(mContext, (int) (8)), SketchwareUtil.getDip(mContext, (int) (8)), background);
                     _radius_4("#FF8C92AC", "#00000000", 0, SketchwareUtil.getDip(mContext, (int) (8)), SketchwareUtil.getDip(mContext, (int) (8)), SketchwareUtil.getDip(mContext, (int) (8)), 0, second_all_in_message_holder);
-                    _radius_4("#FFECF0F3", "#00000000", 0, 0, 0, SketchwareUtil.getDip(mContext, (int) (16)), 0, corner);
-                    _radius_4("#FFECF0F3", "#00000000", 0, 4, 4, 4, 4, reply_in_top_divider);
+                    _radius_4("#FFFFFFFF", "#00000000", 0, 0, 0, SketchwareUtil.getDip(mContext, (int) (16)), 0, corner);
+                    _radius_4("#FFFFFFFF", "#00000000", 0, 4, 4, 4, 4, reply_in_top_divider);
                     background.setElevation((int) 1);
-                    reply_name.setTextColor(0xFFECF0F3);
-                    reply_message.setTextColor(0xFFECF0F3);
+                    reply_name.setTextColor(0xFFFFFFFF);
+                    reply_message.setTextColor(0xFFFFFFFF);
                     time2.setTextColor(0xFFFFFFFF);
-                    message.setTextColor(0xFFECF0F3);
-                    time.setTextColor(0xFFECF0F3);
+                    message.setTextColor(0xFFFFFFFF);
+                    time.setTextColor(0xFFFFFFFF);
                 }
                 if (_data.get((int) _position).containsKey("type")) {
-                    if (_data.get((int) _position).get("type").toString().equals("message")) {
-                        background.setVisibility(View.VISIBLE);
-                        reply_top.setVisibility(View.GONE);
-                        message.setText(_data.get((int) _position).get("text").toString());
-                        cardview.setVisibility(View.GONE);
-                        love.setVisibility(View.GONE);
-                        reply_img.setVisibility(View.GONE);
-                    } else {
-                        if (_data.get((int) _position).get("type").toString().equals("reply")) {
-                            if (_data.get((int) _position).containsKey("reply_text") && _data.get((int) _position).containsKey("reply_image")) {
-                                String reply_image_str = "";
-                                reply_image_str = _data.get((int) _position).get("reply_image").toString();
-                                com.bumptech.glide.Glide.with(mContext)
-                                        .load(reply_image_str)
-                                        .override(160, 160)
-                                        .into(reply_img);
-                                String reply_text_str = "";
-                                reply_text_str = _data.get((int) _position).get("reply_text").toString();
-                                message.setText(reply_text_str);
-                                reply_img.setVisibility(View.VISIBLE);
+                    if (_data.get((int)_position).containsKey("type")) {
+                        if (_data.get((int)_position).get("type").toString().equals("message")) {
+                            background.setVisibility(View.VISIBLE);
+                            reply_top.setVisibility(View.GONE);
+                            message.setText(_data.get((int)_position).get("text").toString());
+                            cardview.setVisibility(View.GONE);
+                            love.setVisibility(View.GONE);
+                        }
+                        else {
+                            if (_data.get((int)_position).get("type").toString().equals("reply")) {
                                 background.setVisibility(View.VISIBLE);
                                 reply_top.setVisibility(View.VISIBLE);
-                                reply_name.setText(_data.get((int) _position).get("replyed_name").toString());
-                                if (_data.get((int) _position).containsKey("replyed_message")) {
-                                    reply_message.setText(_data.get((int) _position).get("replyed_message").toString());
-                                }
+                                message.setText(_data.get((int)_position).get("text").toString());
+                                reply_name.setText(_data.get((int)_position).get("replyed_name").toString());
+                                reply_message.setText(_data.get((int)_position).get("replyed_message").toString());
                                 love.setVisibility(View.GONE);
                                 cardview.setVisibility(View.GONE);
-                            } else {
-                                if (_data.get((int) _position).containsKey("reply_text")) {
-                                    String reply_text_str = "";
-                                    reply_text_str = _data.get((int) _position).get("reply_text").toString();
-                                    message.setText(reply_text_str);
-                                    reply_img.setVisibility(View.VISIBLE);
-                                    background.setVisibility(View.VISIBLE);
-                                    reply_top.setVisibility(View.VISIBLE);
-                                    reply_name.setText(_data.get((int) _position).get("replyed_name").toString());
-                                    if (_data.get((int) _position).containsKey("replyed_message")) {
-                                        reply_message.setText(_data.get((int) _position).get("replyed_message").toString());
-                                    }
-                                    love.setVisibility(View.GONE);
-                                    cardview.setVisibility(View.GONE);
-                                } else {
-                                    if (_data.get((int) _position).containsKey("reply_image")) {
-                                        reply_img.setVisibility(View.VISIBLE);
-                                        background.setVisibility(View.VISIBLE);
-                                        reply_message.setVisibility(View.GONE);
-                                        reply_top.setVisibility(View.VISIBLE);
-                                        reply_name.setText(_data.get((int) _position).get("replyed_name").toString());
-                                        message.setText("replied to an image.");
-                                        love.setVisibility(View.GONE);
-                                        cardview.setVisibility(View.GONE);
-                                        String reply_image_str = "";
-                                        reply_image_str = _data.get((int) _position).get("reply_image").toString();
-                                        com.bumptech.glide.Glide.with(mContext)
-                                                .load(reply_image_str)
-                                                .override(160, 160)
-                                                .into(reply_img);
-                                    }
-                                }
                             }
-                        } else {
-                            if (_data.get((int) _position).get("type").toString().equals("image")) {
-                                image_holder.setVisibility(View.VISIBLE);
-                                love.setVisibility(View.GONE);
-                                image.setVisibility(View.VISIBLE);
-                                background.setVisibility(View.GONE);
-                                cardview.setVisibility(View.VISIBLE);
-                                Glide.with(mContext).load(Uri.parse(_data.get((int) _position).get("image").toString())).into(image);
-                            } else {
-
+                            else {
+                                if (_data.get((int)_position).get("type").toString().equals("image")) {
+                                    image_holder.setVisibility(View.VISIBLE);
+                                    love.setVisibility(View.GONE);
+                                    image.setVisibility(View.VISIBLE);
+                                    background.setVisibility(View.GONE);
+                                    cardview.setVisibility(View.VISIBLE);
+                                    Glide.with(mContext).load(Uri.parse(_data.get((int)_position).get("image").toString())).into(image);
+                                }
                             }
                         }
                     }
                 } else {
                     background.setVisibility(View.GONE);
                     cardview.setVisibility(View.GONE);
-                }
-                if (_data.get((int) _position).containsKey("deleted")) {
-                    if (_data.get((int) _position).get("deleted").toString().equals("true")) {
-                        message.setText("Message is deleted.");
-                        background.setVisibility(View.VISIBLE);
-                        cardview.setVisibility(View.GONE);
-                        love.setVisibility(View.GONE);
-                        reply_top.setVisibility(View.GONE);
-                    } else {
-
-                    }
                 }
                 if (_data.get((int) _position).containsKey("time")) {
                     _Time(Double.parseDouble(_data.get((int) _position).get("time").toString()), time);
@@ -263,13 +205,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
                     love.setVisibility(View.GONE);
                 }
                 image.setOnClickListener(_view14 -> {
-                    toView.setClass(mContext, PhotoviewerActivity.class);
-                    toView.putExtra("uid", _data.get((int) _position).get("uid").toString());
-                    toView.putExtra("image_link", _data.get((int) _position).get("image").toString());
-                    toView.putExtra("image_time", _data.get((int) _position).get("time").toString());
-                    toView.putExtra("firstname", _data.get((int) _position).get("firstname").toString());
-                    toView.putExtra("lastname", _data.get((int) _position).get("lastname").toString());
-                    _libsben_animation(image, "image", toView);
+                    NotificationCenter.getInstance().postNotificationName(NotificationCenter.didClickImage, _data.get((int) _position).get("uid").toString(), _data.get((int) _position).get("image").toString(), _data.get((int) _position).get("time").toString(), _data.get((int) _position).get("firstname").toString(), _data.get((int) _position).get("lastname").toString());
                 });
                 background.setOnLongClickListener(_view1 -> {
                     btmsheet_id = _data.get((int) _position).get("mid").toString();
@@ -447,8 +383,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
         // Start onClickListener Methods
         // OnClick
         item1lin.setOnClickListener(v -> {
-            chatActivity._getReplyData(btmsheet_pos);
-            chatActivity._Replying(true);
+            NotificationCenter.getInstance().postNotificationName(NotificationCenter.getChatReplyData, btmsheet_pos);
             SketchwareUtil.showKeyboard(mContext);
             bsh.dismiss();
         });
@@ -465,43 +400,11 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
         });
         item3lin.setOnClickListener(v -> {
             // Action Here
-            CurrentDeletingPosition = btmsheet_pos;
-            _data.remove((int)(btmsheet_pos));
-            Chat1.child(btmsheet_id).removeValue();
+            NotificationCenter.getInstance().postNotificationName(NotificationCenter.didDeleteMessage, btmsheet_pos, btmsheet_id);
             bsh.dismiss();
         });
         item4lin.setOnClickListener(v -> {
-            CurrentDeletingPosition = btmsheet_pos;
-            if (btmsheet_uid.equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
-                if (_data.get((int)btmsheet_pos).containsKey("text")) {
-                    ChatSettingsMap = new HashMap<>();
-                    ChatSettingsMap.put("deleted", "true");
-                    Chat1.child(btmsheet_id).updateChildren(ChatSettingsMap);
-                    Chat2.child(btmsheet_id).updateChildren(ChatSettingsMap);
-                    ChatSettingsMap.clear();
-                    mRecyclerView.getAdapter().notifyDataSetChanged();
-                    ScrollingTimer = new TimerTask() {
-                        @Override
-                        public void run() {
-                            chatActivity.runOnUiThread(() -> ((LinearLayoutManager) mRecyclerView.getLayoutManager()).scrollToPositionWithOffset((int)CurrentDeletingPosition, (int)0));
-                        }
-                    };
-                    _timer.schedule(ScrollingTimer, (int)(120));
-                }
-                else {
-                    _data.remove((int)(btmsheet_pos));
-                    Chat1.child(btmsheet_id).removeValue();
-                    Chat2.child(btmsheet_id).removeValue();
-                    mRecyclerView.getAdapter().notifyDataSetChanged();
-                    ScrollingTimer = new TimerTask() {
-                        @Override
-                        public void run() {
-                            chatActivity.runOnUiThread(() -> ((LinearLayoutManager) mRecyclerView.getLayoutManager()).scrollToPositionWithOffset((int)CurrentDeletingPosition, (int)0));
-                        }
-                    };
-                    _timer.schedule(ScrollingTimer, (int)(120));
-                }
-            }
+            NotificationCenter.getInstance().postNotificationName(NotificationCenter.didDeleteMessageForever, btmsheet_id, btmsheet_pos, btmsheet_uid);
             bsh.dismiss();
         });
         item5lin.setOnClickListener(v -> {

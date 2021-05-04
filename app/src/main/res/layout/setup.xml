@@ -9,7 +9,7 @@
 		android:id="@+id/topbar"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:background="#ECF0F3"
+		android:background="#FFFFFF"
 		android:gravity="center_vertical"
 		android:orientation="horizontal"
 		android:fitsSystemWindows="true">
@@ -41,7 +41,7 @@
 		android:id="@+id/main"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:background="#ECF0F3"
+		android:background="#FFFFFF"
 		android:orientation="vertical"
 		android:fitsSystemWindows="true">
 		<TextView

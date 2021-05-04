@@ -4,29 +4,25 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ClipData;
 import android.content.ClipboardManager;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.util.SparseBooleanArray;
-import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.ChildEventListener;
@@ -37,17 +33,19 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.GenericTypeIndicator;
 
 import org.mark.axemojiview.view.AXEmojiTextView;
+import org.mark.moonmeet.ui.BaseFragment;
+import org.mark.moonmeet.utils.AndroidUtilities;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
-import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class StoryActivity extends AppCompatActivity {
+public class StoryActivity extends BaseFragment {
+
 	private Timer _timer = new Timer();
 	private FirebaseDatabase _firebase = FirebaseDatabase.getInstance();
 	
@@ -120,17 +118,25 @@ public class StoryActivity extends AppCompatActivity {
 	private DatabaseReference reports = _firebase.getReference("reports");
 	private ChildEventListener _reports_child_listener;
 	private SharedPreferences MyStoryData;
-	
+
+	public StoryActivity(String storyuid) {
+		this.uid = storyuid;
+	}
+
 	@Override
-	protected void onCreate(Bundle _savedInstanceState) {
-		super.onCreate(_savedInstanceState);
-		setContentView(R.layout.story);
-		initialize(_savedInstanceState);
-		com.google.firebase.FirebaseApp.initializeApp(this);
+	public View createView(Context context) {
+		fragmentView = new FrameLayout(context);
+		actionBar.setAddToContainer(false);
+		LayoutInflater inflater = LayoutInflater.from(context);
+		View view = inflater.inflate(R.layout.story, ((ViewGroup) fragmentView), false);
+		((ViewGroup) fragmentView).addView(view);
+		initialize(context);
+		com.google.firebase.FirebaseApp.initializeApp(getParentActivity());
 		initializeLogic();
+		return fragmentView;
 	}
 	
-	private void initialize(Bundle _savedInstanceState) {
+	private void initialize(Context context) {
 		linear1 = (LinearLayout) findViewById(R.id.linear1);
 		progressbar1 = (ProgressBar) findViewById(R.id.progressbar1);
 		linear14 = (LinearLayout) findViewById(R.id.linear14);
@@ -156,51 +162,32 @@ public class StoryActivity extends AppCompatActivity {
 		imageview6 = (ImageView) findViewById(R.id.imageview6);
 		textview10 = (TextView) findViewById(R.id.textview10);
 		Fauth = FirebaseAuth.getInstance();
-		sp_seen = getSharedPreferences("sp_seen", Activity.MODE_PRIVATE);
-		EnableViewers = getSharedPreferences("sp_ev", Activity.MODE_PRIVATE);
-		MyStoryData = getSharedPreferences("MyStoryData", Activity.MODE_PRIVATE);
+		sp_seen = context.getSharedPreferences("sp_seen", Activity.MODE_PRIVATE);
+		EnableViewers = context.getSharedPreferences("sp_ev", Activity.MODE_PRIVATE);
+		MyStoryData = context.getSharedPreferences("MyStoryData", Activity.MODE_PRIVATE);
 		
-		imageview8.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View _view) {
-				finish();
+		imageview8.setOnClickListener(_view -> finishFragment());
+		
+		linear19.setOnClickListener(_view -> {
+			Bundle bundle = new Bundle();
+			bundle.putString("sid", current);
+			presentFragment(new StoryviewActivity(bundle), false);
+		});
+		
+		imageview11.setOnClickListener(_view -> _BottomSheet());
+		
+		imageview5.setOnClickListener(_view -> {
+			if (currentPosition == 0) {
+
+			}
+			else {
+				_getdata(currentPosition - 1);
 			}
 		});
 		
-		linear19.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View _view) {
-				toViewers.setClass(getApplicationContext(), StoryviewActivity.class);
-				toViewers.putExtra("sid", current);
-				startActivity(toViewers);
-			}
-		});
-		
-		imageview11.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View _view) {
-				_BottomSheet();
-			}
-		});
-		
-		imageview5.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View _view) {
-				if (currentPosition == 0) {
-					
-				}
-				else {
-					_getdata(currentPosition - 1);
-				}
-			}
-		});
-		
-		imageview6.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View _view) {
-				if (listmap.size() > (currentPosition + 1)) {
-					_getdata(currentPosition + 1);
-				}
+		imageview6.setOnClickListener(_view -> {
+			if (listmap.size() > (currentPosition + 1)) {
+				_getdata(currentPosition + 1);
 			}
 		});
 		
@@ -223,7 +210,7 @@ public class StoryActivity extends AppCompatActivity {
 								_getdata(0);
 							}
 							else {
-								finish();
+								finishFragment();
 							}
 							progressbar1.setVisibility(View.GONE);
 						}
@@ -286,12 +273,9 @@ public class StoryActivity extends AppCompatActivity {
 						Timer = new TimerTask() {
 							@Override
 							public void run() {
-								runOnUiThread(new Runnable() {
-									@Override
-									public void run() {
-										linear19.setAlpha((float)(1));
-										linear19.setEnabled(true);
-									}
+								AndroidUtilities.runOnUIThread(() -> {
+									linear19.setAlpha((float)(1));
+									linear19.setEnabled(true);
 								});
 							}
 						};
@@ -337,7 +321,7 @@ public class StoryActivity extends AppCompatActivity {
 				final String _childKey = _param1.getKey();
 				final HashMap<String, Object> _childValue = _param1.getValue(_ind);
 				if (listmap.size() < 1) {
-					finish();
+					finishFragment();
 				}
 				else {
 					if (listmap.get((int)currentPosition).containsKey("sid")) {
@@ -419,105 +403,72 @@ public class StoryActivity extends AppCompatActivity {
 		};
 		reports.addChildEventListener(_reports_child_listener);
 		
-		Fauth_updateEmailListener = new OnCompleteListener<Void>() {
-			@Override
-			public void onComplete(Task<Void> _param1) {
-				final boolean _success = _param1.isSuccessful();
-				final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
-				
-			}
+		Fauth_updateEmailListener = _param1 -> {
+			final boolean _success = _param1.isSuccessful();
+			final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
+
 		};
 		
-		Fauth_updatePasswordListener = new OnCompleteListener<Void>() {
-			@Override
-			public void onComplete(Task<Void> _param1) {
-				final boolean _success = _param1.isSuccessful();
-				final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
-				
-			}
+		Fauth_updatePasswordListener = _param1 -> {
+			final boolean _success = _param1.isSuccessful();
+			final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
+
 		};
 		
-		Fauth_emailVerificationSentListener = new OnCompleteListener<Void>() {
-			@Override
-			public void onComplete(Task<Void> _param1) {
-				final boolean _success = _param1.isSuccessful();
-				final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
-				
-			}
+		Fauth_emailVerificationSentListener = _param1 -> {
+			final boolean _success = _param1.isSuccessful();
+			final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
+
 		};
 		
-		Fauth_deleteUserListener = new OnCompleteListener<Void>() {
-			@Override
-			public void onComplete(Task<Void> _param1) {
-				final boolean _success = _param1.isSuccessful();
-				final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
-				
-			}
+		Fauth_deleteUserListener = _param1 -> {
+			final boolean _success = _param1.isSuccessful();
+			final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
+
 		};
 		
-		Fauth_phoneAuthListener = new OnCompleteListener<AuthResult>() {
-			@Override
-			public void onComplete(Task<AuthResult> task){
-				final boolean _success = task.isSuccessful();
-				final String _errorMessage = task.getException() != null ? task.getException().getMessage() : "";
-				
-			}
+		Fauth_phoneAuthListener = task -> {
+			final boolean _success = task.isSuccessful();
+			final String _errorMessage = task.getException() != null ? task.getException().getMessage() : "";
+
 		};
 		
-		Fauth_updateProfileListener = new OnCompleteListener<Void>() {
-			@Override
-			public void onComplete(Task<Void> _param1) {
-				final boolean _success = _param1.isSuccessful();
-				final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
-				
-			}
+		Fauth_updateProfileListener = _param1 -> {
+			final boolean _success = _param1.isSuccessful();
+			final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
+
 		};
 		
-		Fauth_googleSignInListener = new OnCompleteListener<AuthResult>() {
-			@Override
-			public void onComplete(Task<AuthResult> task){
-				final boolean _success = task.isSuccessful();
-				final String _errorMessage = task.getException() != null ? task.getException().getMessage() : "";
-				
-			}
+		Fauth_googleSignInListener = task -> {
+			final boolean _success = task.isSuccessful();
+			final String _errorMessage = task.getException() != null ? task.getException().getMessage() : "";
+
 		};
 		
-		_Fauth_create_user_listener = new OnCompleteListener<AuthResult>() {
-			@Override
-			public void onComplete(Task<AuthResult> _param1) {
-				final boolean _success = _param1.isSuccessful();
-				final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
-				
-			}
+		_Fauth_create_user_listener = _param1 -> {
+			final boolean _success = _param1.isSuccessful();
+			final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
+
 		};
 		
-		_Fauth_sign_in_listener = new OnCompleteListener<AuthResult>() {
-			@Override
-			public void onComplete(Task<AuthResult> _param1) {
-				final boolean _success = _param1.isSuccessful();
-				final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
-				
-			}
+		_Fauth_sign_in_listener = _param1 -> {
+			final boolean _success = _param1.isSuccessful();
+			final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
+
 		};
 		
-		_Fauth_reset_password_listener = new OnCompleteListener<Void>() {
-			@Override
-			public void onComplete(Task<Void> _param1) {
-				final boolean _success = _param1.isSuccessful();
-				
-			}
+		_Fauth_reset_password_listener = _param1 -> {
+			final boolean _success = _param1.isSuccessful();
+
 		};
 	}
 	
 	private void initializeLogic() {
-		getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-		updateStatusBar();
 		StoryViews.addChildEventListener(_StoryViews_child_listener);
-		uid = getIntent().getStringExtra("uid");
-		textview8.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/rmedium.ttf"), 0);
-		textview9.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/rmedium.ttf"), 0);
-		textview10.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/rmedium.ttf"), 0);
-		textview12.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/rmedium.ttf"), 0);
+		textview8.setTypeface(Typeface.createFromAsset(getParentActivity().getAssets(),"fonts/rmedium.ttf"), 0);
+		textview9.setTypeface(Typeface.createFromAsset(getParentActivity().getAssets(),"fonts/rmedium.ttf"), 0);
+		textview10.setTypeface(Typeface.createFromAsset(getParentActivity().getAssets(),"fonts/rmedium.ttf"), 0);
+		textview12.setTypeface(Typeface.createFromAsset(getParentActivity().getAssets(),"fonts/rmedium.ttf"), 0);
 		linear14.setElevation((int)2);
 		bottomlin.setElevation((int)2);
 		linear19.setAlpha((float)(0.3d));
@@ -539,36 +490,23 @@ public class StoryActivity extends AppCompatActivity {
 			Color.parseColor("#FF193566")}));
 	}
 	
-	@Override
-	protected void onActivityResult(int _requestCode, int _resultCode, Intent _data) {
-		super.onActivityResult(_requestCode, _resultCode, _data);
-		switch (_requestCode) {
-			
-			default:
-			break;
-		}
-	}
-	
 	public void _getdata (final double _position) {
 		linear19.setVisibility(View.INVISIBLE);
 		Timer = new TimerTask() {
 			@Override
 			public void run() {
-				runOnUiThread(new Runnable() {
-					@Override
-					public void run() {
-						if (uid.equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
-							linear19.setVisibility(View.VISIBLE);
-						}
-						else {
-							linear19.setVisibility(View.GONE);
-						}
+				AndroidUtilities.runOnUIThread(() -> {
+					if (uid.equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
+						linear19.setVisibility(View.VISIBLE);
+					}
+					else {
+						linear19.setVisibility(View.GONE);
 					}
 				});
 			}
 		};
 		_timer.schedule(Timer, (int)(500));
-		sp_seen.edit().putString(listmap.get((int)_position).get("sid").toString(), "true").commit();
+		sp_seen.edit().putString(listmap.get((int)_position).get("sid").toString(), "true").apply();
 		if (!FirebaseAuth.getInstance().getCurrentUser().getUid().equals(listmap.get((int)_position).get("uid").toString())) {
 			StoryView = new HashMap<>();
 			StoryView.put("uid", MyStoryData.getString("uid", ""));
@@ -649,9 +587,9 @@ public class StoryActivity extends AppCompatActivity {
 	
 	public void _BottomSheet () {
 		final
-		com.google.android.material.bottomsheet.BottomSheetDialog bsh = new com.google.android.material.bottomsheet.BottomSheetDialog(StoryActivity.this);
+		com.google.android.material.bottomsheet.BottomSheetDialog bsh = new com.google.android.material.bottomsheet.BottomSheetDialog(getParentActivity());
 		
-		View bshlay = getLayoutInflater().inflate(R.layout.bsc, null);
+		View bshlay = getParentActivity().getLayoutInflater().inflate(R.layout.bsc, null);
 		
 		bsh.setContentView(bshlay);
 		
@@ -662,7 +600,7 @@ public class StoryActivity extends AppCompatActivity {
 		bsh.getWindow().findViewById(R.id.design_bottom_sheet).setBackgroundResource(android.R.color.transparent);
 		android.graphics.drawable.GradientDrawable gd = new android.graphics.drawable.GradientDrawable();
 		
-		gd.setColor(Color.parseColor("#FFECF0F3"));
+		gd.setColor(Color.parseColor("#FFFFFF"));
 		
 		gd.setStroke((int)0, Color.parseColor("#FF193566"));
 		
@@ -698,21 +636,21 @@ public class StoryActivity extends AppCompatActivity {
 			Color.parseColor("#FF193566")}));
 		// Define TextViews
 		TextView ttl1txt = (TextView)bshlay.findViewById(R.id.ttl1_txt);
-		ttl1txt.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/rmedium.ttf"), 0);
+		ttl1txt.setTypeface(Typeface.createFromAsset(getParentActivity().getAssets(),"fonts/rmedium.ttf"), 0);
 		ttl1txt.setText("Choose Option");
 		TextView ttl2txt = (TextView)bshlay.findViewById(R.id.ttl2_txt);
-		ttl2txt.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/rmedium.ttf"), 0);
+		ttl2txt.setTypeface(Typeface.createFromAsset(getParentActivity().getAssets(),"fonts/rmedium.ttf"), 0);
 		ttl2txt.setTextColor(0xFF193566);
 		ttl2txt.setText(listmap.get((int)currentPosition).get("firstname").toString().concat(" ".concat(listmap.get((int)currentPosition).get("lastname").toString())));
 		ttl2txt.setVisibility(View.GONE);
 		TextView item1txt = (TextView)bshlay.findViewById(R.id.item1_txt);
-		item1txt.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/rmedium.ttf"), 0);
+		item1txt.setTypeface(Typeface.createFromAsset(getParentActivity().getAssets(),"fonts/rmedium.ttf"), 0);
 		item1txt.setText("Copy Text");
 		TextView item2txt = (TextView)bshlay.findViewById(R.id.item2_txt);
-		item2txt.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/rmedium.ttf"), 0);
+		item2txt.setTypeface(Typeface.createFromAsset(getParentActivity().getAssets(),"fonts/rmedium.ttf"), 0);
 		item2txt.setText("Delete Story");
 		TextView item3txt = (TextView)bshlay.findViewById(R.id.item3_txt);
-		item3txt.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/rmedium.ttf"), 0);
+		item3txt.setTypeface(Typeface.createFromAsset(getParentActivity().getAssets(),"fonts/rmedium.ttf"), 0);
 		item3txt.setText("Report Story");
 		// SetData
 		if (uid.equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
@@ -728,36 +666,26 @@ public class StoryActivity extends AppCompatActivity {
 			item1bg.setVisibility(View.GONE);
 		}
 		// OnClick
-		item1lin.setOnClickListener(new View.OnClickListener() {
-							@Override
-							public void onClick(View _view) {
-									((ClipboardManager) getSystemService(getApplicationContext().CLIPBOARD_SERVICE)).setPrimaryClip(ClipData.newPlainText("clipboard", listmap.get((int)currentPosition).get("text").toString()));
-				SketchwareUtil.showMessage(getApplicationContext(), "Copied to Clipboard.");
-				bsh.dismiss();
-							}
-					});
-		item2lin.setOnClickListener(new View.OnClickListener() {
-							@Override
-							public void onClick(View _view) {
-									_DeleteDialog();
-				bsh.dismiss();
-							}
-					});
-		item3lin.setOnClickListener(new View.OnClickListener() {
-							@Override
-							public void onClick(View _view) {
-									_ReportDialog();
-				bsh.dismiss();
-							}
-					});
+		item1lin.setOnClickListener(_view -> {
+				((ClipboardManager) getParentActivity().getSystemService(getApplicationContext().CLIPBOARD_SERVICE)).setPrimaryClip(ClipData.newPlainText("clipboard", listmap.get((int)currentPosition).get("text").toString()));
+			AndroidUtilities.showToast("Copied to Clipboard.");
+bsh.dismiss();
+		});
+		item2lin.setOnClickListener(_view -> {
+				_DeleteDialog();
+bsh.dismiss();
+		});
+		item3lin.setOnClickListener(_view -> {
+				_ReportDialog();
+bsh.dismiss();
+		});
 		bsh.show();
 	}
 	
 	
 	public void _DeleteDialog () {
-		final AlertDialog DeleteRequest = new AlertDialog.Builder(StoryActivity.this).create();
-		LayoutInflater Del = getLayoutInflater();
-		
+		final AlertDialog DeleteRequest = new AlertDialog.Builder(getParentActivity()).create();
+		LayoutInflater Del = getParentActivity().getLayoutInflater();
 		View convertView = (View) Del.inflate(R.layout.delete, null);
 		DeleteRequest.setView(convertView);
 		DeleteRequest.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
@@ -777,30 +705,22 @@ public class StoryActivity extends AppCompatActivity {
 		delete_description.setText("Are you sure you want to delete your story ? This can be undone.");
 		_RippleEffects("#DADADA", cancel);
 		_RippleEffects("#DADADA", for_me);
-		cancel.setOnClickListener(new View.OnClickListener() {
-						@Override
-						public void onClick(View _view) {
-								DeleteRequest.dismiss();
-						}
-				});
-		for_me.setOnClickListener(new View.OnClickListener() {
-						@Override
-						public void onClick(View _view) {
-								if (uid.equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
-					stories.child(listmap.get((int)currentPosition).get("sid").toString()).removeValue();
-					StoryViews.child(listmap.get((int)currentPosition).get("sid").toString()).removeValue();
-					DeleteRequest.dismiss();
-				}
-						}
-				});
+		cancel.setOnClickListener(_view -> DeleteRequest.dismiss());
+		for_me.setOnClickListener(_view -> {
+				if (uid.equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
+	stories.child(listmap.get((int)currentPosition).get("sid").toString()).removeValue();
+	StoryViews.child(listmap.get((int)currentPosition).get("sid").toString()).removeValue();
+	DeleteRequest.dismiss();
+}
+		});
 		DeleteRequest.setCancelable(true);
 		DeleteRequest.show();
 	}
 	
 	
 	public void _ReportDialog () {
-		final AlertDialog ReportRequest = new AlertDialog.Builder(StoryActivity.this).create();
-		LayoutInflater rep = getLayoutInflater();
+		final AlertDialog ReportRequest = new AlertDialog.Builder(getParentActivity()).create();
+		LayoutInflater rep = getParentActivity().getLayoutInflater();
 		
 		View convertView = (View) rep.inflate(R.layout.delete, null);
 		ReportRequest.setView(convertView);
@@ -821,32 +741,24 @@ public class StoryActivity extends AppCompatActivity {
 		delete_description.setText("Before reporting, Please make sure this story contains at least one of these below:\n\n+ Sexual Content\n+ Rude Behavior / Harassment\n+ Spam\n+ Or any other content that you think shouldn't be here.\n\nPlease note that there's only one admin at the moment that can review reports, so reviewing may take some time.");
 		_RippleEffects("#DADADA", cancel);
 		_RippleEffects("#DADADA", for_me);
-		cancel.setOnClickListener(new View.OnClickListener() {
-						@Override
-						public void onClick(View _view) {
-								ReportRequest.dismiss();
-						}
-				});
-		for_me.setOnClickListener(new View.OnClickListener() {
-						@Override
-						public void onClick(View _view) {
-								Report_Map = new HashMap<>();
-				Report_Map.put("id", listmap.get((int)currentPosition).get("sid").toString());
-				Report_Map.put("reported_by", FirebaseAuth.getInstance().getCurrentUser().getUid());
-				Report_Map.put("uid", uid);
-				Report_Map.put("rid", reports.push().getKey());
-				if (listmap.get((int)currentPosition).containsKey("text")) {
-					Report_Map.put("text", listmap.get((int)currentPosition).get("text").toString());
-				}
-				if (listmap.get((int)currentPosition).containsKey("image")) {
-					Report_Map.put("image", listmap.get((int)currentPosition).get("image").toString());
-				}
-				reports.child("Stories/".concat(Report_Map.get("rid").toString())).updateChildren(Report_Map);
-				Report_Map.clear();
-				SketchwareUtil.showMessage(getApplicationContext(), "Reported.");
-				ReportRequest.dismiss();
-						}
-				});
+		cancel.setOnClickListener(_view -> ReportRequest.dismiss());
+		for_me.setOnClickListener(_view -> {
+				Report_Map = new HashMap<>();
+Report_Map.put("id", listmap.get((int)currentPosition).get("sid").toString());
+Report_Map.put("reported_by", FirebaseAuth.getInstance().getCurrentUser().getUid());
+Report_Map.put("uid", uid);
+Report_Map.put("rid", reports.push().getKey());
+if (listmap.get((int)currentPosition).containsKey("text")) {
+	Report_Map.put("text", listmap.get((int)currentPosition).get("text").toString());
+}
+if (listmap.get((int)currentPosition).containsKey("image")) {
+	Report_Map.put("image", listmap.get((int)currentPosition).get("image").toString());
+}
+reports.child("Stories/".concat(Report_Map.get("rid").toString())).updateChildren(Report_Map);
+Report_Map.clear();
+SketchwareUtil.showMessage(getApplicationContext(), "Reported.");
+ReportRequest.dismiss();
+		});
 		ReportRequest.setCancelable(true);
 		ReportRequest.show();
 	}
@@ -860,115 +772,49 @@ public class StoryActivity extends AppCompatActivity {
 	
 	
 	public void _Gestures () {
-		midlin.setOnTouchListener(new View.OnTouchListener() {@Override public boolean onTouch(View v, MotionEvent event) {switch (event.getAction()) { 
-											case MotionEvent.ACTION_DOWN: 
+		midlin.setOnTouchListener((v, event) -> {switch (event.getAction()) {
+											case MotionEvent.ACTION_DOWN:
 											x1 = event.getX();
-											y1 = event.getY(); 
+											y1 = event.getY();
 											return true;
-											case MotionEvent.ACTION_UP: 
+											case MotionEvent.ACTION_UP:
 											x2 = event.getX();
-											y2 = event.getY(); 
-											if ((x1 - x2) < -250) { 
+											y2 = event.getY();
+											if ((x1 - x2) < -250) {
 														// Right
-														
-											} 
-											else { 
-														if ((x2 - x1) < -250) { 
+
+											}
+											else {
+														if ((x2 - x1) < -250) {
 																	// Left
-														} 
-														else { 
-																	if ((y1 - y2) < -250) { 
+														}
+														else {
+																	if ((y1 - y2) < -250) {
 																				// Down
 																				if (currentPosition == 0) {
-																							
+
 																				}
 																				else {
 																							_getdata(currentPosition - 1);
 																				}
-																	} 
-																	else { 
-																				if ((y2 - y1) < -250) { 
+																	}
+																	else {
+																				if ((y2 - y1) < -250) {
 																							// Up
 																							if (listmap.size() > (currentPosition + 1)) {
 																										_getdata(currentPosition + 1);
 																							}
-																				} 
-																				else { 
+																				}
+																				else {
 																							// Touch
-																				} 
-																	} 
-														} 
-											} 
+																				}
+																	}
+														}
+											}
 											return true;
 								}
 								return false;
-					}
-		});
+					});
 		
-	}
-	
-	
-	public void _UpdateStatus () {
-	}
-	private void updateStatusBar() {
-				Window window = getWindow();
-				window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-				window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-				window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
-				window.setStatusBarColor(getResources().getColor(R.color.StatusBarColor));
-				window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-				
-	}
-	
-	
-	@Deprecated
-	public void showMessage(String _s) {
-		Toast.makeText(getApplicationContext(), _s, Toast.LENGTH_SHORT).show();
-	}
-	
-	@Deprecated
-	public int getLocationX(View _v) {
-		int _location[] = new int[2];
-		_v.getLocationInWindow(_location);
-		return _location[0];
-	}
-	
-	@Deprecated
-	public int getLocationY(View _v) {
-		int _location[] = new int[2];
-		_v.getLocationInWindow(_location);
-		return _location[1];
-	}
-	
-	@Deprecated
-	public int getRandom(int _min, int _max) {
-		Random random = new Random();
-		return random.nextInt(_max - _min + 1) + _min;
-	}
-	
-	@Deprecated
-	public ArrayList<Double> getCheckedItemPositionsToArray(ListView _list) {
-		ArrayList<Double> _result = new ArrayList<Double>();
-		SparseBooleanArray _arr = _list.getCheckedItemPositions();
-		for (int _iIdx = 0; _iIdx < _arr.size(); _iIdx++) {
-			if (_arr.valueAt(_iIdx))
-			_result.add((double)_arr.keyAt(_iIdx));
-		}
-		return _result;
-	}
-	
-	@Deprecated
-	public float getDip(int _input) {
-		return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, _input, getResources().getDisplayMetrics());
-	}
-	
-	@Deprecated
-	public int getDisplayWidthPixels() {
-		return getResources().getDisplayMetrics().widthPixels;
-	}
-	
-	@Deprecated
-	public int getDisplayHeightPixels() {
-		return getResources().getDisplayMetrics().heightPixels;
 	}
 }
