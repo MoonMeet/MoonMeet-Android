@@ -194,6 +194,7 @@ public class LaunchActivity extends BaseFragment implements NotificationCenter.N
 
     @Override
     public boolean onFragmentCreate() {
+        NotificationCenter.getInstance().addObserver(this, NotificationCenter.didClickActiveUser);
         NotificationCenter.getInstance().addObserver(this, NotificationCenter.didClickConversation);
         NotificationCenter.getInstance().addObserver(this, NotificationCenter.didClickStory);
         return super.onFragmentCreate();
@@ -201,6 +202,7 @@ public class LaunchActivity extends BaseFragment implements NotificationCenter.N
 
     @Override
     public void onFragmentDestroy() {
+        NotificationCenter.getInstance().removeObserver(this, NotificationCenter.didClickActiveUser);
         NotificationCenter.getInstance().removeObserver(this, NotificationCenter.didClickConversation);
         NotificationCenter.getInstance().removeObserver(this, NotificationCenter.didClickStory);
         super.onFragmentDestroy();
@@ -299,7 +301,7 @@ public class LaunchActivity extends BaseFragment implements NotificationCenter.N
         imageview1.setOnClickListener(_view -> _drawer.openDrawer(GravityCompat.START));
 
         search.setOnClickListener(_view -> {
-            presentFragment(new SearchActivity(), false);
+            presentFragment(new SearchActivity());
         });
 
         no_internet4.setOnClickListener(_view -> InternetCheck.startRequestNetwork(RequestNetworkController.GET, "https://www.google.com/", "connecting", _InternetCheck_request_listener));
@@ -323,14 +325,14 @@ public class LaunchActivity extends BaseFragment implements NotificationCenter.N
 
         ppl_holder.setOnClickListener(_view -> {
             if (ppl_new_txt.getText().toString().equals("Add Story")) {
-                presentFragment(new NewstoryActivity(), false);
+                presentFragment(new NewstoryActivity());
             } else {
-                presentFragment(new DiscoverActivity(), false);
+                presentFragment(new DiscoverActivity());
             }
         });
 
         _fab.setOnClickListener(_view -> {
-            presentFragment(new DiscoverActivity(), false);
+            presentFragment(new DiscoverActivity());
         });
 
         _stories_child_listener = new ChildEventListener() {
@@ -730,11 +732,11 @@ FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(_onComple
         _drawer_saved_message_holder.setOnClickListener(_view -> AndroidUtilities.showToast("Coming Soon !"));
 
         _drawer_settings_holder.setOnClickListener(_view -> {
-            presentFragment(new SettingsActivity(), false, false);
+            presentFragment(new SettingsActivity());
         });
 
         _drawer_announcement_holder.setOnClickListener(_view -> {
-            presentFragment(new AnnouncementsActivity(), false, false);
+            presentFragment(new AnnouncementsActivity());
         });
 
         _drawer_divider2.setOnClickListener(_view -> {
@@ -758,7 +760,7 @@ FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(_onComple
         });
 
         _drawer_faq_holder.setOnClickListener(_view -> {
-            presentFragment(new FaqInfoActivity(), false);
+            presentFragment(new FaqInfoActivity());
         });
 
         _drawer_part_1.setOnClickListener(_view -> {
@@ -818,11 +820,11 @@ FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(_onComple
         });
 
         _drawer_settings_icon.setOnClickListener(_view -> {
-            presentFragment(new SettingsActivity(), false, false);
+            presentFragment(new SettingsActivity());
         });
 
         _drawer_settings_txt.setOnClickListener(_view -> {
-            presentFragment(new SettingsActivity(), false, false);
+            presentFragment(new SettingsActivity());
         });
 
         _drawer_invite_icon.setOnClickListener(_view -> {
@@ -834,11 +836,11 @@ FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(_onComple
         });
 
         _drawer_faq_icon.setOnClickListener(_view -> {
-            presentFragment(new FaqInfoActivity(), false);
+            presentFragment(new FaqInfoActivity());
         });
 
         _drawer_faq_txt.setOnClickListener(_view -> {
-            presentFragment(new FaqInfoActivity(), false);
+            presentFragment(new FaqInfoActivity());
         });
 
         Fauth_updateEmailListener = _param1 -> {
@@ -929,7 +931,7 @@ OneSignalPushToken = pushToken;
             Bundle args = new Bundle();
             args.putString("Country", ".");
             args.putString("Code", ".");
-            presentFragment(new OtpActivity(args), false);
+            presentFragment(new OtpActivity(args));
             AndroidUtilities.showToast("Session Expired, please re-login.");
         }
         // Strict VM Policy
@@ -1102,10 +1104,13 @@ OneSignalPushToken = pushToken;
     @Override
     public void didReceivedNotification(int id, Object... args) {
         if (id == NotificationCenter.didClickConversation) {
-            presentFragment(new ChatActivity((String) args[0]), false);
+            presentFragment(new ChatActivity((String) args[0],(String) args[1]));
+        }
+        if (id == NotificationCenter.didClickActiveUser) {
+            presentFragment(new ChatActivity((String) args[0], (String) args[1]));
         }
         if (id == NotificationCenter.didClickStory) {
-            presentFragment(new StoryActivity((String) args[0]), false);
+            presentFragment(new StoryActivity((String) args[0]));
         }
     }
 }

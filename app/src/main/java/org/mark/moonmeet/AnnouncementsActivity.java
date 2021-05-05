@@ -107,7 +107,7 @@ public class AnnouncementsActivity extends BaseFragment {
         back.setOnClickListener(_view -> finishFragment());
 
         _fab.setOnClickListener(_view -> {
-            presentFragment(new AnnouncementPostActivity(), false);
+            presentFragment(new AnnouncementPostActivity());
         });
 
         _users_child_listener = new ChildEventListener() {

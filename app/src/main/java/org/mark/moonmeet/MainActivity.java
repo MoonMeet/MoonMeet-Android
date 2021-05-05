@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity implements ActionBarLayout.A
     }
 
     private void showConstants() {
-        actionBarLayout.presentFragment(new SplashActivity(), false);
+        actionBarLayout.presentFragment(new SplashActivity());
     }
 
     @Override

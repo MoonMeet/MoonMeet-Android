@@ -31,6 +31,7 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.core.content.FileProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -294,7 +295,7 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
     private ObjectAnimator obj = new ObjectAnimator();
     private ChatAdapter chatAdapter;
 
-    public ChatActivity(String chat_uid) {
+    public ChatActivity(String chat_uid, String type) {
         this.uid = chat_uid;
         this.type = "private";
     }
@@ -410,13 +411,13 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
         name_holder.setOnClickListener(_view -> {
             Bundle bundle = new Bundle();
             bundle.putString("uid", uid);
-            presentFragment(new UserprofileActivity(bundle), false);
+            presentFragment(new UserprofileActivity(bundle));
         });
 
         info.setOnClickListener(_view -> {
             Bundle bundle = new Bundle();
             bundle.putString("uid", uid);
-            presentFragment(new UserprofileActivity(bundle), false);
+            presentFragment(new UserprofileActivity(bundle));
         });
 
         close_img_lin.setOnClickListener(_view -> {
@@ -574,7 +575,7 @@ else {
                         }
                         com.bumptech.glide.Glide.with(getApplicationContext())
                                 .load(_childValue.get("avatar").toString())
-                                .override(1024, 1024)
+                                .override(512, 512)
                                 .into(avatar);
 						/*
 if (_childValue.containsKey("OneSignalUserID")) {
@@ -882,7 +883,7 @@ MyOSPushToken = _childValue.get("OneSignalPushToken").toString();
             }
 
             @Override
-            public void onChildRemoved(DataSnapshot _param1) {
+            public void onChildRemoved(@NonNull DataSnapshot _param1) {
                 GenericTypeIndicator<HashMap<String, Object>> _ind = new GenericTypeIndicator<HashMap<String, Object>>() {
                 };
                 final String _childKey = _param1.getKey();
@@ -1277,6 +1278,7 @@ OneSignalPushToken = pushToken;
 
             @Override
             public void onKeyboardOpened(int height) {
+                Log.d(ChatActivity.class.getSimpleName(), "emoji keyboard height is: " + height);
             }
 
             @Override
@@ -1294,10 +1296,6 @@ OneSignalPushToken = pushToken;
         Chatcopy = "chat/".concat(uid.concat("/".concat(FirebaseAuth.getInstance().getCurrentUser().getUid())));
         Chat1 = _firebase.getReference(Chatroom);
         Chat2 = _firebase.getReference(Chatcopy);
-        /**
-         firstLoad = true;
-         roundLast = true;
-         **/
         Chat1.addChildEventListener(_Chat1_child_listener);
         Chat2.addChildEventListener(_Chat2_child_listener);
         // Booleans
@@ -1307,7 +1305,7 @@ OneSignalPushToken = pushToken;
         chatAdapter = new ChatAdapter(uid, chats_rv, getParentActivity(), Private_Map);
         chats_rv.setAdapter(chatAdapter);
         LinearLayoutManager mLinearLayoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
-        //mLinearLayoutManager.setStackFromEnd(true);
+        mLinearLayoutManager.setStackFromEnd(true);
         chats_rv.setLayoutManager(mLinearLayoutManager);
         chats_rv.setItemViewCacheSize(60);
         chats_rv.setDrawingCacheEnabled(true);
@@ -1378,6 +1376,9 @@ OneSignalPushToken = pushToken;
             message.setText(sp_lm.getString(uid.concat("'s type"), ""));
         }
         // Initialize AudioRecorder
+        /*
+         * this feature is soon ( SoonTM)
+         */
         FilePath = FileUtil.getExternalStorageDir().concat("/".concat("MoonMeet".concat("/".concat("AudioRecords".concat("/".concat(String.valueOf((long) (SketchwareUtil.getRandom((int) (1111111111), (int) (9999999999d)))).concat(".mp3")))))));
     }
 
@@ -1974,7 +1975,7 @@ try {
             presentFragment(new ImagePickerActivity((Bundle) args[0]));
         }
         if (id == NotificationCenter.getNeedPresentCamera) {
-            presentFragment(new CameraActivity(), false);
+            presentFragment(new CameraActivity());
         }
         if (id == NotificationCenter.getChatReplyData) {
             _getReplyData((Double) args[0]);

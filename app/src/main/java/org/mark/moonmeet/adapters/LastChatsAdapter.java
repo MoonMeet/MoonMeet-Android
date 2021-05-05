@@ -3,13 +3,11 @@ package org.mark.moonmeet.adapters;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.Typeface;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,9 +22,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.firebase.auth.FirebaseAuth;
 
 import org.mark.axemojiview.view.AXEmojiTextView;
-import org.mark.moonmeet.ChatActivity;
 import org.mark.moonmeet.R;
-import org.mark.moonmeet.StoryActivity;
 import org.mark.moonmeet.utils.NotificationCenter;
 
 import java.text.SimpleDateFormat;
@@ -90,150 +86,131 @@ public class LastChatsAdapter extends RecyclerView.Adapter<LastChatsAdapter.View
         _round(propic_bg, 360, "#193566");
         _round(unread_lin, 360, "#193566");
         name.setTextColor(0xFF607D8B);
-        name.setTypeface(Typeface.createFromAsset(mContext.getAssets(),"fonts/roboto_regular.ttf"), 0);
-        time.setTypeface(Typeface.createFromAsset(mContext.getAssets(),"fonts/roboto_light.ttf"), 0);
-        content.setTypeface(Typeface.createFromAsset(mContext.getAssets(),"fonts/roboto_regular.ttf"), 0);
-        textview1.setTypeface(Typeface.createFromAsset(mContext.getAssets(),"fonts/roboto_light.ttf"), 0);
+        name.setTypeface(Typeface.createFromAsset(mContext.getAssets(), "fonts/roboto_regular.ttf"), 0);
+        time.setTypeface(Typeface.createFromAsset(mContext.getAssets(), "fonts/roboto_light.ttf"), 0);
+        content.setTypeface(Typeface.createFromAsset(mContext.getAssets(), "fonts/roboto_regular.ttf"), 0);
+        textview1.setTypeface(Typeface.createFromAsset(mContext.getAssets(), "fonts/roboto_light.ttf"), 0);
         unread_lin.setVisibility(View.INVISIBLE);
         imageview2.setVisibility(View.GONE);
         time.setVisibility(View.INVISIBLE);
-        if (_data.get((int)_position).containsKey("uid") && (_data.get((int)_position).containsKey("firstname") && (_data.get((int)_position).containsKey("lastname") && (_data.get((int)_position).containsKey("avatar") && _data.get((int)_position).containsKey("last_message_uid"))))) {
-            if (!_data.get((int)_position).get("uid").toString().equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
+        if (_data.get((int) _position).containsKey("uid") && (_data.get((int) _position).containsKey("firstname") && (_data.get((int) _position).containsKey("lastname") && (_data.get((int) _position).containsKey("avatar") && _data.get((int) _position).containsKey("last_message_uid"))))) {
+            if (!_data.get((int) _position).get("uid").toString().equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
                 imageview2.setColorFilter(0xFF193566, PorterDuff.Mode.MULTIPLY);
                 _radius_4("#64bb6a", "#ffffff", 6, 40, 40, 40, 40, linear8);
-                if (_data.get((int)_position).get("firstname").toString().equals("") && _data.get((int)_position).get("lastname").toString().equals("")) {
+                if (_data.get((int) _position).get("firstname").toString().equals("") && _data.get((int) _position).get("lastname").toString().equals("")) {
                     linear9.setVisibility(View.VISIBLE);
+                } else {
+                    name.setText(_data.get((int) _position).get("firstname").toString().concat(" ".concat(_data.get((int) _position).get("lastname").toString())));
                 }
-                else {
-                    name.setText(_data.get((int)_position).get("firstname").toString().concat(" ".concat(_data.get((int)_position).get("lastname").toString())));
-                }
-                if (_data.get((int)_position).get("avatar").toString().equals("")) {
+                if (_data.get((int) _position).get("avatar").toString().equals("")) {
                     linear9.setVisibility(View.VISIBLE);
-                }
-                else {
+                } else {
                     com.bumptech.glide.Glide.with(mContext)
-                            .load(_data.get((int)_position).get("avatar").toString())
+                            .load(_data.get((int) _position).get("avatar").toString())
                             .override(50, 50)
                             .into(circleimageview2);
                 }
                 linear8.setVisibility(View.INVISIBLE);
-                if (!_data.get((int)_position).get("lastseen").toString().equals("")) {
+                if (!_data.get((int) _position).get("lastseen").toString().equals("")) {
                     Cal = Calendar.getInstance();
-                    if ((Cal.getTimeInMillis() - Double.parseDouble(_data.get((int)_position).get("lastseen").toString())) < 30000) {
+                    if ((Cal.getTimeInMillis() - Double.parseDouble(_data.get((int) _position).get("lastseen").toString())) < 30000) {
                         linear8.setVisibility(View.VISIBLE);
                     }
                 }
-                if (_data.get((int)_position).containsKey("last_message_time")) {
-                    _Time(Double.parseDouble(_data.get((int)_position).get("last_message_time").toString()), time);
+                if (_data.get((int) _position).containsKey("last_message_time")) {
+                    _Time(Double.parseDouble(_data.get((int) _position).get("last_message_time").toString()), time);
                     time.setVisibility(View.VISIBLE);
                 }
-                if (_data.get((int)_position).containsKey("last_message_uid")) {
-                    if (_data.get((int)_position).containsKey("last_message_deleted")) {
-                        if (_data.get((int)_position).get("last_message_deleted").toString().equals("true")) {
+                if (_data.get((int) _position).containsKey("last_message_uid")) {
+                    if (_data.get((int) _position).containsKey("last_message_deleted")) {
+                        if (_data.get((int) _position).get("last_message_deleted").toString().equals("true")) {
                             imageview2.setVisibility(View.GONE);
                             content.setText("Message Deleted.");
-                            if (!_data.get((int)_position).get("firstname").toString().equals("")) {
-                                content.setText(_data.get((int)_position).get("firstname").toString().concat(" Deleted a message."));
+                            if (!_data.get((int) _position).get("firstname").toString().equals("")) {
+                                content.setText(_data.get((int) _position).get("firstname").toString().concat(" Deleted a message."));
                             }
                         }
-                    }
-                    else {
-                        if (_data.get((int)_position).get("last_message_uid").toString().equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
+                    } else {
+                        if (_data.get((int) _position).get("last_message_uid").toString().equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
                             content.setText("You : ");
-                        }
-                        else {
+                        } else {
                             content.setText("");
-                            if (_data.get((int)_position).containsKey("last_message_status")) {
-                                if (_data.get((int)_position).get("last_message_status").toString().equals("Sent")) {
-                                    content.setTypeface(Typeface.createFromAsset(mContext.getAssets(),"fonts/roboto_light.ttf"), 1);
-                                }
-                                else {
-                                    content.setTypeface(Typeface.createFromAsset(mContext.getAssets(),"fonts/roboto_light.ttf"), 0);
+                            if (_data.get((int) _position).containsKey("last_message_status")) {
+                                if (_data.get((int) _position).get("last_message_status").toString().equals("Sent")) {
+                                    content.setTypeface(Typeface.createFromAsset(mContext.getAssets(), "fonts/roboto_light.ttf"), 1);
+                                } else {
+                                    content.setTypeface(Typeface.createFromAsset(mContext.getAssets(), "fonts/roboto_light.ttf"), 0);
                                 }
                             }
                         }
                     }
-                    if (_data.get((int)_position).containsKey("last_message_type")) {
-                        if (_data.get((int)_position).get("last_message_type").toString().equals("image")) {
-                            if (_data.get((int)_position).get("last_message_uid").toString().equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
+                    if (_data.get((int) _position).containsKey("last_message_type")) {
+                        if (_data.get((int) _position).get("last_message_type").toString().equals("image")) {
+                            if (_data.get((int) _position).get("last_message_uid").toString().equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
                                 content.setText("You sent an image.");
-                                content.setTypeface(Typeface.createFromAsset(mContext.getAssets(),"fonts/roboto_regular.ttf"), 2);
-                            }
-                            else {
-                                content.setText(_data.get((int)_position).get("firstname").toString().concat(" Sent a photo."));
-                                if (_data.get((int)_position).containsKey("last_message_status")) {
-                                    if (_data.get((int)_position).get("last_message_status").toString().equals("Sent")) {
-                                        content.setTypeface(Typeface.createFromAsset(mContext.getAssets(),"fonts/roboto_light.ttf"), 3);
-                                    }
-                                    else {
-                                        content.setTypeface(Typeface.createFromAsset(mContext.getAssets(),"fonts/roboto_light.ttf"), 2);
+                                content.setTypeface(Typeface.createFromAsset(mContext.getAssets(), "fonts/roboto_regular.ttf"), 2);
+                            } else {
+                                content.setText(_data.get((int) _position).get("firstname").toString().concat(" Sent a photo."));
+                                if (_data.get((int) _position).containsKey("last_message_status")) {
+                                    if (_data.get((int) _position).get("last_message_status").toString().equals("Sent")) {
+                                        content.setTypeface(Typeface.createFromAsset(mContext.getAssets(), "fonts/roboto_light.ttf"), 3);
+                                    } else {
+                                        content.setTypeface(Typeface.createFromAsset(mContext.getAssets(), "fonts/roboto_light.ttf"), 2);
                                     }
                                 }
                             }
-                        }
-                        else {
-                            if (_data.get((int)_position).get("last_message_type").toString().equals("love")) {
+                        } else {
+                            if (_data.get((int) _position).get("last_message_type").toString().equals("love")) {
                                 imageview2.setVisibility(View.VISIBLE);
-                            }
-                            else {
-                                if (_data.get((int)_position).get("last_message_type").toString().equals("text")) {
-                                    if (_data.get((int)_position).containsKey("last_message_text")) {
-                                        content.setText(content.getText().toString().concat(_data.get((int)_position).get("last_message_text").toString()));
+                            } else {
+                                if (_data.get((int) _position).get("last_message_type").toString().equals("text")) {
+                                    if (_data.get((int) _position).containsKey("last_message_text")) {
+                                        content.setText(content.getText().toString().concat(_data.get((int) _position).get("last_message_text").toString()));
+                                    } else {
+                                        content.setText("Start chatting with ".concat(_data.get((int) _position).get("firstname").toString()));
                                     }
-                                    else {
-                                        content.setText("Start chatting with ".concat(_data.get((int)_position).get("firstname").toString()));
-                                    }
-                                }
-                                else {
-                                    content.setText("Start chatting with ".concat(_data.get((int)_position).get("firstname").toString()));
+                                } else {
+                                    content.setText("Start chatting with ".concat(_data.get((int) _position).get("firstname").toString()));
                                 }
                             }
-                            if (_data.get((int)_position).containsKey("UnreadMessagesNum")) {
-                                if (_data.get((int)_position).get("UnreadMessagesNum").toString().equals("")) {
+                            if (_data.get((int) _position).containsKey("UnreadMessagesNum")) {
+                                if (_data.get((int) _position).get("UnreadMessagesNum").toString().equals("")) {
                                     unread_lin.setVisibility(View.INVISIBLE);
-                                }
-                                else {
-                                    if (_data.get((int)_position).get("UnreadMessagesNum").toString().equals("0")) {
+                                } else {
+                                    if (_data.get((int) _position).get("UnreadMessagesNum").toString().equals("0")) {
                                         unread_lin.setVisibility(View.INVISIBLE);
-                                    }
-                                    else {
-                                        textview1.setText(_data.get((int)_position).get("UnreadMessagesNum").toString());
+                                    } else {
+                                        textview1.setText(_data.get((int) _position).get("UnreadMessagesNum").toString());
                                         unread_lin.setVisibility(View.VISIBLE);
                                     }
                                 }
-                            }
-                            else {
+                            } else {
                                 unread_lin.setVisibility(View.INVISIBLE);
                             }
                         }
                     }
-                }
-                else {
+                } else {
                     linear9.setVisibility(View.GONE);
                 }
-                if (storiesMap.containsKey(_data.get((int)_position).get("uid").toString())) {
-                    if (sp_seen.getString(storiesMap.get(_data.get((int)_position).get("uid").toString()).toString(), "").equals("")) {
+                if (storiesMap.containsKey(_data.get((int) _position).get("uid").toString())) {
+                    if (sp_seen.getString(storiesMap.get(_data.get((int) _position).get("uid").toString()).toString(), "").equals("")) {
                         _radius_4("#00000000", "#FF193566", 8, 100, 100, 100, 100, storylin);
-                    }
-                    else {
+                    } else {
                         _radius_4("#00000000", "#FFDADADA", 8, 100, 100, 100, 100, storylin);
                     }
                     storylin.setOnClickListener(_view12 -> {
-                       NotificationCenter.getInstance().postNotificationName(NotificationCenter.didClickStory, _data.get((int)_position).get("uid").toString());
+                        NotificationCenter.getInstance().postNotificationName(NotificationCenter.didClickStory, _data.get((int) _position).get("uid").toString());
                     });
-                }
-                else {
+                } else {
                     _radius_4("#00000000", "#00000000", 8, 100, 100, 100, 100, storylin);
                 }
                 linear1.setOnClickListener(_view1 -> {
-                    NotificationCenter.getInstance().postNotificationName(NotificationCenter.didClickConversation, _data.get(_position).get("uid").toString());
+                    NotificationCenter.getInstance().postNotificationName(NotificationCenter.didClickConversation, _data.get(_position).get("uid").toString(), "private");
                 });
-            }
-            else {
+            } else {
                 linear9.setVisibility(View.GONE);
             }
-        }
-        else {
+        } else {
             linear9.setVisibility(View.GONE);
         }
     }
@@ -243,14 +220,16 @@ public class LastChatsAdapter extends RecyclerView.Adapter<LastChatsAdapter.View
         return _data.size();
     }
 
-    public void _round (final View _view, final double _num, final String _color) {
+    public void _round(final View _view, final double _num, final String _color) {
         try {
             android.graphics.drawable.GradientDrawable gd = new android.graphics.drawable.GradientDrawable();
             gd.setColor(Color.parseColor(_color));
             float f = (float) _num;
             gd.setCornerRadius(f);
             _view.setBackground(gd);
-        } catch(Exception e){ Log.e("Error: ", e.toString()); String error_code = e.toString();
+        } catch (Exception e) {
+            Log.e("Error: ", e.toString());
+            String error_code = e.toString();
             AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
             builder.setTitle("Error")
                     .setMessage(error_code)
@@ -262,24 +241,23 @@ public class LastChatsAdapter extends RecyclerView.Adapter<LastChatsAdapter.View
         }
     }
 
-    public void _Time (final double _position, final TextView _textview) {
+    public void _Time(final double _position, final TextView _textview) {
         c = Calendar.getInstance();
         time = c.getTimeInMillis() - _position;
         if (((time / 1000) / 3600) < 24) {
-            c.setTimeInMillis((long)(_position));
+            c.setTimeInMillis((long) (_position));
             _textview.setText(new SimpleDateFormat("hh:mm a").format(c.getTime()));
-        }
-        else {
-            c.setTimeInMillis((long)(_position));
+        } else {
+            c.setTimeInMillis((long) (_position));
             _textview.setText(new SimpleDateFormat("MMM d 'at' hh:mm a").format(c.getTime()));
         }
     }
 
-    public void _radius_4 (final String _color1, final String _color2, final double _str, final double _n1, final double _n2, final double _n3, final double _n4, final View _view) {
+    public void _radius_4(final String _color1, final String _color2, final double _str, final double _n1, final double _n2, final double _n3, final double _n4, final View _view) {
         android.graphics.drawable.GradientDrawable gd = new android.graphics.drawable.GradientDrawable();
         gd.setColor(Color.parseColor(_color1));
-        gd.setStroke((int)_str, Color.parseColor(_color2));
-        gd.setCornerRadii(new float[]{(int)_n1,(int)_n1,(int)_n2,(int)_n2,(int)_n3,(int)_n3,(int)_n4,(int)_n4});
+        gd.setStroke((int) _str, Color.parseColor(_color2));
+        gd.setCornerRadii(new float[]{(int) _n1, (int) _n1, (int) _n2, (int) _n2, (int) _n3, (int) _n3, (int) _n4, (int) _n4});
         _view.setBackground(gd);
     }
 

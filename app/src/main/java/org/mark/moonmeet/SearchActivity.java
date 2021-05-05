@@ -961,10 +961,10 @@ public class SearchActivity extends BaseFragment implements NotificationCenter.N
     @Override
     public void didReceivedNotification(int id, Object... args) {
         if (id == NotificationCenter.didClickConversation) {
-            presentFragment(new ChatActivity((String) args[0]), false);
+            presentFragment(new ChatActivity((String) args[0], (String) args[1]));
         }
         if (id == NotificationCenter.didClickStory) {
-            presentFragment(new StoryActivity((String) args[0]), false);
+            presentFragment(new StoryActivity((String) args[0]));
         }
         if (id == NotificationCenter.didClickImage) {
             presentFragment(new PhotoviewerActivity((String) args[0],(String) args[1],(String) args[2],(String) args[3],(String) args[4]));

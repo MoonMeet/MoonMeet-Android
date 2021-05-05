@@ -171,12 +171,12 @@ public class StoryActivity extends BaseFragment {
 		linear19.setOnClickListener(_view -> {
 			Bundle bundle = new Bundle();
 			bundle.putString("sid", current);
-			presentFragment(new StoryviewActivity(bundle), false);
+			presentFragment(new StoryViewActivity(bundle));
 		});
 		
-		imageview11.setOnClickListener(_view -> _BottomSheet());
+		imageview11.setOnClickListener(view -> _BottomSheet());
 		
-		imageview5.setOnClickListener(_view -> {
+		imageview5.setOnClickListener(view -> {
 			if (currentPosition == 0) {
 
 			}
