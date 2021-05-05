@@ -7,8 +7,6 @@
 <img src="https://visitor-badge.laobi.icu/badge?page_id=AlucardTN.MoonMeet" />
 <img  src="https://img.shields.io/github/issues/AlucardTN/MoonMeet?color=0088ff" />
 <img  src="https://img.shields.io/github/issues-pr/AlucardTN/MoonMeet?color=0088ff?color=0088ff" />
-<img src="https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github" />
-
 
 </p>
 - A new era of chatting and meeting people.
