@@ -581,6 +581,62 @@ function fetch_posts()
      <button alt="dismiss" class="close" onclick="$('#welcome-4').slideUp();"><strong>X</strong></button>
      <strong><?php echo $_SESSION['username']; ?></strong>, how are you today ?
      </div>
+
+<div class="panel panel-primary">
+<style>
+ul.social-icons {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+ul.social-icons > li {
+  display: inline-block;
+}
+
+ul.social-icons > li > a {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 36px;
+  background-color: #163566;
+  color: #fff;
+  margin: 0 3px 3px 0;
+}
+
+ul.social-icons > li > a:hover {
+  text-decoration: none;
+  background-color: #163566;
+}
+
+</style>
+      <div style="font-weight:bold" class="panel-heading">
+        <i class="fa fa-share-alt"></i> &nbsp; Find us Out
+      </div>
+      <div class="panel-body">
+          <center><ul class="social-icons">
+  <li>
+    <a target="_blank" href="https://facebook.com/moonmeet.inc" title="Facebook">
+      <span class="icon fa fa-facebook"></span>
+    </a>
+  </li>
+  <li>
+    <a target="_blank" href="https://t.me/MoonMeet" title="Telegram">
+      <span class="icon fa fa-telegram"></span>
+    </a>
+  </li>
+  <li>
+    <a target="_blank" href="https://github.com/AlucardTn/MoonMeet" title="GitHub">
+      <span class="icon fa fa-github"></span>
+    </a>
+  </li>
+</ul></center>
+      </div>
+</div>
+
         <div class="panel panel-primary">
          <div class="panel-heading"><i class="fa fa-comment"></i> <strong>Chats and Discussions</strong></div>
            <div class="panel-body">

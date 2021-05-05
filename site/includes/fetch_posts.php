@@ -10,9 +10,34 @@ include("database_connection2.php");
   <br><i style='margin-top:8px;' data-toggle='modal' data-target='#myModal' style='font-size:25px' class='fa fa-clock-o'></i>   ".time_ago($row['posted_on']) . "</h4>
   <div class='' style='background-color:'><h2 style='color:black'>" . $row['post'] ."</h2></div>
   <br>
+  <button id='likebtn' disabled type='submit' class='btn btn-primary btn-block btn-lg'><i class='fa fa-heart'></i> Like</button>
+  
+  <br>
+ 
+
   </div>
   ";
 }
-//  <button id='likebtn' type='submit' class='btn btn-primary btn-block btn-lg'><i class='fa fa-thumbs-up'></i> Like</button>
+/*
+
+ <style>.blocks .btn-primary 
+  {
+      padding: 8px 72px;
+      margin: 0 5px 5px;  
+      border-radius: 15px;
+  }</style>
+  <div class='btn-group blocks' data-toggle='buttons'>
+  <label class='btn btn-primary'>
+  <i class='fa fa-heart'></i>
+  </label>
+  <label class='btn btn-primary'>
+  <i class='fa fa-comment'></i>
+  </label>
+  <label class='btn btn-primary'>
+  <i class='fa fa-share'></i>
+  </label>
+</div>
+
+*/
 
  ?>
