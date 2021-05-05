@@ -20,17 +20,27 @@ import android.os.Build;
 import android.os.Environment;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
+import android.text.Selection;
+import android.text.Spannable;
+import android.text.method.LinkMovementMethod;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.Display;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.AccelerateDecelerateInterpolator;
+import android.view.animation.AccelerateInterpolator;
+import android.view.animation.DecelerateInterpolator;
+import android.view.animation.OvershootInterpolator;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AbsListView;
 import android.widget.EdgeEffect;
+import android.widget.HorizontalScrollView;
+import android.widget.ScrollView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.mark.moonmeet.MoonMeetApplication;
@@ -60,6 +70,15 @@ public class  AndroidUtilities {
     private static Boolean isTablet = null;
     private static Field mAttachInfoField;
     private static Field mStableInsetsField;
+
+    public static float screenRefreshRate = 60;
+    public static int roundMessageSize;
+    public static int roundMessageInset;
+    public static boolean firstConfigurationWas;
+
+    public static DecelerateInterpolator decelerateInterpolator = new DecelerateInterpolator();
+    public static AccelerateInterpolator accelerateInterpolator = new AccelerateInterpolator();
+    public static OvershootInterpolator overshootInterpolator = new OvershootInterpolator();
 
     private static Toast toast;
     private static int adjustOwnerClassGuid = 0;
@@ -256,9 +275,66 @@ public class  AndroidUtilities {
         return false;
     }
 
+
+    public static void setScrollViewEdgeEffectColor(HorizontalScrollView scrollView, int color) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            scrollView.setEdgeEffectColor(color);
+        } else if (Build.VERSION.SDK_INT >= 21) {
+            try {
+                Field field = HorizontalScrollView.class.getDeclaredField("mEdgeGlowLeft");
+                field.setAccessible(true);
+                EdgeEffect mEdgeGlowTop = (EdgeEffect) field.get(scrollView);
+                if (mEdgeGlowTop != null) {
+                    mEdgeGlowTop.setColor(color);
+                }
+
+                field = HorizontalScrollView.class.getDeclaredField("mEdgeGlowRight");
+                field.setAccessible(true);
+                EdgeEffect mEdgeGlowBottom = (EdgeEffect) field.get(scrollView);
+                if (mEdgeGlowBottom != null) {
+                    mEdgeGlowBottom.setColor(color);
+                }
+            } catch (Exception e) {
+                FileLog.e(e);
+            }
+        }
+    }
+
+    public static void setScrollViewEdgeEffectColor(ScrollView scrollView, int color) {
+        if (Build.VERSION.SDK_INT >= 29) {
+            scrollView.setTopEdgeEffectColor(color);
+            scrollView.setBottomEdgeEffectColor(color);
+        } else if (Build.VERSION.SDK_INT >= 21) {
+            try {
+                Field field = ScrollView.class.getDeclaredField("mEdgeGlowTop");
+                field.setAccessible(true);
+                EdgeEffect mEdgeGlowTop = (EdgeEffect) field.get(scrollView);
+                if (mEdgeGlowTop != null) {
+                    mEdgeGlowTop.setColor(color);
+                }
+
+                field = ScrollView.class.getDeclaredField("mEdgeGlowBottom");
+                field.setAccessible(true);
+                EdgeEffect mEdgeGlowBottom = (EdgeEffect) field.get(scrollView);
+                if (mEdgeGlowBottom != null) {
+                    mEdgeGlowBottom.setColor(color);
+                }
+            } catch (Exception ignore) {
+
+            }
+        }
+    }
+
+
     public static void checkDisplaySize(Context context, Configuration newConfiguration) {
         try {
+            float oldDensity = density;
             density = context.getResources().getDisplayMetrics().density;
+            float newDensity = density;
+            if (firstConfigurationWas && Math.abs(oldDensity - newDensity) > 0.001) {
+                //Theme.reloadAllResources(context);
+            }
+            firstConfigurationWas = true;
             Configuration configuration = newConfiguration;
             if (configuration == null) {
                 configuration = context.getResources().getConfiguration();
@@ -270,6 +346,7 @@ public class  AndroidUtilities {
                 if (display != null) {
                     display.getMetrics(displayMetrics);
                     display.getSize(displaySize);
+                    screenRefreshRate = display.getRefreshRate();
                 }
             }
             if (configuration.screenWidthDp != Configuration.SCREEN_WIDTH_DP_UNDEFINED) {
@@ -284,11 +361,41 @@ public class  AndroidUtilities {
                     displaySize.y = newSize;
                 }
             }
-            Log.e("MoonMeet", "display size = " + displaySize.x + " " + displaySize.y + " " + displayMetrics.xdpi + "x" + displayMetrics.ydpi);
+            if (roundMessageSize == 0) {
+                if (AndroidUtilities.isTablet()) {
+                    roundMessageSize = (int) (AndroidUtilities.getMinTabletSide() * 0.6f);
+                } else {
+                    roundMessageSize = (int) (Math.min(AndroidUtilities.displaySize.x, AndroidUtilities.displaySize.y) * 0.6f);
+                }
+                roundMessageInset = dp(2);
+            }
+            if (BuildVars.LOGS_ENABLED) {
+                FileLog.d("density = " + density + " display size = width: " + displaySize.x + " height: " + displaySize.y + " xdpi: " + displayMetrics.xdpi + " ydpi: " + displayMetrics.ydpi);
+            }
         } catch (Exception e) {
-            Log.e("MoonMeet", e.toString());
+            FileLog.e(e);
         }
     }
+
+    public static int getMinTabletSide() {
+        if (!isSmallTablet()) {
+            int smallSide = Math.min(displaySize.x, displaySize.y);
+            int leftSide = smallSide * 25 / 100;
+            if (leftSide < dp(250)) {
+                leftSide = dp(250);
+            }
+            return smallSide - leftSide;
+        } else {
+            int smallSide = Math.min(displaySize.x, displaySize.y);
+            int maxSide = Math.max(displaySize.x, displaySize.y);
+            int leftSide = maxSide * 25 / 100;
+            if (leftSide < dp(250)) {
+                leftSide = dp(250);
+            }
+            return Math.min(smallSide, maxSide - leftSide);
+        }
+    }
+
 
     public static int dp(Context context, int dp) {
         Resources r = context.getResources();
@@ -619,6 +726,22 @@ public class  AndroidUtilities {
         int resourceId = context.getResources().getIdentifier("status_bar_height", "dimen", "android");
         if (resourceId > 0) {
             AndroidUtilities.statusBarHeight = context.getResources().getDimensionPixelSize(resourceId);
+        }
+    }
+
+    public static class LinkMovementMethodMy extends LinkMovementMethod {
+        @Override
+        public boolean onTouchEvent(TextView widget, Spannable buffer, MotionEvent event) {
+            try {
+                boolean result = super.onTouchEvent(widget, buffer, event);
+                if (event.getAction() == MotionEvent.ACTION_UP || event.getAction() == MotionEvent.ACTION_CANCEL) {
+                    Selection.removeSelection(buffer);
+                }
+                return result;
+            } catch (Exception e) {
+                FileLog.e(e);
+            }
+            return false;
         }
     }
 }

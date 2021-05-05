@@ -25,6 +25,8 @@ import android.graphics.drawable.shapes.RoundRectShape;
 import android.os.Build;
 import android.util.StateSet;
 
+import androidx.core.view.ViewCompat;
+
 import org.mark.moonmeet.R;
 import org.mark.moonmeet.components.CombinedDrawable;
 import org.mark.moonmeet.utils.AndroidUtilities;
@@ -49,6 +51,8 @@ public class Theme {
 	public static final int ACTION_BAR_SUBTITLE_COLOR = 0xffd5e8f7;
 	public static final int ACTION_BAR_SELECTOR_COLOR = 0xff406d94;
 
+	public static final String key_dialogButton = "dialogButton";
+	public static final String key_dialogIcon = "dialogIcon";
 	public static final int ACTION_BAR_PICKER_SELECTOR_COLOR = 0xff3d3d3d;
 	public static final int ACTION_BAR_WHITE_SELECTOR_COLOR = 0x40ffffff;
 	public static final int ACTION_BAR_AUDIO_SELECTOR_COLOR = 0x2f000000;
@@ -192,6 +196,7 @@ public class Theme {
 		defaultColors.put(key_dialogTextGray2, 0xff757575);
 		defaultColors.put(key_dialogTextGray3, 0xff999999);
 		defaultColors.put(key_dialogTextGray4, 0xffb3b3b3);
+		defaultColors.put(key_dialogButton, 0xff4991cc);
 		defaultColors.put(key_radioBackground, 0xffb3b3b3);
 		defaultColors.put(key_radioBackgroundChecked, 0xff37a9f0);
 		defaultColors.put(key_dialogRadioBackground, 0xffb3b3b3);
@@ -660,6 +665,18 @@ public class Theme {
 	public static Drawable createSimpleSelectorRoundRectDrawable(int rad, int defaultColor, int pressedColor) {
 		return createSimpleSelectorRoundRectDrawable(rad, defaultColor, pressedColor, pressedColor);
 	}
+
+	public static Drawable getRoundRectSelectorDrawable(int color) {
+		if (Build.VERSION.SDK_INT >= 21) {
+			return new RippleDrawable(new ColorStateList(new int[][]{StateSet.WILD_CARD}, new int[]{419430400 | (16777215 & color)}), null, createRoundRectDrawable(AndroidUtilities.dp(3.0f), -1));
+		}
+		StateListDrawable stateListDrawable = new StateListDrawable();
+		stateListDrawable.addState(new int[]{16842919}, createRoundRectDrawable(AndroidUtilities.dp(3.0f), (color & ViewCompat.MEASURED_SIZE_MASK) | 419430400));
+		stateListDrawable.addState(new int[]{16842913}, createRoundRectDrawable(AndroidUtilities.dp(3.0f), 419430400 | (16777215 & color)));
+		stateListDrawable.addState(StateSet.WILD_CARD, new ColorDrawable(0));
+		return stateListDrawable;
+	}
+
 
 	public static Drawable createSimpleSelectorRoundRectDrawable(int rad, int defaultColor, int pressedColor, int maskColor) {
 		ShapeDrawable defaultDrawable = new ShapeDrawable(new RoundRectShape(new float[]{rad, rad, rad, rad, rad, rad, rad, rad}, null, null));

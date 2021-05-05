@@ -12,13 +12,13 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.material.textview.MaterialTextView;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -34,10 +34,10 @@ import java.util.HashMap;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class StoryviewActivity extends BaseFragment {
+public class StoryViewActivity extends BaseFragment {
 
-    private Timer _timer = new Timer();
-    private FirebaseDatabase _firebase = FirebaseDatabase.getInstance();
+    private Timer TimerComponent = new Timer();
+    private final FirebaseDatabase firebase = FirebaseDatabase.getInstance();
 
     private String sid = "";
     private String StoryViews_str = "";
@@ -53,21 +53,12 @@ public class StoryviewActivity extends BaseFragment {
     private MaterialTextView noviewersyet_mini_txt;
 
     private FirebaseAuth Fauth;
-    private OnCompleteListener<Void> Fauth_updateEmailListener;
-    private OnCompleteListener<Void> Fauth_updatePasswordListener;
-    private OnCompleteListener<Void> Fauth_emailVerificationSentListener;
-    private OnCompleteListener<Void> Fauth_deleteUserListener;
-    private OnCompleteListener<Void> Fauth_updateProfileListener;
-    private OnCompleteListener<AuthResult> Fauth_phoneAuthListener;
-    private OnCompleteListener<AuthResult> Fauth_googleSignInListener;
-    private OnCompleteListener<AuthResult> _Fauth_create_user_listener;
-    private OnCompleteListener<AuthResult> _Fauth_sign_in_listener;
-    private OnCompleteListener<Void> _Fauth_reset_password_listener;
-    private DatabaseReference StoryViews = _firebase.getReference("StoryViews");
-    private ChildEventListener _StoryViews_child_listener;
+
+    private DatabaseReference StoryViews = firebase.getReference("StoryViews");
+    private ChildEventListener StoryViews_child_listener;
     private TimerTask timer;
 
-    public StoryviewActivity(Bundle args) {
+    public StoryViewActivity(Bundle args) {
         super(args);
     }
 
@@ -85,25 +76,25 @@ public class StoryviewActivity extends BaseFragment {
     }
 
     private void initialize(Context context) {
-        linear1 = (LinearLayout) findViewById(R.id.linear1);
-        noviewersyet = (LinearLayout) findViewById(R.id.noviewersyet);
-        recyclerview1 = (RecyclerView) findViewById(R.id.recyclerview1);
-        imageview1 = (ImageView) findViewById(R.id.imageview1);
-        textview1 = (TextView) findViewById(R.id.textview1);
-        noviewersyet_full_txt = (MaterialTextView) findViewById(R.id.noviewersyet_full_txt);
-        noviewersyet_mini_txt = (MaterialTextView) findViewById(R.id.noviewersyet_mini_txt);
+        linear1 = findViewById(R.id.linear1);
+        noviewersyet = findViewById(R.id.noviewersyet);
+        recyclerview1 = findViewById(R.id.recyclerview1);
+        imageview1 = findViewById(R.id.imageview1);
+        textview1 = findViewById(R.id.textview1);
+        noviewersyet_full_txt = findViewById(R.id.noviewersyet_full_txt);
+        noviewersyet_mini_txt = findViewById(R.id.noviewersyet_mini_txt);
         Fauth = FirebaseAuth.getInstance();
 
-        imageview1.setOnClickListener(_view -> finishFragment());
+        imageview1.setOnClickListener(view -> finishFragment());
 
-        _StoryViews_child_listener = new ChildEventListener() {
+        StoryViews_child_listener = new ChildEventListener() {
             @Override
-            public void onChildAdded(DataSnapshot _param1, String _param2) {
+            public void onChildAdded(@NonNull DataSnapshot param1, String param2) {
                 GenericTypeIndicator<HashMap<String, Object>> _ind = new GenericTypeIndicator<HashMap<String, Object>>() {
                 };
-                final String _childKey = _param1.getKey();
-                final HashMap<String, Object> _childValue = _param1.getValue(_ind);
-                StoryViews_map.add(_childValue);
+                final String childKey = param1.getKey();
+                final HashMap<String, Object> childValue = param1.getValue(_ind);
+                StoryViews_map.add(childValue);
                 if (StoryViews_map.size() > 0) {
                     noviewersyet.setVisibility(View.GONE);
                     recyclerview1.setAdapter(new Recyclerview1Adapter(StoryViews_map));
@@ -111,95 +102,28 @@ public class StoryviewActivity extends BaseFragment {
             }
 
             @Override
-            public void onChildChanged(DataSnapshot _param1, String _param2) {
-                GenericTypeIndicator<HashMap<String, Object>> _ind = new GenericTypeIndicator<HashMap<String, Object>>() {
-                };
-                final String _childKey = _param1.getKey();
-                final HashMap<String, Object> _childValue = _param1.getValue(_ind);
+            public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
 
             }
 
             @Override
-            public void onChildMoved(DataSnapshot _param1, String _param2) {
+            public void onChildRemoved(@NonNull DataSnapshot snapshot) {
 
             }
 
             @Override
-            public void onChildRemoved(DataSnapshot _param1) {
-                GenericTypeIndicator<HashMap<String, Object>> _ind = new GenericTypeIndicator<HashMap<String, Object>>() {
-                };
-                final String _childKey = _param1.getKey();
-                final HashMap<String, Object> _childValue = _param1.getValue(_ind);
+            public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
 
             }
 
             @Override
-            public void onCancelled(DatabaseError _param1) {
-                final int _errorCode = _param1.getCode();
-                final String _errorMessage = _param1.getMessage();
+            public void onCancelled(@NonNull DatabaseError error) {
 
             }
-        };
-        StoryViews.addChildEventListener(_StoryViews_child_listener);
 
-        Fauth_updateEmailListener = _param1 -> {
-            final boolean _success = _param1.isSuccessful();
-            final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
 
         };
-
-        Fauth_updatePasswordListener = _param1 -> {
-            final boolean _success = _param1.isSuccessful();
-            final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
-
-        };
-
-        Fauth_emailVerificationSentListener = _param1 -> {
-            final boolean _success = _param1.isSuccessful();
-            final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
-
-        };
-
-        Fauth_deleteUserListener = _param1 -> {
-            final boolean _success = _param1.isSuccessful();
-            final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
-
-        };
-
-        Fauth_phoneAuthListener = task -> {
-            final boolean _success = task.isSuccessful();
-            final String _errorMessage = task.getException() != null ? task.getException().getMessage() : "";
-
-        };
-
-        Fauth_updateProfileListener = _param1 -> {
-            final boolean _success = _param1.isSuccessful();
-            final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
-
-        };
-
-        Fauth_googleSignInListener = task -> {
-            final boolean _success = task.isSuccessful();
-            final String _errorMessage = task.getException() != null ? task.getException().getMessage() : "";
-
-        };
-
-        _Fauth_create_user_listener = _param1 -> {
-            final boolean _success = _param1.isSuccessful();
-            final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
-
-        };
-
-        _Fauth_sign_in_listener = _param1 -> {
-            final boolean _success = _param1.isSuccessful();
-            final String _errorMessage = _param1.getException() != null ? _param1.getException().getMessage() : "";
-
-        };
-
-        _Fauth_reset_password_listener = _param1 -> {
-            final boolean _success = _param1.isSuccessful();
-
-        };
+        StoryViews.addChildEventListener(StoryViews_child_listener);
     }
 
     private void initializeLogic() {
@@ -207,64 +131,66 @@ public class StoryviewActivity extends BaseFragment {
         imageview1.setImageTintList(new android.content.res.ColorStateList(new int[][]{{-android.R.attr.state_pressed}, {android.R.attr.state_pressed}}, new int[]{Color.parseColor("#FF193566"),
                 Color.parseColor("#FFDADADA")}));
         sid = getArguments().getString("sid");
-        StoryViews.removeEventListener(_StoryViews_child_listener);
+        StoryViews.removeEventListener(StoryViews_child_listener);
         StoryViews_str = "StoryViews/".concat(sid);
-        StoryViews = _firebase.getReference(StoryViews_str);
+        StoryViews = firebase.getReference(StoryViews_str);
         recyclerview1.setLayoutManager(new LinearLayoutManager(getParentActivity()));
-        StoryViews.addChildEventListener(_StoryViews_child_listener);
+        StoryViews.addChildEventListener(StoryViews_child_listener);
         androidx.appcompat.widget.TooltipCompat.setTooltipText(imageview1, "Back");
     }
 
     @Override
     public boolean onBackPressed() {
-        finishFragment();
-        return false;
+        return true;
     }
 
 
     public class Recyclerview1Adapter extends RecyclerView.Adapter<Recyclerview1Adapter.ViewHolder> {
-        ArrayList<HashMap<String, Object>> _data;
+        ArrayList<HashMap<String, Object>> data;
 
-        public Recyclerview1Adapter(ArrayList<HashMap<String, Object>> _arr) {
-            _data = _arr;
+        public Recyclerview1Adapter(ArrayList<HashMap<String, Object>> arr) {
+            data = arr;
         }
 
         @Override
         public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            LayoutInflater _inflater = (LayoutInflater) getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View _v = _inflater.inflate(R.layout.viewsc, null);
-            RecyclerView.LayoutParams _lp = new RecyclerView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-            _v.setLayoutParams(_lp);
-            return new ViewHolder(_v);
+            LayoutInflater inflater = (LayoutInflater) getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            View v = inflater.inflate(R.layout.viewsc, null);
+            RecyclerView.LayoutParams layoutParams = new RecyclerView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+            v.setLayoutParams(layoutParams);
+            return new ViewHolder(v);
         }
 
         @Override
-        public void onBindViewHolder(ViewHolder _holder, final int _position) {
-            View _view = _holder.itemView;
+        public void onBindViewHolder(ViewHolder holder, final int position) {
+            View view = holder.itemView;
 
-            final LinearLayout linear4 = (LinearLayout) _view.findViewById(R.id.linear4);
-            final LinearLayout linear1 = (LinearLayout) _view.findViewById(R.id.linear1);
-            final LinearLayout nothing = (LinearLayout) _view.findViewById(R.id.nothing);
-            final LinearLayout propic_bg = (LinearLayout) _view.findViewById(R.id.propic_bg);
-            final LinearLayout linear3 = (LinearLayout) _view.findViewById(R.id.linear3);
-            final de.hdodenhof.circleimageview.CircleImageView circleimageview2 = (de.hdodenhof.circleimageview.CircleImageView) _view.findViewById(R.id.circleimageview2);
-            final TextView textview1 = (TextView) _view.findViewById(R.id.textview1);
-            final TextView textview2 = (TextView) _view.findViewById(R.id.textview2);
+            final LinearLayout linear4 = view.findViewById(R.id.linear4);
+            final LinearLayout linear1 = view.findViewById(R.id.linear1);
+            final LinearLayout nothing = view.findViewById(R.id.nothing);
+            final LinearLayout propic_bg = view.findViewById(R.id.propic_bg);
+            final LinearLayout linear3 = view.findViewById(R.id.linear3);
+            final de.hdodenhof.circleimageview.CircleImageView circleimageview2 = (de.hdodenhof.circleimageview.CircleImageView) view.findViewById(R.id.circleimageview2);
+            final TextView textview1 = view.findViewById(R.id.textview1);
+            final TextView textview2 = view.findViewById(R.id.textview2);
 
-            RecyclerView.LayoutParams _lp = new RecyclerView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-            _view.setLayoutParams(_lp);
-            if (_data.get((int) _position).containsKey("uid")) {
+            RecyclerView.LayoutParams layoutParams = new RecyclerView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+            view.setLayoutParams(layoutParams);
+            if (data.get((int) position).containsKey("uid")) {
                 //  Data
-                if (_data.get((int) _position).containsKey("firstname") && _data.get((int) _position).containsKey("lastname")) {
-                    textview1.setText(_data.get((int) _position).get("firstname").toString().concat(" ".concat(_data.get((int) _position).get("lastname").toString())));
+                if (data.get((int) position).containsKey("firstname") && data.get((int) position).containsKey("lastname")) {
+                    textview1.setText(data.get((int) position).get("firstname").toString().concat(" ".concat(data.get((int) position).get("lastname").toString())));
                 }
-                if (_data.get((int) _position).containsKey("avatar")) {
+                if (data.get((int) position).containsKey("avatar")) {
                     circleimageview2.setVisibility(View.VISIBLE);
-                    Glide.with(getApplicationContext()).load(Uri.parse(_data.get((int) _position).get("avatar").toString())).into(circleimageview2);
+                    Glide.with(getApplicationContext()).load(Uri.parse(data.get((int) position).get("avatar").toString())).into(circleimageview2);
                 }
-                if (_data.get((int) _position).containsKey("username")) {
-                    textview2.setText(" @".concat(_data.get((int) _position).get("username").toString()));
+                if (data.get((int) position).containsKey("username")) {
+                    textview2.setText(" @".concat(data.get((int) position).get("username").toString()));
                 }
+                linear4.setOnClickListener(v -> {
+                    presentFragment(new ChatActivity(data.get((int) position).get("uid").toString(), "private"));
+                });
             } else {
                 linear4.setVisibility(View.GONE);
             }
@@ -272,7 +198,7 @@ public class StoryviewActivity extends BaseFragment {
 
         @Override
         public int getItemCount() {
-            return _data.size();
+            return data.size();
         }
 
         public class ViewHolder extends RecyclerView.ViewHolder {

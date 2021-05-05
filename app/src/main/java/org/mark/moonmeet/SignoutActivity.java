@@ -136,7 +136,7 @@ public class SignoutActivity extends BaseFragment {
                 Bundle args = new Bundle();
                 args.putString("Country", ".");
                 args.putString("Code", ".");
-                presentFragment(new OtpActivity(args), false);
+                presentFragment(new OtpActivity(args));
             }
     }
 

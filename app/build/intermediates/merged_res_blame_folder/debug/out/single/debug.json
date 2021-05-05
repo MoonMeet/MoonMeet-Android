@@ -4,20 +4,8 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\passcode_setup.xml"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_comment_white.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\ic_comment_white.png"
-    },
-    {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_heart_confetti.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\heart_confetti.png"
-    },
-    {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_close_white.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\ic_close_white.png"
-    },
-    {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_search_web.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\search_web.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_waitc.xml.flat",
@@ -28,10 +16,6 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\sms_code.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_audio_mini_arrow.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\audio_mini_arrow.png"
-    },
-    {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_reply_right.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\ic_reply_right.png"
     },
@@ -40,12 +24,12 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\fingerprintc.xml"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_bar_selector_style.xml.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\bar_selector_style.xml"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi-v4_photos_header_shadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xxhdpi-v4\\photos_header_shadow.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\anim_design_bottom_sheet_slide_out.xml.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\anim\\design_bottom_sheet_slide_out.xml"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_bar_selector_style.xml.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\bar_selector_style.xml"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_toolsup.xml.flat",
@@ -56,24 +40,16 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\otp.xml"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_chevron_right.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\chevron_right.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_calls_topshadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-hdpi\\calls_topshadow.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_checkbig.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\checkbig.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_layer_shadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-mdpi\\layer_shadow.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\anim_mtrl_bottom_sheet_slide_in.xml.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\anim\\mtrl_bottom_sheet_slide_in.xml"
-    },
-    {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_photobadge_new.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\photobadge_new.png"
-    },
-    {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_incoming_speech_bubble.xml.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\incoming_speech_bubble.xml"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_calls_bottomshadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-hdpi\\calls_bottomshadow.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_outline_pack.png.flat",
@@ -84,8 +60,28 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\sticker15.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\anim_design_bottom_sheet_slide_in.xml.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\anim\\design_bottom_sheet_slide_in.xml"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_menu_shadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\menu_shadow.png"
+    },
+    {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi-v4_boxshadow.9.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xxhdpi-v4\\boxshadow.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_popup_fixed_top.9.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-mdpi\\popup_fixed_top.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi-v4_bottom_shadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xxhdpi-v4\\bottom_shadow.png"
+    },
+    {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_header_shadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-hdpi\\header_shadow.png"
+    },
+    {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_blockpanel.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-hdpi\\blockpanel.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_ab_done.png.flat",
@@ -100,6 +96,10 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\floating_pencil.png"
     },
     {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_zoom_slide.9.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-mdpi\\zoom_slide.9.png"
+    },
+    {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_devices.xml.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\devices.xml"
     },
@@ -108,36 +108,36 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\newstory.xml"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_search_gif.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\search_gif.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi-v4_shadowdown.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xxhdpi-v4\\shadowdown.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_shop_recyclerview.xml.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\shop_recyclerview.xml"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_input_mic.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\input_mic.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_popup_fixed_alert.9.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-hdpi\\popup_fixed_alert.9.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_sticker13.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\sticker13.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_addcart.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\ic_addcart.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_menu_shadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-mdpi\\menu_shadow.png"
+    },
+    {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_popup_fixed_top.9.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-hdpi\\popup_fixed_top.9.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_msg_addphoto.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\msg_addphoto.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_icon_free.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\icon_free.png"
-    },
-    {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_strings.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\strings.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_boxshadow.9.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\boxshadow.9.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_popup_fixed.9.png.flat",
@@ -152,20 +152,16 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\grid_item.xml"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_icon_chevron_right.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\icon_chevron_right.png"
-    },
-    {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_chatsc.xml.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\chatsc.xml"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_search_carret.xml.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\search_carret.xml"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_bottom_shadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\bottom_shadow.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_input_sticker.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\input_sticker.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi-v4_menu_shadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xxhdpi-v4\\menu_shadow.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_intro.xml.flat",
@@ -180,16 +176,16 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\bsc.xml"
     },
     {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi-v4_popup_fixed_alert.9.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xxhdpi-v4\\popup_fixed_alert.9.png"
+    },
+    {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_launch.xml.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\launch.xml"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_faq_info.xml.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\faq_info.xml"
-    },
-    {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_back.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\back.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_settings.xml.flat",
@@ -228,12 +224,16 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\sticker11.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_folder.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\ic_folder.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_header_shadow_reverse.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\header_shadow_reverse.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_input_attach.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\input_attach.png"
+    },
+    {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi-v4_popup_fixed_alert2.9.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xxhdpi-v4\\popup_fixed_alert2.9.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_edit_name.xml.flat",
@@ -252,10 +252,6 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\changeusername.xml"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\anim_mtrl_bottom_sheet_slide_out.xml.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\anim\\mtrl_bottom_sheet_slide_out.xml"
-    },
-    {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_msg_text_check.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\msg_text_check.png"
     },
@@ -268,12 +264,12 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\signout.xml"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_viewsc.xml.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\viewsc.xml"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_zoom_slide_a.9.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-hdpi\\zoom_slide_a.9.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_menu_expand.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\menu_expand.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_viewsc.xml.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\viewsc.xml"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_sticker12.png.flat",
@@ -296,28 +292,20 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\termsandprivacy.xml"
     },
     {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_zoom_slide.9.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\zoom_slide.9.png"
+    },
+    {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_storyview.xml.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\storyview.xml"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_close.xml.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\ic_close.xml"
-    },
-    {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_popup_fixed.9.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\popup_fixed.9.png"
-    },
-    {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_smiles_panel_food.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\smiles_panel_food.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi-v4_popup_fixed_top.9.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xxhdpi-v4\\popup_fixed_top.9.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_msg_panel_stickers.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\ic_msg_panel_stickers.png"
-    },
-    {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_camera_preview.xml.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\camera_preview.xml"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_changebio.xml.flat",
@@ -332,16 +320,12 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\image_picker.xml"
     },
     {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi-v4_header_shadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xxhdpi-v4\\header_shadow.png"
+    },
+    {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_menu_contacts.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\menu_contacts.png"
-    },
-    {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\raw_sound_in.wav.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\raw\\sound_in.wav"
-    },
-    {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_chat.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\chat.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_msg_round_load_m.png.flat",
@@ -350,10 +334,6 @@
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\xml_provider_paths.xml.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\xml\\provider_paths.xml"
-    },
-    {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_outgoing_speech_bubble.xml.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\outgoing_speech_bubble.xml"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_sticker2.png.flat",
@@ -372,12 +352,16 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\ic_close_white.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_msg_panel_kb.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\ic_msg_panel_kb.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_zoom_slide_a.9.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\zoom_slide_a.9.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_favorite_outline_white.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\ic_favorite_outline_white.png"
+    },
+    {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_shadowdown.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-mdpi\\shadowdown.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_countrycode.xml.flat",
@@ -388,20 +372,32 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\ptools.xml"
     },
     {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_shadowdown.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-hdpi\\shadowdown.png"
+    },
+    {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_calls_bottomshadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\calls_bottomshadow.png"
+    },
+    {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_menu_devices.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\menu_devices.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_wallet_fingerprint.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\wallet_fingerprint.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi-v4_zoom_slide_a.9.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xxhdpi-v4\\zoom_slide_a.9.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_msg_round_load_m.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\msg_round_load_m.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_shop.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\shop.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi-v4_popup_fixed.9.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xxhdpi-v4\\popup_fixed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_zoom_slide.9.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-hdpi\\zoom_slide.9.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_bshchats.xml.flat",
@@ -416,16 +412,8 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\getstarted_fragment.xml"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_code_dialog_fragment.xml.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\code_dialog_fragment.xml"
-    },
-    {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_header_shadow.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\header_shadow.png"
-    },
-    {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_msg_go_down.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\msg_go_down.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_sticker8.png.flat",
@@ -444,20 +432,16 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\story.xml"
     },
     {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi-v4_album_shadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xxhdpi-v4\\album_shadow.png"
+    },
+    {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_circle_bg.xml.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\circle_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_attach_send.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\attach_send.png"
-    },
-    {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_delete.xml.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\delete.xml"
-    },
-    {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_attach_send.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\attach_send.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout-v23__drawer_launch.xml.flat",
@@ -480,16 +464,12 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\profile_photos.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_nophotos.9.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\nophotos.9.png"
-    },
-    {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_round_shape.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\ic_round_shape.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_chats_popupc.xml.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\chats_popupc.xml"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_header_shadow_reverse.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-hdpi\\header_shadow_reverse.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_msg_actions.png.flat",
@@ -500,12 +480,12 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\msg_edit.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_bg_message.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\bg_message.png"
-    },
-    {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_app_icon.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\app_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_blockpanel_shadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-mdpi\\blockpanel_shadow.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_image_15.png.flat",
@@ -514,6 +494,18 @@
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_pager3.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\pager3.png"
+    },
+    {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_lock_round_shadow.9.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\lock_round_shadow.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_calls_bottomshadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-mdpi\\calls_bottomshadow.png"
+    },
+    {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_popup_fixed_alert2.9.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-mdpi\\popup_fixed_alert2.9.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_splash.xml.flat",
@@ -532,16 +524,8 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\ghost.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_smiles_panel_question.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\smiles_panel_question.png"
-    },
-    {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_action_1.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\action_1.png"
-    },
-    {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_background_cargo.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\background_cargo.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_bottom_shadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-hdpi\\bottom_shadow.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_actions_setphoto.png.flat",
@@ -552,6 +536,10 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\messagec.xml"
     },
     {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_header_shadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-mdpi\\header_shadow.png"
+    },
+    {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_msg_report.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\msg_report.png"
     },
@@ -560,8 +548,12 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\sticker7.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_files_folder.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\files_folder.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi-v4_calls_topshadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xxhdpi-v4\\calls_topshadow.png"
+    },
+    {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\raw_dartloop.tgs.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\raw\\dartloop.tgs"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_announcements.xml.flat",
@@ -572,8 +564,8 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\popup_fixed_alert2.9.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_home_white.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\ic_home_white.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_popup_fixed_alert.9.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-mdpi\\popup_fixed_alert.9.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_menu_night.png.flat",
@@ -596,32 +588,28 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\announcementsc.xml"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_preview_open.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\preview_open.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi-v4_header_shadow_reverse.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xxhdpi-v4\\header_shadow_reverse.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_msg_video.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\msg_video.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_preview_open.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\preview_open.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_banned_bottomdialog_fragment.xml.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\banned_bottomdialog_fragment.xml"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_announcement_pin.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\announcement_pin.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi-v4_sheet_shadow.9.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xxxhdpi-v4\\sheet_shadow.9.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_pager1.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\pager1.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\anim_slide_out_bottom.xml.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\anim\\slide_out_bottom.xml"
-    },
-    {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\anim_slide_in_bottom.xml.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\anim\\slide_in_bottom.xml"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi-v4_attach_shadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xxhdpi-v4\\attach_shadow.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_sticker9.png.flat",
@@ -640,6 +628,10 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\menu_chats.png"
     },
     {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_blockpanel_shadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-hdpi\\blockpanel_shadow.png"
+    },
+    {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_menu_policy.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\menu_policy.png"
     },
@@ -648,16 +640,16 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\popup_fixed_top.9.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_shop.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\ic_shop.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_photos_header_shadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\photos_header_shadow.png"
+    },
+    {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_popup_fixed.9.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-mdpi\\popup_fixed.9.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_msg_link.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\msg_link.png"
-    },
-    {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_location.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\location.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_ab_search.png.flat",
@@ -668,12 +660,12 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\input_video.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_selectphoto_large.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\selectphoto_large.png"
-    },
-    {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_sheet_shadow_round.9.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\sheet_shadow_round.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_popup_fixed.9.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-hdpi\\popup_fixed.9.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_image_12.png.flat",
@@ -696,8 +688,8 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\menu_camera.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_tool_rotate.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\tool_rotate.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_popup_fixed_alert2.9.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-hdpi\\popup_fixed_alert2.9.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_layer_shadow.png.flat",
@@ -708,12 +700,20 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\search.xml"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_sticker.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\sticker.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi-v4_zoom_slide.9.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xxhdpi-v4\\zoom_slide.9.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_verified_profile.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\verified_profile.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_photos_header_shadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-mdpi\\photos_header_shadow.png"
+    },
+    {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_album_shadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-mdpi\\album_shadow.png"
+    },
+    {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_sticker.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\sticker.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_announcement_post.xml.flat",
@@ -728,20 +728,8 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\ic_favorite_white.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_msg_panel_reply.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\msg_panel_reply.png"
-    },
-    {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_photoview_placeholder.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\photoview_placeholder.png"
-    },
-    {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_list_selector.xml.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\list_selector.xml"
-    },
-    {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_player_new_play.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\player_new_play.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_transparent.xml.flat",
@@ -756,12 +744,12 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\profile_info.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_menu_shadow.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-hdpi\\menu_shadow.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_knob_shadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\knob_shadow.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_more.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\more.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_menu_shadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-hdpi\\menu_shadow.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_not_found.png.flat",
@@ -770,6 +758,10 @@
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_introducing_fragment.xml.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\introducing_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_bottom_shadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-mdpi\\bottom_shadow.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_countries.xml.flat",
@@ -784,12 +776,24 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\msg_delete.png"
     },
     {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_header_shadow_reverse.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-mdpi\\header_shadow_reverse.png"
+    },
+    {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\raw_diceloop.tgs.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\raw\\diceloop.tgs"
+    },
+    {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_default_image.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\default_image.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_menu_support2.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\menu_support2.png"
+    },
+    {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_layer_shadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-hdpi\\layer_shadow.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\anim_no_animation.xml.flat",
@@ -828,24 +832,16 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\raw\\sound_out.wav"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_k7shop.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\k7shop.png"
-    },
-    {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_icplaceholder.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\icplaceholder.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_catstile.jpg.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable\\catstile.jpg"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_attach_shadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\attach_shadow.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_tree.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\tree.png"
-    },
-    {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_cart.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\cart.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_profile_newmsg.png.flat",
@@ -856,16 +852,20 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\setup.xml"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_sl_shop.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\sl_shop.png"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_calls_topshadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-mdpi\\calls_topshadow.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_verification_dialog_fragment.xml.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\verification_dialog_fragment.xml"
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_attach_shadow.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-mdpi\\attach_shadow.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_camera.xml.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_zoom_slide_a.9.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-mdpi\\zoom_slide_a.9.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_menu_settings_14.png.flat",
@@ -878,6 +878,10 @@
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_chat.xml.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_shadowdown.png.flat",
+        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\shadowdown.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_input_keyboard.png.flat",
@@ -904,24 +908,12 @@
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\msg_leave.png"
     },
     {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_ntcnum_dialog_fragment.xml.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\ntcnum_dialog_fragment.xml"
-    },
-    {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\layout_shop_sticker_item.xml.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\layout\\shop_sticker_item.xml"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_pager2.png.flat",
         "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\pager2.png"
-    },
-    {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_boxshadow.9.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-hdpi\\boxshadow.9.png"
-    },
-    {
-        "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_announcement.png.flat",
-        "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\drawable-xhdpi\\announcement.png"
     },
     {
         "merged": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\merged_res\\debug\\drawable_sticker5.png.flat",

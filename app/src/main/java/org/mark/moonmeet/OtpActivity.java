@@ -239,7 +239,7 @@ public class OtpActivity extends BaseFragment {
 			divider_country.setBackgroundColor(0xFF193566);
 			divider_number.setBackgroundColor(0xFFDADADA);
 			divider_dialcode.setBackgroundColor(0xFFDADADA);
-			presentFragment(new CountrycodeActivity(), false);
+			presentFragment(new CountrycodeActivity());
 		});
 
 		dial_code.addTextChangedListener(new TextWatcher() {
@@ -677,12 +677,12 @@ public class OtpActivity extends BaseFragment {
 							sp_mydt.edit().putString("country", country_text.getText().toString()).apply();
 							Bundle bundle = new Bundle();
 							bundle.putString("taked_photo", ".");
-							presentFragment(new SetupActivity(bundle), false);
+							presentFragment(new SetupActivity(bundle));
 							break;
 						}
 					}
 				} else {
-					presentFragment(new LaunchActivity(), false);
+					presentFragment(new LaunchActivity());
 				}
 			} else {
 				AlertDialog.Builder dialog = new AlertDialog.Builder(getParentActivity());

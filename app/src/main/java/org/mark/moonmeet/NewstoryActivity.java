@@ -219,7 +219,7 @@ public class NewstoryActivity extends BaseFragment {
 					AndroidUtilities.runOnUIThread(() -> {
 						Bundle args = new Bundle();
 						args.putString("multiple_images", "false");
-						presentFragment(new ImagePickerActivity(args) ,false);
+						presentFragment(new ImagePickerActivity(args));
 						picktype_lin.setVisibility(View.GONE);
 						text_lin.setVisibility(View.GONE);
 						image_lin.setVisibility(View.VISIBLE);

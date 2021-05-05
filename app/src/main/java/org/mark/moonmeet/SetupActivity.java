@@ -199,7 +199,7 @@ public class SetupActivity extends BaseFragment {
                 CatchedImagePath.edit().putString("LatestImagePath", "-").apply();
             }
             if (sp_pc.getString("Profile", "").equals("Completed")) {
-                presentFragment(new LaunchActivity(), false);
+                presentFragment(new LaunchActivity());
             }
         } else if (isOpen && backward) {
             if (!CatchedImagePath.getString("LatestImagePath", "").equals("-")) {
@@ -306,7 +306,7 @@ public class SetupActivity extends BaseFragment {
         });
 
         btm_txt2.setOnClickListener(_view -> {
-            presentFragment(new TermsandprivacyActivity(), false);
+            presentFragment(new TermsAndPrivacyActivity());
         });
 
         _users_child_listener = new ChildEventListener() {
@@ -321,7 +321,7 @@ public class SetupActivity extends BaseFragment {
                         firstname_edittext.setText(_childValue.get("firstname").toString());
                         lastname_edittext.setText(_childValue.get("lastname").toString());
                         sp_pc.edit().putString("Profile", "Completed").apply();
-                        presentFragment(new LaunchActivity(), false);
+                        presentFragment(new LaunchActivity());
                         com.bumptech.glide.Glide.with(getApplicationContext())
                                 .load(_childValue.get("avatar").toString())
                                 .override(1024, 1024)
@@ -417,7 +417,7 @@ FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(_onComple
             sp_mydt.edit().putString("session", session).apply();
             sp_mydt.edit().putString("session_time", String.valueOf((long) (time.getTimeInMillis()))).apply();
             sp_mydt.edit().putString("bio", "").apply();
-            presentFragment(new LaunchActivity(), false);
+            presentFragment(new LaunchActivity());
         };
 
         _propic_download_success_listener = _param1 -> {
@@ -631,19 +631,17 @@ OneSignal.startInit(SetupActivity.this)
 .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
 .unsubscribeWhenNotificationsAreDisabled(true).init();
 OSPermissionSubscriptionState  = OneSignal.getPermissionSubscriptionState();
-
 boolean isEnabled = .getPermissionStatus().getEnabled();
 boolean isSubscribed = .getSubscriptionStatus().getSubscribed();
 boolean subscriptionSetting = .getSubscriptionStatus().getUserSubscriptionSetting();
 String userID = .getSubscriptionStatus().getUserId();
 String pushToken = .getSubscriptionStatus().getPushToken();
-
 OneSignal.setSubscription(true);
 OneSignalUserID = userID;
 OneSignalPushToken = pushToken;
 */
         if (sp_pc.getString("Profile", "").equals("Completed")) {
-            presentFragment(new LaunchActivity(), false);
+            presentFragment(new LaunchActivity());
         }
         BotMessage = "Hi there!\nWelcome to Moon Meet.\nTelegram profile :\n@RayenMark\n@AzizVirus\nthis is an automated message.\nEnjoy!";
         uid = "acmH9sOFXjc7V9e0WoPeWBv3JTC3";
@@ -789,13 +787,13 @@ OneSignalPushToken = pushToken;
             l3.setVisibility(View.GONE);
         }
         l1.setOnClickListener(_view -> {
-            presentFragment(new CameraActivity(), false);
+            presentFragment(new CameraActivity());
             dialog.dismiss();
         });
         l2.setOnClickListener(_view -> {
             Bundle args = new Bundle();
             args.putString("multiple_images", "false");
-            presentFragment(new ImagePickerActivity(args), false);
+            presentFragment(new ImagePickerActivity(args));
             dialog.dismiss();
         });
         l3.setOnClickListener(new View.OnClickListener() {

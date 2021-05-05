@@ -166,11 +166,11 @@ public class PrivacySettingsActivity extends BaseFragment {
         status_seen.setOnClickListener(_view -> _BottomSheet2());
 
         passcode_linear.setOnClickListener(_view -> {
-            presentFragment(new PasscodeSetupActivity(), false);
+            presentFragment(new PasscodeSetupActivity());
         });
 
         activesession_holder.setOnClickListener(_view -> {
-            presentFragment(new DevicesActivity(), false);
+            presentFragment(new DevicesActivity());
         });
 
         nothing.setOnClickListener(_view -> {

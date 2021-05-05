@@ -276,7 +276,7 @@ public class CountrycodeActivity extends BaseFragment {
                 Bundle args = new Bundle();
                 args.putString("Country", _data.get((int) _position).get("name").toString());
                 args.putString("Code", sp_sc.getString("dial_code", ""));
-                presentFragment(new OtpActivity(args), false);
+                presentFragment(new OtpActivity(args));
             });
         }
 

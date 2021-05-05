@@ -283,7 +283,7 @@ public class DiscoverActivity extends BaseFragment {
                                 .into(circleimageview2);
                     }
                     linear4.setOnClickListener(_view1 -> {
-                        presentFragment(new ChatActivity(_data.get((int) _position).get("uid").toString()));
+                        presentFragment(new ChatActivity(_data.get((int) _position).get("uid").toString(), "private"));
                     });
                 } else {
                     linear4.setVisibility(View.GONE);

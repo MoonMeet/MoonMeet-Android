@@ -21,6 +21,7 @@ public class NotificationCenter {
 
     public static final int didClickImage = totalEvents++;
     public static final int didDeleteMessage = totalEvents++;
+    public static final int didClickActiveUser = totalEvents++;
     public static final int didDeleteMessageForever = totalEvents++;
 
 

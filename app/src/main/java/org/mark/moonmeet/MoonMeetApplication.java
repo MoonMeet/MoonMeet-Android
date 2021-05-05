@@ -7,6 +7,7 @@ import android.os.Handler;
 
 import androidx.multidex.MultiDex;
 
+
 import org.mark.axemojiview.AXEmojiManager;
 import org.mark.axemojiview.emoji.iosprovider.AXIOSEmojiProvider;
 
@@ -14,6 +15,7 @@ public class MoonMeetApplication extends Application {
 
 	@SuppressLint("StaticFieldLeak")
 	public static Context applicationContext;
+
 	public static volatile Handler applicationHandler;
 
 	@Override

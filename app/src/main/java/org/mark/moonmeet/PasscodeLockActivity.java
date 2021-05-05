@@ -32,6 +32,7 @@ import com.google.android.material.imageview.ShapeableImageView;
 import com.google.android.material.textview.MaterialTextView;
 
 import org.mark.moonmeet.ui.BaseFragment;
+import org.mark.moonmeet.utils.AndroidUtilities;
 
 import java.util.List;
 
@@ -99,7 +100,7 @@ public class PasscodeLockActivity extends BaseFragment {
                 FingerHash = PatternLockUtils.patternToString(patternlockview, _pattern);
                 AlreadyFingerHash = passcode.getString("passcode", "");
                 if (FingerHash.equals(AlreadyFingerHash)) {
-                    presentFragment(new LaunchActivity(), false);
+                    presentFragment(new LaunchActivity());
                 } else {
                     patternlockview.setViewMode(PatternLockView.PatternViewMode.WRONG);
                     vib.vibrate((long) (25));
@@ -263,13 +264,13 @@ public class PasscodeLockActivity extends BaseFragment {
 
         @Override
         public void onAuthenticationSucceeded(android.hardware.fingerprint.FingerprintManager.AuthenticationResult result) {
-            presentFragment(new LaunchActivity(), false);
+            presentFragment(new LaunchActivity());
             cancellationSignal.cancel();
         }
 
         @Override
         public void onAuthenticationHelp(int helpCode, CharSequence helpString) {
-            SketchwareUtil.showMessage(getApplicationContext(), (helpString.toString()));
+            AndroidUtilities.showToast((helpString.toString()));
         }
 
     }

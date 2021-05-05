@@ -15,7 +15,7 @@ import androidx.core.widget.NestedScrollView;
 
 import org.mark.moonmeet.ui.BaseFragment;
 
-public class TermsandprivacyActivity extends BaseFragment {
+public class TermsAndPrivacyActivity extends BaseFragment {
 
     private String Terms_of_services = "";
     private String Privacy_Policy = "";

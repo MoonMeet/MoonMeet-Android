@@ -288,29 +288,29 @@ public class SettingsActivity extends BaseFragment {
         dots.setOnClickListener(_view -> _Popup());
 
         name_holder.setOnClickListener(_view -> {
-            presentFragment(new ChangeusernameActivity(), false);
+            presentFragment(new ChangeusernameActivity());
         });
 
         bio_holder.setOnClickListener(_view -> {
-           presentFragment(new ChangebioActivity(), false);
+           presentFragment(new ChangebioActivity());
         });
 
         privacy_holder.setOnClickListener(_view -> {
-            presentFragment(new PrivacySettingsActivity(), false);
+            presentFragment(new PrivacySettingsActivity());
         });
 
         chats_holder.setOnClickListener(_view -> AndroidUtilities.showToast("Coming Soon !"));
 
         devices_holder.setOnClickListener(_view -> {
-            presentFragment(new DevicesActivity(), false);
+            presentFragment(new DevicesActivity());
         });
 
         faq_holder.setOnClickListener(_view -> {
-            presentFragment(new FaqInfoActivity(), false);
+            presentFragment(new FaqInfoActivity());
         });
 
         policy_holder.setOnClickListener(_view -> {
-            presentFragment(new TermsandprivacyActivity(), false);
+            presentFragment(new TermsAndPrivacyActivity());
         });
 
         _fab.setOnClickListener(_view -> _BottomSheet());
@@ -708,12 +708,12 @@ public class SettingsActivity extends BaseFragment {
         tx1.setTextColor(0xFF616161);
         tx2.setTextColor(0xFF616161);
         lin1.setOnClickListener(view -> {
-            presentFragment(new EditNameActivity(), false);
+            presentFragment(new EditNameActivity());
             popup.dismiss();
         });
 
         lin2.setOnClickListener(view -> {
-            presentFragment(new SignoutActivity(), false);
+            presentFragment(new SignoutActivity());
             try {
 
                 my_data.edit().clear().apply();
@@ -850,13 +850,13 @@ public class SettingsActivity extends BaseFragment {
         t1.setTypeface(Typeface.createFromAsset(getParentActivity().getAssets(), "fonts/rmedium.ttf"), 0);
         t2.setTypeface(Typeface.createFromAsset(getParentActivity().getAssets(), "fonts/rmedium.ttf"), 0);
         l1.setOnClickListener(_view -> {
-            presentFragment(new CameraActivity(), false);
+            presentFragment(new CameraActivity());
             dialog.dismiss();
         });
         l2.setOnClickListener(_view -> {
             Bundle args = new Bundle();
             args.putString("multiple_images", "false");
-            presentFragment(new ImagePickerActivity(args) ,false);
+            presentFragment(new ImagePickerActivity(args));
             dialog.dismiss();
         });
         dialog.show();
