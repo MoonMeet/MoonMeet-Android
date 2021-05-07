@@ -74,7 +74,6 @@ Thanks, they help to keep **Moon Meet** alive. It's better to have multiple peop
 
 ### Special Thanks
 - [Telegram](https://github.com/DrKLO/Telegram)
-- [AXEmojiView](https://github.com/Aghajari/AXEmojiView)
 
 ### License
    ```
