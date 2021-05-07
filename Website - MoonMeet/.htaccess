@@ -1,2 +1,0 @@
-RewriteEngine on
-ErrorDocument 404 http://%{HTTP_HOST}/404
