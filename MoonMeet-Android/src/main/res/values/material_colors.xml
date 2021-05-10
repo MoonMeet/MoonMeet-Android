@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <!-- google's material design colours from
+  http://www.google.com/design/spec/style/color.html#color-ui-color-palette -->
+    <!--reds-->
+    <!-- pinks -->
+    <!-- purples -->
+    <!-- deep purples -->
+    <!-- indigo -->
+    <!--blue-->
+    <color name="md_blue_200">#90CAF9</color>
+    <!-- light blue-->
+    <!-- cyan -->
+    <!-- teal -->
+    <!-- green -->
+    <!--light green-->
+    <!-- lime-->
+    <!--yellow -->
+    <!--amber-->
+    <!--orange-->
+    <!--deep orange-->
+    <!--brown -->
+    <!--grey-->
+    <color name="md_grey_400">#BDBDBD</color>
+    <!--blue grey-->
+</resources>

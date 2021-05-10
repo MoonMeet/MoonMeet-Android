@@ -1,0 +1,76 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear4"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#FFFFFF"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linear1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="16dp"
+			android:paddingTop="10dp"
+			android:paddingRight="16dp"
+			android:paddingBottom="10dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal"
+			android:foreground="?android:attr/selectableItemBackground">
+			<LinearLayout
+				android:id="@+id/propic_bg"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="16dp"
+				android:orientation="horizontal">
+				<de.hdodenhof.circleimageview.CircleImageView
+					android:id="@+id/circleimageview2"
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:src="@drawable/default_image"
+					app:civ_border_width="0dp"
+					app:civ_border_color="#008DCD"
+					app:civ_circle_background_color="#FFFFFF"
+					app:civ_border_overlay="true" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_weight="1">
+				<TextView
+					android:id="@+id/textview1"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="MoonMeet User"
+					android:textSize="16sp"
+					android:textColor="#193566"
+					android:alpha="0.8" />
+				<TextView
+					android:id="@+id/textview2"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingBottom="2dp"
+					android:textSize="14sp"
+					android:textColor="#000000"
+					android:alpha="0.6" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/nothing"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_marginLeft="82dp"
+			android:padding="8dp"
+			android:background="#DADADA"
+			android:orientation="horizontal" />
+	</LinearLayout>
+</LinearLayout>
