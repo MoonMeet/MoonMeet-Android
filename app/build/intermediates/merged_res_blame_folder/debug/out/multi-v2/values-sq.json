@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sq\\values-sq.xml",
+            "outputFile": "C:\\Users\\Hamza Sbai\\Documents\\GitHub\\MoonMeet\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sq\\values-sq.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Hamza Sbai\\.gradle\\caches\\transforms-3\\912025abaa7667784db6fe8b8d109ac6\\transformed\\jetified-play-services-base-17.1.0\\res\\values-sq\\values.xml",

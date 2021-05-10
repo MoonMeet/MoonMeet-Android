@@ -1,8 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "C:\\Users\\Hamza Sbai\\Documents\\GitHub\\MoonMeet\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\Hamza Sbai\\Documents\\GitHub\\MoonMeet\\app\\src\\main\\res\\values-v23\\styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "59",
+                        "endLines": "26",
+                        "endColumns": "12",
+                        "endOffsets": "1738"
+                    },
+                    "to": {
+                        "startLines": "53",
+                        "startColumns": "4",
+                        "startOffsets": "3674",
+                        "endLines": "76",
+                        "endColumns": "12",
+                        "endOffsets": "5330"
+                    }
+                },
                 {
                     "source": "C:\\Users\\Hamza Sbai\\.gradle\\caches\\transforms-3\\72b8af4e3581cb45ffcc778453943cd5\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
@@ -20,25 +39,6 @@
                         "endLines": "52",
                         "endColumns": "12",
                         "endOffsets": "3669"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\values-v23\\styles.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "59",
-                        "endLines": "26",
-                        "endColumns": "12",
-                        "endOffsets": "1738"
-                    },
-                    "to": {
-                        "startLines": "53",
-                        "startColumns": "4",
-                        "startOffsets": "3674",
-                        "endLines": "76",
-                        "endColumns": "12",
-                        "endOffsets": "5330"
                     }
                 },
                 {

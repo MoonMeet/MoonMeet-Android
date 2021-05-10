@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "outputFile": "C:\\Users\\Hamza Sbai\\Documents\\GitHub\\MoonMeet\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
-                {
-                    "source": "C:\\Users\\Hamza Sbai\\Desktop\\MoonMeet\\app\\src\\main\\res\\values-sw600dp\\values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "56",
-                        "endColumns": "37",
-                        "endOffsets": "89"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "37",
-                        "endOffsets": "88"
-                    }
-                },
                 {
                     "source": "C:\\Users\\Hamza Sbai\\.gradle\\caches\\transforms-3\\b1a9fe0ce1b526a5dbccd9cab633ed55\\transformed\\appcompat-1.2.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
@@ -54,6 +37,23 @@
                         "endLines": "11,12,13,14,15,16,18,19,20,21,22,26",
                         "endColumns": "59,69,70,71,57,57,10,63,55,58,62,10",
                         "endOffsets": "704,774,845,917,975,1033,1142,1206,1262,1321,1384,1556"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Hamza Sbai\\Documents\\GitHub\\MoonMeet\\app\\src\\main\\res\\values-sw600dp\\values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "56",
+                        "endColumns": "37",
+                        "endOffsets": "89"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "37",
+                        "endOffsets": "88"
                     }
                 }
             ]

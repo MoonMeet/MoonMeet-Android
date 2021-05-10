@@ -6,174 +6,174 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml
+8-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="30" />
-9-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml
+9-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml
 10
 11    <supports-screens
-11-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:5:5-11:40
+11-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:5:5-11:40
 12        android:anyDensity="true"
-12-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:6:9-34
+12-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:6:9-34
 13        android:largeScreens="true"
-13-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:7:9-36
+13-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:7:9-36
 14        android:normalScreens="true"
-14-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:8:9-37
+14-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:8:9-37
 15        android:resizeable="true"
-15-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:9:9-34
+15-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:9:9-34
 16        android:smallScreens="true"
-16-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:10:9-36
+16-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:10:9-36
 17        android:xlargeScreens="true" />
-17-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:11:9-37
+17-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:11:9-37
 18
 19    <uses-feature
-19-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:13:5-15:35
+19-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:13:5-15:35
 20        android:name="android.hardware.camera"
-20-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:14:9-47
+20-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:14:9-47
 21        android:required="true" />
-21-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:15:9-32
+21-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:15:9-32
 22    <uses-feature
-22-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:16:5-18:35
+22-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:16:5-18:35
 23        android:name="android.hardware.camera2"
-23-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:17:9-48
+23-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:17:9-48
 24        android:required="true" />
-24-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:18:9-32
+24-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:18:9-32
 25
 26    <uses-permission android:name="android.permission.INTERNET" />
-26-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:20:5-67
-26-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:20:22-64
+26-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:20:5-67
+26-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:20:22-64
 27    <uses-permission android:name="android.permission.VIBRATE" />
-27-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:21:5-66
-27-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:21:22-63
+27-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:21:5-66
+27-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:21:22-63
 28    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-28-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:22:5-79
-28-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:22:22-76
+28-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:22:5-79
+28-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:22:22-76
 29    <uses-permission android:name="android.permission.CAMERA" />
-29-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:23:5-65
-29-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:23:22-62
+29-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:23:5-65
+29-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:23:22-62
 30    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-30-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:24:5-80
-30-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:24:22-77
+30-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:24:5-80
+30-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:24:22-77
 31    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-31-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:25:5-81
-31-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:25:22-78
+31-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:25:5-81
+31-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:25:22-78
 32    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-32-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:26:5-71
-32-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:26:22-68
+32-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:26:5-71
+32-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:26:22-68
 33    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
-33-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:27:5-82
-33-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:27:22-79
+33-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:27:5-82
+33-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:27:22-79
 34    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
-34-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:28:5-74
-34-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:28:22-71
+34-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:28:5-74
+34-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:28:22-71
 35
 36    <application
-36-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:30:5-103:19
+36-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:30:5-103:19
 37        android:name="org.mark.moonmeet.MoonMeetApplication"
-37-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:31:9-44
+37-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:31:9-44
 38        android:allowBackup="true"
-38-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:32:9-35
+38-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:32:9-35
 39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-39-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:33:9-77
+39-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:33:9-77
 40        android:debuggable="true"
 41        android:fullBackupContent="true"
-41-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:34:9-41
+41-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:34:9-41
 42        android:hardwareAccelerated="true"
-42-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:35:9-43
+42-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:35:9-43
 43        android:icon="@drawable/app_icon"
-43-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:36:9-42
+43-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:36:9-42
 44        android:label="@string/app_name"
-44-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:37:9-41
+44-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:37:9-41
 45        android:requestLegacyExternalStorage="true"
-45-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:38:9-52
+45-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:38:9-52
 46        android:supportsRtl="true"
-46-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:39:9-35
+46-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:39:9-35
 47        android:testOnly="true"
 48        android:theme="@style/MoonMeet"
-48-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:40:9-40
+48-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:40:9-40
 49        android:usesCleartextTraffic="true" >
-49-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:41:9-44
+49-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:41:9-44
 50        <activity
-50-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:42:9-53:20
+50-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:42:9-53:20
 51            android:name="org.mark.moonmeet.MainActivity"
-51-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:43:13-41
+51-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:43:13-41
 52            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-52-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:44:13-106
+52-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:44:13-106
 53            android:exported="true"
-53-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:45:13-36
+53-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:45:13-36
 54            android:hardwareAccelerated="true"
-54-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:46:13-47
+54-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:46:13-47
 55            android:windowSoftInputMode="stateHidden|adjustResize|stateVisible" >
-55-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:47:13-80
+55-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:47:13-80
 56            <intent-filter>
-56-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:48:13-52:29
+56-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:48:13-52:29
 57                <action android:name="android.intent.action.MAIN" />
-57-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:49:17-69
-57-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:49:25-66
+57-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:49:17-69
+57-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:49:25-66
 58
 59                <category android:name="android.intent.category.LAUNCHER" />
-59-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:51:17-77
-59-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:51:27-74
+59-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:51:17-77
+59-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:51:27-74
 60            </intent-filter>
 61        </activity>
 62        <activity
-62-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:54:9-59:39
+62-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:54:9-59:39
 63            android:name="org.mark.moonmeet.FragmentStack"
-63-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:55:13-42
+63-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:55:13-42
 64            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-64-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:56:13-106
+64-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:56:13-106
 65            android:exported="true"
-65-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:59:13-36
+65-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:59:13-36
 66            android:hardwareAccelerated="true"
-66-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:57:13-47
+66-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:57:13-47
 67            android:windowSoftInputMode="stateHidden|adjustResize|stateVisible" />
-67-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:58:13-80
+67-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:58:13-80
 68
 69        <meta-data
-69-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:60:9-62:69
+69-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:60:9-62:69
 70            android:name="com.google.android.gms.version"
-70-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:61:13-58
+70-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:61:13-58
 71            android:value="@integer/google_play_services_version" />
-71-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:62:13-66
+71-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:62:13-66
 72
 73        <provider
-73-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:64:9-68:39
+73-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:64:9-68:39
 74            android:name="com.google.firebase.provider.FirebaseInitProvider"
-74-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:65:13-77
+74-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:65:13-77
 75            android:authorities="org.mark.moonmeet.firebaseinitprovider"
-75-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:66:13-73
+75-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:66:13-73
 76            android:directBootAware="true"
 76-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\f6b28117c3f143486c8c62082fef9e0e\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
 77            android:exported="false"
-77-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:67:13-37
+77-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:67:13-37
 78            android:initOrder="100" />
-78-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:68:13-36
+78-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:68:13-36
 79
 80        <service
-80-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:70:9-82:19
+80-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:70:9-82:19
 81            android:name="com.google.firebase.components.ComponentDiscoveryService"
-81-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:71:13-84
+81-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:71:13-84
 82            android:directBootAware="true"
 82-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\f6b28117c3f143486c8c62082fef9e0e\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
 83            android:exported="false" >
-83-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:72:13-37
+83-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:72:13-37
 84            <meta-data
-84-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:73:13-75:85
+84-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:73:13-75:85
 85                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-85-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:74:17-109
+85-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:74:17-109
 86                android:value="com.google.firebase.components.ComponentRegistrar" />
-86-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:75:17-82
+86-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:75:17-82
 87            <meta-data
-87-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:76:13-78:85
+87-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:76:13-78:85
 88                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-88-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:77:17-109
+88-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:77:17-109
 89                android:value="com.google.firebase.components.ComponentRegistrar" />
-89-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:78:17-82
+89-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:78:17-82
 90            <meta-data
-90-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:79:13-81:85
+90-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:79:13-81:85
 91                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-91-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:80:17-107
+91-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:80:17-107
 92                android:value="com.google.firebase.components.ComponentRegistrar" />
-92-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:81:17-82
+92-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:81:17-82
 93            <!--
 94                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
 95                clients to use it as well, by defining this registrar in their own core/common library.
@@ -187,41 +187,41 @@
 100        </service>
 101
 102        <provider
-102-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:84:9-92:20
+102-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:84:9-92:20
 103            android:name="androidx.core.content.FileProvider"
-103-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:85:13-62
+103-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:85:13-62
 104            android:authorities="org.mark.moonmeet.provider"
-104-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:86:13-61
+104-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:86:13-61
 105            android:exported="false"
-105-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:87:13-37
+105-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:87:13-37
 106            android:grantUriPermissions="true" >
-106-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:88:13-47
+106-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:88:13-47
 107            <meta-data
-107-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:89:13-91:58
+107-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:89:13-91:58
 108                android:name="android.support.FILE_PROVIDER_PATHS"
-108-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:90:17-67
+108-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:90:17-67
 109                android:resource="@xml/provider_paths" />
-109-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:91:17-55
+109-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:91:17-55
 110        </provider>
 111        <provider
-111-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:93:9-98:43
+111-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:93:9-98:43
 112            android:name="androidx.camera.camera2.impl.Camera2Initializer"
-112-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:94:13-75
+112-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:94:13-75
 113            android:authorities="org.mark.moonmeet.camerax-init"
-113-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:95:13-65
+113-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:95:13-65
 114            android:exported="false"
-114-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:96:13-37
+114-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:96:13-37
 115            android:initOrder="100"
-115-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:97:13-36
+115-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:97:13-36
 116            android:multiprocess="true" />
-116-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:98:13-40
+116-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:98:13-40
 117
 118        <uses-library
-118-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:100:9-102:40
+118-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:100:9-102:40
 119            android:name="org.apache.http.legacy"
-119-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:101:13-50
+119-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:101:13-50
 120            android:required="false" />
-120-->C:\Users\Hamza Sbai\Desktop\MoonMeet\app\src\main\AndroidManifest.xml:102:13-37
+120-->C:\Users\Hamza Sbai\Documents\GitHub\MoonMeet\app\src\main\AndroidManifest.xml:102:13-37
 121
 122        <activity
 122-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\Hamza Sbai\.gradle\caches\transforms-3\51096894578ccf83b93d3ad54fe1d859\transformed\jetified-firebase-auth-20.0.4\AndroidManifest.xml:27:9-44:20
