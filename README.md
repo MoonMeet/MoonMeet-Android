@@ -68,6 +68,8 @@ You will require updated Android Studio and Android SDK.
 Thanks, they help to keep **Moon Meet** alive. It's better to have multiple people work on a project, for more ideas, less bugs
 (sadly sometimes more), and generally quicker development. Each (helpful) contribution that gets thankfully accepted.
 
+Feel free to contribute & share.
+
 ### Social
 - [Facebook](https://www.facebook.com/moonmeet.inc)
 - [Telegram](https://t.me/MoonMeet)
