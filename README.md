@@ -1,4 +1,4 @@
-### MoonMeet-Android
+### MoonMeet - Android
 <p align="center">
 
 <img src="https://img.shields.io/github/contributors/MoonMeet/MoonMeet-Android" />
