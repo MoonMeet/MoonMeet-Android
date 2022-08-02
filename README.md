@@ -72,7 +72,7 @@ Thanks, they help to keep **Moon Meet** alive. It's better to have multiple peop
 Feel free to contribute & share.
 
 ### Social
-#### Social links are removed since they're fake and not offcial, so stay tuned for new links.
+#### Social links are removed since they're fake and not official, so stay tuned for new links.
 
 ### Special Thanks
 - [Telegram](https://github.com/DrKLO/Telegram)
