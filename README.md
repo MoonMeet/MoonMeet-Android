@@ -1,3 +1,4 @@
+# ! DISCOUNTED !
 ### MoonMeet - Android
 <p align="center">
 
@@ -71,15 +72,14 @@ Thanks, they help to keep **Moon Meet** alive. It's better to have multiple peop
 Feel free to contribute & share.
 
 ### Social
-- [Facebook](https://www.facebook.com/moonmeet.inc)
-- [Telegram](https://t.me/MoonMeet)
+#### Social links are removed since they're fake and not offcial, so stay tuned for new links.
 
 ### Special Thanks
 - [Telegram](https://github.com/DrKLO/Telegram)
 
 ### License
    ```
-   Moon Meet Copyright(C) 2021 Cortex.
+   Moon Meet Copyright(C) 2021 SectionTN.
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
    the Free Software Foundation; either version 2 of the License.
